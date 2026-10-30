@@ -79,5 +79,27 @@ class ChainTests(unittest.TestCase):
         self.assertEqual(hungary["total_factor"], 4e29)
 
 
+class RateTests(unittest.TestCase):
+    """rates.json is written by the scheduled job; these checks run only when it exists."""
+
+    def setUp(self):
+        path = ROOT / "data" / "rates.json"
+        if not path.exists():
+            self.skipTest("rates.json not fetched yet")
+        self.rates = json.loads(path.read_text())
+
+    def test_every_country_has_a_unit_code(self):
+        from fetch_rates import UNITS
+        for c in COUNTRIES:
+            self.assertIn(c["iso"], UNITS, c["name"])
+
+    def test_rates_are_positive_and_dated(self):
+        self.assertRegex(self.rates["date"], r"^\d{4}-\d{2}-\d{2}")
+        for code, value in self.rates["rates"].items():
+            self.assertGreater(value, 0, code)
+        self.assertLessEqual(len(self.rates["missing"]), 2, self.rates["missing"])
+        self.assertAlmostEqual(self.rates["rates"].get("EUR", 0.9), 0.9, delta=0.4)
+
+
 if __name__ == "__main__":
     unittest.main()
