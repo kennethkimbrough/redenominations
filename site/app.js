@@ -212,8 +212,8 @@ if (history) {
     const c = history.countries[iso];
     const chain = chainByWb[iso];
     const out = $("#t-result"), note = $("#t-note");
-    const unit = chain ? unitFor(chain, year) : { name: "local currency", factor: 1 };
-    $("#t-unit").textContent = chain ? `in ${unit.name}` : "";
+    const unit = chain ? unitFor(chain, year) : { name: c.currency ? c.currency.name : "local currency", factor: 1, current: true };
+    $("#t-unit").textContent = `in ${unit.name}`;
     if (!Number.isFinite(amount) || !Number.isFinite(year)) { out.textContent = "Enter a year and an amount."; note.textContent = ""; return; }
     const rate = c.rates[year];
     if (chain?.wb_unsupported) { out.textContent = `No reliable series for ${c.name}.`; note.textContent = chain.wb_unsupported; return; }
@@ -227,13 +227,14 @@ if (history) {
     const usdThen = amount / unit.factor / rate;
     const cpiYear = history.us_cpi[Math.min(Math.max(year, Math.min(...cpiYears)), cpiLatest)];
     const usdNow = usdThen * history.us_cpi[cpiLatest] / cpiYear;
-    out.innerHTML = `${fmtAmount(amount)} ${esc(unit.name === "local currency" ? c.name + " " + unit.name : unit.name)} in ${year} =` +
+    const unitLabel = unit.current && unit.name === "local currency" ? `${c.name} local currency` : unit.name;
+    out.innerHTML = `${fmtAmount(amount)} ${esc(unitLabel)} in ${year} =` +
       `<span class="big">${fmtUsd(usdThen)} in ${year} dollars</span>` +
       `<span class="zeros">about <b>${fmtUsd(usdNow)}</b> in ${cpiLatest} dollars (US consumer prices rose ${(history.us_cpi[cpiLatest] / cpiYear).toFixed(1)}× since ${year})` +
       ` · average official rate in ${year}: ${rate >= 0.01 ? rate.toLocaleString("en-US", { maximumFractionDigits: 4 }) : rate.toExponential(3)} ${chain ? "current units" : "local units"} per dollar</span>`;
     const later = table.rows.filter((r) => r.country === c.name && r.year > year);
     const warn = [];
-    if (!chain && later.length) warn.push(`${c.name} redenominated in ${later.map((r) => r.year).join(", ")} and the World Bank restates earlier years in the later unit, so enter the amount in today's unit, or expect the figure to be off by a factor of ${later.map((r) => fmtRate(r.rate).replace(/<[^>]+>/g, "^")).join(" × ")}.`);
+    if (!chain && later.length) warn.push(`${c.name} redenominated in ${later.map((r) => r.year).join(", ")}; the amount is read in today's ${unit.name}, because the World Bank restates earlier years in it. In the currency of ${year} the figure would differ by a factor of ${later.map((r) => fmtRate(r.rate).replace(/<[^>]+>/g, "^")).join(" × ")}.`);
     if (chain && chain.status === "partial") warn.push(`${chain.name}'s chain has an uncited step; the conversion to the current unit may be off.`);
     if (["VEN", "ARG", "BOL", "ZWE"].includes(iso)) warn.push("Official rate; a parallel street rate existed for much of this period.");
     note.innerHTML = warn.map(esc).join(" ") + ` <a href="${esc(history.source.url)}">Source</a>, fetched ${esc(history.fetched)}.`;

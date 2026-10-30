@@ -38,7 +38,33 @@ def fetch_all(indicator: str) -> list[dict]:
         page += 1
 
 
+CURRENCIES_SOURCE = {
+    "title": "REST Countries (restcountries.com), currencies field",
+    "url": "https://restcountries.com/v3.1/all?fields=cca3,currencies",
+}
+
+
+def fetch_currency_names() -> dict[str, dict]:
+    """ISO3 -> {"code", "name"} for each country's current currency. Empty on failure."""
+    try:
+        req = urllib.request.Request(CURRENCIES_SOURCE["url"], headers={"User-Agent": "redenominations-history/1.0"})
+        with urllib.request.urlopen(req, timeout=60) as resp:  # noqa: S310 - fixed https host
+            rows = json.load(resp)
+    except Exception as exc:  # noqa: BLE001 - names are optional
+        print(f"currency names unavailable: {exc!r}", file=sys.stderr)
+        return {}
+    out = {}
+    for r in rows:
+        cur = r.get("currencies") or {}
+        if not cur:
+            continue
+        code = sorted(cur)[0] if len(cur) > 1 else next(iter(cur))
+        out[r["cca3"]] = {"code": code, "name": cur[code].get("name", code)}
+    return out
+
+
 def main() -> int:
+    names = fetch_currency_names()
     fx = fetch_all("PA.NUS.FCRF")
     cpi = fetch_all("FP.CPI.TOTL")
 
@@ -64,7 +90,8 @@ def main() -> int:
                 "World Bank reports them. The World Bank restates countries that redenominated in "
                 "the latest unit; see data/history_probe.json and the site's method section.",
         "us_cpi": dict(sorted(us_cpi.items())),
-        "countries": {iso: {"name": c["name"], "rates": dict(sorted(c["rates"].items()))}
+        "currencies_source": CURRENCIES_SOURCE if names else None,
+        "countries": {iso: {"name": c["name"], "currency": names.get(iso), "rates": dict(sorted(c["rates"].items()))}
                       for iso, c in sorted(countries.items()) if len(c["rates"]) >= 5},
     }
     path = Path(__file__).with_name("history.json")
@@ -73,7 +100,8 @@ def main() -> int:
     probe = {iso: {y: out["countries"][iso]["rates"].get(y) for y in (1965, 1980, 1985, 1990, 1994, 2000, 2023)}
              for iso in ("BRA", "ARG", "IND", "HUN", "TUR", "ZWE", "VEN", "DEU", "FRA", "POL") if iso in out["countries"]}
     Path(__file__).with_name("history_probe.json").write_text(json.dumps(probe, indent=1))
-    print(f"wrote {path}: {len(out['countries'])} countries, US CPI {min(us_cpi)}–{max(us_cpi)}")
+    named = sum(1 for c in out["countries"].values() if c["currency"])
+    print(f"wrote {path}: {len(out['countries'])} countries ({named} with a currency name), US CPI {min(us_cpi)}–{max(us_cpi)}")
     print(json.dumps(probe, indent=1))
     return 0
 
