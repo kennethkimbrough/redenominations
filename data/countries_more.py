@@ -140,6 +140,17 @@ MORE = [
         (1997, "Guinea-Bissau peso", "CFA franc", 65, "wiki", None)]},
 ]
 
+MORE += [
+    {"iso": "VN", "name": "Vietnam (from South Vietnam)", "start": 1955, "unit": "đồng", "steps": [
+        (1975, "Đồng", "Liberation đồng", 500, "wiki", "The South Vietnamese đồng after the fall of Saigon."),
+        (1978, "Liberation đồng", "Đồng (unified)", 0.8, "wiki", "Unification of the two Vietnamese currencies; the new unit was the larger one."),
+        (1985, "Đồng (unified)", "Đồng (1985)", 10, None, "The 1985 price-wage-money reform exchanged 10 old đồng for 1 new. Missing from the source table; not yet cited.")],
+     "gap": "Follows the southern currency; the North Vietnamese đồng and the 1985 reform are not yet cited."},
+    {"iso": "TL", "name": "Timor-Leste", "start": 1976, "unit": "US dollar", "steps": [
+        (1999, "Indonesian rupiah", "United States dollar", 6900, "wiki", "An approximate market rate at the time, as the source gives it; the dollar was adopted by the UN administration in 2000 and there was no fixed conversion.")],
+     "gap": "The rupiah-to-dollar figure is approximate, not a fixed legal rate; the Portuguese Timor escudo before 1976 is not covered."},
+]
+
 MORE_ALIASES = {
     "Second Azerbaijani manat": "Azerbaijani manat (2nd)",
     "(old) manat": "Turkmenistani manat",
@@ -157,7 +168,7 @@ MORE_WORLD_BANK = {
     "AT": "AUT", "CY": "CYP", "MT": "MLT", "SK": "SVK", "ID": "IDN", "KR": "KOR", "TW": None,
     "CN": "CHN", "IS": "ISL", "MZ": "MOZ", "ZM": "ZMB", "SD": "SDN", "UG": "UGA", "SR": "SUR",
     "SL": "SLE", "ST": "STP", "MR": "MRT", "MG": "MDG", "EC": "ECU", "SV": "SLV", "GN": "GIN",
-    "ML": "MLI", "GQ": "GNQ", "GW": "GNB",
+    "ML": "MLI", "GQ": "GNQ", "GW": "GNB", "VN": "VNM", "TL": "TLS",
 }
 
 MORE_UNITS = {
@@ -167,5 +178,5 @@ MORE_UNITS = {
     "AT": "EUR", "CY": "EUR", "MT": "EUR", "SK": "EUR", "ID": "IDR", "KR": "KRW", "TW": "TWD",
     "CN": "CNY", "IS": "ISK", "MZ": "MZN", "ZM": "ZMW", "SD": "SDG", "UG": "UGX", "SR": "SRD",
     "SL": "SLE", "ST": "STN", "MR": "MRU", "MG": "MGA", "EC": "USD", "SV": "USD", "GN": "GNF",
-    "ML": "XOF", "GQ": "XAF", "GW": "XOF",
+    "ML": "XOF", "GQ": "XAF", "GW": "XOF", "VN": "VND", "TL": "USD",
 }

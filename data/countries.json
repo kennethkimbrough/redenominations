@@ -15,6 +15,11 @@
    "url": "https://www.ecb.europa.eu/press/pr/date/2022/html/ecb.pr220712~b97dd38de3.en.html",
    "accessed": "2026-10-30"
   },
+  "bundesbank-1948": {
+   "title": "Deutsche Bundesbank, \"The economic and currency reform of 1948: the basis for stable money\" (wages and rents converted 1:1; balances at less than 1:10; 60 RM exchanged for 40 DM per head)",
+   "url": "https://www.bundesbank.de/en/press/contributions/the-economic-and-currency-reform-of-1948-the-basis-for-stable-money-915302",
+   "accessed": "2026-10-30"
+  },
   "ecb-bg": {
    "title": "ECB press release, 8 July 2025: Bulgaria to join euro area on 1 January 2026 (lev fixed at 1.95583 = EUR 1)",
    "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr250708~b9676a9fa8.en.html",
@@ -2958,7 +2963,7 @@
      "new": "Second Belarusian ruble",
      "rate": 1000,
      "source": null,
-     "note": "Missing from the source table. Not yet cited."
+     "note": "Missing from the source table. The National Bank of Belarus publishes the history of its denominations, but its site refuses automated reading, so this step must be checked by hand."
     },
     {
      "year": 2016,
@@ -3155,6 +3160,80 @@
    "wb_unsupported": null
   },
   {
+   "iso": "TL",
+   "name": "Timor-Leste",
+   "start": 1976,
+   "unit": "US dollar",
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "The rupiah-to-dollar figure is approximate, not a fixed legal rate; the Portuguese Timor escudo before 1976 is not covered.",
+   "steps": [
+    {
+     "year": 1999,
+     "old": "Indonesian rupiah",
+     "new": "United States dollar",
+     "rate": 6900,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": "An approximate market rate at the time, as the source gives it; the dollar was adopted by the UN administration in 2000 and there was no fixed conversion."
+    }
+   ],
+   "total_factor": 6900.0,
+   "wb": "TLS",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "VN",
+   "name": "Vietnam (from South Vietnam)",
+   "start": 1955,
+   "unit": "đồng",
+   "status": "partial",
+   "unsourced_steps": 1,
+   "gap": "Follows the southern currency; the North Vietnamese đồng and the 1985 reform are not yet cited.",
+   "steps": [
+    {
+     "year": 1975,
+     "old": "Đồng",
+     "new": "Liberation đồng",
+     "rate": 500,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": "The South Vietnamese đồng after the fall of Saigon."
+    },
+    {
+     "year": 1978,
+     "old": "Liberation đồng",
+     "new": "Đồng (unified)",
+     "rate": 0.8,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": "Unification of the two Vietnamese currencies; the new unit was the larger one."
+    },
+    {
+     "year": 1985,
+     "old": "Đồng (unified)",
+     "new": "Đồng (1985)",
+     "rate": 10,
+     "source": null,
+     "note": "The 1985 price-wage-money reform exchanged 10 old đồng for 1 new. Missing from the source table; not yet cited."
+    }
+   ],
+   "total_factor": 4000.0,
+   "wb": "VNM",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "MZ",
    "name": "Mozambique",
    "start": 1980,
@@ -3334,16 +3413,20 @@
    "start": 1945,
    "unit": "euro",
    "status": "partial",
-   "unsourced_steps": 1,
-   "gap": null,
+   "unsourced_steps": 0,
+   "gap": "The 1948 reform had several rates, so no single factor is exact for Reichsmark amounts; West Germany only, and the Saarland and East Germany are not covered.",
    "steps": [
     {
      "year": 1948,
      "old": "Reichsmark",
      "new": "Deutsche Mark",
      "rate": 10,
-     "source": null,
-     "note": "The 1948 currency reform used different rates for cash, wages and savings; 10:1 is the headline rate. Not yet cited."
+     "source": {
+      "title": "Deutsche Bundesbank, \"The economic and currency reform of 1948: the basis for stable money\" (wages and rents converted 1:1; balances at less than 1:10; 60 RM exchanged for 40 DM per head)",
+      "url": "https://www.bundesbank.de/en/press/contributions/the-economic-and-currency-reform-of-1948-the-basis-for-stable-money-915302",
+      "accessed": "2026-10-30"
+     },
+     "note": "No single rate existed: wages, salaries and rents converted 1:1, each person swapped 60 RM for 40 DM (then 20 more), and bank balances converted at less than 1:10. The conventional 10:1 is used here."
     },
     {
      "year": 1999,
@@ -3419,5 +3502,5 @@
   }
  ],
  "verified": 57,
- "partial": 16
+ "partial": 18
 }

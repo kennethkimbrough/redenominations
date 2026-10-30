@@ -34,6 +34,11 @@ SOURCES = {
         "url": "https://www.ecb.europa.eu/press/pr/date/2022/html/ecb.pr220712~b97dd38de3.en.html",
         "accessed": "2026-10-30",
     },
+    "bundesbank-1948": {
+        "title": "Deutsche Bundesbank, \"The economic and currency reform of 1948: the basis for stable money\" (wages and rents converted 1:1; balances at less than 1:10; 60 RM exchanged for 40 DM per head)",
+        "url": "https://www.bundesbank.de/en/press/contributions/the-economic-and-currency-reform-of-1948-the-basis-for-stable-money-915302",
+        "accessed": "2026-10-30",
+    },
     "ecb-bg": {
         "title": "ECB press release, 8 July 2025: Bulgaria to join euro area on 1 January 2026 (lev fixed at 1.95583 = EUR 1)",
         "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr250708~b9676a9fa8.en.html",
@@ -217,10 +222,11 @@ COUNTRIES = [
     {
         "iso": "DE", "name": "Germany", "start": 1945, "unit": "euro",
         "steps": [
-            (1948, "Reichsmark", "Deutsche Mark", 10, None,
-             "The 1948 currency reform used different rates for cash, wages and savings; 10:1 is the headline rate. Not yet cited."),
+            (1948, "Reichsmark", "Deutsche Mark", 10, "bundesbank-1948",
+             "No single rate existed: wages, salaries and rents converted 1:1, each person swapped 60 RM for 40 DM (then 20 more), and bank balances converted at less than 1:10. The conventional 10:1 is used here."),
             (1999, "Deutsche Mark", "Euro", 1.95583, "ec2866", None),
         ],
+        "gap": "The 1948 reform had several rates, so no single factor is exact for Reichsmark amounts; West Germany only, and the Saarland and East Germany are not covered.",
     },
     {
         "iso": "IL", "name": "Israel", "start": 1948, "unit": "new shekel",
@@ -247,7 +253,7 @@ COUNTRIES = [
             (1991, "6th Soviet ruble", "7th Soviet ruble", 1, "wiki", None),
             (1994, "7th Soviet ruble", "First Belarusian ruble", 10, "wiki", None),
             (2000, "First Belarusian ruble", "Second Belarusian ruble", 1_000, None,
-             "Missing from the source table. Not yet cited."),
+             "Missing from the source table. The National Bank of Belarus publishes the history of its denominations, but its site refuses automated reading, so this step must be checked by hand."),
             (2016, "Second Belarusian ruble", "Third Belarusian ruble", 10_000, "wiki", None),
         ],
     },

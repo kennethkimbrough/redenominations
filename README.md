@@ -38,7 +38,7 @@ every figure, and builds three things from it:
 |---|---|
 | Reforms in the table since 1945 | 129 (153 including earlier ones) |
 | Countries with a fully cited chain from their first post-war currency to today | 57 |
-| Countries with a partial chain (a step or the starting point still needs a citation) | 16 |
+| Countries with a partial chain (a step or the starting point still needs a citation) | 18 |
 | Countries not yet covered | about 120 |
 
 A country is **verified** only when every step of its chain has a checked
@@ -63,11 +63,17 @@ the "verified" count truthful.
   Article 1.
 - Croatia's and Bulgaria's euro conversion rates come from the ECB press
   releases announcing them (12 July 2022 and 8 July 2025).
+- Germany's 1948 reform cites the Bundesbank's own account, which is also why
+  Germany stays partial: wages and rents converted 1:1, balances at less than
+  1:10, and each person swapped 60 Reichsmark for 40 Deutsche Mark, so no
+  single factor is exact.
 - Steps that are included for continuity but not yet checked against a source
-  (Germany's 1948 reform, Belarus in 2000, Romania in 1947 and 1952, the end of
-  the Zimbabwean dollar) are marked "not yet cited" in the data and on the
-  site, as are chains whose starting currency is not yet traced back to 1945
-  (Austria, Malta, Slovakia, Sudan and several African countries).
+  (Belarus in 2000, Romania in 1947 and 1952, Vietnam in 1985, the end of the
+  Zimbabwean dollar) are marked "not yet cited" in the data and on the site,
+  as are chains whose starting currency is not yet traced back to 1945
+  (Austria, Malta, Slovakia, Sudan and several African countries). The
+  National Bank of Belarus publishes its denomination history, but its site
+  refuses automated reading, so that one needs a human.
 
 Today's exchange rates come from the
 [currency-api dataset](https://github.com/fawazahmed0/exchange-api) published
