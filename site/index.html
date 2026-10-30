@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zeros Removed</title>
+  <meta name="description" content="Every currency redenomination since 1945, with a converter that chains them: what is an old banknote worth in today's unit?">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231b1a17'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23e9c46a' font-family='Georgia'%3E0%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <p class="kicker">Currency redenominations, 1945 to today</p>
+    <h1>Zeros Removed</h1>
+    <p class="lede">When money loses so much value that the numbers stop fitting on a banknote, a country prints a new currency and strikes zeros off the old one. Hungary struck 29 in a single day in 1946. This page lists every such reform since 1945 and chains them together, so you can ask what a banknote from any year is worth in the unit a country uses now.</p>
+    <p class="coverage" id="coverage"></p>
+  </header>
+
+  <main>
+    <section class="panel" id="converter">
+      <h2>Convert an old banknote</h2>
+      <form class="converter" id="convert-form">
+        <label>Country
+          <select id="c-country"></select>
+        </label>
+        <label>Amount
+          <input id="c-amount" type="text" inputmode="decimal" value="1,000,000" autocomplete="off">
+        </label>
+        <label>Currency
+          <select id="c-from"></select>
+        </label>
+      </form>
+      <div class="result" id="c-result" aria-live="polite"></div>
+      <ol class="steps" id="c-steps"></ol>
+    </section>
+
+    <section class="panel">
+      <h2>Zeros removed, country by country</h2>
+      <p class="muted">Each line follows one country's unit through every reform. The vertical scale is logarithmic: every step up is a factor of ten. Hover or tap a point for the reform. Verified chains are drawn solid; chains with an uncited step are dashed.</p>
+      <div id="chart"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Every redenomination since 1945</h2>
+      <div class="controls">
+        <input id="filter" type="search" placeholder="Filter by country or currency" aria-label="Filter the table">
+        <label class="check"><input type="checkbox" id="all-years"> include before 1945</label>
+        <span class="muted" id="table-count"></span>
+      </div>
+      <div class="table-wrap">
+        <table id="table">
+          <thead><tr><th>Year</th><th>Country</th><th>Old currency</th><th>New currency</th><th class="num">Old per new</th><th class="num">Zeros</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="countries">
+      <h2>Country chains</h2>
+      <p class="muted">A chain is <strong>verified</strong> when every step has a checked citation and each step's new currency is the next step's old one. The tests in the repository refuse anything else. Partial chains show what is still missing.</p>
+      <div id="chains"></div>
+    </section>
+
+    <section class="panel method">
+      <h2>Method and sources</h2>
+      <ul>
+        <li>The table of reforms is transcribed from the <a href="https://en.wikipedia.org/wiki/Redenomination">Wikipedia article on redenomination</a> (read 30 October 2026) and kept as data in the repository, so it can be checked and corrected row by row.</li>
+        <li>Euro conversion rates come from <a href="https://www.legislation.gov.uk/eur/1998/2866/data.html">Council Regulation (EC) No 2866/98</a>, Article 1.</li>
+        <li>"Old per new" is how many units of the old currency bought one unit of the new one. A rate below one means the new unit was smaller.</li>
+        <li>The converter multiplies the rates along the chain. It says nothing about purchasing power: a million pengő in 1945 and the forint it converts to today bought very different things.</li>
+        <li>Steps marked "not yet cited" are included so the chain reads correctly, but the country stays partial until they are checked against a primary source.</li>
+      </ul>
+      <p><a href="https://github.com/kennethkimbrough/redenominations">Source, data and tests on GitHub</a></p>
+    </section>
+  </main>
+
+  <div class="tip" id="tip" hidden></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

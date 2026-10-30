@@ -1,0 +1,52 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 -m unittest discover -s tests
+      - name: Assemble the site
+        run: |
+          mkdir -p site/data
+          cp data/redenominations.json data/countries.json site/data/
+          touch site/.nojekyll
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          user_name: Kenneth Kimbrough
+          user_email: 146112017+kennethkimbrough@users.noreply.github.com
+          commit_message: "Deploy site"
+  verify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          url="https://kennethkimbrough.github.io/redenominations/"
+          for i in $(seq 1 20); do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+            echo "attempt $i: HTTP $code"
+            if [ "$code" = "200" ] && curl -s "$url" | grep -q "Zeros Removed"; then
+              echo "::notice title=Live site::$url is serving the page"
+              exit 0
+            fi
+            sleep 15
+          done
+          echo "::error::$url did not answer; enable Pages from the gh-pages branch in Settings > Pages"
+          exit 1

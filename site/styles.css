@@ -1,0 +1,108 @@
+/* Zeros Removed. Banknote paper, engraved ink, one gold accent. */
+
+:root {
+  --paper: #f3eee2;
+  --paper-2: #e9e2d1;
+  --ink: #1b1a17;
+  --ink-2: #4f4a40;
+  --ink-3: #857d6e;
+  --line: #cfc6b1;
+  --gold: #b8860b;
+  --gold-soft: #f1e3b5;
+  --red: #9b2d20;
+  --green: #2f6b3a;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #171613; --paper-2: #211f1a; --ink: #ece6d6; --ink-2: #bdb4a2; --ink-3: #8b8375;
+    --line: #3a362d; --gold: #e2b94c; --gold-soft: #3a3117; --red: #e07a6d; --green: #7fc38b;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--serif); font-size: 18px; line-height: 1.55;
+  background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,.035) 1px, transparent 0);
+  background-size: 14px 14px;
+}
+a { color: var(--ink); text-decoration-color: var(--gold); text-underline-offset: 3px; }
+h1, h2 { font-weight: 500; letter-spacing: -.01em; line-height: 1.1; margin: 0 0 .5rem; }
+h1 { font-size: clamp(2.6rem, 8vw, 5rem); font-variant: small-caps; letter-spacing: .04em; }
+h2 { font-size: 1.5rem; }
+p { margin: 0 0 .8rem; }
+.muted { color: var(--ink-2); }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+.masthead { max-width: 52rem; margin: 0 auto; padding: 3rem 1rem 1.5rem; }
+.kicker { color: var(--ink-3); font-variant: small-caps; letter-spacing: .12em; margin: 0; }
+.lede { font-size: 1.15rem; max-width: 44rem; }
+.coverage { color: var(--ink-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: .6rem 0; font-size: .95rem; }
+.coverage b { color: var(--green); }
+
+main { max-width: 52rem; margin: 0 auto; padding: 0 1rem 4rem; }
+.panel { padding: 1.75rem 0; border-bottom: 1px solid var(--line); }
+.panel:last-child { border-bottom: 0; }
+
+/* Converter */
+.converter { display: grid; grid-template-columns: 1fr; gap: .8rem; margin: .5rem 0 1rem; }
+@media (min-width: 640px) { .converter { grid-template-columns: 1.2fr 1fr 1.4fr; } }
+.converter label { display: flex; flex-direction: column; gap: .3rem; font-size: .9rem; color: var(--ink-2); }
+select, input[type=text], input[type=search] {
+  font: inherit; font-size: 1.05rem; color: var(--ink); background: var(--paper-2);
+  border: 1px solid var(--line); border-bottom: 2px solid var(--ink-3); border-radius: 4px;
+  padding: .55rem .7rem; min-height: 48px; width: 100%;
+}
+input:focus-visible, select:focus-visible { outline: 3px solid var(--gold); outline-offset: 1px; }
+.result { font-size: 1.35rem; padding: 1rem 1.1rem; border: 1px solid var(--line); background: var(--paper-2); border-left: 6px solid var(--gold); }
+.result .big { font-size: clamp(1.6rem, 5vw, 2.4rem); font-variant-numeric: tabular-nums; display: block; margin: .15rem 0; }
+.result .zeros { color: var(--ink-2); font-size: 1rem; }
+.steps { margin: 1rem 0 0; padding-left: 1.4rem; color: var(--ink-2); font-size: .95rem; }
+.steps li { margin: .25rem 0; }
+.steps .rate { font-family: var(--mono); font-size: .85rem; color: var(--ink); }
+.steps .uncited { color: var(--red); }
+
+/* Chart */
+#chart svg { width: 100%; height: auto; display: block; font-family: var(--serif); }
+#chart .grid { stroke: var(--line); }
+#chart .axis { fill: var(--ink-3); font-size: 12px; }
+#chart .series { fill: none; stroke-width: 2; }
+#chart .series.partial { stroke-dasharray: 5 4; }
+#chart .pt { cursor: pointer; }
+#chart .name { font-size: 12px; fill: var(--ink-2); }
+.legend { display: flex; flex-wrap: wrap; gap: .3rem .9rem; font-size: .85rem; margin-top: .6rem; }
+.legend i { display: inline-block; width: 14px; height: 3px; vertical-align: middle; margin-right: .3rem; }
+
+/* Table */
+.controls { display: flex; flex-wrap: wrap; gap: .8rem; align-items: center; margin-bottom: .8rem; }
+.controls input[type=search] { flex: 1 1 16rem; }
+.check { display: flex; align-items: center; gap: .4rem; font-size: .95rem; min-height: 48px; }
+.check input { width: 20px; height: 20px; accent-color: var(--gold); }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--ink-3); font-weight: 500; font-variant: small-caps; letter-spacing: .05em; position: sticky; top: 0; background: var(--paper); }
+td.num { font-family: var(--mono); font-size: .85rem; white-space: nowrap; }
+tr.old { color: var(--ink-3); }
+.zeros-bar { display: inline-block; height: 8px; background: var(--gold); vertical-align: middle; margin-right: .3rem; }
+
+/* Chains */
+.chain { border: 1px solid var(--line); background: var(--paper-2); padding: .9rem 1rem; margin: .7rem 0; }
+.chain summary { cursor: pointer; display: flex; flex-wrap: wrap; gap: .4rem .8rem; align-items: baseline; min-height: 40px; }
+.chain summary h3 { margin: 0; font-size: 1.1rem; font-weight: 500; }
+.badge { font-size: .75rem; padding: .1rem .5rem; border-radius: 999px; border: 1px solid; font-variant: small-caps; letter-spacing: .06em; }
+.badge.verified { color: var(--green); border-color: var(--green); }
+.badge.partial { color: var(--red); border-color: var(--red); }
+.chain .factor { margin-left: auto; font-family: var(--mono); font-size: .85rem; color: var(--ink-2); }
+.chain ol { margin: .6rem 0 0; padding-left: 1.3rem; font-size: .95rem; }
+.chain li { margin: .3rem 0; }
+.chain .note { color: var(--ink-2); font-size: .9rem; }
+.chain .gap { color: var(--red); font-size: .9rem; margin-top: .5rem; }
+.chain cite { font-style: normal; color: var(--ink-3); font-size: .8rem; }
+
+.method ul { padding-left: 1.2rem; }
+.tip { position: fixed; z-index: 5; pointer-events: none; background: var(--ink); color: var(--paper); padding: .4rem .6rem; font-size: .85rem; border-radius: 4px; max-width: 18rem; }
+@media (prefers-reduced-motion: no-preference) { .result { transition: border-color .2s; } }
