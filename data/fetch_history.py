@@ -60,18 +60,23 @@ CURRENCIES_SOURCE = {
 
 def fetch_currency_names() -> dict[str, dict]:
     """ISO3 -> {"code", "name"} for each country's current currency. Empty on failure."""
+    out: dict[str, dict] = {}
     try:
         rows = get_json(CURRENCIES_SOURCE["url"])
+        if not isinstance(rows, list):
+            raise RuntimeError(f"unexpected shape: {str(rows)[:200]}")
+        for r in rows:
+            if not isinstance(r, dict) or not r.get("cca3"):
+                continue
+            cur = r.get("currencies")
+            if not isinstance(cur, dict) or not cur:
+                continue
+            code = sorted(cur)[0] if len(cur) > 1 else next(iter(cur))
+            info = cur[code] if isinstance(cur[code], dict) else {}
+            out[r["cca3"]] = {"code": code, "name": info.get("name") or code}
     except Exception as exc:  # noqa: BLE001 - names are optional
         print(f"::warning::currency names unavailable: {exc!r}")
         return {}
-    out = {}
-    for r in rows:
-        cur = r.get("currencies") or {}
-        if not cur:
-            continue
-        code = sorted(cur)[0] if len(cur) > 1 else next(iter(cur))
-        out[r["cca3"]] = {"code": code, "name": cur[code].get("name", code)}
     return out
 
 
