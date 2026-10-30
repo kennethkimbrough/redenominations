@@ -109,6 +109,96 @@
    "title": "Belarusian ruble — Wikipedia (2000: 1 new ruble = 1,000 old)",
    "url": "https://en.wikipedia.org/wiki/Belarusian_ruble",
    "accessed": "2026-10-30"
+  },
+  "wp-decimal-day": {
+   "title": "Decimal Day — Wikipedia (1971: the pound was retained, divided into 100 new pence)",
+   "url": "https://en.wikipedia.org/wiki/Decimal_Day",
+   "accessed": "2026-10-30"
+  },
+  "wp-aud": {
+   "title": "Australian dollar — Wikipedia (1966: two dollars to the pound)",
+   "url": "https://en.wikipedia.org/wiki/Australian_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-nzd": {
+   "title": "New Zealand dollar — Wikipedia (1967: two dollars to one pound)",
+   "url": "https://en.wikipedia.org/wiki/New_Zealand_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-zar": {
+   "title": "South African rand — Wikipedia (1961: 2 rand to 1 pound)",
+   "url": "https://en.wikipedia.org/wiki/South_African_rand",
+   "accessed": "2026-10-30"
+  },
+  "wp-zapound": {
+   "title": "South African pound — Wikipedia (currency of South Africa from 1910)",
+   "url": "https://en.wikipedia.org/wiki/South_African_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-bwapound": {
+   "title": "British West African pound — Wikipedia (table of successor currencies, each at a conversion of 1)",
+   "url": "https://en.wikipedia.org/wiki/British_West_African_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-ngn": {
+   "title": "Nigerian naira — Wikipedia (1 January 1973: £1 = ₦2)",
+   "url": "https://en.wikipedia.org/wiki/Nigerian_naira",
+   "accessed": "2026-10-30"
+  },
+  "wp-kes": {
+   "title": "Kenyan shilling — Wikipedia (replaced the East African shilling in 1966 at par)",
+   "url": "https://en.wikipedia.org/wiki/Kenyan_shilling",
+   "accessed": "2026-10-30"
+  },
+  "wp-tzs": {
+   "title": "Tanzanian shilling — Wikipedia (replaced the East African shilling on 14 June 1966 at par)",
+   "url": "https://en.wikipedia.org/wiki/Tanzanian_shilling",
+   "accessed": "2026-10-30"
+  },
+  "wp-jmd": {
+   "title": "Jamaican dollar — Wikipedia (1969: a dollar worth 10 shillings replaced the pound)",
+   "url": "https://en.wikipedia.org/wiki/Jamaican_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-mwpound": {
+   "title": "Malawian pound — Wikipedia (Southern Rhodesian pound from 1932; kwacha in 1971 at 2 to the pound)",
+   "url": "https://en.wikipedia.org/wiki/Malawian_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-rnpound2": {
+   "title": "Rhodesia and Nyasaland pound — Wikipedia (replaced the Southern Rhodesian pound at par; successor pounds at par)",
+   "url": "https://en.wikipedia.org/wiki/Rhodesia_and_Nyasaland_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-gmpound": {
+   "title": "Gambian pound — Wikipedia (own currency issued 5 October 1964)",
+   "url": "https://en.wikipedia.org/wiki/Gambian_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-gmd": {
+   "title": "Gambian dalasi — Wikipedia (1971: 5 dalasis to the pound)",
+   "url": "https://en.wikipedia.org/wiki/Gambian_dalasi",
+   "accessed": "2026-10-30"
+  },
+  "wp-irr": {
+   "title": "Iranian toman — Wikipedia (rial since 1932; a new rial of 10,000 old approved in 2025)",
+   "url": "https://en.wikipedia.org/wiki/Iranian_toman",
+   "accessed": "2026-10-30"
+  },
+  "wp-afn": {
+   "title": "Afghan afghani — Wikipedia (2002: 1,000 old afghanis per new, 2,000 for Dostum issues)",
+   "url": "https://en.wikipedia.org/wiki/Afghan_afghani",
+   "accessed": "2026-10-30"
+  },
+  "wp-khr": {
+   "title": "Cambodian riel — Wikipedia (1953 at par with the piastre; abolished 1975; re-established 20 March 1980)",
+   "url": "https://en.wikipedia.org/wiki/Cambodian_riel",
+   "accessed": "2026-10-30"
+  },
+  "wp-lak": {
+   "title": "Lao kip — Wikipedia (1953 at par with the piastre; 1976 at 20:1; 1979 at 100:1)",
+   "url": "https://en.wikipedia.org/wiki/Lao_kip",
+   "accessed": "2026-10-30"
   }
  },
  "countries": [
@@ -2516,6 +2606,59 @@
    "wb_unsupported": null
   },
   {
+   "iso": "LA",
+   "name": "Laos",
+   "start": 1945,
+   "unit": "kip",
+   "currency": "French Indochinese piastre",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1953,
+     "old": "French Indochinese piastre",
+     "new": "Royal kip",
+     "rate": 1,
+     "source": {
+      "title": "Lao kip — Wikipedia (1953 at par with the piastre; 1976 at 20:1; 1979 at 100:1)",
+      "url": "https://en.wikipedia.org/wiki/Lao_kip",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1976,
+     "old": "Royal kip",
+     "new": "Liberation kip",
+     "rate": 20,
+     "source": {
+      "title": "Lao kip — Wikipedia (1953 at par with the piastre; 1976 at 20:1; 1979 at 100:1)",
+      "url": "https://en.wikipedia.org/wiki/Lao_kip",
+      "accessed": "2026-10-30"
+     },
+     "note": "People could exchange up to 100,000 royal kip and businesses up to a million; the rest had to be deposited in state banks."
+    },
+    {
+     "year": 1979,
+     "old": "Liberation kip",
+     "new": "Lao kip",
+     "rate": 100,
+     "source": {
+      "title": "Lao kip — Wikipedia (1953 at par with the piastre; 1976 at 20:1; 1979 at 100:1)",
+      "url": "https://en.wikipedia.org/wiki/Lao_kip",
+      "accessed": "2026-10-30"
+     },
+     "note": "16 December 1979."
+    }
+   ],
+   "total_factor": 2000.0,
+   "wb": "LAO",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "IT",
    "name": "Italy",
    "start": 1945,
@@ -3498,6 +3641,84 @@
    "wb_unsupported": null
   },
   {
+   "iso": "GB",
+   "name": "United Kingdom",
+   "start": 1945,
+   "unit": "pound",
+   "currency": "Pound sterling",
+   "basis": {
+    "title": "Decimal Day — Wikipedia (1971: the pound was retained, divided into 100 new pence)",
+    "url": "https://en.wikipedia.org/wiki/Decimal_Day",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "GBR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "KE",
+   "name": "Kenya",
+   "start": 1945,
+   "unit": "shilling",
+   "currency": "East African shilling",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1966,
+     "old": "East African shilling",
+     "new": "Kenyan shilling",
+     "rate": 1,
+     "source": {
+      "title": "Kenyan shilling — Wikipedia (replaced the East African shilling in 1966 at par)",
+      "url": "https://en.wikipedia.org/wiki/Kenyan_shilling",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "KEN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "TZ",
+   "name": "Tanzania",
+   "start": 1945,
+   "unit": "shilling",
+   "currency": "East African shilling",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1966,
+     "old": "East African shilling",
+     "new": "Tanzanian shilling",
+     "rate": 1,
+     "source": {
+      "title": "Tanzanian shilling — Wikipedia (replaced the East African shilling on 14 June 1966 at par)",
+      "url": "https://en.wikipedia.org/wiki/Tanzanian_shilling",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "TZA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "IE",
    "name": "Ireland",
    "start": 1945,
@@ -3556,6 +3777,216 @@
    "wb_unsupported": null
   },
   {
+   "iso": "AU",
+   "name": "Australia",
+   "start": 1945,
+   "unit": "dollar",
+   "currency": "Australian pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1966,
+     "old": "Australian pound",
+     "new": "Australian dollar",
+     "rate": 0.5,
+     "source": {
+      "title": "Australian dollar — Wikipedia (1966: two dollars to the pound)",
+      "url": "https://en.wikipedia.org/wiki/Australian_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "Decimalisation: two dollars to the pound."
+    }
+   ],
+   "total_factor": 0.5,
+   "wb": "AUS",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "NZ",
+   "name": "New Zealand",
+   "start": 1945,
+   "unit": "dollar",
+   "currency": "New Zealand pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1967,
+     "old": "New Zealand pound",
+     "new": "New Zealand dollar",
+     "rate": 0.5,
+     "source": {
+      "title": "New Zealand dollar — Wikipedia (1967: two dollars to one pound)",
+      "url": "https://en.wikipedia.org/wiki/New_Zealand_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "Decimalisation: two dollars to the pound."
+    }
+   ],
+   "total_factor": 0.5,
+   "wb": "NZL",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "ZA",
+   "name": "South Africa",
+   "start": 1945,
+   "unit": "rand",
+   "currency": "South African pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1961,
+     "old": "South African pound",
+     "new": "South African rand",
+     "rate": 0.5,
+     "source": {
+      "title": "South African rand — Wikipedia (1961: 2 rand to 1 pound)",
+      "url": "https://en.wikipedia.org/wiki/South_African_rand",
+      "accessed": "2026-10-30"
+     },
+     "note": "Decimalisation: two rand to the pound."
+    }
+   ],
+   "total_factor": 0.5,
+   "wb": "ZAF",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "NG",
+   "name": "Nigeria",
+   "start": 1945,
+   "unit": "naira",
+   "currency": "British West African pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1958,
+     "old": "British West African pound",
+     "new": "Nigerian pound",
+     "rate": 1,
+     "source": {
+      "title": "British West African pound — Wikipedia (table of successor currencies, each at a conversion of 1)",
+      "url": "https://en.wikipedia.org/wiki/British_West_African_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1973,
+     "old": "Nigerian pound",
+     "new": "Nigerian naira",
+     "rate": 0.5,
+     "source": {
+      "title": "Nigerian naira — Wikipedia (1 January 1973: £1 = ₦2)",
+      "url": "https://en.wikipedia.org/wiki/Nigerian_naira",
+      "accessed": "2026-10-30"
+     },
+     "note": "Decimalisation: two naira to the pound."
+    }
+   ],
+   "total_factor": 0.5,
+   "wb": "NGA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "JM",
+   "name": "Jamaica",
+   "start": 1945,
+   "unit": "dollar",
+   "currency": "Jamaican pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1969,
+     "old": "Jamaican pound",
+     "new": "Jamaican dollar",
+     "rate": 0.5,
+     "source": {
+      "title": "Jamaican dollar — Wikipedia (1969: a dollar worth 10 shillings replaced the pound)",
+      "url": "https://en.wikipedia.org/wiki/Jamaican_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "Decimalisation: a dollar worth ten shillings, so two to the pound."
+    }
+   ],
+   "total_factor": 0.5,
+   "wb": "JAM",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "MW",
+   "name": "Malawi",
+   "start": 1945,
+   "unit": "kwacha",
+   "currency": "Southern Rhodesian pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1955,
+     "old": "Southern Rhodesian pound",
+     "new": "Rhodesia and Nyasaland pound",
+     "rate": 1,
+     "source": {
+      "title": "Rhodesia and Nyasaland pound — Wikipedia (replaced the Southern Rhodesian pound at par; successor pounds at par)",
+      "url": "https://en.wikipedia.org/wiki/Rhodesia_and_Nyasaland_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": "Nyasaland had used the Southern Rhodesian pound since 1932."
+    },
+    {
+     "year": 1964,
+     "old": "Rhodesia and Nyasaland pound",
+     "new": "Malawian pound",
+     "rate": 1,
+     "source": {
+      "title": "Rhodesia and Nyasaland pound — Wikipedia (replaced the Southern Rhodesian pound at par; successor pounds at par)",
+      "url": "https://en.wikipedia.org/wiki/Rhodesia_and_Nyasaland_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1971,
+     "old": "Malawian pound",
+     "new": "Malawian kwacha",
+     "rate": 0.5,
+     "source": {
+      "title": "Malawian pound — Wikipedia (Southern Rhodesian pound from 1932; kwacha in 1971 at 2 to the pound)",
+      "url": "https://en.wikipedia.org/wiki/Malawian_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": "Decimalisation: two kwacha to the pound."
+    }
+   ],
+   "total_factor": 0.5,
+   "wb": "MWI",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "MT",
    "name": "Malta",
    "start": 1945,
@@ -3593,6 +4024,47 @@
    ],
    "total_factor": 0.4293,
    "wb": "MLT",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "GM",
+   "name": "The Gambia",
+   "start": 1945,
+   "unit": "dalasi",
+   "currency": "British West African pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1964,
+     "old": "British West African pound",
+     "new": "Gambian pound",
+     "rate": 1,
+     "source": {
+      "title": "British West African pound — Wikipedia (table of successor currencies, each at a conversion of 1)",
+      "url": "https://en.wikipedia.org/wiki/British_West_African_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": "The Gambian pound was issued on 5 October 1964; the West African pound article's table dates it 1965."
+    },
+    {
+     "year": 1971,
+     "old": "Gambian pound",
+     "new": "Gambian dalasi",
+     "rate": 0.2,
+     "source": {
+      "title": "Gambian dalasi — Wikipedia (1971: 5 dalasis to the pound)",
+      "url": "https://en.wikipedia.org/wiki/Gambian_dalasi",
+      "accessed": "2026-10-30"
+     },
+     "note": "Five dalasis to the pound."
+    }
+   ],
+   "total_factor": 0.2,
+   "wb": "GMB",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -3805,6 +4277,35 @@
    "wb_unsupported": null
   },
   {
+   "iso": "AF",
+   "name": "Afghanistan",
+   "start": 1945,
+   "unit": "afghani",
+   "currency": "Afghani (1925)",
+   "basis": null,
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Every step is cited, but the 2002 exchange used two rates depending on who had issued the notes.",
+   "steps": [
+    {
+     "year": 2002,
+     "old": "Afghani (1925)",
+     "new": "Afghan afghani",
+     "rate": 1000,
+     "source": {
+      "title": "Afghan afghani — Wikipedia (2002: 1,000 old afghanis per new, 2,000 for Dostum issues)",
+      "url": "https://en.wikipedia.org/wiki/Afghan_afghani",
+      "accessed": "2026-10-30"
+     },
+     "note": "1,000 old afghanis per new; notes issued by Dostum in the north were exchanged at 2,000 per new."
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "AFG",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "SK",
    "name": "Slovakia (and Czechoslovakia)",
    "start": 1945,
@@ -3938,8 +4439,81 @@
    "wb": "AUT",
    "wb_unit_year": null,
    "wb_unsupported": null
+  },
+  {
+   "iso": "IR",
+   "name": "Iran",
+   "start": 1945,
+   "unit": "rial",
+   "currency": "Iranian rial",
+   "basis": {
+    "title": "Iranian toman — Wikipedia (rial since 1932; a new rial of 10,000 old approved in 2025)",
+    "url": "https://en.wikipedia.org/wiki/Iranian_toman",
+    "accessed": "2026-10-30"
+   },
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "A new rial worth 10,000 of the current ones was approved in 2025 with a transition of several years; whether the new notes are in use yet is not confirmed, so it is not applied.",
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "IRN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "KH",
+   "name": "Cambodia",
+   "start": 1945,
+   "unit": "riel",
+   "currency": "French Indochinese piastre",
+   "basis": null,
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Money was abolished in 1975 and the riel re-created from nothing in 1980, so nothing before 1980 converts to today's riel.",
+   "steps": [
+    {
+     "year": 1953,
+     "old": "French Indochinese piastre",
+     "new": "Cambodian riel (1953)",
+     "rate": 1,
+     "source": {
+      "title": "Cambodian riel — Wikipedia (1953 at par with the piastre; abolished 1975; re-established 20 March 1980)",
+      "url": "https://en.wikipedia.org/wiki/Cambodian_riel",
+      "accessed": "2026-10-30"
+     },
+     "note": "Notes were issued in both units, the riel at par with the piastre."
+    },
+    {
+     "year": 1975,
+     "old": "Cambodian riel (1953)",
+     "new": "No currency",
+     "rate": null,
+     "source": {
+      "title": "Cambodian riel — Wikipedia (1953 at par with the piastre; abolished 1975; re-established 20 March 1980)",
+      "url": "https://en.wikipedia.org/wiki/Cambodian_riel",
+      "accessed": "2026-10-30"
+     },
+     "note": "The Khmer Rouge abolished money."
+    },
+    {
+     "year": 1980,
+     "old": "No currency",
+     "new": "Cambodian riel",
+     "rate": null,
+     "source": {
+      "title": "Cambodian riel — Wikipedia (1953 at par with the piastre; abolished 1975; re-established 20 March 1980)",
+      "url": "https://en.wikipedia.org/wiki/Cambodian_riel",
+      "accessed": "2026-10-30"
+     },
+     "note": "The riel was re-established on 20 March 1980 and handed out by the government, not exchanged for anything."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "KHM",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   }
  ],
- "verified": 68,
- "partial": 7
+ "verified": 79,
+ "partial": 10
 }
