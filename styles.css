@@ -60,6 +60,8 @@ input:focus-visible, select:focus-visible { outline: 3px solid var(--gold); outl
 .result { font-size: 1.35rem; padding: 1rem 1.1rem; border: 1px solid var(--line); background: var(--paper-2); border-left: 6px solid var(--gold); }
 .result .big { font-size: clamp(1.6rem, 5vw, 2.4rem); font-variant-numeric: tabular-nums; display: block; margin: .15rem 0; }
 .result .zeros { color: var(--ink-2); font-size: 1rem; }
+.result .usd { font-size: 1rem; color: var(--ink-2); border-top: 1px dashed var(--line); margin-top: .6rem; padding-top: .5rem; }
+.result .usd b { color: var(--ink); font-size: 1.25rem; }
 .steps { margin: 1rem 0 0; padding-left: 1.4rem; color: var(--ink-2); font-size: .95rem; }
 .steps li { margin: .25rem 0; }
 .steps .rate { font-family: var(--mono); font-size: .85rem; color: var(--ink); }

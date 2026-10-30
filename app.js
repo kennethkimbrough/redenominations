@@ -1,6 +1,7 @@
-const [table, countries] = await Promise.all([
+const [table, countries, rates] = await Promise.all([
   fetch("data/redenominations.json").then((r) => r.json()),
   fetch("data/countries.json").then((r) => r.json()),
+  fetch("data/rates.json").then((r) => (r.ok ? r.json() : null)).catch(() => null),
 ]);
 
 const $ = (s) => document.querySelector(s);
@@ -14,6 +15,11 @@ const fmtRate = (r) => {
   return r.toLocaleString("en-US", { maximumFractionDigits: 6 });
 };
 const zerosOf = (r) => (r >= 1 ? Math.round(log10(r) * 100) / 100 : 0);
+const fmtUsd = (x) => {
+  if (x >= 0.01) return "$" + x.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  if (x >= 1e-6) return "$" + x.toLocaleString("en-US", { maximumFractionDigits: 8 });
+  return "$" + x.toExponential(2).replace(/e\+?(-?\d+)/, " × 10<sup>$1</sup>");
+};
 const fmtAmount = (x) => {
   if (!Number.isFinite(x)) return "—";
   if (x === 0) return "0";
@@ -75,6 +81,17 @@ function convert() {
     : `${fmtAmount(amount)} ${esc(from)} ${broken ? "was last convertible as" : "="}<span class="big">${fmtAmount(value)} ${esc(unit)}</span>` +
       `<span class="zeros">${zeros ? `${Number.isInteger(zeros) ? zeros : zeros.toFixed(2)} zeros removed over ${steps.filter((s) => s.rate).length} reform${steps.length === 1 ? "" : "s"}` : "no zeros removed"}` +
       `${uncited ? " · includes a step that is not yet cited" : ""}${broken ? " · the chain has no fixed rate past this point" : ""}</span>`;
+  // Dollars today: only when the chain reaches the country's current unit and a rate exists.
+  const code = rates?.units?.[c.iso];
+  const perUsd = code && rates.rates[code];
+  if (!broken && perUsd && steps.length) {
+    const usd = value / perUsd;
+    const oneDollar = perUsd * totalRate;
+    $("#c-result").innerHTML += `<div class="usd">≈ <b>${fmtUsd(usd)}</b> at the rate of ${esc(rates.date)} (${perUsd.toLocaleString("en-US", { maximumFractionDigits: 4 })} ${code} per US dollar). ` +
+      `One dollar today buys ${fmtAmount(oneDollar)} ${esc(from)}.` +
+      `${["VES", "ARS", "BOB"].includes(code) ? " This is the published rate; a parallel street rate may differ." : ""}` +
+      ` <a href="${esc(rates.source.url)}">Rate source</a>.</div>`;
+  }
   stepsEl.innerHTML = lines.join("");
 }
 cCountry.addEventListener("change", fillCurrencies);
