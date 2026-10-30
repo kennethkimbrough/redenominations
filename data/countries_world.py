@@ -205,3 +205,58 @@ WORLD_UNITS = {
     "SG": "SGD", "LK": "LKR", "MM": "MMK", "IQ": "IQD", "SA": "SAR", "EG": "EGP", "NP": "NPR",
     "KP": "KPW", "MN": "MNT",
 }
+
+
+# ---------- Caribbean and Central America ----------
+WORLD_SOURCES.update({
+    "wp-bspound": _wp("Bahamian_pound", "1966: 7 shillings = $1"),
+    "wp-bwi": _wp("British_West_Indies_dollar", "introduced 1949 at the existing $4.80 per pound sterling; replaced at par by the East Caribbean dollar"),
+    "wp-xcd": _wp("Eastern_Caribbean_dollar", "replaced the BWI dollar at par in 1965; Grenada used the Trinidad and Tobago dollar 1964–1968"),
+    "wp-bbd": _wp("Barbadian_dollar", "BWI dollar from 1949; Barbados dollar replaced the East Caribbean dollar at par in 1973"),
+    "wp-bzd": _wp("Belize_dollar", "known until 1973 as the British Honduras dollar"),
+    "wp-gyd": _wp("Guyanese_dollar", "dollar worth 4s 2d; BWI notes from 1951; EC dollar 1965; Guyanese dollar at par 1966"),
+    "wp-ttd": _wp("Trinidad_and_Tobago_dollar", "dollar of 4s 2d from 1934; BWI dollar from 1949; own dollar again in 1964"),
+    "wp-htg": _wp("Haitian_gourde", "last revalued in 1872"),
+    "wp-hnl": _wp("Honduran_lempira", "introduced in 1931"),
+    "wp-pab": _wp("Panamanian_balboa", "at 1:1 with the US dollar since its introduction; the dollar also legal tender"),
+    "wp-cup": _wp("Cuban_peso", "the peso throughout; the parallel convertible peso (1994–2021) was converted at 24 pesos each"),
+})
+
+_EC = [(1949, "Pound sterling", "British West Indies dollar", 1 / 4.8, "wp-bwi",
+        "Accounts moved from sterling to the BWI dollar at the existing $4.80 to the pound."),
+       (1965, "British West Indies dollar", "Eastern Caribbean dollar", 1, "wp-xcd", None)]
+
+WORLD += [
+    {"iso": "BS", "name": "Bahamas", "start": 1945, "unit": "dollar", "steps": [
+        (1966, "Bahamian pound", "Bahamian dollar", 0.35, "wp-bspound", "Seven shillings to the dollar.")]},
+    *[{"iso": iso, "name": name, "start": 1945, "unit": "East Caribbean dollar", "steps": list(_EC)}
+      for iso, name in [("AG", "Antigua and Barbuda"), ("DM", "Dominica"), ("KN", "Saint Kitts and Nevis"),
+                        ("LC", "Saint Lucia"), ("VC", "Saint Vincent and the Grenadines")]],
+    {"iso": "GD", "name": "Grenada", "start": 1945, "unit": "East Caribbean dollar", "steps": [
+        _EC[0],
+        (1964, "British West Indies dollar", "Trinidad and Tobago dollar", 1, None, "Grenada used the Trinidad and Tobago dollar from 1964; presumably at par, but no source states the rate."),
+        (1968, "Trinidad and Tobago dollar", "Eastern Caribbean dollar", 1, None, "Grenada rejoined the common currency in 1968; the rate is not stated.")]},
+    {"iso": "BB", "name": "Barbados", "start": 1949, "unit": "dollar", "currency": "British West Indies dollar", "steps": [
+        (1965, "British West Indies dollar", "Eastern Caribbean dollar", 1, "wp-bwi", None),
+        (1973, "Eastern Caribbean dollar", "Barbadian dollar", 1, "wp-bbd", None)],
+     "gap": "Starts at the BWI dollar of 1949. Before it, sterling and government dollar notes circulated together and no source says which was legal tender."},
+    {"iso": "BZ", "name": "Belize", "start": 1945, "unit": "dollar", "currency": "Belize dollar", "steps": [], "basis": "wp-bzd"},
+    {"iso": "GY", "name": "Guyana", "start": 1945, "unit": "dollar", "steps": [
+        (1951, "British Guiana dollar", "British West Indies dollar", 1, "wp-gyd",
+         "Local notes were replaced by BWI notes; both dollars were worth four shillings and two pence."),
+        (1965, "British West Indies dollar", "Eastern Caribbean dollar", 1, "wp-bwi", None),
+        (1966, "Eastern Caribbean dollar", "Guyanese dollar", 1, "wp-gyd", None)]},
+    {"iso": "TT", "name": "Trinidad and Tobago", "start": 1945, "unit": "dollar", "steps": [
+        (1949, "Trinidad and Tobago dollar (1934)", "British West Indies dollar", 1, "wp-ttd",
+         "Both were worth four shillings and two pence, $4.80 to the pound."),
+        (1964, "British West Indies dollar", "Trinidad and Tobago dollar", 1, None,
+         "The Central Bank's own dollar from December 1964; presumably at par, but no source states the rate.")]},
+    {"iso": "HT", "name": "Haiti", "start": 1945, "unit": "gourde", "currency": "Haitian gourde", "steps": [], "basis": "wp-htg"},
+    {"iso": "HN", "name": "Honduras", "start": 1945, "unit": "lempira", "currency": "Honduran lempira", "steps": [], "basis": "wp-hnl"},
+    {"iso": "PA", "name": "Panama", "start": 1945, "unit": "balboa", "currency": "Panamanian balboa", "steps": [], "basis": "wp-pab"},
+    {"iso": "CU", "name": "Cuba", "start": 1945, "unit": "peso", "currency": "Cuban peso", "steps": [], "basis": "wp-cup"},
+]
+WORLD_WORLD_BANK.update({"BS": "BHS", "AG": "ATG", "DM": "DMA", "KN": "KNA", "LC": "LCA", "VC": "VCT", "GD": "GRD",
+                         "BB": "BRB", "BZ": "BLZ", "GY": "GUY", "TT": "TTO", "HT": "HTI", "HN": "HND", "PA": "PAN", "CU": "CUB"})
+WORLD_UNITS.update({"BS": "BSD", "AG": "XCD", "DM": "XCD", "KN": "XCD", "LC": "XCD", "VC": "XCD", "GD": "XCD",
+                    "BB": "BBD", "BZ": "BZD", "GY": "GYD", "TT": "TTD", "HT": "HTG", "HN": "HNL", "PA": "PAB", "CU": "CUP"})

@@ -374,6 +374,61 @@
    "title": "North Korean won — Wikipedia (1959: new won equal to 100 old; 2009: 100 to 1, with exchange limits)",
    "url": "https://en.wikipedia.org/wiki/North_Korean_won",
    "accessed": "2026-10-30"
+  },
+  "wp-bspound": {
+   "title": "Bahamian pound — Wikipedia (1966: 7 shillings = $1)",
+   "url": "https://en.wikipedia.org/wiki/Bahamian_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-bwi": {
+   "title": "British West Indies dollar — Wikipedia (introduced 1949 at the existing $4.80 per pound sterling; replaced at par by the East Caribbean dollar)",
+   "url": "https://en.wikipedia.org/wiki/British_West_Indies_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-xcd": {
+   "title": "Eastern Caribbean dollar — Wikipedia (replaced the BWI dollar at par in 1965; Grenada used the Trinidad and Tobago dollar 1964–1968)",
+   "url": "https://en.wikipedia.org/wiki/Eastern_Caribbean_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-bbd": {
+   "title": "Barbadian dollar — Wikipedia (BWI dollar from 1949; Barbados dollar replaced the East Caribbean dollar at par in 1973)",
+   "url": "https://en.wikipedia.org/wiki/Barbadian_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-bzd": {
+   "title": "Belize dollar — Wikipedia (known until 1973 as the British Honduras dollar)",
+   "url": "https://en.wikipedia.org/wiki/Belize_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-gyd": {
+   "title": "Guyanese dollar — Wikipedia (dollar worth 4s 2d; BWI notes from 1951; EC dollar 1965; Guyanese dollar at par 1966)",
+   "url": "https://en.wikipedia.org/wiki/Guyanese_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-ttd": {
+   "title": "Trinidad and Tobago dollar — Wikipedia (dollar of 4s 2d from 1934; BWI dollar from 1949; own dollar again in 1964)",
+   "url": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-htg": {
+   "title": "Haitian gourde — Wikipedia (last revalued in 1872)",
+   "url": "https://en.wikipedia.org/wiki/Haitian_gourde",
+   "accessed": "2026-10-30"
+  },
+  "wp-hnl": {
+   "title": "Honduran lempira — Wikipedia (introduced in 1931)",
+   "url": "https://en.wikipedia.org/wiki/Honduran_lempira",
+   "accessed": "2026-10-30"
+  },
+  "wp-pab": {
+   "title": "Panamanian balboa — Wikipedia (at 1:1 with the US dollar since its introduction; the dollar also legal tender)",
+   "url": "https://en.wikipedia.org/wiki/Panamanian_balboa",
+   "accessed": "2026-10-30"
+  },
+  "wp-cup": {
+   "title": "Cuban peso — Wikipedia (the peso throughout; the parallel convertible peso (1994–2021) was converted at 24 pesos each)",
+   "url": "https://en.wikipedia.org/wiki/Cuban_peso",
+   "accessed": "2026-10-30"
   }
  },
  "countries": [
@@ -4685,6 +4740,159 @@
    "wb_unsupported": null
   },
   {
+   "iso": "BZ",
+   "name": "Belize",
+   "start": 1945,
+   "unit": "dollar",
+   "currency": "Belize dollar",
+   "basis": {
+    "title": "Belize dollar — Wikipedia (known until 1973 as the British Honduras dollar)",
+    "url": "https://en.wikipedia.org/wiki/Belize_dollar",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "BLZ",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "GY",
+   "name": "Guyana",
+   "start": 1945,
+   "unit": "dollar",
+   "currency": "British Guiana dollar",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1951,
+     "old": "British Guiana dollar",
+     "new": "British West Indies dollar",
+     "rate": 1,
+     "source": {
+      "title": "Guyanese dollar — Wikipedia (dollar worth 4s 2d; BWI notes from 1951; EC dollar 1965; Guyanese dollar at par 1966)",
+      "url": "https://en.wikipedia.org/wiki/Guyanese_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "Local notes were replaced by BWI notes; both dollars were worth four shillings and two pence."
+    },
+    {
+     "year": 1965,
+     "old": "British West Indies dollar",
+     "new": "Eastern Caribbean dollar",
+     "rate": 1,
+     "source": {
+      "title": "British West Indies dollar — Wikipedia (introduced 1949 at the existing $4.80 per pound sterling; replaced at par by the East Caribbean dollar)",
+      "url": "https://en.wikipedia.org/wiki/British_West_Indies_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1966,
+     "old": "Eastern Caribbean dollar",
+     "new": "Guyanese dollar",
+     "rate": 1,
+     "source": {
+      "title": "Guyanese dollar — Wikipedia (dollar worth 4s 2d; BWI notes from 1951; EC dollar 1965; Guyanese dollar at par 1966)",
+      "url": "https://en.wikipedia.org/wiki/Guyanese_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "GUY",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "HT",
+   "name": "Haiti",
+   "start": 1945,
+   "unit": "gourde",
+   "currency": "Haitian gourde",
+   "basis": {
+    "title": "Haitian gourde — Wikipedia (last revalued in 1872)",
+    "url": "https://en.wikipedia.org/wiki/Haitian_gourde",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "HTI",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "HN",
+   "name": "Honduras",
+   "start": 1945,
+   "unit": "lempira",
+   "currency": "Honduran lempira",
+   "basis": {
+    "title": "Honduran lempira — Wikipedia (introduced in 1931)",
+    "url": "https://en.wikipedia.org/wiki/Honduran_lempira",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "HND",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "PA",
+   "name": "Panama",
+   "start": 1945,
+   "unit": "balboa",
+   "currency": "Panamanian balboa",
+   "basis": {
+    "title": "Panamanian balboa — Wikipedia (at 1:1 with the US dollar since its introduction; the dollar also legal tender)",
+    "url": "https://en.wikipedia.org/wiki/Panamanian_balboa",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "PAN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "CU",
+   "name": "Cuba",
+   "start": 1945,
+   "unit": "peso",
+   "currency": "Cuban peso",
+   "basis": {
+    "title": "Cuban peso — Wikipedia (the peso throughout; the parallel convertible peso (1994–2021) was converted at 24 pesos each)",
+    "url": "https://en.wikipedia.org/wiki/Cuban_peso",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "CUB",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "IE",
    "name": "Ireland",
    "start": 1945,
@@ -4990,6 +5198,240 @@
    ],
    "total_factor": 0.4293,
    "wb": "MLT",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "BS",
+   "name": "Bahamas",
+   "start": 1945,
+   "unit": "dollar",
+   "currency": "Bahamian pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1966,
+     "old": "Bahamian pound",
+     "new": "Bahamian dollar",
+     "rate": 0.35,
+     "source": {
+      "title": "Bahamian pound — Wikipedia (1966: 7 shillings = $1)",
+      "url": "https://en.wikipedia.org/wiki/Bahamian_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": "Seven shillings to the dollar."
+    }
+   ],
+   "total_factor": 0.35,
+   "wb": "BHS",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "AG",
+   "name": "Antigua and Barbuda",
+   "start": 1945,
+   "unit": "East Caribbean dollar",
+   "currency": "Pound sterling",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1949,
+     "old": "Pound sterling",
+     "new": "British West Indies dollar",
+     "rate": 0.20833333333333334,
+     "source": {
+      "title": "British West Indies dollar — Wikipedia (introduced 1949 at the existing $4.80 per pound sterling; replaced at par by the East Caribbean dollar)",
+      "url": "https://en.wikipedia.org/wiki/British_West_Indies_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "Accounts moved from sterling to the BWI dollar at the existing $4.80 to the pound."
+    },
+    {
+     "year": 1965,
+     "old": "British West Indies dollar",
+     "new": "Eastern Caribbean dollar",
+     "rate": 1,
+     "source": {
+      "title": "Eastern Caribbean dollar — Wikipedia (replaced the BWI dollar at par in 1965; Grenada used the Trinidad and Tobago dollar 1964–1968)",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Caribbean_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 0.20833333333333334,
+   "wb": "ATG",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "DM",
+   "name": "Dominica",
+   "start": 1945,
+   "unit": "East Caribbean dollar",
+   "currency": "Pound sterling",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1949,
+     "old": "Pound sterling",
+     "new": "British West Indies dollar",
+     "rate": 0.20833333333333334,
+     "source": {
+      "title": "British West Indies dollar — Wikipedia (introduced 1949 at the existing $4.80 per pound sterling; replaced at par by the East Caribbean dollar)",
+      "url": "https://en.wikipedia.org/wiki/British_West_Indies_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "Accounts moved from sterling to the BWI dollar at the existing $4.80 to the pound."
+    },
+    {
+     "year": 1965,
+     "old": "British West Indies dollar",
+     "new": "Eastern Caribbean dollar",
+     "rate": 1,
+     "source": {
+      "title": "Eastern Caribbean dollar — Wikipedia (replaced the BWI dollar at par in 1965; Grenada used the Trinidad and Tobago dollar 1964–1968)",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Caribbean_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 0.20833333333333334,
+   "wb": "DMA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "KN",
+   "name": "Saint Kitts and Nevis",
+   "start": 1945,
+   "unit": "East Caribbean dollar",
+   "currency": "Pound sterling",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1949,
+     "old": "Pound sterling",
+     "new": "British West Indies dollar",
+     "rate": 0.20833333333333334,
+     "source": {
+      "title": "British West Indies dollar — Wikipedia (introduced 1949 at the existing $4.80 per pound sterling; replaced at par by the East Caribbean dollar)",
+      "url": "https://en.wikipedia.org/wiki/British_West_Indies_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "Accounts moved from sterling to the BWI dollar at the existing $4.80 to the pound."
+    },
+    {
+     "year": 1965,
+     "old": "British West Indies dollar",
+     "new": "Eastern Caribbean dollar",
+     "rate": 1,
+     "source": {
+      "title": "Eastern Caribbean dollar — Wikipedia (replaced the BWI dollar at par in 1965; Grenada used the Trinidad and Tobago dollar 1964–1968)",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Caribbean_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 0.20833333333333334,
+   "wb": "KNA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "LC",
+   "name": "Saint Lucia",
+   "start": 1945,
+   "unit": "East Caribbean dollar",
+   "currency": "Pound sterling",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1949,
+     "old": "Pound sterling",
+     "new": "British West Indies dollar",
+     "rate": 0.20833333333333334,
+     "source": {
+      "title": "British West Indies dollar — Wikipedia (introduced 1949 at the existing $4.80 per pound sterling; replaced at par by the East Caribbean dollar)",
+      "url": "https://en.wikipedia.org/wiki/British_West_Indies_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "Accounts moved from sterling to the BWI dollar at the existing $4.80 to the pound."
+    },
+    {
+     "year": 1965,
+     "old": "British West Indies dollar",
+     "new": "Eastern Caribbean dollar",
+     "rate": 1,
+     "source": {
+      "title": "Eastern Caribbean dollar — Wikipedia (replaced the BWI dollar at par in 1965; Grenada used the Trinidad and Tobago dollar 1964–1968)",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Caribbean_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 0.20833333333333334,
+   "wb": "LCA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "VC",
+   "name": "Saint Vincent and the Grenadines",
+   "start": 1945,
+   "unit": "East Caribbean dollar",
+   "currency": "Pound sterling",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1949,
+     "old": "Pound sterling",
+     "new": "British West Indies dollar",
+     "rate": 0.20833333333333334,
+     "source": {
+      "title": "British West Indies dollar — Wikipedia (introduced 1949 at the existing $4.80 per pound sterling; replaced at par by the East Caribbean dollar)",
+      "url": "https://en.wikipedia.org/wiki/British_West_Indies_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "Accounts moved from sterling to the BWI dollar at the existing $4.80 to the pound."
+    },
+    {
+     "year": 1965,
+     "old": "British West Indies dollar",
+     "new": "Eastern Caribbean dollar",
+     "rate": 1,
+     "source": {
+      "title": "Eastern Caribbean dollar — Wikipedia (replaced the BWI dollar at par in 1965; Grenada used the Trinidad and Tobago dollar 1964–1968)",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Caribbean_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 0.20833333333333334,
+   "wb": "VCT",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -5551,8 +5993,131 @@
    "wb": "CMR",
    "wb_unit_year": null,
    "wb_unsupported": null
+  },
+  {
+   "iso": "BB",
+   "name": "Barbados",
+   "start": 1949,
+   "unit": "dollar",
+   "currency": "British West Indies dollar",
+   "basis": null,
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Starts at the BWI dollar of 1949. Before it, sterling and government dollar notes circulated together and no source says which was legal tender.",
+   "steps": [
+    {
+     "year": 1965,
+     "old": "British West Indies dollar",
+     "new": "Eastern Caribbean dollar",
+     "rate": 1,
+     "source": {
+      "title": "British West Indies dollar — Wikipedia (introduced 1949 at the existing $4.80 per pound sterling; replaced at par by the East Caribbean dollar)",
+      "url": "https://en.wikipedia.org/wiki/British_West_Indies_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1973,
+     "old": "Eastern Caribbean dollar",
+     "new": "Barbadian dollar",
+     "rate": 1,
+     "source": {
+      "title": "Barbadian dollar — Wikipedia (BWI dollar from 1949; Barbados dollar replaced the East Caribbean dollar at par in 1973)",
+      "url": "https://en.wikipedia.org/wiki/Barbadian_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "BRB",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "TT",
+   "name": "Trinidad and Tobago",
+   "start": 1945,
+   "unit": "dollar",
+   "currency": "Trinidad and Tobago dollar (1934)",
+   "basis": null,
+   "status": "partial",
+   "unsourced_steps": 1,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1949,
+     "old": "Trinidad and Tobago dollar (1934)",
+     "new": "British West Indies dollar",
+     "rate": 1,
+     "source": {
+      "title": "Trinidad and Tobago dollar — Wikipedia (dollar of 4s 2d from 1934; BWI dollar from 1949; own dollar again in 1964)",
+      "url": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "Both were worth four shillings and two pence, $4.80 to the pound."
+    },
+    {
+     "year": 1964,
+     "old": "British West Indies dollar",
+     "new": "Trinidad and Tobago dollar",
+     "rate": 1,
+     "source": null,
+     "note": "The Central Bank's own dollar from December 1964; presumably at par, but no source states the rate."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "TTO",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "GD",
+   "name": "Grenada",
+   "start": 1945,
+   "unit": "East Caribbean dollar",
+   "currency": "Pound sterling",
+   "basis": null,
+   "status": "partial",
+   "unsourced_steps": 2,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1949,
+     "old": "Pound sterling",
+     "new": "British West Indies dollar",
+     "rate": 0.20833333333333334,
+     "source": {
+      "title": "British West Indies dollar — Wikipedia (introduced 1949 at the existing $4.80 per pound sterling; replaced at par by the East Caribbean dollar)",
+      "url": "https://en.wikipedia.org/wiki/British_West_Indies_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "Accounts moved from sterling to the BWI dollar at the existing $4.80 to the pound."
+    },
+    {
+     "year": 1964,
+     "old": "British West Indies dollar",
+     "new": "Trinidad and Tobago dollar",
+     "rate": 1,
+     "source": null,
+     "note": "Grenada used the Trinidad and Tobago dollar from 1964; presumably at par, but no source states the rate."
+    },
+    {
+     "year": 1968,
+     "old": "Trinidad and Tobago dollar",
+     "new": "Eastern Caribbean dollar",
+     "rate": 1,
+     "source": null,
+     "note": "Grenada rejoined the common currency in 1968; the rate is not stated."
+    }
+   ],
+   "total_factor": 0.20833333333333334,
+   "wb": "GRD",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   }
  ],
- "verified": 110,
- "partial": 12
+ "verified": 122,
+ "partial": 15
 }
