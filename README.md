@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/kennethkimbrough/redenominations/actions/workflows/ci.yml/badge.svg)](https://github.com/kennethkimbrough/redenominations/actions/workflows/ci.yml)
 
-**Every currency redenomination since 1945, chained together so you can ask
+**Currency redenominations since 1945, chained together for 195 countries so you can ask
 what an old banknote is worth in the unit a country uses today.**
 
 Live: https://kennethkimbrough.github.io/redenominations/
