@@ -192,3 +192,11 @@ MORE_UNITS = {
     "SL": "SLE", "ST": "STN", "MR": "MRU", "MG": "MGA", "EC": "USD", "SV": "USD", "GN": "GNF",
     "ML": "XOF", "GQ": "XAF", "GW": "XOF", "VN": "VND", "TL": "USD",
 }
+
+# Countries outside the redenomination table (see countries_world.py).
+from countries_world import WORLD, WORLD_ALIASES, WORLD_UNITS, WORLD_WORLD_BANK  # noqa: E402
+
+MORE += WORLD
+MORE_ALIASES.update(WORLD_ALIASES)
+MORE_UNITS.update(WORLD_UNITS)
+MORE_WORLD_BANK.update(WORLD_WORLD_BANK)

@@ -17,6 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from countries_more import MORE, MORE_ALIASES, MORE_UNITS, MORE_WORLD_BANK  # noqa: E402
+from countries_world import WORLD_SOURCES  # noqa: E402
 
 SOURCES = {
     "wiki": {
@@ -75,6 +76,7 @@ SOURCES.update({
     "wp-atschilling": _wp("Austrian schilling", "Austrian_schilling", "1945 at 1:1 to the Reichsmark up to 150 per person; 1947 at par for the first 150, 3:1 beyond"),
     "wp-byr": _wp("Belarusian ruble", "Belarusian_ruble", "2000: 1 new ruble = 1,000 old"),
 })
+SOURCES.update(WORLD_SOURCES)
 
 # Each country: iso, name, the currency in use at the start year, then steps.
 # Step: (year, old currency, new currency, old units per new unit, source key, note)
