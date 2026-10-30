@@ -34,7 +34,10 @@
      "note": "The largest redenomination on record. The pengő's 1946 hyperinflation peaked at prices doubling roughly every 15 hours."
     }
    ],
-   "total_factor": 4e+29
+   "total_factor": 4e+29,
+   "wb": "HUN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "RS",
@@ -118,7 +121,10 @@
      "note": "Two reforms in one month: 22 zeros removed within 1993–94."
     }
    ],
-   "total_factor": 1.3e+29
+   "total_factor": 1.3e+29,
+   "wb": "SRB",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "BR",
@@ -202,7 +208,10 @@
      "note": "The Plano Real. The only step in this dataset with a rate that is not a power of ten."
     }
    ],
-   "total_factor": 2750000000000000.0
+   "total_factor": 2750000000000000.0,
+   "wb": "BRA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "VE",
@@ -250,7 +259,10 @@
      "note": "Fourteen zeros removed across the three reforms."
     }
    ],
-   "total_factor": 100000000000000.0
+   "total_factor": 100000000000000.0,
+   "wb": "VEN",
+   "wb_unit_year": 2008,
+   "wb_unsupported": null
   },
   {
    "iso": "AR",
@@ -310,7 +322,10 @@
      "note": "Thirteen zeros removed between 1970 and 1992."
     }
    ],
-   "total_factor": 10000000000000.0
+   "total_factor": 10000000000000.0,
+   "wb": "ARG",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "NI",
@@ -346,7 +361,10 @@
      "note": null
     }
    ],
-   "total_factor": 5000000000.0
+   "total_factor": 5000000000.0,
+   "wb": "NIC",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "PE",
@@ -382,7 +400,10 @@
      "note": "Renamed simply \"sol\" in 2015."
     }
    ],
-   "total_factor": 1000000000.0
+   "total_factor": 1000000000.0,
+   "wb": "PER",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "BO",
@@ -418,7 +439,10 @@
      "note": null
     }
    ],
-   "total_factor": 1000000000.0
+   "total_factor": 1000000000.0,
+   "wb": "BOL",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "AO",
@@ -478,7 +502,10 @@
      "note": null
     }
    ],
-   "total_factor": 1000000000.0
+   "total_factor": 1000000000.0,
+   "wb": "AGO",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "UA",
@@ -550,7 +577,10 @@
      "note": null
     }
    ],
-   "total_factor": 10000000.0
+   "total_factor": 10000000.0,
+   "wb": "UKR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "TR",
@@ -574,7 +604,10 @@
      "note": "The word \"new\" was dropped again in 2009."
     }
    ],
-   "total_factor": 1000000.0
+   "total_factor": 1000000.0,
+   "wb": "TUR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "PL",
@@ -610,7 +643,10 @@
      "note": null
     }
    ],
-   "total_factor": 1000000.0
+   "total_factor": 1000000.0,
+   "wb": "POL",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "CL",
@@ -646,7 +682,10 @@
      "note": null
     }
    ],
-   "total_factor": 1000000.0
+   "total_factor": 1000000.0,
+   "wb": "CHL",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "UY",
@@ -682,7 +721,10 @@
      "note": null
     }
    ],
-   "total_factor": 1000000.0
+   "total_factor": 1000000.0,
+   "wb": "URY",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "GR",
@@ -718,7 +760,10 @@
      "note": null
     }
    ],
-   "total_factor": 340750.0
+   "total_factor": 340750.0,
+   "wb": "GRC",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "RU",
@@ -790,7 +835,10 @@
      "note": null
     }
    ],
-   "total_factor": 100000.0
+   "total_factor": 100000.0,
+   "wb": "RUS",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "MX",
@@ -814,7 +862,10 @@
      "note": "\"Nuevo\" was dropped in 1996."
     }
    ],
-   "total_factor": 1000.0
+   "total_factor": 1000.0,
+   "wb": "MEX",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "FR",
@@ -850,7 +901,10 @@
      "note": "Euro conversion rate fixed on 31 December 1998; notes and coins followed in 2002."
     }
    ],
-   "total_factor": 655.957
+   "total_factor": 655.957,
+   "wb": "FRA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "FI",
@@ -886,7 +940,10 @@
      "note": null
     }
    ],
-   "total_factor": 594.573
+   "total_factor": 594.573,
+   "wb": "FIN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "ZW",
@@ -942,7 +999,10 @@
      "note": "Multi-currency period; no fixed conversion. Later the RTGS dollar (2019) and ZiG (2024). Not yet cited."
     }
    ],
-   "total_factor": 1e+25
+   "total_factor": 1e+25,
+   "wb": "ZWE",
+   "wb_unit_year": null,
+   "wb_unsupported": "The World Bank series mixes several Zimbabwean currencies without a consistent restatement."
   },
   {
    "iso": "CD",
@@ -990,7 +1050,10 @@
      "note": null
     }
    ],
-   "total_factor": 300000000000000.0
+   "total_factor": 300000000000000.0,
+   "wb": "COD",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "BY",
@@ -1070,7 +1133,10 @@
      "note": null
     }
    ],
-   "total_factor": 10000000000.0
+   "total_factor": 10000000000.0,
+   "wb": "BLR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "HR",
@@ -1138,7 +1204,10 @@
      "note": "Not yet cited."
     }
    ],
-   "total_factor": 7534500000.0
+   "total_factor": 7534500000.0,
+   "wb": "HRV",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "RO",
@@ -1178,7 +1247,10 @@
      "note": null
     }
    ],
-   "total_factor": 4000000000.0
+   "total_factor": 4000000000.0,
+   "wb": "ROU",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "BG",
@@ -1226,7 +1298,10 @@
      "note": "Not yet cited."
     }
    ],
-   "total_factor": 1955830.0
+   "total_factor": 1955830.0,
+   "wb": "BGR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "GH",
@@ -1262,7 +1337,10 @@
      "note": null
     }
    ],
-   "total_factor": 12000.0
+   "total_factor": 12000.0,
+   "wb": "GHA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "IL",
@@ -1298,7 +1376,10 @@
      "note": null
     }
    ],
-   "total_factor": 10000.0
+   "total_factor": 10000.0,
+   "wb": "ISR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   },
   {
    "iso": "DE",
@@ -1330,7 +1411,10 @@
      "note": null
     }
    ],
-   "total_factor": 19.5583
+   "total_factor": 19.5583,
+   "wb": "DEU",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   }
  ],
  "verified": 19,

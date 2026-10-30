@@ -18,6 +18,11 @@ every figure, and builds three things from it:
   how much of the old currency one dollar buys now (1.3 × 10³² pengő). A
   scheduled job fetches the rates daily from a keyless source and records the
   date; the site shows it with every result.
+- **At the time.** Any of 215 countries, any year from 1960: the amount in
+  that year's currency, in dollars of that year, and in today's dollars after
+  US inflation. 1,000 Indian rupees in 1980 were $127, about $484 in 2024
+  dollars. Uses the World Bank's annual official exchange rates and US
+  consumer price index, fetched by the same daily job.
 - **A chart** of cumulative zeros removed per country since 1945, on a log
   scale, drawn as plain SVG.
 - **The full table**, filterable, with the rate and the number of zeros for each
@@ -63,6 +68,16 @@ daily to jsDelivr, with open.er-api.com as a fallback. These are published
 market or official rates. In countries with a parallel street rate (Venezuela
 and Argentina for long stretches, Bolivia recently) the dollar figure can be
 well off what a money changer would give, and the site says so.
+
+Historical rates are the World Bank's annual averages (indicator
+PA.NUS.FCRF), and the inflation adjustment uses its US consumer price index
+(FP.CPI.TOTL). The World Bank restates countries that redenominated in their
+latest unit, so Brazil's 1980 rate is quoted in reais, not cruzeiros. For the
+countries with a verified chain the site converts the amount along the chain
+first, which makes the result right in the year's own currency; for other
+countries that redenominated after the chosen year it warns by how much the
+figure may be off. Venezuela is restated only to the 2008 unit, which is
+handled; Zimbabwe's series mixes currencies and is not offered.
 
 "Old per new" is the number of old units that bought one new unit. A rate below
 one (Iran's 1932 toman to rial) means the new unit was the smaller one.

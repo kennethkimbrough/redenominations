@@ -275,6 +275,18 @@ COUNTRIES = [
 ]
 
 
+# World Bank ISO3 code for each chain, and the year of the unit the World Bank series is
+# restated in where that is not the current unit (Venezuela: the 2008 bolívar fuerte).
+WORLD_BANK = {
+    "HU": "HUN", "VE": "VEN", "BR": "BRA", "AR": "ARG", "TR": "TUR", "PL": "POL", "RU": "RUS",
+    "UA": "UKR", "PE": "PER", "BO": "BOL", "FR": "FRA", "FI": "FIN", "GR": "GRC", "NI": "NIC",
+    "RS": "SRB", "MX": "MEX", "AO": "AGO", "CL": "CHL", "UY": "URY", "DE": "DEU", "IL": "ISR",
+    "RO": "ROU", "BY": "BLR", "CD": "COD", "GH": "GHA", "HR": "HRV", "BG": "BGR", "ZW": "ZWE",
+}
+WORLD_BANK_UNIT_YEAR = {"VE": 2008}
+WORLD_BANK_UNSUPPORTED = {"ZW": "The World Bank series mixes several Zimbabwean currencies without a consistent restatement."}
+
+
 def normalise(name: str) -> str:
     """Currency names in the source table are not perfectly consistent between rows
     ("Peso argentino" vs "Argentine peso (1983)"), so chain continuity is checked on a
@@ -325,6 +337,9 @@ def build() -> dict:
             "gap": c.get("gap"),
             "steps": steps,
             "total_factor": total_factor,
+            "wb": WORLD_BANK.get(c["iso"]),
+            "wb_unit_year": WORLD_BANK_UNIT_YEAR.get(c["iso"]),
+            "wb_unsupported": WORLD_BANK_UNSUPPORTED.get(c["iso"]),
         })
     out.sort(key=lambda c: (c["status"] != "verified", -c["total_factor"]))
     return {"sources": SOURCES, "countries": out,

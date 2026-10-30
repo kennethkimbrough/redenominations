@@ -24,7 +24,7 @@ jobs:
       - name: Assemble the site
         run: |
           mkdir -p site/data
-          cp data/redenominations.json data/countries.json data/rates.json site/data/
+          cp data/redenominations.json data/countries.json data/rates.json data/history.json site/data/
           touch site/.nojekyll
       - uses: peaceiris/actions-gh-pages@v4
         with:

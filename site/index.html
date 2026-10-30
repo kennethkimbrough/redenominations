@@ -34,6 +34,24 @@
       <ol class="steps" id="c-steps"></ol>
     </section>
 
+    <section class="panel" id="then">
+      <h2>What was it worth at the time?</h2>
+      <p class="muted">Any country, any year from 1960: the amount in that year's currency, in dollars of that year, and in today's dollars after US inflation.</p>
+      <form class="converter" id="then-form">
+        <label>Country
+          <select id="t-country"></select>
+        </label>
+        <label>Year
+          <input id="t-year" type="number" min="1960" max="2026" value="1980" inputmode="numeric">
+        </label>
+        <label>Amount <span id="t-unit" class="muted"></span>
+          <input id="t-amount" type="text" inputmode="decimal" value="1,000" autocomplete="off">
+        </label>
+      </form>
+      <div class="result" id="t-result" aria-live="polite"></div>
+      <p class="hint muted" id="t-note"></p>
+    </section>
+
     <section class="panel">
       <h2>Zeros removed, country by country</h2>
       <p class="muted">Each line follows one country's unit through every reform. The vertical scale is logarithmic: every step up is a factor of ten. Hover or tap a point for the reform. Verified chains are drawn solid; chains with an uncited step are dashed.</p>
@@ -67,6 +85,7 @@
         <li>The table of reforms is transcribed from the <a href="https://en.wikipedia.org/wiki/Redenomination">Wikipedia article on redenomination</a> (read 30 October 2026) and kept as data in the repository, so it can be checked and corrected row by row.</li>
         <li>Euro conversion rates come from <a href="https://www.legislation.gov.uk/eur/1998/2866/data.html">Council Regulation (EC) No 2866/98</a>, Article 1.</li>
         <li>"Old per new" is how many units of the old currency bought one unit of the new one. A rate below one means the new unit was smaller.</li>
+        <li>"At the time" uses the World Bank's annual average official exchange rate (indicator PA.NUS.FCRF) and the US consumer price index (FP.CPI.TOTL) for the inflation adjustment. The World Bank restates countries that redenominated in their latest unit, so for countries with a verified chain the amount is first converted along the chain; for other countries that redenominated after the chosen year, the page warns that the figure may be off by that factor.</li>
         <li>Today's dollar figure uses a published exchange rate fetched once a day by a scheduled job (date and source shown with the result). It is the official or market rate the source publishes; in countries with a parallel street rate, the two can differ a lot.</li>
         <li>The converter multiplies the rates along the chain. It says nothing about purchasing power: a million pengő in 1945 and the forint it converts to today bought very different things.</li>
         <li>Steps marked "not yet cited" are included so the chain reads correctly, but the country stays partial until they are checked against a primary source.</li>
