@@ -4,7 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zeros Removed</title>
-  <meta name="description" content="Every currency redenomination since 1945, with a converter that chains them: what is an old banknote worth in today's unit?">
+  <meta name="description" content="Every currency redenomination since 1945, with a converter that chains them: what is an old banknote worth in today's unit, and in dollars then and now?">
+  <meta property="og:title" content="Zeros Removed">
+  <meta property="og:description" content="Every currency redenomination since 1945, chained together. Convert any old banknote to today's unit, and any past currency to dollars of the time and of today.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kennethkimbrough.github.io/redenominations/">
+  <meta property="og:image" content="https://kennethkimbrough.github.io/redenominations/chart.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231b1a17'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23e9c46a' font-family='Georgia'%3E0%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -60,7 +66,16 @@
       <h2>Zeros removed, country by country</h2>
       <p class="muted">One bar per country, one segment per reform, each segment as wide as the number of zeros it removed. Colour is the decade. Hover or tap a segment for the reform. A hollow segment is a step that is not yet cited.</p>
       <div id="chart"></div>
-      <div class="controls"><button class="btn" id="chart-more" type="button"></button></div>
+      <div class="controls">
+        <button class="btn" id="chart-more" type="button"></button>
+        <label class="check">Sort by
+          <select id="chart-sort" aria-label="Sort the chart">
+            <option value="zeros">zeros removed</option>
+            <option value="recent">most recent reform</option>
+            <option value="name">country name</option>
+          </select>
+        </label>
+      </div>
     </section>
 
     <section class="panel">
@@ -72,7 +87,7 @@
       </div>
       <div class="table-wrap">
         <table id="table">
-          <thead><tr><th>Year</th><th>Country</th><th>Old currency</th><th>New currency</th><th class="num">Old per new</th><th class="num">Zeros</th></tr></thead>
+          <thead><tr><th data-sort="year"><button type="button">Year</button></th><th data-sort="country"><button type="button">Country</button></th><th data-sort="old"><button type="button">Old currency</button></th><th data-sort="new"><button type="button">New currency</button></th><th class="num" data-sort="rate"><button type="button">Old per new</button></th><th class="num" data-sort="rate"><button type="button">Zeros</button></th></tr></thead>
           <tbody></tbody>
         </table>
       </div>

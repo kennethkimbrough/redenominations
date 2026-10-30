@@ -1,3 +1,5 @@
+import { chainConvert, chartRows, currencyOptions, dollarsToday, fmtAmount, fmtRate, fmtUsd, log10, parseAmount, thenConvert, zerosOf } from "./engine.js";
+
 const [table, countries, rates, history] = await Promise.all([
   fetch("data/redenominations.json").then((r) => r.json()),
   fetch("data/countries.json").then((r) => r.json()),
@@ -7,27 +9,19 @@ const [table, countries, rates, history] = await Promise.all([
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const log10 = (x) => Math.log10(x);
-const fmtRate = (r) => {
-  if (r >= 1e6) {
-    const e = Math.floor(log10(r)), m = r / 10 ** e;
-    return (Math.abs(m - 1) < 1e-9 ? "" : `${+m.toFixed(2)} × `) + `10<sup>${e}</sup>`;
-  }
-  return r.toLocaleString("en-US", { maximumFractionDigits: 6 });
-};
-const zerosOf = (r) => (r >= 1 ? Math.round(log10(r) * 100) / 100 : 0);
-const fmtUsd = (x) => {
-  if (x >= 0.01) return "$" + x.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  if (x >= 1e-6) return "$" + x.toLocaleString("en-US", { maximumFractionDigits: 8 });
-  return "$" + x.toExponential(2).replace(/e\+?(-?\d+)/, " × 10<sup>$1</sup>");
-};
-const fmtAmount = (x) => {
-  if (!Number.isFinite(x)) return "—";
-  if (x === 0) return "0";
-  const a = Math.abs(x);
-  if (a >= 1e15 || a < 1e-6) return x.toExponential(3).replace(/e\+?(-?\d+)/, " × 10<sup>$1</sup>");
-  return x.toLocaleString("en-US", { maximumFractionDigits: a < 1 ? 10 : a < 1000 ? 4 : 2 });
-};
+const chainOf = (iso) => countries.countries.find((x) => x.iso === iso);
+
+// ---------- shareable state in the URL ----------
+// #c=BR.0.1000000&t=IND.1980.1000  (country.currencyIndex.amount / country.year.amount)
+const urlState = Object.fromEntries(location.hash.replace(/^#/, "").split("&").filter(Boolean).map((kv) => kv.split("=")));
+let hashTimer;
+function writeState() {
+  const c = `${cCountry.value}.${cFrom.value}.${parseAmount(cAmount.value) || 0}`;
+  const t = history ? `${$("#t-country").value}.${$("#t-year").value}.${parseAmount($("#t-amount").value) || 0}` : "";
+  clearTimeout(hashTimer);
+  hashTimer = setTimeout(() => history_replace(`#c=${c}${t ? `&t=${t}` : ""}`), 150);
+}
+function history_replace(hash) { if (location.hash !== hash) window.history.replaceState(null, "", hash); }
 
 // ---------- coverage ----------
 $("#coverage").innerHTML = `${table.rows.filter((r) => r.year >= 1945).length} reforms since 1945 in the table, ` +
@@ -41,87 +35,62 @@ for (const c of countries.countries) {
   o.value = c.iso; o.textContent = `${c.name}${c.status === "partial" ? " (partial)" : ""}`;
   cCountry.append(o);
 }
-function currencyOptions(c) {
-  // The chain's currencies in order: the first step's old currency, then each new one.
-  const list = [{ name: c.steps[0].old, from: c.start, idx: 0 }];
-  c.steps.forEach((s, i) => list.push({ name: s.new, from: s.year, idx: i + 1 }));
-  return list;
-}
-function fillCurrencies() {
-  const c = countries.countries.find((x) => x.iso === cCountry.value);
+function fillCurrencies(selectIdx = 0) {
+  const c = chainOf(cCountry.value);
   cFrom.innerHTML = "";
   for (const cur of currencyOptions(c)) {
     const o = document.createElement("option");
     o.value = cur.idx; o.textContent = `${cur.name} (${cur.from}${cur.idx === c.steps.length ? " – today" : ""})`;
     cFrom.append(o);
   }
+  cFrom.value = String(Math.min(selectIdx, c.steps.length));
   convert();
 }
 function convert() {
-  const c = countries.countries.find((x) => x.iso === cCountry.value);
-  const idx = Number(cFrom.value);
-  const amount = parseFloat(cAmount.value.replace(/[,\s_]/g, ""));
-  const steps = c.steps.slice(idx);
-  const stepsEl = $("#c-steps");
-  if (!Number.isFinite(amount)) { $("#c-result").textContent = "Enter an amount."; stepsEl.innerHTML = ""; return; }
-  let value = amount, broken = false, uncited = false;
-  const lines = [];
-  for (const s of steps) {
-    if (!s.rate) { broken = true; lines.push(`<li class="uncited">${s.year}: ${esc(s.old)} → ${esc(s.new)} — no fixed conversion; the chain stops here.</li>`); break; }
-    value /= s.rate;
-    if (!s.source) uncited = true;
-    lines.push(`<li>${s.year}: ${esc(s.old)} → ${esc(s.new)} <span class="rate">÷ ${fmtRate(s.rate)}</span>${s.source ? "" : ' <span class="uncited">(not yet cited)</span>'}</li>`);
+  const c = chainOf(cCountry.value);
+  const amount = parseAmount(cAmount.value);
+  const stepsEl = $("#c-steps"), out = $("#c-result");
+  if (!Number.isFinite(amount)) { out.textContent = "Enter an amount."; stepsEl.innerHTML = ""; return; }
+  const r = chainConvert(c, Number(cFrom.value), amount);
+  stepsEl.innerHTML = r.trail.map(({ step: s, applied }) => applied
+    ? `<li>${s.year}: ${esc(s.old)} → ${esc(s.new)} <span class="rate">÷ ${fmtRate(s.rate)}</span>${s.source ? "" : ' <span class="uncited">(not yet cited)</span>'}</li>`
+    : `<li class="uncited">${s.year}: ${esc(s.old)} → ${esc(s.new)} — no fixed conversion; the chain stops here.</li>`).join("");
+  if (r.noop) { out.innerHTML = `${fmtAmount(amount)} ${esc(r.from)} is already the current unit.`; writeState(); return; }
+  out.innerHTML = `${fmtAmount(amount)} ${esc(r.from)} ${r.broken ? "was last convertible as" : "="}<span class="big">${fmtAmount(r.value)} ${esc(r.unit)}</span>` +
+    `<span class="zeros">${r.zeros ? `${Number.isInteger(r.zeros) ? r.zeros : r.zeros.toFixed(2)} zeros removed over ${r.applied} reform${r.applied === 1 ? "" : "s"}` : "no zeros removed"}` +
+    `${r.uncited ? " · includes a step that is not yet cited" : ""}${r.broken ? " · the chain has no fixed rate past this point" : ""}</span>`;
+  const d = dollarsToday(c, r, rates);
+  if (d) {
+    out.innerHTML += `<div class="usd">≈ <b>${fmtUsd(d.usd)}</b> at the rate of ${esc(d.date)} (${d.perUsd.toLocaleString("en-US", { maximumFractionDigits: 4 })} ${d.code} per US dollar). ` +
+      `One dollar today buys ${fmtAmount(d.oneDollarBuys)} ${esc(r.from)}.` +
+      `${["VES", "ARS", "BOB"].includes(d.code) ? " This is the published rate; a parallel street rate may differ." : ""}` +
+      ` <a href="${esc(d.source.url)}">Rate source</a>.</div>`;
   }
-  const from = currencyOptions(c)[idx].name;
-  const last = steps.length ? steps[steps.length - 1] : null;
-  const unit = broken ? (last ? last.old : from) : (c.steps.length ? c.steps[c.steps.length - 1].new : from);
-  const totalRate = steps.filter((s) => s.rate).reduce((p, s) => p * s.rate, 1);
-  const zeros = zerosOf(totalRate);
-  $("#c-result").innerHTML = steps.length === 0
-    ? `${fmtAmount(amount)} ${esc(from)} is already the current unit.`
-    : `${fmtAmount(amount)} ${esc(from)} ${broken ? "was last convertible as" : "="}<span class="big">${fmtAmount(value)} ${esc(unit)}</span>` +
-      `<span class="zeros">${zeros ? `${Number.isInteger(zeros) ? zeros : zeros.toFixed(2)} zeros removed over ${steps.filter((s) => s.rate).length} reform${steps.length === 1 ? "" : "s"}` : "no zeros removed"}` +
-      `${uncited ? " · includes a step that is not yet cited" : ""}${broken ? " · the chain has no fixed rate past this point" : ""}</span>`;
-  // Dollars today: only when the chain reaches the country's current unit and a rate exists.
-  const code = rates?.units?.[c.iso];
-  const perUsd = code && rates.rates[code];
-  if (!broken && perUsd && steps.length) {
-    const usd = value / perUsd;
-    const oneDollar = perUsd * totalRate;
-    $("#c-result").innerHTML += `<div class="usd">≈ <b>${fmtUsd(usd)}</b> at the rate of ${esc(rates.date)} (${perUsd.toLocaleString("en-US", { maximumFractionDigits: 4 })} ${code} per US dollar). ` +
-      `One dollar today buys ${fmtAmount(oneDollar)} ${esc(from)}.` +
-      `${["VES", "ARS", "BOB"].includes(code) ? " This is the published rate; a parallel street rate may differ." : ""}` +
-      ` <a href="${esc(rates.source.url)}">Rate source</a>.</div>`;
-  }
-  stepsEl.innerHTML = lines.join("");
+  writeState();
 }
-cCountry.addEventListener("change", fillCurrencies);
+cCountry.addEventListener("change", () => fillCurrencies());
 cFrom.addEventListener("change", convert);
 cAmount.addEventListener("input", convert);
 $("#convert-form").addEventListener("submit", (e) => e.preventDefault());
-cCountry.value = "BR";
-fillCurrencies();
+{
+  const [iso, idx, amt] = (urlState.c ?? "").split(".");
+  cCountry.value = chainOf(iso) ? iso : "BR";
+  if (amt && Number.isFinite(+amt)) cAmount.value = (+amt).toLocaleString("en-US", { maximumFractionDigits: 6 });
+  fillCurrencies(Number(idx) || 0);
+}
 
 // ---------- chart ----------
 const DECADES = [1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020];
 const DECADE_COLOURS = { 1940: "#5b4a2f", 1950: "#8a6d3b", 1960: "#b8860b", 1970: "#c2651a", 1980: "#9b2d20", 1990: "#7b4b94", 2000: "#1f5f8b", 2010: "#2f6b3a", 2020: "#3f7f7f" };
-let chartShowAll = false;
+let chartShowAll = false, chartSort = "zeros";
 function chart() {
-  const rows = countries.countries
-    .map((c) => {
-      const segs = [];
-      for (const st of c.steps) {
-        if (!st.rate) break;
-        segs.push({ z: zerosOf(st.rate), step: st, uncited: !st.source });
-      }
-      return { c, segs, total: segs.reduce((a, b) => a + b.z, 0) };
-    })
-    .filter((r) => r.total > 0)
-    .sort((a, b) => b.total - a.total);
+  let rows = chartRows(countries.countries);
+  if (chartSort === "recent") rows = [...rows].sort((a, b) => b.segs[b.segs.length - 1].step.year - a.segs[a.segs.length - 1].step.year);
+  if (chartSort === "name") rows = [...rows].sort((a, b) => a.c.name.localeCompare(b.c.name));
   const shown = chartShowAll ? rows : rows.slice(0, 20);
   const W = 860, L = 200, R = 70, T = 28, rowH = 24, B = 8;
   const H = T + shown.length * rowH + B;
-  const maxZ = Math.ceil(rows[0].total / 5) * 5;
+  const maxZ = Math.ceil(Math.max(...rows.map((r) => r.total)) / 5) * 5;
   const X = (z) => L + (z / maxZ) * (W - L - R);
   let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Zeros removed per country since 1945, one segment per reform">`;
   for (let z = 0; z <= maxZ; z += 5) {
@@ -150,7 +119,12 @@ function chart() {
   svg += `<div class="legend">${DECADES.filter((d) => shown.some((r) => r.segs.some((sg) => Math.floor(sg.step.year / 10) * 10 === d)))
     .map((d) => `<span><i style="background:${DECADE_COLOURS[d]}"></i>${d}s</span>`).join("")}<span><i style="border:1px dashed var(--red)"></i>not yet cited</span><span>· partial chain</span></div>`;
   $("#chart").innerHTML = svg;
-  $("#chart-more").textContent = chartShowAll ? `Show the top 20` : `Show all ${rows.length} countries`;
+  $("#chart-more").textContent = chartShowAll ? "Show the top 20" : `Show all ${rows.length} countries`;
+}
+chart();
+$("#chart-more").addEventListener("click", () => { chartShowAll = !chartShowAll; chart(); });
+$("#chart-sort").addEventListener("change", (e) => { chartSort = e.target.value; chart(); });
+{
   const tip = $("#tip");
   $("#chart").addEventListener("pointerover", (e) => {
     const t = e.target.closest("[data-tip]"); if (!t) return;
@@ -159,14 +133,15 @@ function chart() {
   $("#chart").addEventListener("pointermove", (e) => { tip.style.left = `${Math.min(e.clientX + 12, innerWidth - 300)}px`; tip.style.top = `${e.clientY + 14}px`; });
   $("#chart").addEventListener("pointerout", () => { tip.hidden = true; });
 }
-chart();
-$("#chart-more").addEventListener("click", () => { chartShowAll = !chartShowAll; chart(); });
 
 // ---------- table ----------
+let tableSort = { key: "year", dir: 1 };
 function renderTable() {
   const q = $("#filter").value.trim().toLowerCase();
   const all = $("#all-years").checked;
   const rows = table.rows.filter((r) => (all || r.year >= 1945) && (!q || `${r.country} ${r.old} ${r.new}`.toLowerCase().includes(q)));
+  const k = tableSort.key;
+  rows.sort((a, b) => (k === "rate" ? a.rate - b.rate : k === "year" ? a.year - b.year || a.country.localeCompare(b.country) : String(a[k]).localeCompare(String(b[k]))) * tableSort.dir);
   const maxZ = 30;
   $("#table tbody").innerHTML = rows.map((r) => {
     const z = zerosOf(r.rate);
@@ -175,9 +150,18 @@ function renderTable() {
       `<td class="num"><span class="zeros-bar" style="width:${(z / maxZ) * 60}px"></span>${z ? (Number.isInteger(z) ? z : z.toFixed(1)) : "–"}</td></tr>`;
   }).join("");
   $("#table-count").textContent = `${rows.length} reform${rows.length === 1 ? "" : "s"}`;
+  for (const th of document.querySelectorAll("#table th[data-sort]")) {
+    th.setAttribute("aria-sort", th.dataset.sort === k ? (tableSort.dir > 0 ? "ascending" : "descending") : "none");
+  }
 }
 $("#filter").addEventListener("input", renderTable);
 $("#all-years").addEventListener("change", renderTable);
+$("#table thead").addEventListener("click", (e) => {
+  const th = e.target.closest("th[data-sort]"); if (!th) return;
+  const key = th.dataset.sort;
+  tableSort = { key, dir: tableSort.key === key ? -tableSort.dir : (key === "rate" ? -1 : 1) };
+  renderTable();
+});
 renderTable();
 
 // ---------- chains ----------
@@ -186,18 +170,25 @@ function renderChains() {
   const list = countries.countries.filter((c) => !q || c.name.toLowerCase().includes(q) || c.steps.some((s) => `${s.old} ${s.new}`.toLowerCase().includes(q)));
   $("#chain-count").textContent = `${list.length} of ${countries.countries.length} · ${countries.verified} verified`;
   $("#chains").innerHTML = list.map((c) => `
-  <details class="chain">
+  <details class="chain" id="chain-${c.iso}">
     <summary><h3>${esc(c.name)}</h3><span class="badge ${c.status}">${c.status}</span>
       <span class="factor">${c.steps.length} step${c.steps.length === 1 ? "" : "s"}${c.total_factor > 1 ? ` · ${Math.round(log10(c.total_factor))} zeros` : ""}</span></summary>
     <ol>${c.steps.map((s) => `<li>${s.year}: ${esc(s.old)} → ${esc(s.new)}, ${s.rate ? (s.rate === 1 ? "at par" : `${fmtRate(s.rate)} old per new`) : "no fixed rate"}` +
       `${s.note ? `<div class="note">${esc(s.note)}</div>` : ""}` +
       `<div>${s.source ? `<cite>Source: <a href="${esc(s.source.url)}">${esc(s.source.title)}</a></cite>` : `<cite class="uncited" style="color:var(--red)">Not yet cited</cite>`}</div></li>`).join("")}</ol>
     ${c.gap ? `<p class="gap">${esc(c.gap)}</p>` : ""}
+    <p class="chain-links"><a href="#c=${c.iso}.0.1000000">Convert from this country</a></p>
   </details>`).join("");
 }
 $("#chain-filter").addEventListener("input", renderChains);
 renderChains();
-
+$("#chains").addEventListener("click", (e) => {
+  const a = e.target.closest("a[href^='#c=']"); if (!a) return;
+  e.preventDefault();
+  const [iso, idx, amt] = a.getAttribute("href").slice(3).split(".");
+  cCountry.value = iso; cAmount.value = (+amt).toLocaleString("en-US"); fillCurrencies(Number(idx) || 0);
+  $("#converter").scrollIntoView({ behavior: "smooth", block: "start" });
+});
 
 // ---------- at the time ----------
 if (history) {
@@ -205,60 +196,34 @@ if (history) {
   const chainByWb = Object.fromEntries(countries.countries.filter((c) => c.wb).map((c) => [c.wb, c]));
   const list = Object.entries(history.countries).map(([iso, c]) => ({ iso, name: c.name })).sort((a, b) => a.name.localeCompare(b.name));
   for (const c of list) { const o = document.createElement("option"); o.value = c.iso; o.textContent = c.name; tCountry.append(o); }
-  const cpiYears = Object.keys(history.us_cpi).map(Number);
-  const cpiLatest = Math.max(...cpiYears);
+  const cpiLatest = Math.max(...Object.keys(history.us_cpi).map(Number));
   tYear.max = String(cpiLatest + 2);
 
-  /** Name of the currency a chain country used in `year`, and the factor from that unit to the World Bank's unit. */
-  function unitFor(chain, year) {
-    const cutoff = chain.wb_unit_year ?? Infinity;
-    let name = chain.steps[0].old, factor = 1;
-    for (const s of chain.steps) {
-      if (s.year <= year) name = s.new;
-      else if (s.year <= cutoff && s.new !== "Euro" && s.rate) factor *= s.rate;
-      else if (s.year <= cutoff && s.new !== "Euro" && !s.rate) return { name, factor: null };
-    }
-    return { name, factor };
-  }
-
-  function thenConvert() {
+  function renderThen() {
     const iso = tCountry.value, year = Math.round(Number(tYear.value));
-    const amount = parseFloat(tAmount.value.replace(/[,\s_]/g, ""));
-    const c = history.countries[iso];
-    const chain = chainByWb[iso];
+    const r = thenConvert({ history, chain: chainByWb[iso], tableRows: table.rows }, iso, year, parseAmount(tAmount.value));
     const out = $("#t-result");
-    const note = { set textContent(v) { if (v) out.innerHTML += `<span class="fine">${esc(v)}</span>`; }, set innerHTML(v) { out.innerHTML += `<span class="fine">${v}</span>`; } };
-    const unit = chain ? unitFor(chain, year) : { name: c.currency ? c.currency.name : "local currency", factor: 1, current: true };
-    $("#t-unit").textContent = unit.name === "local currency" ? "" : `in ${unit.name}`;
-    if (!Number.isFinite(amount) || !Number.isFinite(year)) { out.textContent = "Enter a year and an amount."; note.textContent = ""; return; }
-    const rate = c.rates[year];
-    if (chain?.wb_unsupported) { out.textContent = `No reliable series for ${c.name}.`; note.textContent = chain.wb_unsupported; return; }
-    if (!rate) {
-      const have = Object.keys(c.rates).map(Number);
-      out.textContent = `No exchange rate for ${c.name} in ${year}.`;
-      note.textContent = have.length ? `The World Bank series for ${c.name} covers ${Math.min(...have)}–${Math.max(...have)}, with gaps.` : "";
+    $("#t-unit").textContent = r.unit && r.unit.name !== "local currency" ? `in ${r.unit.name}` : "";
+    if (!r.ok) {
+      out.innerHTML = `${esc(r.reason)}${r.detail ? `<span class="fine">${esc(r.detail)}</span>` : ""}`;
+      writeState();
       return;
     }
-    if (unit.factor === null) { out.textContent = `${c.name}'s chain has no fixed rate between ${year} and the World Bank's unit.`; note.textContent = ""; return; }
-    const usdThen = amount / unit.factor / rate;
-    const cpiYear = history.us_cpi[Math.min(Math.max(year, Math.min(...cpiYears)), cpiLatest)];
-    const usdNow = usdThen * history.us_cpi[cpiLatest] / cpiYear;
-    const unitLabel = unit.current && unit.name === "local currency" ? `${c.name} local currency` : unit.name;
-    out.innerHTML = `${fmtAmount(amount)} ${esc(unitLabel)} in ${year} =` +
-      `<span class="big">${fmtUsd(usdThen)} in ${year} dollars</span>` +
-      `<span class="zeros">about <b>${fmtUsd(usdNow)}</b> in ${cpiLatest} dollars (US consumer prices rose ${(history.us_cpi[cpiLatest] / cpiYear).toFixed(1)}× since ${year})` +
-      ` · average official rate in ${year}: ${rate >= 0.01 ? rate.toLocaleString("en-US", { maximumFractionDigits: 4 }) : rate.toExponential(3)} ${chain ? "current units" : "local units"} per dollar</span>`;
-    const later = table.rows.filter((r) => r.country === c.name && r.year > year);
-    const warn = [];
-    if (!chain && later.length) warn.push(`${c.name} redenominated in ${later.map((r) => r.year).join(", ")}; the amount is read in today's ${unit.name}, because the World Bank restates earlier years in it. In the currency of ${year} the figure would differ by a factor of ${later.map((r) => fmtRate(r.rate).replace(/<[^>]+>/g, "^")).join(" × ")}.`);
-    if (chain && chain.status === "partial") warn.push(`${chain.name}'s chain has an uncited step; the conversion to the current unit may be off.`);
-    if (["VEN", "ARG", "BOL", "ZWE"].includes(iso)) warn.push("Official rate; a parallel street rate existed for much of this period.");
-    note.innerHTML = warn.map(esc).join(" ") + ` <a href="${esc(history.source.url)}">Source</a>, fetched ${esc(history.fetched)}.`;
+    out.innerHTML = `${fmtAmount(parseAmount(tAmount.value))} ${esc(r.unitLabel)} in ${year} =` +
+      `<span class="big">${fmtUsd(r.usdThen)} in ${year} dollars</span>` +
+      `<span class="zeros">about <b>${fmtUsd(r.usdNow)}</b> in ${r.cpiLatest} dollars (US consumer prices rose ${r.inflation.toFixed(1)}× since ${year})` +
+      ` · average official rate in ${year}: ${r.rate >= 0.01 ? r.rate.toLocaleString("en-US", { maximumFractionDigits: 4 }) : r.rate.toExponential(3)} ${chainByWb[iso] ? "current units" : "local units"} per dollar</span>` +
+      `<span class="fine">${r.warnings.map(esc).join(" ")} <a href="${esc(history.source.url)}">Source</a>, fetched ${esc(history.fetched)}.</span>`;
+    writeState();
   }
-  tCountry.addEventListener("change", thenConvert);
-  tYear.addEventListener("input", thenConvert);
-  tAmount.addEventListener("input", thenConvert);
+  tCountry.addEventListener("change", renderThen);
+  tYear.addEventListener("input", renderThen);
+  tAmount.addEventListener("input", renderThen);
   $("#then-form").addEventListener("submit", (e) => e.preventDefault());
-  tCountry.value = "IND";
-  thenConvert();
+  const [iso, year, amt] = (urlState.t ?? "").split(".");
+  tCountry.value = history.countries[iso] ? iso : "IND";
+  if (year && Number.isFinite(+year)) tYear.value = year;
+  if (amt && Number.isFinite(+amt)) tAmount.value = (+amt).toLocaleString("en-US", { maximumFractionDigits: 6 });
+  renderThen();
+  if (urlState.t && !urlState.c) $("#then").scrollIntoView();
 }
