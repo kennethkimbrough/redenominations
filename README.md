@@ -5,6 +5,8 @@ what an old banknote is worth in the unit a country uses today.**
 
 Live: https://kennethkimbrough.github.io/redenominations/
 
+![Zeros removed per country since 1945: one bar per country, one segment per reform, coloured by decade](docs/chart.png)
+
 When inflation runs far enough, the numbers stop fitting on the notes and a
 country issues a new currency at a fixed rate to the old one: 1,000 old for 1
 new, or in Hungary in 1946, 400,000,000,000,000,000,000,000,000,000 pengő for
@@ -23,8 +25,8 @@ every figure, and builds three things from it:
   US inflation. 1,000 Indian rupees in 1980 were $127, about $484 in 2024
   dollars. Uses the World Bank's annual official exchange rates and US
   consumer price index, fetched by the same daily job.
-- **A chart** of cumulative zeros removed per country since 1945, on a log
-  scale, drawn as plain SVG.
+- **A chart** of zeros removed per country since 1945: one bar per country,
+  one segment per reform, coloured by decade, drawn as plain SVG.
 - **The full table**, filterable, with the rate and the number of zeros for each
   reform.
 

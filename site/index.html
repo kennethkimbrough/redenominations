@@ -13,6 +13,10 @@
     <p class="kicker">Currency redenominations, 1945 to today</p>
     <h1>Zeros Removed</h1>
     <p class="lede">When money loses so much value that the numbers stop fitting on a banknote, a country prints a new currency and strikes zeros off the old one. Hungary struck 29 in a single day in 1946. This page lists every such reform since 1945 and chains them together, so you can ask what a banknote from any year is worth in the unit a country uses now, and what that comes to in US dollars at today's exchange rate.</p>
+    <figure class="hero-figure" aria-label="Hungary's 1946 conversion rate written out in full">
+      <div class="hero-number">400<span>000</span><span>000</span><span>000</span><span>000</span><span>000</span><span>000</span><span>000</span><span>000</span><span>000</span> pengő</div>
+      <figcaption>= 1 forint. Hungary, 1 August 1946: twenty-nine zeros, the most ever struck off a currency at once.</figcaption>
+    </figure>
     <p class="coverage" id="coverage"></p>
   </header>
 
@@ -44,18 +48,19 @@
         <label>Year
           <input id="t-year" type="number" min="1960" max="2026" value="1980" inputmode="numeric">
         </label>
-        <label>Amount <span id="t-unit" class="muted"></span>
+        <label>Amount
           <input id="t-amount" type="text" inputmode="decimal" value="1,000" autocomplete="off">
+          <span class="unit" id="t-unit"></span>
         </label>
       </form>
       <div class="result" id="t-result" aria-live="polite"></div>
-      <p class="hint muted" id="t-note"></p>
     </section>
 
     <section class="panel">
       <h2>Zeros removed, country by country</h2>
-      <p class="muted">Each line follows one country's unit through every reform. The vertical scale is logarithmic: every step up is a factor of ten. Hover or tap a point for the reform. Verified chains are drawn solid; chains with an uncited step are dashed.</p>
+      <p class="muted">One bar per country, one segment per reform, each segment as wide as the number of zeros it removed. Colour is the decade. Hover or tap a segment for the reform. A hollow segment is a step that is not yet cited.</p>
       <div id="chart"></div>
+      <div class="controls"><button class="btn" id="chart-more" type="button"></button></div>
     </section>
 
     <section class="panel">
@@ -76,6 +81,10 @@
     <section class="panel" id="countries">
       <h2>Country chains</h2>
       <p class="muted">A chain is <strong>verified</strong> when every step has a checked citation and each step's new currency is the next step's old one. The tests in the repository refuse anything else. Partial chains show what is still missing.</p>
+      <div class="controls">
+        <input id="chain-filter" type="search" placeholder="Find a country" aria-label="Find a country chain">
+        <span class="muted" id="chain-count"></span>
+      </div>
       <div id="chains"></div>
     </section>
 

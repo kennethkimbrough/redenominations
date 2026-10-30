@@ -103,47 +103,54 @@ cCountry.value = "BR";
 fillCurrencies();
 
 // ---------- chart ----------
+const DECADES = [1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020];
+const DECADE_COLOURS = { 1940: "#5b4a2f", 1950: "#8a6d3b", 1960: "#b8860b", 1970: "#c2651a", 1980: "#9b2d20", 1990: "#7b4b94", 2000: "#1f5f8b", 2010: "#2f6b3a", 2020: "#3f7f7f" };
+let chartShowAll = false;
 function chart() {
-  const W = 860, H = 460, L = 56, R = 150, T = 16, B = 36;
-  const x0 = 1945, x1 = 2026;
-  const series = countries.countries
+  const rows = countries.countries
     .map((c) => {
-      let f = 1; const pts = [{ year: x0, f: 1, label: `${c.steps[0].old}` }];
-      for (const s of c.steps) {
-        if (!s.rate) break;
-        pts.push({ year: s.year, f, label: `${s.year}: ${s.old} → ${s.new}, ÷ ${s.rate.toLocaleString("en-US")}`, before: true });
-        f *= s.rate;
-        pts.push({ year: s.year, f, label: `${s.year}: ${s.old} → ${s.new}, ÷ ${s.rate.toLocaleString("en-US")}` });
+      const segs = [];
+      for (const st of c.steps) {
+        if (!st.rate) break;
+        segs.push({ z: zerosOf(st.rate), step: st, uncited: !st.source });
       }
-      pts.push({ year: x1, f, label: c.unit });
-      return { c, pts, total: f };
+      return { c, segs, total: segs.reduce((a, b) => a + b.z, 0) };
     })
-    .filter((s) => s.total > 1);
-  const maxLog = Math.ceil(Math.max(...series.map((s) => log10(s.total))));
-  const X = (y) => L + ((y - x0) / (x1 - x0)) * (W - L - R);
-  const Y = (f) => T + (1 - log10(f) / maxLog) * (H - T - B);
-  const colours = ["#b8860b", "#9b2d20", "#2f6b3a", "#1f5f8b", "#7b4b94", "#c2651a", "#3f7f7f", "#8a6d3b"];
-  let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Cumulative zeros removed per country since 1945, log scale">`;
-  for (let z = 0; z <= maxLog; z += 5) {
-    svg += `<line class="grid" x1="${L}" x2="${W - R}" y1="${Y(10 ** z)}" y2="${Y(10 ** z)}"/><text class="axis" x="${L - 6}" y="${Y(10 ** z) + 4}" text-anchor="end">10<tspan baseline-shift="super" font-size="9">${z}</tspan></text>`;
+    .filter((r) => r.total > 0)
+    .sort((a, b) => b.total - a.total);
+  const shown = chartShowAll ? rows : rows.slice(0, 20);
+  const W = 860, L = 200, R = 70, T = 28, rowH = 24, B = 8;
+  const H = T + shown.length * rowH + B;
+  const maxZ = Math.ceil(rows[0].total / 5) * 5;
+  const X = (z) => L + (z / maxZ) * (W - L - R);
+  let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Zeros removed per country since 1945, one segment per reform">`;
+  for (let z = 0; z <= maxZ; z += 5) {
+    svg += `<line class="grid" x1="${X(z)}" x2="${X(z)}" y1="${T - 6}" y2="${H - B}"/><text class="axis" x="${X(z)}" y="${T - 10}" text-anchor="middle">${z}</text>`;
   }
-  for (let y = 1950; y <= 2020; y += 10) svg += `<text class="axis" x="${X(y)}" y="${H - 12}" text-anchor="middle">${y}</text>`;
-  const labels = [];
-  series.forEach((s, i) => {
-    const col = colours[i % colours.length];
-    const d = s.pts.map((p, j) => `${j ? "L" : "M"}${X(p.year).toFixed(1)},${Y(p.f).toFixed(1)}`).join(" ");
-    svg += `<path class="series ${s.c.status}" stroke="${col}" d="${d}"/>`;
-    s.pts.filter((p) => !p.before && p.year !== x0 && p.year !== x1).forEach((p) => {
-      svg += `<circle class="pt" r="4" cx="${X(p.year)}" cy="${Y(p.f)}" fill="${col}" data-tip="${esc(s.c.name)} — ${esc(p.label)}"/>`;
-    });
-    labels.push({ y: Y(s.total), text: `${s.c.name.replace(/ \(.*\)/, "")} · ${Math.round(log10(s.total))}`, col });
+  svg += `<text class="axis" x="${W - R + 14}" y="${T - 10}">zeros</text>`;
+  shown.forEach((r, i) => {
+    const y = T + i * rowH;
+    const label = r.c.name.replace(/ \(.*\)/, "");
+    svg += `<text class="name" x="${L - 10}" y="${y + 16}" text-anchor="end">${esc(label.length > 24 ? label.slice(0, 23) + "…" : label)}</text>`;
+    let x = L;
+    for (const sg of r.segs) {
+      const decade = Math.floor(sg.step.year / 10) * 10;
+      const tip = `${esc(r.c.name)} — ${sg.step.year}: ${esc(sg.step.old)} → ${esc(sg.step.new)}, ÷ ${sg.step.rate.toLocaleString("en-US")} (${sg.z % 1 ? sg.z.toFixed(2) : sg.z} zeros)${sg.uncited ? " · not yet cited" : ""}`;
+      if (sg.z === 0) {
+        svg += `<line class="tick" x1="${x}" x2="${x}" y1="${y + 5}" y2="${y + 19}" data-tip="${tip} — at par"/>`;
+        continue;
+      }
+      const w = Math.max(X(sg.z) - L, 2);
+      svg += `<rect class="seg${sg.uncited ? " uncited" : ""}" x="${x}" y="${y + 4}" width="${w}" height="16" fill="${DECADE_COLOURS[decade] ?? "#888"}" data-tip="${tip}"/>`;
+      x += w;
+    }
+    svg += `<text class="total" x="${x + 6}" y="${y + 16}">${r.total % 1 ? r.total.toFixed(1) : r.total}${r.c.status === "partial" ? " ·" : ""}</text>`;
   });
-  // Spread the right-hand labels so they don't overlap.
-  labels.sort((a, b) => a.y - b.y);
-  for (let i = 1; i < labels.length; i++) if (labels[i].y - labels[i - 1].y < 13) labels[i].y = labels[i - 1].y + 13;
-  for (const l of labels) svg += `<text class="name" x="${W - R + 8}" y="${l.y + 4}" fill="${l.col}">${esc(l.text)}</text>`;
-  svg += `</svg><div class="legend"><span><i style="background:var(--ink-2)"></i>solid: verified chain</span><span><i style="background:repeating-linear-gradient(90deg,var(--ink-2) 0 4px,transparent 4px 7px)"></i>dashed: has an uncited step</span><span>label: country · zeros removed in total</span></div>`;
+  svg += "</svg>";
+  svg += `<div class="legend">${DECADES.filter((d) => shown.some((r) => r.segs.some((sg) => Math.floor(sg.step.year / 10) * 10 === d)))
+    .map((d) => `<span><i style="background:${DECADE_COLOURS[d]}"></i>${d}s</span>`).join("")}<span><i style="border:1px dashed var(--red)"></i>not yet cited</span><span>· partial chain</span></div>`;
   $("#chart").innerHTML = svg;
+  $("#chart-more").textContent = chartShowAll ? `Show the top 20` : `Show all ${rows.length} countries`;
   const tip = $("#tip");
   $("#chart").addEventListener("pointerover", (e) => {
     const t = e.target.closest("[data-tip]"); if (!t) return;
@@ -153,6 +160,7 @@ function chart() {
   $("#chart").addEventListener("pointerout", () => { tip.hidden = true; });
 }
 chart();
+$("#chart-more").addEventListener("click", () => { chartShowAll = !chartShowAll; chart(); });
 
 // ---------- table ----------
 function renderTable() {
@@ -173,7 +181,11 @@ $("#all-years").addEventListener("change", renderTable);
 renderTable();
 
 // ---------- chains ----------
-$("#chains").innerHTML = countries.countries.map((c) => `
+function renderChains() {
+  const q = $("#chain-filter").value.trim().toLowerCase();
+  const list = countries.countries.filter((c) => !q || c.name.toLowerCase().includes(q) || c.steps.some((s) => `${s.old} ${s.new}`.toLowerCase().includes(q)));
+  $("#chain-count").textContent = `${list.length} of ${countries.countries.length} · ${countries.verified} verified`;
+  $("#chains").innerHTML = list.map((c) => `
   <details class="chain">
     <summary><h3>${esc(c.name)}</h3><span class="badge ${c.status}">${c.status}</span>
       <span class="factor">${c.steps.length} step${c.steps.length === 1 ? "" : "s"}${c.total_factor > 1 ? ` · ${Math.round(log10(c.total_factor))} zeros` : ""}</span></summary>
@@ -182,6 +194,9 @@ $("#chains").innerHTML = countries.countries.map((c) => `
       `<div>${s.source ? `<cite>Source: <a href="${esc(s.source.url)}">${esc(s.source.title)}</a></cite>` : `<cite class="uncited" style="color:var(--red)">Not yet cited</cite>`}</div></li>`).join("")}</ol>
     ${c.gap ? `<p class="gap">${esc(c.gap)}</p>` : ""}
   </details>`).join("");
+}
+$("#chain-filter").addEventListener("input", renderChains);
+renderChains();
 
 
 // ---------- at the time ----------
@@ -211,9 +226,10 @@ if (history) {
     const amount = parseFloat(tAmount.value.replace(/[,\s_]/g, ""));
     const c = history.countries[iso];
     const chain = chainByWb[iso];
-    const out = $("#t-result"), note = $("#t-note");
+    const out = $("#t-result");
+    const note = { set textContent(v) { if (v) out.innerHTML += `<span class="fine">${esc(v)}</span>`; }, set innerHTML(v) { out.innerHTML += `<span class="fine">${v}</span>`; } };
     const unit = chain ? unitFor(chain, year) : { name: c.currency ? c.currency.name : "local currency", factor: 1, current: true };
-    $("#t-unit").textContent = `in ${unit.name}`;
+    $("#t-unit").textContent = unit.name === "local currency" ? "" : `in ${unit.name}`;
     if (!Number.isFinite(amount) || !Number.isFinite(year)) { out.textContent = "Enter a year and an amount."; note.textContent = ""; return; }
     const rate = c.rates[year];
     if (chain?.wb_unsupported) { out.textContent = `No reliable series for ${c.name}.`; note.textContent = chain.wb_unsupported; return; }
