@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild the data and check it is committed
+        run: |
+          python3 data/build_redenominations.py
+          python3 data/build_countries.py
+          git diff --exit-code -- data/*.json
+      - name: Tests
+        run: python3 -m unittest discover -s tests -v
