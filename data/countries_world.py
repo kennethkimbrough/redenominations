@@ -178,8 +178,7 @@ WORLD = [
         (1959, "North Korean won (1947)", "North Korean won (1959)", 100, "wp-kpw", None),
         (2009, "North Korean won (1959)", "North Korean won", 100, "wp-kpw",
          "Each person could exchange only a limited amount (first 100,000, later up to 500,000 old won); the rest could not be converted.")]},
-    {"iso": "CM", "name": "Cameroon", "start": 1946, "unit": "CFA franc", "currency": "Central African CFA franc", "steps": [], "basis": "wp-xaf",
-     "gap": "Starts at the CFA franc's creation in December 1945. The rate at which French Cameroun's own franc was swapped, the move to the BEAC issue in the 1970s, and the former British Southern Cameroons are not yet cited."},
+    {"iso": "CM", "name": "Cameroon", "start": 1946, "unit": "CFA franc", "currency": "Central African CFA franc", "steps": [], "basis": "wp-xaf-c"},
 ]
 
 WORLD_ALIASES = {}
@@ -260,3 +259,52 @@ WORLD_WORLD_BANK.update({"BS": "BHS", "AG": "ATG", "DM": "DMA", "KN": "KNA", "LC
                          "BB": "BRB", "BZ": "BLZ", "GY": "GUY", "TT": "TTO", "HT": "HTI", "HN": "HND", "PA": "PAN", "CU": "CUB"})
 WORLD_UNITS.update({"BS": "BSD", "AG": "XCD", "DM": "XCD", "KN": "XCD", "LC": "XCD", "VC": "XCD", "GD": "XCD",
                     "BB": "BBD", "BZ": "BZD", "GY": "GYD", "TT": "TTD", "HT": "HTG", "HN": "HNL", "PA": "PAB", "CU": "CUP"})
+
+
+# ---------- West, Central and East Africa ----------
+WORLD_SOURCES.update({
+    "wp-xof": _wp("West_African_CFA_franc", "introduced in 1945, replacing the French West African franc; no swap rate is stated"),
+    "wp-xaf-c": _wp("Central_African_CFA_franc", "introduced in 1945, replacing the French Equatorial African franc; kept at independence; no swap rate is stated"),
+    "wp-tgf": _wp("Togolese_franc", "Togo has used the West African CFA franc since 1945"),
+    "wp-kmf": _wp("Comorian_franc", "Madagascar-Comores CFA franc from 1945; notes overstamped COMORES from 1962"),
+    "wp-djf": _wp("Djiboutian_franc", "an independent Djibouti franc from 1949"),
+    "wp-cve": _wp("Cape_Verdean_escudo", "the escudo since 1914, equal to the Portuguese escudo until 1975"),
+    "wp-lrd": _wp("Liberian_dollar", "the currency since 1943; the 2000 unified notes were exchanged at par for J. J. notes"),
+    "aacb-rw": {"title": "Association of African Central Banks, monetary history of Rwanda (1960: one Rwanda and Burundi franc against one Congolese franc)",
+                "url": "https://aacb.org/fr/book/export/html/374", "accessed": "2026-10-30"},
+    "wp-bif": _wp("Burundian_franc", "Burundi began issuing its own francs in 1964"),
+    "wp-rwf": _wp("Rwandan_franc", "Rwanda began issuing the Rwandan franc in 1964"),
+    "wp-somalo": _wp("Somalo", "replaced the East African shilling at par in 1950; replaced at par by the Somali shilling on 15 December 1962"),
+    "wp-ern": _wp("Eritrean_nakfa", "introduced 15 November 1997 to replace the birr at par"),
+    "wp-eas": _wp("East_African_shilling", "Eritrea adopted the Ethiopian dollar on federation in 1952"),
+})
+
+WORLD += [
+    *[{"iso": iso, "name": name, "start": 1946, "unit": "CFA franc", "currency": "West African CFA franc", "steps": [], "basis": "wp-xof"}
+      for iso, name in [("BJ", "Benin"), ("BF", "Burkina Faso"), ("CI", "Côte d'Ivoire"), ("NE", "Niger"), ("SN", "Senegal")]],
+    {"iso": "TG", "name": "Togo", "start": 1946, "unit": "CFA franc", "currency": "West African CFA franc", "steps": [], "basis": "wp-tgf"},
+    *[{"iso": iso, "name": name, "start": 1946, "unit": "CFA franc", "currency": "Central African CFA franc", "steps": [], "basis": "wp-xaf-c"}
+      for iso, name in [("CF", "Central African Republic"), ("TD", "Chad"), ("CG", "Republic of the Congo"), ("GA", "Gabon")]],
+    {"iso": "KM", "name": "Comoros", "start": 1946, "unit": "Comorian franc", "currency": "Comorian franc", "steps": [], "basis": "wp-kmf",
+     "gap": "Started as the Madagascar-Comores CFA franc of 1945; when and at what rate the Comorian franc separated from it is not stated."},
+    {"iso": "DJ", "name": "Djibouti", "start": 1949, "unit": "franc", "currency": "Djiboutian franc", "steps": [], "basis": "wp-djf"},
+    {"iso": "CV", "name": "Cabo Verde", "start": 1945, "unit": "escudo", "currency": "Cape Verdean escudo", "steps": [], "basis": "wp-cve"},
+    {"iso": "LR", "name": "Liberia", "start": 1945, "unit": "dollar", "currency": "Liberian dollar", "steps": [], "basis": "wp-lrd"},
+    *[{"iso": iso, "name": name, "start": 1945, "unit": "franc", "steps": [
+        (1960, "Belgian Congo franc", "Rwanda and Burundi franc", 1, "aacb-rw", None),
+        (1964, "Rwanda and Burundi franc", cur, 1, None, "Own francs from 1964; presumably at par, but no source states the rate.")]}
+      for iso, name, cur in [("BI", "Burundi", "Burundian franc"), ("RW", "Rwanda", "Rwandan franc")]],
+    {"iso": "SO", "name": "Somalia", "start": 1945, "unit": "shilling", "steps": [
+        (1950, "East African shilling", "Somalo", 1, "wp-somalo", "In the former Italian south; the north kept the East African shilling until 1962."),
+        (1962, "Somalo", "Somali shilling", 1, "wp-somalo", "An attempted 100-to-1 reform in 1990 is not known to have taken effect.")]},
+    {"iso": "ER", "name": "Eritrea", "start": 1945, "unit": "nakfa", "steps": [
+        (1952, "East African shilling", "Ethiopian birr", 2, None,
+         "Adopted on federation with Ethiopia in 1952. Ethiopia's own rate was two shillings to the dollar; the rate used in Eritrea is not stated."),
+        (1997, "Ethiopian birr", "Eritrean nakfa", 1, "wp-ern", None)]},
+]
+WORLD_WORLD_BANK.update({"BJ": "BEN", "BF": "BFA", "CI": "CIV", "NE": "NER", "SN": "SEN", "TG": "TGO", "CF": "CAF", "TD": "TCD",
+                         "CG": "COG", "GA": "GAB", "KM": "COM", "DJ": "DJI", "CV": "CPV", "LR": "LBR", "BI": "BDI", "RW": "RWA",
+                         "SO": "SOM", "ER": "ERI"})
+WORLD_UNITS.update({"BJ": "XOF", "BF": "XOF", "CI": "XOF", "NE": "XOF", "SN": "XOF", "TG": "XOF", "CF": "XAF", "TD": "XAF",
+                    "CG": "XAF", "GA": "XAF", "KM": "KMF", "DJ": "DJF", "CV": "CVE", "LR": "LRD", "BI": "BIF", "RW": "RWF",
+                    "SO": "SOS", "ER": "ERN"})

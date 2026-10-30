@@ -429,6 +429,71 @@
    "title": "Cuban peso — Wikipedia (the peso throughout; the parallel convertible peso (1994–2021) was converted at 24 pesos each)",
    "url": "https://en.wikipedia.org/wiki/Cuban_peso",
    "accessed": "2026-10-30"
+  },
+  "wp-xof": {
+   "title": "West African CFA franc — Wikipedia (introduced in 1945, replacing the French West African franc; no swap rate is stated)",
+   "url": "https://en.wikipedia.org/wiki/West_African_CFA_franc",
+   "accessed": "2026-10-30"
+  },
+  "wp-xaf-c": {
+   "title": "Central African CFA franc — Wikipedia (introduced in 1945, replacing the French Equatorial African franc; kept at independence; no swap rate is stated)",
+   "url": "https://en.wikipedia.org/wiki/Central_African_CFA_franc",
+   "accessed": "2026-10-30"
+  },
+  "wp-tgf": {
+   "title": "Togolese franc — Wikipedia (Togo has used the West African CFA franc since 1945)",
+   "url": "https://en.wikipedia.org/wiki/Togolese_franc",
+   "accessed": "2026-10-30"
+  },
+  "wp-kmf": {
+   "title": "Comorian franc — Wikipedia (Madagascar-Comores CFA franc from 1945; notes overstamped COMORES from 1962)",
+   "url": "https://en.wikipedia.org/wiki/Comorian_franc",
+   "accessed": "2026-10-30"
+  },
+  "wp-djf": {
+   "title": "Djiboutian franc — Wikipedia (an independent Djibouti franc from 1949)",
+   "url": "https://en.wikipedia.org/wiki/Djiboutian_franc",
+   "accessed": "2026-10-30"
+  },
+  "wp-cve": {
+   "title": "Cape Verdean escudo — Wikipedia (the escudo since 1914, equal to the Portuguese escudo until 1975)",
+   "url": "https://en.wikipedia.org/wiki/Cape_Verdean_escudo",
+   "accessed": "2026-10-30"
+  },
+  "wp-lrd": {
+   "title": "Liberian dollar — Wikipedia (the currency since 1943; the 2000 unified notes were exchanged at par for J. J. notes)",
+   "url": "https://en.wikipedia.org/wiki/Liberian_dollar",
+   "accessed": "2026-10-30"
+  },
+  "aacb-rw": {
+   "title": "Association of African Central Banks, monetary history of Rwanda (1960: one Rwanda and Burundi franc against one Congolese franc)",
+   "url": "https://aacb.org/fr/book/export/html/374",
+   "accessed": "2026-10-30"
+  },
+  "wp-bif": {
+   "title": "Burundian franc — Wikipedia (Burundi began issuing its own francs in 1964)",
+   "url": "https://en.wikipedia.org/wiki/Burundian_franc",
+   "accessed": "2026-10-30"
+  },
+  "wp-rwf": {
+   "title": "Rwandan franc — Wikipedia (Rwanda began issuing the Rwandan franc in 1964)",
+   "url": "https://en.wikipedia.org/wiki/Rwandan_franc",
+   "accessed": "2026-10-30"
+  },
+  "wp-somalo": {
+   "title": "Somalo — Wikipedia (replaced the East African shilling at par in 1950; replaced at par by the Somali shilling on 15 December 1962)",
+   "url": "https://en.wikipedia.org/wiki/Somalo",
+   "accessed": "2026-10-30"
+  },
+  "wp-ern": {
+   "title": "Eritrean nakfa — Wikipedia (introduced 15 November 1997 to replace the birr at par)",
+   "url": "https://en.wikipedia.org/wiki/Eritrean_nakfa",
+   "accessed": "2026-10-30"
+  },
+  "wp-eas": {
+   "title": "East African shilling — Wikipedia (Eritrea adopted the Ethiopian dollar on federation in 1952)",
+   "url": "https://en.wikipedia.org/wiki/East_African_shilling",
+   "accessed": "2026-10-30"
   }
  },
  "countries": [
@@ -4740,6 +4805,26 @@
    "wb_unsupported": null
   },
   {
+   "iso": "CM",
+   "name": "Cameroon",
+   "start": 1946,
+   "unit": "CFA franc",
+   "currency": "Central African CFA franc",
+   "basis": {
+    "title": "Central African CFA franc — Wikipedia (introduced in 1945, replacing the French Equatorial African franc; kept at independence; no swap rate is stated)",
+    "url": "https://en.wikipedia.org/wiki/Central_African_CFA_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "CMR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "BZ",
    "name": "Belize",
    "start": 1945,
@@ -4889,6 +4974,307 @@
    "steps": [],
    "total_factor": 1.0,
    "wb": "CUB",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "BJ",
+   "name": "Benin",
+   "start": 1946,
+   "unit": "CFA franc",
+   "currency": "West African CFA franc",
+   "basis": {
+    "title": "West African CFA franc — Wikipedia (introduced in 1945, replacing the French West African franc; no swap rate is stated)",
+    "url": "https://en.wikipedia.org/wiki/West_African_CFA_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "BEN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "BF",
+   "name": "Burkina Faso",
+   "start": 1946,
+   "unit": "CFA franc",
+   "currency": "West African CFA franc",
+   "basis": {
+    "title": "West African CFA franc — Wikipedia (introduced in 1945, replacing the French West African franc; no swap rate is stated)",
+    "url": "https://en.wikipedia.org/wiki/West_African_CFA_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "BFA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "CI",
+   "name": "Côte d'Ivoire",
+   "start": 1946,
+   "unit": "CFA franc",
+   "currency": "West African CFA franc",
+   "basis": {
+    "title": "West African CFA franc — Wikipedia (introduced in 1945, replacing the French West African franc; no swap rate is stated)",
+    "url": "https://en.wikipedia.org/wiki/West_African_CFA_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "CIV",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "NE",
+   "name": "Niger",
+   "start": 1946,
+   "unit": "CFA franc",
+   "currency": "West African CFA franc",
+   "basis": {
+    "title": "West African CFA franc — Wikipedia (introduced in 1945, replacing the French West African franc; no swap rate is stated)",
+    "url": "https://en.wikipedia.org/wiki/West_African_CFA_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "NER",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SN",
+   "name": "Senegal",
+   "start": 1946,
+   "unit": "CFA franc",
+   "currency": "West African CFA franc",
+   "basis": {
+    "title": "West African CFA franc — Wikipedia (introduced in 1945, replacing the French West African franc; no swap rate is stated)",
+    "url": "https://en.wikipedia.org/wiki/West_African_CFA_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "SEN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "TG",
+   "name": "Togo",
+   "start": 1946,
+   "unit": "CFA franc",
+   "currency": "West African CFA franc",
+   "basis": {
+    "title": "Togolese franc — Wikipedia (Togo has used the West African CFA franc since 1945)",
+    "url": "https://en.wikipedia.org/wiki/Togolese_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "TGO",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "CF",
+   "name": "Central African Republic",
+   "start": 1946,
+   "unit": "CFA franc",
+   "currency": "Central African CFA franc",
+   "basis": {
+    "title": "Central African CFA franc — Wikipedia (introduced in 1945, replacing the French Equatorial African franc; kept at independence; no swap rate is stated)",
+    "url": "https://en.wikipedia.org/wiki/Central_African_CFA_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "CAF",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "TD",
+   "name": "Chad",
+   "start": 1946,
+   "unit": "CFA franc",
+   "currency": "Central African CFA franc",
+   "basis": {
+    "title": "Central African CFA franc — Wikipedia (introduced in 1945, replacing the French Equatorial African franc; kept at independence; no swap rate is stated)",
+    "url": "https://en.wikipedia.org/wiki/Central_African_CFA_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "TCD",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "CG",
+   "name": "Republic of the Congo",
+   "start": 1946,
+   "unit": "CFA franc",
+   "currency": "Central African CFA franc",
+   "basis": {
+    "title": "Central African CFA franc — Wikipedia (introduced in 1945, replacing the French Equatorial African franc; kept at independence; no swap rate is stated)",
+    "url": "https://en.wikipedia.org/wiki/Central_African_CFA_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "COG",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "GA",
+   "name": "Gabon",
+   "start": 1946,
+   "unit": "CFA franc",
+   "currency": "Central African CFA franc",
+   "basis": {
+    "title": "Central African CFA franc — Wikipedia (introduced in 1945, replacing the French Equatorial African franc; kept at independence; no swap rate is stated)",
+    "url": "https://en.wikipedia.org/wiki/Central_African_CFA_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "GAB",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "DJ",
+   "name": "Djibouti",
+   "start": 1949,
+   "unit": "franc",
+   "currency": "Djiboutian franc",
+   "basis": {
+    "title": "Djiboutian franc — Wikipedia (an independent Djibouti franc from 1949)",
+    "url": "https://en.wikipedia.org/wiki/Djiboutian_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "DJI",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "CV",
+   "name": "Cabo Verde",
+   "start": 1945,
+   "unit": "escudo",
+   "currency": "Cape Verdean escudo",
+   "basis": {
+    "title": "Cape Verdean escudo — Wikipedia (the escudo since 1914, equal to the Portuguese escudo until 1975)",
+    "url": "https://en.wikipedia.org/wiki/Cape_Verdean_escudo",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "CPV",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "LR",
+   "name": "Liberia",
+   "start": 1945,
+   "unit": "dollar",
+   "currency": "Liberian dollar",
+   "basis": {
+    "title": "Liberian dollar — Wikipedia (the currency since 1943; the 2000 unified notes were exchanged at par for J. J. notes)",
+    "url": "https://en.wikipedia.org/wiki/Liberian_dollar",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "LBR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SO",
+   "name": "Somalia",
+   "start": 1945,
+   "unit": "shilling",
+   "currency": "East African shilling",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1950,
+     "old": "East African shilling",
+     "new": "Somalo",
+     "rate": 1,
+     "source": {
+      "title": "Somalo — Wikipedia (replaced the East African shilling at par in 1950; replaced at par by the Somali shilling on 15 December 1962)",
+      "url": "https://en.wikipedia.org/wiki/Somalo",
+      "accessed": "2026-10-30"
+     },
+     "note": "In the former Italian south; the north kept the East African shilling until 1962."
+    },
+    {
+     "year": 1962,
+     "old": "Somalo",
+     "new": "Somali shilling",
+     "rate": 1,
+     "source": {
+      "title": "Somalo — Wikipedia (replaced the East African shilling at par in 1950; replaced at par by the Somali shilling on 15 December 1962)",
+      "url": "https://en.wikipedia.org/wiki/Somalo",
+      "accessed": "2026-10-30"
+     },
+     "note": "An attempted 100-to-1 reform in 1990 is not known to have taken effect."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "SOM",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -5902,6 +6288,43 @@
    "wb_unsupported": null
   },
   {
+   "iso": "ER",
+   "name": "Eritrea",
+   "start": 1945,
+   "unit": "nakfa",
+   "currency": "East African shilling",
+   "basis": null,
+   "status": "partial",
+   "unsourced_steps": 1,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1952,
+     "old": "East African shilling",
+     "new": "Ethiopian birr",
+     "rate": 2,
+     "source": null,
+     "note": "Adopted on federation with Ethiopia in 1952. Ethiopia's own rate was two shillings to the dollar; the rate used in Eritrea is not stated."
+    },
+    {
+     "year": 1997,
+     "old": "Ethiopian birr",
+     "new": "Eritrean nakfa",
+     "rate": 1,
+     "source": {
+      "title": "Eritrean nakfa — Wikipedia (introduced 15 November 1997 to replace the birr at par)",
+      "url": "https://en.wikipedia.org/wiki/Eritrean_nakfa",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 2.0,
+   "wb": "ERI",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "IR",
    "name": "Iran",
    "start": 1945,
@@ -5971,26 +6394,6 @@
    ],
    "total_factor": 1.0,
    "wb": "KHM",
-   "wb_unit_year": null,
-   "wb_unsupported": null
-  },
-  {
-   "iso": "CM",
-   "name": "Cameroon",
-   "start": 1946,
-   "unit": "CFA franc",
-   "currency": "Central African CFA franc",
-   "basis": {
-    "title": "CFA franc — Wikipedia (created 26 December 1945)",
-    "url": "https://en.wikipedia.org/wiki/CFA_franc",
-    "accessed": "2026-10-30"
-   },
-   "status": "partial",
-   "unsourced_steps": 0,
-   "gap": "Starts at the CFA franc's creation in December 1945. The rate at which French Cameroun's own franc was swapped, the move to the BEAC issue in the 1970s, and the former British Southern Cameroons are not yet cited.",
-   "steps": [],
-   "total_factor": 1.0,
-   "wb": "CMR",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -6073,6 +6476,100 @@
    "wb_unsupported": null
   },
   {
+   "iso": "KM",
+   "name": "Comoros",
+   "start": 1946,
+   "unit": "Comorian franc",
+   "currency": "Comorian franc",
+   "basis": {
+    "title": "Comorian franc — Wikipedia (Madagascar-Comores CFA franc from 1945; notes overstamped COMORES from 1962)",
+    "url": "https://en.wikipedia.org/wiki/Comorian_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Started as the Madagascar-Comores CFA franc of 1945; when and at what rate the Comorian franc separated from it is not stated.",
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "COM",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "BI",
+   "name": "Burundi",
+   "start": 1945,
+   "unit": "franc",
+   "currency": "Belgian Congo franc",
+   "basis": null,
+   "status": "partial",
+   "unsourced_steps": 1,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1960,
+     "old": "Belgian Congo franc",
+     "new": "Rwanda and Burundi franc",
+     "rate": 1,
+     "source": {
+      "title": "Association of African Central Banks, monetary history of Rwanda (1960: one Rwanda and Burundi franc against one Congolese franc)",
+      "url": "https://aacb.org/fr/book/export/html/374",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1964,
+     "old": "Rwanda and Burundi franc",
+     "new": "Burundian franc",
+     "rate": 1,
+     "source": null,
+     "note": "Own francs from 1964; presumably at par, but no source states the rate."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "BDI",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "RW",
+   "name": "Rwanda",
+   "start": 1945,
+   "unit": "franc",
+   "currency": "Belgian Congo franc",
+   "basis": null,
+   "status": "partial",
+   "unsourced_steps": 1,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1960,
+     "old": "Belgian Congo franc",
+     "new": "Rwanda and Burundi franc",
+     "rate": 1,
+     "source": {
+      "title": "Association of African Central Banks, monetary history of Rwanda (1960: one Rwanda and Burundi franc against one Congolese franc)",
+      "url": "https://aacb.org/fr/book/export/html/374",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1964,
+     "old": "Rwanda and Burundi franc",
+     "new": "Rwandan franc",
+     "rate": 1,
+     "source": null,
+     "note": "Own francs from 1964; presumably at par, but no source states the rate."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "RWA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "GD",
    "name": "Grenada",
    "start": 1945,
@@ -6118,6 +6615,6 @@
    "wb_unsupported": null
   }
  ],
- "verified": 122,
- "partial": 15
+ "verified": 137,
+ "partial": 18
 }
