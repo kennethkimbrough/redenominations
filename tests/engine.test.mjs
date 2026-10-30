@@ -118,3 +118,15 @@ test("chart rows are sorted by zeros removed and skip countries with none", () =
   assert.ok(rows.every((r, i) => i === 0 || rows[i - 1].total >= r.total));
   assert.ok(rows.every((r) => r.total > 0));
 });
+
+test("a country with no currency change converts to itself and still gets dollars", () => {
+  const c = { iso: "XX", start: 1945, currency: "Test dollar", steps: [] };
+  const opts = currencyOptions(c);
+  assert.deepEqual(opts.map((o) => o.name), ["Test dollar"]);
+  const r = chainConvert(c, 0, 50);
+  assert.equal(r.noop, true);
+  assert.equal(r.value, 50);
+  const d = dollarsToday(c, r, { units: { XX: "XXD" }, rates: { XXD: 2 }, date: "d", source: { url: "x" } });
+  assert.equal(d.usd, 25);
+  assert.equal(unitFor(c, 1980).name, "Test dollar");
+});

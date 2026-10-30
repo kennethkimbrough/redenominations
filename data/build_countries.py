@@ -391,12 +391,18 @@ def build() -> dict:
             steps.append({"year": year, "old": old, "new": new, "rate": rate,
                           "source": SOURCES[src] if src else None, "note": note})
         unsourced = [s for s in steps if s["source"] is None]
+        # A country with no currency change since its start year cites one source for that
+        # continuity ("basis"); without one it cannot be verified.
+        basis = SOURCES[c["basis"]] if c.get("basis") else None
+        if not steps and not basis:
+            unsourced = [None]
         total_factor = 1.0
         for s in steps:
             if s["rate"]:
                 total_factor *= s["rate"]
         out.append({
             "iso": c["iso"], "name": c["name"], "start": c["start"], "unit": c["unit"],
+            "currency": c.get("currency") or steps[0]["old"], "basis": basis,
             "status": "verified" if not unsourced and not c.get("gap") else "partial",
             "unsourced_steps": len(unsourced),
             "gap": c.get("gap"),

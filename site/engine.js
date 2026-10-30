@@ -39,7 +39,7 @@ export const parseAmount = (text) => parseFloat(String(text).replace(/[,\s_]/g, 
 
 /** The currencies of a chain in order: the first step's old currency, then each new one. */
 export function currencyOptions(chain) {
-  const list = [{ name: chain.steps[0].old, from: chain.start, idx: 0 }];
+  const list = [{ name: chain.currency ?? chain.steps[0].old, from: chain.start, idx: 0 }];
   chain.steps.forEach((s, i) => list.push({ name: s.new, from: s.year, idx: i + 1 }));
   return list;
 }
@@ -70,7 +70,7 @@ export function chainConvert(chain, idx, amount) {
 export function dollarsToday(chain, result, rates) {
   const code = rates?.units?.[chain.iso];
   const perUsd = code && rates.rates?.[code];
-  if (result.broken || !perUsd || result.noop) return null;
+  if (result.broken || !perUsd) return null;
   return { code, perUsd, usd: result.value / perUsd, oneDollarBuys: perUsd * result.totalRate, date: rates.date, source: rates.source };
 }
 
@@ -82,7 +82,7 @@ export function dollarsToday(chain, result, rates) {
  */
 export function unitFor(chain, year) {
   const cutoff = chain.wb_unit_year ?? Infinity;
-  let name = chain.steps[0].old, factor = 1;
+  let name = chain.currency ?? chain.steps[0].old, factor = 1;
   for (const s of chain.steps) {
     if (s.year <= year) name = s.new;
     else if (s.year <= cutoff && s.new !== "Euro" && s.rate) factor *= s.rate;
@@ -121,7 +121,7 @@ export function thenConvert({ history, chain, tableRows }, iso, year, amount) {
     warnings.push(`${c.name} redenominated in ${later.map((r) => r.year).join(", ")}; the amount is read in today's ${unit.name}, because the World Bank restates earlier years in it. ` +
       `In the currency of ${year} the figure would differ by a factor of ${later.map((r) => fmtRate(r.rate).replace(/<[^>]+>/g, "^")).join(" × ")}.`);
   }
-  if (chain && chain.status === "partial") warnings.push(`${chain.name}'s chain has an uncited step; the conversion to the current unit may be off.`);
+  if (chain && chain.status === "partial") warnings.push(`${chain.name}'s chain is partial (${chain.gap ?? "it has an uncited step"}), so the conversion to the current unit may be approximate.`);
   if (["VEN", "ARG", "BOL", "ZWE"].includes(iso)) warnings.push("Official rate; a parallel street rate existed for much of this period.");
   return { ok: true, country: c, unit, rate, usdThen, usdNow: usdThen * inflation, inflation, cpiLatest, warnings,
     unitLabel: unit.current && unit.name === "local currency" ? `${c.name} local currency` : unit.name };
