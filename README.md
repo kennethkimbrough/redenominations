@@ -32,6 +32,22 @@ every figure, and builds three things from it:
 - **The full table**, filterable, with the rate and the number of zeros for each
   reform.
 
+## What I built, decided and learned
+
+- **Built:** currency reforms since 1945, chained for 195 countries with a
+  source on every rate, plus converters from any old banknote to today's money
+  and from any past amount to dollars of the time and of today. Scheduled jobs
+  keep the exchange rates current.
+- **Hardest decision:** calling a country verified only when every step is
+  cited, and letting the tests enforce it. Countries whose reforms used several
+  rates, like Germany in 1948, stay partial instead of showing a falsely exact
+  figure.
+- **What I learned:** data isn't trustworthy just because it is published.
+  Sources disagreed on rates and dates (Oman's 1970 rate, the year of Sudan's
+  first pound), and a live exchange-rate feed was still quoting Syria in its
+  pre-2026 unit. Tests and an independent spot-check against the sources caught
+  what reading the data by eye would have missed.
+
 ## Coverage, honestly
 
 | | Count |
