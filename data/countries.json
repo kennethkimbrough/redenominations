@@ -9,6 +9,16 @@
    "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
    "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
    "accessed": "2026-10-30"
+  },
+  "ecb-hr": {
+   "title": "ECB press release, 12 July 2022: Croatia to join euro area on 1 January 2023 (kuna fixed at 7.53450 = EUR 1)",
+   "url": "https://www.ecb.europa.eu/press/pr/date/2022/html/ecb.pr220712~b97dd38de3.en.html",
+   "accessed": "2026-10-30"
+  },
+  "ecb-bg": {
+   "title": "ECB press release, 8 July 2025: Bulgaria to join euro area on 1 January 2026 (lev fixed at 1.95583 = EUR 1)",
+   "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr250708~b9676a9fa8.en.html",
+   "accessed": "2026-10-30"
   }
  },
  "countries": [
@@ -328,6 +338,81 @@
    "wb_unsupported": null
   },
   {
+   "iso": "HR",
+   "name": "Croatia (and Yugoslavia)",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1966,
+     "old": "1944 dinara",
+     "new": "Yugoslav 1966 dinar",
+     "rate": 100,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1990,
+     "old": "1966 dinara",
+     "new": "Yugoslav 1990 dinar",
+     "rate": 10000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "Yugoslav 1990 dinar",
+     "new": "Croatian dinar",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1994,
+     "old": "Croatian dinar",
+     "new": "Croatian kuna",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2023,
+     "old": "Croatian kuna",
+     "new": "Euro",
+     "rate": 7.5345,
+     "source": {
+      "title": "ECB press release, 12 July 2022: Croatia to join euro area on 1 January 2023 (kuna fixed at 7.53450 = EUR 1)",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2022/html/ecb.pr220712~b97dd38de3.en.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 7534500000.0,
+   "wb": "HRV",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "NI",
    "name": "Nicaragua",
    "start": 1945,
@@ -508,6 +593,282 @@
    "wb_unsupported": null
   },
   {
+   "iso": "TM",
+   "name": "Turkmenistan (and the Soviet Union)",
+   "start": 1945,
+   "unit": "manat",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1993,
+     "old": "7th Soviet ruble",
+     "new": "Turkmenistani manat",
+     "rate": 500,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2009,
+     "old": "(old) manat",
+     "new": "Turkmenistani new manat",
+     "rate": 5000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 250000000.0,
+   "wb": "TKM",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SI",
+   "name": "Slovenia (and Yugoslavia)",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1966,
+     "old": "1944 dinara",
+     "new": "Yugoslav 1966 dinar",
+     "rate": 100,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1990,
+     "old": "1966 dinara",
+     "new": "Yugoslav 1990 dinar",
+     "rate": 10000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "Yugoslav 1990 dinar",
+     "new": "Slovenian tolar",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2007,
+     "old": "Slovenian tolar",
+     "new": "Euro",
+     "rate": 239.64,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 239640000.0,
+   "wb": "SVN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "GE",
+   "name": "Georgia (and the Soviet Union)",
+   "start": 1945,
+   "unit": "lari",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1993,
+     "old": "7th Soviet ruble",
+     "new": "Georgian kuponi",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1995,
+     "old": "Georgian kuponi",
+     "new": "Georgian lari",
+     "rate": 1000000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 100000000.0,
+   "wb": "GEO",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "MK",
+   "name": "North Macedonia (and Yugoslavia)",
+   "start": 1945,
+   "unit": "denar",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1966,
+     "old": "1944 dinara",
+     "new": "Yugoslav 1966 dinar",
+     "rate": 100,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1990,
+     "old": "1966 dinara",
+     "new": "Yugoslav 1990 dinar",
+     "rate": 10000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1992,
+     "old": "Yugoslav 1990 dinar",
+     "new": "First Macedonian denar",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1993,
+     "old": "First Macedonian denar",
+     "new": "Second Macedonian denar",
+     "rate": 100,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 100000000.0,
+   "wb": "MKD",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "UA",
    "name": "Ukraine (and the Soviet Union)",
    "start": 1945,
@@ -579,6 +940,168 @@
    ],
    "total_factor": 10000000.0,
    "wb": "UKR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "TJ",
+   "name": "Tajikistan (and the Soviet Union)",
+   "start": 1945,
+   "unit": "somoni",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1992,
+     "old": "7th Soviet ruble",
+     "new": "1st Russian ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": "Tajikistan kept the Russian ruble after independence."
+    },
+    {
+     "year": 1995,
+     "old": "First Russian ruble",
+     "new": "Tajikistani ruble",
+     "rate": 100,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2000,
+     "old": "Tajikistani ruble",
+     "new": "Tajikistani somoni",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 10000000.0,
+   "wb": "TJK",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "AZ",
+   "name": "Azerbaijan (and the Soviet Union)",
+   "start": 1945,
+   "unit": "manat",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1992,
+     "old": "7th Soviet ruble",
+     "new": "Azerbaijani manat (2nd)",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2006,
+     "old": "Second Azerbaijani manat",
+     "new": "Azerbaijani new manat",
+     "rate": 5000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 5000000.0,
+   "wb": "AZE",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -727,6 +1250,93 @@
    "wb_unsupported": null
   },
   {
+   "iso": "LT",
+   "name": "Lithuania (and the Soviet Union)",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "7th Soviet ruble",
+     "new": "Talonas",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1993,
+     "old": "Talonas",
+     "new": "Lithuanian litas",
+     "rate": 100,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2015,
+     "old": "Lithuanian litas",
+     "new": "Euro",
+     "rate": 3.4528,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 345280.0,
+   "wb": "LTU",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "GR",
    "name": "Greece",
    "start": 1945,
@@ -841,6 +1451,615 @@
    "wb_unsupported": null
   },
   {
+   "iso": "UZ",
+   "name": "Uzbekistan (and the Soviet Union)",
+   "start": 1945,
+   "unit": "soum",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1993,
+     "old": "7th Soviet ruble",
+     "new": "1st Uzbekistani soum",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1994,
+     "old": "1st Uzbekistani soum",
+     "new": "2nd Uzbekistani soum",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 100000.0,
+   "wb": "UZB",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "MD",
+   "name": "Moldova (and the Soviet Union)",
+   "start": 1945,
+   "unit": "leu",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1992,
+     "old": "7th Soviet ruble",
+     "new": "Moldovan cupon",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1993,
+     "old": "Moldovan cupon",
+     "new": "Moldovan leu",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 100000.0,
+   "wb": "MDA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "KZ",
+   "name": "Kazakhstan (and the Soviet Union)",
+   "start": 1945,
+   "unit": "tenge",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1993,
+     "old": "7th Soviet ruble",
+     "new": "Kazakhstani tenge",
+     "rate": 500,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 50000.0,
+   "wb": "KAZ",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "TW",
+   "name": "Taiwan",
+   "start": 1946,
+   "unit": "New Taiwan dollar",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1949,
+     "old": "Taiwan dollars",
+     "new": "New Taiwan dollar",
+     "rate": 40000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 40000.0,
+   "wb": null,
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "EC",
+   "name": "Ecuador",
+   "start": 1945,
+   "unit": "US dollar",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 2000,
+     "old": "Sucre",
+     "new": "United States dollar",
+     "rate": 25000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": "Dollarised; the sucre was withdrawn."
+    }
+   ],
+   "total_factor": 25000.0,
+   "wb": "ECU",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "KG",
+   "name": "Kyrgyzstan (and the Soviet Union)",
+   "start": 1945,
+   "unit": "som",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1993,
+     "old": "7th Soviet ruble",
+     "new": "Kyrgyzstani som",
+     "rate": 200,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 20000.0,
+   "wb": "KGZ",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "AM",
+   "name": "Armenia (and the Soviet Union)",
+   "start": 1945,
+   "unit": "dram",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1993,
+     "old": "7th Soviet ruble",
+     "new": "Armenian dram",
+     "rate": 200,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 20000.0,
+   "wb": "ARM",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "EE",
+   "name": "Estonia (and the Soviet Union)",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1992,
+     "old": "7th Soviet ruble",
+     "new": "Estonian kroon",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2011,
+     "old": "Estonian kroon",
+     "new": "Euro",
+     "rate": 15.6466,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 15646.599999999999,
+   "wb": "EST",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "LV",
+   "name": "Latvia (and the Soviet Union)",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1992,
+     "old": "7th Soviet rouble",
+     "new": "2nd Latvian rouble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1993,
+     "old": "2nd Latvian rouble",
+     "new": "2nd Latvian lats",
+     "rate": 200,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2014,
+     "old": "2nd Latvian lats",
+     "new": "Euro",
+     "rate": 0.702804,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 14056.08,
+   "wb": "LVA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "CN",
+   "name": "China",
+   "start": 1948,
+   "unit": "renminbi yuan",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1955,
+     "old": "First Renminbi yuan",
+     "new": "Second Renminbi yuan",
+     "rate": 10000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 10000.0,
+   "wb": "CHN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "IT",
+   "name": "Italy",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1999,
+     "old": "Italian lira",
+     "new": "Euro",
+     "rate": 1936.27,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1936.27,
+   "wb": "ITA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "MX",
    "name": "Mexico",
    "start": 1945,
@@ -864,6 +2083,99 @@
    ],
    "total_factor": 1000.0,
    "wb": "MEX",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "ID",
+   "name": "Indonesia",
+   "start": 1949,
+   "unit": "rupiah",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1965,
+     "old": "First rupiah",
+     "new": "Rupiah (new)",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "IDN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "KR",
+   "name": "South Korea",
+   "start": 1945,
+   "unit": "won",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1954,
+     "old": "first South Korean won",
+     "new": "South Korean hwan",
+     "rate": 100,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1963,
+     "old": "South Korean hwan",
+     "new": "South Korean won (2nd)",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "KOR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SR",
+   "name": "Suriname",
+   "start": 1945,
+   "unit": "dollar",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 2004,
+     "old": "Surinamese guilder",
+     "new": "Surinamese dollar",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "SUR",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -942,6 +2254,534 @@
    ],
    "total_factor": 594.573,
    "wb": "FIN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "PT",
+   "name": "Portugal",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1999,
+     "old": "Portuguese escudo",
+     "new": "Euro",
+     "rate": 200.482,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 200.482,
+   "wb": "PRT",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "ES",
+   "name": "Spain",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1999,
+     "old": "Spanish peseta",
+     "new": "Euro",
+     "rate": 166.386,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 166.386,
+   "wb": "ESP",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "IS",
+   "name": "Iceland",
+   "start": 1945,
+   "unit": "króna",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1981,
+     "old": "Icelandic króna",
+     "new": "Icelandic króna",
+     "rate": 100,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 100.0,
+   "wb": "ISL",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "UG",
+   "name": "Uganda",
+   "start": 1945,
+   "unit": "shilling",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1966,
+     "old": "East African shilling",
+     "new": "First Ugandan shilling",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1987,
+     "old": "First Ugandan shilling",
+     "new": "Second Ugandan shilling",
+     "rate": 100,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 100.0,
+   "wb": "UGA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "GW",
+   "name": "Guinea-Bissau",
+   "start": 1945,
+   "unit": "CFA franc",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1975,
+     "old": "Portuguese Guinean escudo",
+     "new": "Guinea-Bissau peso",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1997,
+     "old": "Guinea-Bissau peso",
+     "new": "CFA franc",
+     "rate": 65,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 65.0,
+   "wb": "GNB",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "MR",
+   "name": "Mauritania",
+   "start": 1960,
+   "unit": "ouguiya",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1973,
+     "old": "CFA franc",
+     "new": "Ouguiya",
+     "rate": 5,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2018,
+     "old": "First Mauritanian ouguiya",
+     "new": "Second Mauritanian ouguiya",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 50.0,
+   "wb": "MRT",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "BE",
+   "name": "Belgium",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1999,
+     "old": "Belgian franc",
+     "new": "Euro",
+     "rate": 40.3399,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 40.3399,
+   "wb": "BEL",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "LU",
+   "name": "Luxembourg",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1999,
+     "old": "Luxembourg franc",
+     "new": "Euro",
+     "rate": 40.3399,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 40.3399,
+   "wb": "LUX",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "GN",
+   "name": "Guinea",
+   "start": 1945,
+   "unit": "franc",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1959,
+     "old": "CFA franc",
+     "new": "First Guinean franc",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1971,
+     "old": "Guinean franc (1st)",
+     "new": "Guinean syli",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1985,
+     "old": "Syli",
+     "new": "Franc guinéen",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 10.0,
+   "wb": "GIN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SV",
+   "name": "El Salvador",
+   "start": 1945,
+   "unit": "US dollar",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 2001,
+     "old": "Colón",
+     "new": "United States dollar",
+     "rate": 8.75,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": "Dollarised; the colón was withdrawn."
+    }
+   ],
+   "total_factor": 8.75,
+   "wb": "SLV",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "MG",
+   "name": "Madagascar",
+   "start": 1945,
+   "unit": "ariary",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 2005,
+     "old": "Franc malgache",
+     "new": "Ariary",
+     "rate": 5,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 5.0,
+   "wb": "MDG",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "GQ",
+   "name": "Equatorial Guinea",
+   "start": 1945,
+   "unit": "CFA franc",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1969,
+     "old": "Spanish peseta",
+     "new": "Peseta guineana",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1975,
+     "old": "Peseta guineana",
+     "new": "Ekwele",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1985,
+     "old": "Ekwele",
+     "new": "CFA franc",
+     "rate": 4,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 4.0,
+   "wb": "GNQ",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "NL",
+   "name": "Netherlands",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1999,
+     "old": "Dutch guilder",
+     "new": "Euro",
+     "rate": 2.20371,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 2.20371,
+   "wb": "NLD",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "ML",
+   "name": "Mali",
+   "start": 1945,
+   "unit": "CFA franc",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1962,
+     "old": "CFA franc",
+     "new": "Franc malien",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1984,
+     "old": "Franc malien",
+     "new": "CFA franc",
+     "rate": 2,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 2.0,
+   "wb": "MLI",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "IE",
+   "name": "Ireland",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1999,
+     "old": "Irish pound",
+     "new": "Euro",
+     "rate": 0.787564,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 0.787564,
+   "wb": "IRL",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "CY",
+   "name": "Cyprus",
+   "start": 1960,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 2008,
+     "old": "Cyprus pound",
+     "new": "Euro",
+     "rate": 0.585274,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 0.585274,
+   "wb": "CYP",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -1139,77 +2979,6 @@
    "wb_unsupported": null
   },
   {
-   "iso": "HR",
-   "name": "Croatia (and Yugoslavia)",
-   "start": 1945,
-   "unit": "euro",
-   "status": "partial",
-   "unsourced_steps": 1,
-   "gap": null,
-   "steps": [
-    {
-     "year": 1966,
-     "old": "1944 dinara",
-     "new": "Yugoslav 1966 dinar",
-     "rate": 100,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 1990,
-     "old": "1966 dinara",
-     "new": "Yugoslav 1990 dinar",
-     "rate": 10000,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 1991,
-     "old": "Yugoslav 1990 dinar",
-     "new": "Croatian dinar",
-     "rate": 1,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 1994,
-     "old": "Croatian dinar",
-     "new": "Croatian kuna",
-     "rate": 1000,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 2023,
-     "old": "Croatian kuna",
-     "new": "Euro",
-     "rate": 7.5345,
-     "source": null,
-     "note": "Not yet cited."
-    }
-   ],
-   "total_factor": 7534500000.0,
-   "wb": "HRV",
-   "wb_unit_year": null,
-   "wb_unsupported": null
-  },
-  {
    "iso": "RO",
    "name": "Romania",
    "start": 1945,
@@ -1258,7 +3027,7 @@
    "start": 1945,
    "unit": "euro",
    "status": "partial",
-   "unsourced_steps": 3,
+   "unsourced_steps": 2,
    "gap": null,
    "steps": [
     {
@@ -1294,8 +3063,12 @@
      "old": "Bulgarian new lev",
      "new": "Euro",
      "rate": 1.95583,
-     "source": null,
-     "note": "Not yet cited."
+     "source": {
+      "title": "ECB press release, 8 July 2025: Bulgaria to join euro area on 1 January 2026 (lev fixed at 1.95583 = EUR 1)",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr250708~b9676a9fa8.en.html",
+      "accessed": "2026-10-30"
+     },
+     "note": "The lev had been pegged at this rate to the mark, then the euro, since 1997."
     }
    ],
    "total_factor": 1955830.0,
@@ -1382,6 +3155,180 @@
    "wb_unsupported": null
   },
   {
+   "iso": "MZ",
+   "name": "Mozambique",
+   "start": 1980,
+   "unit": "metical",
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Starts at the 1980 metical; the Mozambican escudo before it is not yet cited.",
+   "steps": [
+    {
+     "year": 2006,
+     "old": "(old) meticais",
+     "new": "New Mozambican metical",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "MOZ",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "ZM",
+   "name": "Zambia",
+   "start": 1968,
+   "unit": "kwacha",
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Starts at the 1968 kwacha; the Zambian pound before it is not yet cited.",
+   "steps": [
+    {
+     "year": 2013,
+     "old": "(old) Kwacha",
+     "new": "Zambian kwacha",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "ZMB",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SD",
+   "name": "Sudan",
+   "start": 1957,
+   "unit": "pound",
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Starts at the 1957 pound; the Egyptian pound used before it is not yet cited.",
+   "steps": [
+    {
+     "year": 1992,
+     "old": "First Sudanese pounds",
+     "new": "Sudanese dinar",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2007,
+     "old": "Sudanese dinars",
+     "new": "Second Sudanese pound",
+     "rate": 100,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "SDN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SL",
+   "name": "Sierra Leone",
+   "start": 1964,
+   "unit": "leone",
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Starts at the 1964 leone; the West African pound before it is not yet cited.",
+   "steps": [
+    {
+     "year": 2021,
+     "old": "(old) Sierra Leonean leone",
+     "new": "Sierra Leonean leone",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "SLE",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "ST",
+   "name": "São Tomé and Príncipe",
+   "start": 1977,
+   "unit": "dobra",
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Starts at the 1977 dobra; the escudo before it is not yet cited.",
+   "steps": [
+    {
+     "year": 2018,
+     "old": "São Tomé and Príncipe dobra (1st)",
+     "new": "São Tomé and Príncipe dobra (2nd)",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "STP",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SK",
+   "name": "Slovakia",
+   "start": 1993,
+   "unit": "euro",
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Starts at the 1993 koruna; its split from the Czechoslovak koruna at par is not yet cited.",
+   "steps": [
+    {
+     "year": 2009,
+     "old": "Slovak koruna",
+     "new": "Euro",
+     "rate": 30.126,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 30.126,
+   "wb": "SVK",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "DE",
    "name": "Germany",
    "start": 1945,
@@ -1415,8 +3362,62 @@
    "wb": "DEU",
    "wb_unit_year": null,
    "wb_unsupported": null
+  },
+  {
+   "iso": "AT",
+   "name": "Austria",
+   "start": 1945,
+   "unit": "euro",
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Starts at the schilling as reintroduced in December 1945; its conversion from the Reichsmark is not yet cited.",
+   "steps": [
+    {
+     "year": 1999,
+     "old": "Austrian schilling",
+     "new": "Euro",
+     "rate": 13.7603,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 13.7603,
+   "wb": "AUT",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "MT",
+   "name": "Malta",
+   "start": 1972,
+   "unit": "euro",
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Starts at the 1972 lira; the Maltese pound before it, renamed at par, is not yet cited.",
+   "steps": [
+    {
+     "year": 2008,
+     "old": "Maltese lira",
+     "new": "Euro",
+     "rate": 0.4293,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 0.4293,
+   "wb": "MLT",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   }
  ],
- "verified": 19,
- "partial": 9
+ "verified": 57,
+ "partial": 16
 }

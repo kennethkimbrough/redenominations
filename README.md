@@ -33,9 +33,9 @@ every figure, and builds three things from it:
 | | Count |
 |---|---|
 | Reforms in the table since 1945 | 129 (153 including earlier ones) |
-| Countries with a fully cited chain from 1945 to today | 19 |
-| Countries with a partial chain (a step still needs a citation) | 9 |
-| Countries not yet covered | about 165 |
+| Countries with a fully cited chain from their first post-war currency to today | 57 |
+| Countries with a partial chain (a step or the starting point still needs a citation) | 16 |
+| Countries not yet covered | about 120 |
 
 A country is **verified** only when every step of its chain has a checked
 source and the chain is unbroken, meaning each reform's new currency is the
@@ -57,10 +57,13 @@ the "verified" count truthful.
 - Euro conversion rates come from
   [Council Regulation (EC) No 2866/98](https://www.legislation.gov.uk/eur/1998/2866/data.html),
   Article 1.
+- Croatia's and Bulgaria's euro conversion rates come from the ECB press
+  releases announcing them (12 July 2022 and 8 July 2025).
 - Steps that are included for continuity but not yet checked against a source
-  (Germany's 1948 reform, Belarus in 2000, Romania in 1947 and 1952, Croatia's
-  and Bulgaria's euro adoptions, and the end of the Zimbabwean dollar) are
-  marked "not yet cited" in the data and on the site.
+  (Germany's 1948 reform, Belarus in 2000, Romania in 1947 and 1952, the end of
+  the Zimbabwean dollar) are marked "not yet cited" in the data and on the
+  site, as are chains whose starting currency is not yet traced back to 1945
+  (Austria, Malta, Slovakia, Sudan and several African countries).
 
 Today's exchange rates come from the
 [currency-api dataset](https://github.com/fawazahmed0/exchange-api) published
@@ -91,6 +94,7 @@ numbering was struck off, not what the money bought.
 ```
 data/build_redenominations.py   the source table as rows → data/redenominations.json
 data/build_countries.py         one chain per country with a source per step → data/countries.json
+data/countries_more.py          further chains built from the same sources (Soviet and Yugoslav successors, euro members, others)
 tests/test_data.py              chain continuity, citations, rates matching the table
 site/                           index.html, styles.css, app.js (no build step, no dependencies)
 .github/workflows/ci.yml        rebuilds the JSON, fails if it differs from what is committed, runs the tests

@@ -35,6 +35,10 @@ UNITS = {
     "GH": "GHS", "HR": "EUR", "BG": "EUR", "ZW": "ZWG",
 }
 
+sys.path.insert(0, str(Path(__file__).parent))
+from countries_more import MORE_UNITS  # noqa: E402
+UNITS = {**UNITS, **MORE_UNITS}
+
 SOURCES = [
     {
         "name": "currency-api (fawazahmed0/exchange-api) via jsDelivr",

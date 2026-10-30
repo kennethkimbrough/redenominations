@@ -12,7 +12,11 @@ Run:  python3 data/build_countries.py
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from countries_more import MORE, MORE_ALIASES, MORE_UNITS, MORE_WORLD_BANK  # noqa: E402
 
 SOURCES = {
     "wiki": {
@@ -23,6 +27,16 @@ SOURCES = {
     "ec2866": {
         "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
         "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+        "accessed": "2026-10-30",
+    },
+    "ecb-hr": {
+        "title": "ECB press release, 12 July 2022: Croatia to join euro area on 1 January 2023 (kuna fixed at 7.53450 = EUR 1)",
+        "url": "https://www.ecb.europa.eu/press/pr/date/2022/html/ecb.pr220712~b97dd38de3.en.html",
+        "accessed": "2026-10-30",
+    },
+    "ecb-bg": {
+        "title": "ECB press release, 8 July 2025: Bulgaria to join euro area on 1 January 2026 (lev fixed at 1.95583 = EUR 1)",
+        "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr250708~b9676a9fa8.en.html",
         "accessed": "2026-10-30",
     },
 }
@@ -187,6 +201,7 @@ COUNTRIES = [
             (1993, "Nuevo peso", "Peso uruguayo", 1_000, "wiki", None),
         ],
     },
+    *MORE,
     # ---- Partial chains: at least one step still needs a checked citation ----
     {
         "iso": "ZW", "name": "Zimbabwe", "start": 1980, "unit": "ZiG",
@@ -260,7 +275,7 @@ COUNTRIES = [
             (1990, "1966 dinara", "Yugoslav 1990 dinar", 10_000, "wiki", None),
             (1991, "Yugoslav 1990 dinar", "Croatian dinar", 1, "wiki", None),
             (1994, "Croatian dinar", "Croatian kuna", 1_000, "wiki", None),
-            (2023, "Croatian kuna", "Euro", 7.5345, None, "Not yet cited."),
+            (2023, "Croatian kuna", "Euro", 7.5345, "ecb-hr", None),
         ],
     },
     {
@@ -269,7 +284,7 @@ COUNTRIES = [
             (1952, "Bulgarian lev (2nd)", "Bulgarian lev (3rd)", 100, None, "Not yet cited."),
             (1962, "Bulgarian lev (3rd)", "Bulgarian lev (4th)", 10, None, "Not yet cited."),
             (1999, "Bulgarian lev", "Bulgarian new lev", 1_000, "wiki", None),
-            (2026, "Bulgarian new lev", "Euro", 1.95583, None, "Not yet cited."),
+            (2026, "Bulgarian new lev", "Euro", 1.95583, "ecb-bg", "The lev had been pegged at this rate to the mark, then the euro, since 1997."),
         ],
     },
 ]
@@ -311,6 +326,11 @@ ALIASES = {
     normalise("Bolívar Soberano"): normalise("Venezuelan bolívar (3rd)"),
     normalise("Peso (convertible)"): normalise("Peso (convertible)"),
 }
+
+
+for _a, _b in MORE_ALIASES.items():
+    ALIASES[normalise(_a)] = normalise(_b)
+WORLD_BANK = {**WORLD_BANK, **MORE_WORLD_BANK}
 
 
 def key(name: str) -> str:
