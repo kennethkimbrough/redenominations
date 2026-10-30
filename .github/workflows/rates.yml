@@ -20,12 +20,13 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 data/fetch_rates.py
+      - run: python3 data/fetch_history.py
       - run: python3 -m unittest discover -s tests
       - name: Commit if changed
         run: |
           git config user.name "Kenneth Kimbrough"
           git config user.email "146112017+kennethkimbrough@users.noreply.github.com"
-          git add data/rates.json
+          git add data/rates.json data/history.json data/history_probe.json
           if git diff --cached --quiet; then echo "rates unchanged"; exit 0; fi
           git commit -m "Update exchange rates ($(python3 -c 'import json;print(json.load(open("data/rates.json"))["date"])'))"
           git push
