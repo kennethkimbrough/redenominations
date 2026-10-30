@@ -1,0 +1,2152 @@
+{
+ "source": {
+  "title": "Redenomination — Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Redenomination",
+  "accessed": "2026-10-30"
+ },
+ "count": 153,
+ "rows": [
+  {
+   "country": "Haiti",
+   "year": 1813,
+   "old": "Haitian livre",
+   "new": "1st Haitian gourde",
+   "rate": 8.25,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Argentina",
+   "year": 1826,
+   "old": "Real",
+   "new": "Peso moneda corriente",
+   "rate": 8.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Haiti",
+   "year": 1870,
+   "old": "1st Haitian gourde",
+   "new": "2nd Haitian gourde",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Haiti",
+   "year": 1872,
+   "old": "2nd Haitian gourde",
+   "new": "3rd Haitian gourde",
+   "rate": 300.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Argentina",
+   "year": 1881,
+   "old": "Peso moneda corriente",
+   "new": "Peso moneda nacional",
+   "rate": 25.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Austria-Hungary",
+   "year": 1892,
+   "old": "Austro-Hungarian florin",
+   "new": "Austro-Hungarian krone",
+   "rate": 0.5,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Nicaragua",
+   "year": 1912,
+   "old": "Nicaraguan peso",
+   "new": "Nicaraguan córdoba (1st)",
+   "rate": 12.5,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Hungary",
+   "year": 1919,
+   "old": "Austro-Hungarian krone",
+   "new": "Hungarian korona",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Austria",
+   "year": 1920,
+   "old": "Austro-Hungarian krone",
+   "new": "Austrian krone",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Latvia",
+   "year": 1922,
+   "old": "1st Latvian rouble",
+   "new": "1st Latvian lats",
+   "rate": 50.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Soviet Union",
+   "year": 1922,
+   "old": "1st Soviet ruble",
+   "new": "2nd Soviet ruble",
+   "rate": 10000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Germany",
+   "year": 1923,
+   "old": "Papiermark",
+   "new": "Rentenmark",
+   "rate": 1000000000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Soviet Union",
+   "year": 1923,
+   "old": "2nd Soviet ruble",
+   "new": "3rd Soviet ruble",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Poland",
+   "year": 1924,
+   "old": "Polish marka",
+   "new": "Polish złoty (2nd)",
+   "rate": 1800000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Soviet Union",
+   "year": 1924,
+   "old": "3rd Soviet ruble",
+   "new": "4th Soviet ruble",
+   "rate": 50000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Austria",
+   "year": 1925,
+   "old": "Austrian krone",
+   "new": "Austrian schilling",
+   "rate": 10000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Guatemala",
+   "year": 1925,
+   "old": "Guatemalan peso",
+   "new": "Guatemalan quetzal",
+   "rate": 60.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Mongolia",
+   "year": 1925,
+   "old": "4th Soviet ruble",
+   "new": "Mongolian tögrög",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Hungary",
+   "year": 1927,
+   "old": "Hungarian korona",
+   "new": "Hungarian pengő",
+   "rate": 12500.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Iran",
+   "year": 1932,
+   "old": "Iranian Toman",
+   "new": "Iranian Rial",
+   "rate": 0.1,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Brazil",
+   "year": 1942,
+   "old": "Real (old)",
+   "new": "Cruzeiro (antigo)",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Greece",
+   "year": 1944,
+   "old": "Greek drachma (1st)",
+   "new": "Greek drachma (2nd)",
+   "rate": 50000000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Yugoslavia",
+   "year": 1944,
+   "old": "Independent State of Croatia kuna",
+   "new": "Yugoslav 1944 dinar",
+   "rate": 40.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Yugoslavia",
+   "year": 1944,
+   "old": "Serbian 1941 dinar",
+   "new": "Yugoslav 1944 dinar",
+   "rate": 20.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Hungary",
+   "year": 1946,
+   "old": "Hungarian pengő",
+   "new": "Hungarian forint",
+   "rate": 4e+29,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Hungary",
+   "year": 1946,
+   "old": "Hungarian adópengő",
+   "new": "Hungarian forint",
+   "rate": 200000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Soviet Union",
+   "year": 1947,
+   "old": "4th Soviet ruble",
+   "new": "5th Soviet ruble",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "China (Republic of China)",
+   "year": 1948,
+   "old": "(old) yuan",
+   "new": "Chinese \"gold\" yuan",
+   "rate": 3000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "China (Republic of China)",
+   "year": 1949,
+   "old": "\"gold\" yuan",
+   "new": "Chinese \"silver\" yuan",
+   "rate": 500000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Poland",
+   "year": 1949,
+   "old": "2nd Polish złoty",
+   "new": "3rd Polish złoty",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Taiwan (Republic of China)",
+   "year": 1949,
+   "old": "Taiwan dollars",
+   "new": "New Taiwan dollar",
+   "rate": 40000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Greece",
+   "year": 1954,
+   "old": "Greek drachma (2nd)",
+   "new": "Greek drachma (3rd)",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Republic of Korea",
+   "year": 1954,
+   "old": "first South Korean won",
+   "new": "South Korean hwan",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "China (People's Republic of China)",
+   "year": 1955,
+   "old": "First Renminbi yuan",
+   "new": "Second Renminbi yuan",
+   "rate": 10000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Guinea",
+   "year": 1959,
+   "old": "CFA franc",
+   "new": "First Guinean franc",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Chile",
+   "year": 1960,
+   "old": "First Chilean peso",
+   "new": "Chilean escudo",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "France",
+   "year": 1960,
+   "old": "French Franc",
+   "new": "New French Franc",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Soviet Union",
+   "year": 1961,
+   "old": "5th Soviet ruble",
+   "new": "6th Soviet ruble",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Mali",
+   "year": 1962,
+   "old": "CFA franc",
+   "new": "Franc malien",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Bolivia",
+   "year": 1963,
+   "old": "First boliviano",
+   "new": "Peso boliviano",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Finland",
+   "year": 1963,
+   "old": "Finnish markka",
+   "new": "New Finnish markka",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Republic of Korea",
+   "year": 1963,
+   "old": "South Korean hwan",
+   "new": "South Korean won (2nd)",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Indonesia",
+   "year": 1965,
+   "old": "First rupiah",
+   "new": "Rupiah (new)",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Uganda",
+   "year": 1966,
+   "old": "East African shilling",
+   "new": "First Ugandan shilling",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Yugoslavia",
+   "year": 1966,
+   "old": "1944 dinara",
+   "new": "Yugoslav 1966 dinar",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Brazil",
+   "year": 1967,
+   "old": "Cruzeiro (antigo)",
+   "new": "Cruzeiro (novo)",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "DR Congo",
+   "year": 1967,
+   "old": "First congolese franc",
+   "new": "First zaïre",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Ghana",
+   "year": 1967,
+   "old": "Old cedi",
+   "new": "Ghanaian cedi",
+   "rate": 1.2,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Equatorial Guinea",
+   "year": 1969,
+   "old": "Spanish peseta",
+   "new": "Peseta guineana",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Argentina",
+   "year": 1970,
+   "old": "Peso moneda nacional",
+   "new": "Peso ley",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Guinea",
+   "year": 1971,
+   "old": "Guinean franc (1st)",
+   "new": "Guinean syli",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Mauritania",
+   "year": 1973,
+   "old": "CFA franc",
+   "new": "Ouguiya",
+   "rate": 5.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Uruguay",
+   "year": 1973,
+   "old": "Peso moneda nacional",
+   "new": "Nuevo peso",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Angola",
+   "year": 1975,
+   "old": "Second Angolan escudo",
+   "new": "First Kwanza",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Chile",
+   "year": 1975,
+   "old": "Chilean escudo",
+   "new": "Chilean peso",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Equatorial Guinea",
+   "year": 1975,
+   "old": "Peseta guineana",
+   "new": "Ekwele",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Guinea-Bissau",
+   "year": 1975,
+   "old": "Portuguese Guinean escudo",
+   "new": "Guinea-Bissau peso",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "South Vietnam",
+   "year": 1975,
+   "old": "Đồng",
+   "new": "Liberation đồng",
+   "rate": 500.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "South Vietnam",
+   "year": 1978,
+   "old": "Liberation đồng",
+   "new": "Đồng (unified)",
+   "rate": 0.8,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Israel",
+   "year": 1980,
+   "old": "Israeli pound",
+   "new": "Israeli shekel (1st)",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Iceland",
+   "year": 1981,
+   "old": "Icelandic króna",
+   "new": "Icelandic króna",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Argentina",
+   "year": 1983,
+   "old": "Peso ley",
+   "new": "Peso argentino",
+   "rate": 10000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Mali",
+   "year": 1984,
+   "old": "Franc malien",
+   "new": "CFA franc",
+   "rate": 2.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Argentina",
+   "year": 1985,
+   "old": "Argentine peso (1983)",
+   "new": "Argentine austral",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Bolivia",
+   "year": 1985,
+   "old": "Peso boliviano",
+   "new": "Boliviano",
+   "rate": 1000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Equatorial Guinea",
+   "year": 1985,
+   "old": "Ekwele",
+   "new": "CFA franc",
+   "rate": 4.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Guinea",
+   "year": 1985,
+   "old": "Syli",
+   "new": "Franc guinéen",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Peru",
+   "year": 1985,
+   "old": "Peruvian sol (1863)",
+   "new": "Peruvian inti",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Brazil",
+   "year": 1986,
+   "old": "Cruzeiro (novo)",
+   "new": "Cruzado",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Israel",
+   "year": 1986,
+   "old": "Shekel",
+   "new": "New Shekel",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Uganda",
+   "year": 1987,
+   "old": "First Ugandan shilling",
+   "new": "Second Ugandan shilling",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Nicaragua",
+   "year": 1988,
+   "old": "Nicaraguan córdoba (1st)",
+   "new": "Nicaraguan córdoba (2nd)",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Brazil",
+   "year": 1989,
+   "old": "Cruzado",
+   "new": "Cruzado Novo",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Angola",
+   "year": 1990,
+   "old": "First Kwanza",
+   "new": "Novo kwanza",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Brazil",
+   "year": 1990,
+   "old": "Cruzado Novo",
+   "new": "Cruzeiro (third)",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Yugoslavia",
+   "year": 1990,
+   "old": "1966 dinara",
+   "new": "Yugoslav 1990 dinar",
+   "rate": 10000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Croatia",
+   "year": 1991,
+   "old": "Yugoslav 1990 dinar",
+   "new": "Croatian dinar",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Lithuania",
+   "year": 1991,
+   "old": "7th Soviet ruble",
+   "new": "Talonas",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Nicaragua",
+   "year": 1991,
+   "old": "Nicaraguan córdoba (2nd)",
+   "new": "Nicaraguan córdoba (oro, 3rd)",
+   "rate": 5000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Peru",
+   "year": 1991,
+   "old": "Peruvian inti",
+   "new": "Peruvian nuevo sol",
+   "rate": 1000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Slovenia",
+   "year": 1991,
+   "old": "Yugoslav 1990 dinar",
+   "new": "Slovenian tolar",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Soviet Union",
+   "year": 1991,
+   "old": "6th Soviet ruble",
+   "new": "7th Soviet ruble",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Argentina",
+   "year": 1992,
+   "old": "Austral",
+   "new": "Peso (convertible)",
+   "rate": 10000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Azerbaijan",
+   "year": 1992,
+   "old": "7th Soviet ruble",
+   "new": "Azerbaijani manat (2nd)",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Estonia",
+   "year": 1992,
+   "old": "7th Soviet ruble",
+   "new": "Estonian kroon",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Latvia",
+   "year": 1992,
+   "old": "7th Soviet rouble",
+   "new": "2nd Latvian rouble",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Moldova",
+   "year": 1992,
+   "old": "7th Soviet ruble",
+   "new": "Moldovan cupon",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "North Macedonia",
+   "year": 1992,
+   "old": "Yugoslav 1990 dinar",
+   "new": "First Macedonian denar",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Republic of Serbian Krajina",
+   "year": 1992,
+   "old": "Yugoslav 1992 dinar",
+   "new": "1st Krajina dinar",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Russia",
+   "year": 1992,
+   "old": "7th Soviet ruble",
+   "new": "1st Russian ruble",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Sudan",
+   "year": 1992,
+   "old": "First Sudanese pounds",
+   "new": "Sudanese dinar",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Ukraine",
+   "year": 1992,
+   "old": "7th Soviet ruble",
+   "new": "3rd Ukrainian karbovanets",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Yugoslavia",
+   "year": 1992,
+   "old": "1990 dinara",
+   "new": "Yugoslav 1992 dinar",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Armenia",
+   "year": 1993,
+   "old": "7th Soviet ruble",
+   "new": "Armenian dram",
+   "rate": 200.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Brazil",
+   "year": 1993,
+   "old": "Cruzeiro (third)",
+   "new": "Cruzeiro real",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "DR Congo",
+   "year": 1993,
+   "old": "First Zaïre",
+   "new": "Nouveau zaïre",
+   "rate": 3000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Georgia",
+   "year": 1993,
+   "old": "7th Soviet ruble",
+   "new": "Georgian kuponi",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Kazakhstan",
+   "year": 1993,
+   "old": "7th Soviet ruble",
+   "new": "Kazakhstani tenge",
+   "rate": 500.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Kyrgyzstan",
+   "year": 1993,
+   "old": "7th Soviet ruble",
+   "new": "Kyrgyzstani som",
+   "rate": 200.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Latvia",
+   "year": 1993,
+   "old": "2nd Latvian rouble",
+   "new": "2nd Latvian lats",
+   "rate": 200.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Lithuania",
+   "year": 1993,
+   "old": "Talonas",
+   "new": "Lithuanian litas",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Mexico",
+   "year": 1993,
+   "old": "Peso mexicano",
+   "new": "Nuevo peso mexicano",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Moldova",
+   "year": 1993,
+   "old": "Moldovan cupon",
+   "new": "Moldovan leu",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "North Macedonia",
+   "year": 1993,
+   "old": "First Macedonian denar",
+   "new": "Second Macedonian denar",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Republic of Serbian Krajina",
+   "year": 1993,
+   "old": "1st Krajina dinar",
+   "new": "2nd Krajina dinar",
+   "rate": 1000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Turkmenistan",
+   "year": 1993,
+   "old": "7th Soviet ruble",
+   "new": "Turkmenistani manat",
+   "rate": 500.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Uruguay",
+   "year": 1993,
+   "old": "Nuevo peso",
+   "new": "Peso uruguayo",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Uzbekistan",
+   "year": 1993,
+   "old": "7th Soviet ruble",
+   "new": "1st Uzbekistani soum",
+   "rate": 1.0,
+   "approximate": false,
+   "at_par": true,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Yugoslavia",
+   "year": 1993,
+   "old": "1992 dinara",
+   "new": "Yugoslav 1993 dinar",
+   "rate": 1000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Belarus",
+   "year": 1994,
+   "old": "7th Soviet ruble",
+   "new": "First Belarusian ruble",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Brazil",
+   "year": 1994,
+   "old": "Cruzeiro real",
+   "new": "Real",
+   "rate": 2750.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Croatia",
+   "year": 1994,
+   "old": "Croatian dinar",
+   "new": "Croatian kuna",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Republic of Serbian Krajina",
+   "year": 1994,
+   "old": "2nd Krajina dinar",
+   "new": "3rd Krajina dinar",
+   "rate": 1000000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Uzbekistan",
+   "year": 1994,
+   "old": "1st Uzbekistani soum",
+   "new": "2nd Uzbekistani soum",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Yugoslavia",
+   "year": 1994,
+   "old": "1993 dinara",
+   "new": "Yugoslav 1994 dinar",
+   "rate": 1000000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Yugoslavia",
+   "year": 1994,
+   "old": "1994 dinara",
+   "new": "Yugoslav novi dinar",
+   "rate": 13000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Angola",
+   "year": 1995,
+   "old": "Novo kwanza",
+   "new": "Kwanza reajustado",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Georgia",
+   "year": 1995,
+   "old": "Georgian kuponi",
+   "new": "Georgian lari",
+   "rate": 1000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Poland",
+   "year": 1995,
+   "old": "3rd Polish złoty",
+   "new": "4th Polish złoty",
+   "rate": 10000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Tajikistan",
+   "year": 1995,
+   "old": "First Russian ruble",
+   "new": "Tajikistani ruble",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Ukraine",
+   "year": 1996,
+   "old": "3rd Ukrainian karbovanets",
+   "new": "Hryvnia",
+   "rate": 100000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Guinea-Bissau",
+   "year": 1997,
+   "old": "Guinea-Bissau peso",
+   "new": "CFA franc",
+   "rate": 65.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "DR Congo",
+   "year": 1998,
+   "old": "Nouveau zaïre",
+   "new": "Second Congolese franc",
+   "rate": 100000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Russia",
+   "year": 1998,
+   "old": "First Russian ruble",
+   "new": "Second Russian ruble",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Angola",
+   "year": 1999,
+   "old": "Kwanza reajustado",
+   "new": "Second Kwanza",
+   "rate": 1000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Bulgaria",
+   "year": 1999,
+   "old": "Bulgarian lev",
+   "new": "Bulgarian new lev",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "UN Transitional Administration in East Timor",
+   "year": 1999,
+   "old": "Indonesian rupiah",
+   "new": "United States dollar",
+   "rate": 6900.0,
+   "approximate": true,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Ecuador",
+   "year": 2000,
+   "old": "Sucre",
+   "new": "United States dollar",
+   "rate": 25000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Tajikistan",
+   "year": 2000,
+   "old": "Tajikistani ruble",
+   "new": "Tajikistani somoni",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "El Salvador",
+   "year": 2001,
+   "old": "Colón",
+   "new": "United States dollar",
+   "rate": 8.75,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Transnistria",
+   "year": 2001,
+   "old": "Transnistrian ruble (2nd)",
+   "new": "Transnistrian ruble (3rd)",
+   "rate": 1000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Suriname",
+   "year": 2004,
+   "old": "Surinamese guilder",
+   "new": "Surinamese dollar",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Madagascar",
+   "year": 2005,
+   "old": "Franc malgache",
+   "new": "Ariary",
+   "rate": 5.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Romania",
+   "year": 2005,
+   "old": "Romanian leu (3rd)",
+   "new": "Romanian leu (4th)",
+   "rate": 10000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Turkey",
+   "year": 2005,
+   "old": "Turkish lira",
+   "new": "Turkish new lira",
+   "rate": 1000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Azerbaijan",
+   "year": 2006,
+   "old": "Second Azerbaijani manat",
+   "new": "Azerbaijani new manat",
+   "rate": 5000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Mozambique",
+   "year": 2006,
+   "old": "(old) meticais",
+   "new": "New Mozambican metical",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Zimbabwe",
+   "year": 2006,
+   "old": "Zimbabwean dollar (1st)",
+   "new": "Zimbabwean dollar (2nd)",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Ghana",
+   "year": 2007,
+   "old": "Cedi",
+   "new": "New Ghanaian cedi",
+   "rate": 10000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Sudan",
+   "year": 2007,
+   "old": "First Sudanese pounds",
+   "new": "Second Sudanese pound",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Sudan",
+   "year": 2007,
+   "old": "Sudanese dinars",
+   "new": "Second Sudanese pound",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Venezuela",
+   "year": 2008,
+   "old": "(old) Bolivar",
+   "new": "Bolivar Fuerte",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Zimbabwe",
+   "year": 2008,
+   "old": "Zimbabwean dollar (2nd)",
+   "new": "Zimbabwean dollar (3rd)",
+   "rate": 10000000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "North Korea",
+   "year": 2009,
+   "old": "North Korean won (1st)",
+   "new": "North Korean won (2nd)",
+   "rate": 100.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Turkmenistan",
+   "year": 2009,
+   "old": "(old) manat",
+   "new": "Turkmenistani new manat",
+   "rate": 5000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Zimbabwe",
+   "year": 2009,
+   "old": "Zimbabwean dollar (3rd)",
+   "new": "Zimbabwean dollar (4th)",
+   "rate": 1000000000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Zambia",
+   "year": 2013,
+   "old": "(old) Kwacha",
+   "new": "Zambian kwacha",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Belarus",
+   "year": 2016,
+   "old": "Second Belarusian ruble",
+   "new": "Third Belarusian ruble",
+   "rate": 10000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Mauritania",
+   "year": 2018,
+   "old": "First Mauritanian ouguiya",
+   "new": "Second Mauritanian ouguiya",
+   "rate": 10.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "São Tomé and Príncipe",
+   "year": 2018,
+   "old": "São Tomé and Príncipe dobra (1st)",
+   "new": "São Tomé and Príncipe dobra (2nd)",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Venezuela",
+   "year": 2018,
+   "old": "Bolivar Fuerte",
+   "new": "Bolívar Soberano",
+   "rate": 100000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Sierra Leone",
+   "year": 2021,
+   "old": "(old) Sierra Leonean leone",
+   "new": "Sierra Leonean leone",
+   "rate": 1000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  },
+  {
+   "country": "Venezuela",
+   "year": 2021,
+   "old": "Venezuelan bolívar (3rd)",
+   "new": "Venezuelan bolívar (4th)",
+   "rate": 1000000.0,
+   "approximate": false,
+   "at_par": false,
+   "source": {
+    "title": "Redenomination — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Redenomination",
+    "accessed": "2026-10-30"
+   }
+  }
+ ]
+}
