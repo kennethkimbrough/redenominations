@@ -26,7 +26,7 @@ function history_replace(hash) { if (location.hash !== hash) window.history.repl
 // ---------- coverage ----------
 $("#coverage").innerHTML = `${table.rows.filter((r) => r.year >= 1945).length} reforms since 1945 in the table, ` +
   `${table.count} in all · <b>${countries.verified} countries</b> with a fully cited chain from 1945, ` +
-  `${countries.partial} partial · ${countries.countries.length} of roughly 195 countries covered so far`;
+  `${countries.partial} partial · ${countries.countries.length} countries covered`;
 
 // ---------- converter ----------
 const cCountry = $("#c-country"), cFrom = $("#c-from"), cAmount = $("#c-amount");
@@ -103,7 +103,7 @@ function chart() {
     for (const sg of r.segs) {
       const decade = Math.floor(sg.step.year / 10) * 10;
       const tip = `${r.c.name} — ${sg.step.year}: ${sg.step.old} → ${sg.step.new}, ÷ ${sg.step.rate.toLocaleString("en-US")} (${sg.z % 1 ? sg.z.toFixed(2) : sg.z} zeros)${sg.uncited ? " · not yet cited" : ""}`;
-      if (sg.z === 0) { segs += `<i class="tick" data-tip="${esc(tip)} — at par" title="${esc(tip)} — at par"></i>`; continue; }
+      if (sg.z <= 0) { const t = `${tip} — ${sg.z === 0 ? "at par" : "the new unit was the smaller one"}`; segs += `<i class="tick" data-tip="${esc(t)}" title="${esc(t)}"></i>`; continue; }
       segs += `<i class="seg${sg.uncited ? " uncited" : ""}" style="width:${(sg.z / maxZ) * 100}%;background:${DECADE_COLOURS[decade] ?? "#888"}" data-tip="${esc(tip)}" title="${esc(tip)}"></i>`;
     }
     html += `<div class="bar-row"><span class="bar-name" title="${esc(r.c.name)}">${esc(label)}</span><span class="bar-track" style="background-size:${100 / (maxZ / 5)}% 100%">${segs}</span>` +
@@ -230,7 +230,7 @@ if (history) {
     out.innerHTML = `${fmtAmount(parseAmount(tAmount.value))} ${esc(r.unitLabel)} in ${year} =` +
       `<span class="big">${fmtUsd(r.usdThen)} in ${year} dollars</span>` +
       `<span class="zeros">about <b>${fmtUsd(r.usdNow)}</b> in ${r.cpiLatest} dollars (US consumer prices rose ${r.inflation.toFixed(1)}× since ${year})` +
-      ` · average official rate in ${year}: ${r.rate >= 0.01 ? r.rate.toLocaleString("en-US", { maximumFractionDigits: 4 }) : r.rate.toExponential(3)} ${chainByWb[iso] ? "current units" : "local units"} per dollar</span>` +
+      ` · average official rate in ${year}: ${r.rate >= 0.01 ? r.rate.toLocaleString("en-US", { maximumFractionDigits: 4 }) : r.rate.toExponential(3)} ${chainByWb[iso] && !chainByWb[iso].wb_unit_year ? "current units" : "local units"} per dollar</span>` +
       `<span class="fine">${r.warnings.map(esc).join(" ")} <a href="${esc(history.source.url)}">Source</a>, fetched ${esc(history.fetched)}.</span>`;
     writeState();
   }

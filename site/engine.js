@@ -122,7 +122,7 @@ export function thenConvert({ history, chain, tableRows }, iso, year, amount) {
       `In the currency of ${year} the figure would differ by a factor of ${later.map((r) => fmtRate(r.rate).replace(/<[^>]+>/g, "^")).join(" × ")}.`);
   }
   if (chain && chain.status === "partial") warnings.push(`${chain.name}'s chain is partial (${chain.gap ?? "it has an uncited step"}), so the conversion to the current unit may be approximate.`);
-  if (["VEN", "ARG", "BOL", "ZWE"].includes(iso)) warnings.push("Official rate; a parallel street rate existed for much of this period.");
+  if (["VEN", "ARG", "BOL", "ZWE", "SYR", "IRN"].includes(iso)) warnings.push("Official rate; a parallel street rate existed for much of this period.");
   return { ok: true, country: c, unit, rate, usdThen, usdNow: usdThen * inflation, inflation, cpiLatest, warnings,
     unitLabel: unit.current && unit.name === "local currency" ? `${c.name} local currency` : unit.name };
 }

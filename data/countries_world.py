@@ -389,3 +389,107 @@ WORLD_WORLD_BANK.update({"BW": "BWA", "SZ": "SWZ", "LS": "LSO", "NA": "NAM", "MU
 WORLD_UNITS.update({"BW": "BWP", "SZ": "SZL", "LS": "LSL", "NA": "NAD", "MU": "MUR", "SC": "SCR", "SS": "SSP", "MV": "MVR",
                     "BH": "BHD", "KW": "KWD", "OM": "OMR", "QA": "QAR", "AE": "AED", "YE": "YER", "JO": "JOD", "LB": "LBP",
                     "SY": "SYP", "BT": "BTN"})
+
+
+# ---------- Europe, the Pacific, Libya ----------
+WORLD_SOURCES.update({
+    "ec2866w": {"title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+                "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html", "accessed": "2026-10-30"},
+    "wp-all": _wp("Albanian_lek", "1965: a confiscatory monetary reform at 10:1"),
+    "wp-bad": _wp("Bosnia_and_Herzegovina_dinar", "July 1992 at 10 Yugoslav dinars; August 1994 at 10,000 old; pegged at 100 dinars to the Deutsche Mark"),
+    "wp-bam": _wp("Bosnia_and_Herzegovina_convertible_mark", "single currency from 1998, replacing the dinar, kuna and Yugoslav novi dinar"),
+    "bqk-euro": {"title": "Central Bank of the Republic of Kosovo, conversion to the euro (Deutsche Mark permitted from 1999; accounts converted on 1 January 2002 at DEM 1.95583 per euro)",
+                 "url": "https://bqk-kos.org/operacionet-bankare/paraja-ne-qarkullim/konvertimi-ne-euro/?lang=en", "accessed": "2026-10-30"},
+    "cbcg-euro": {"title": "Central Bank of Montenegro, euroisation (Deutsche Mark legal tender alongside the dinar from 2 November 1999, floating; euro from 2002)",
+                  "url": "https://cbcg.me/en/core-functions/monetary-policy/euroisation", "accessed": "2026-10-30"},
+    "wp-ad": _wp("Andorra_and_the_euro", "the French franc and Spanish peseta were both used; no official currency before the euro"),
+    "wp-li": _wp("Liechtenstein_franc", "the Swiss franc has been the currency of Liechtenstein since 1920"),
+    "wp-mcf": _wp("Mon%C3%A9gasque_franc", "at par with the French franc; revalued 100:1 in 1960; euro at 6.55957"),
+    "wp-sml": _wp("Sammarinese_lira", "pegged to the Italian lira; replaced by the euro at 1,936.27"),
+    "wp-bnd": _wp("Brunei_dollar", "1967: replaced the Malaya and British Borneo dollar at par"),
+    "wp-fjd": _wp("Fijian_pound", "1969: £1 = FJ$2"),
+    "wp-ki": _wp("Kiribati_dollar", "the Australian pound in use since the First World War; own coins at par with the Australian dollar from 1979"),
+    "wp-tv": _wp("Tuvaluan_dollar", "officially the Australian dollar from 1966; own coins alongside it from 1976"),
+    "wp-oceanian": _wp("Japanese_government-issued_Oceanian_pound", "abolished after the war, replaced by the Australian pound or the US dollar; no rate stated"),
+    "wp-pgk": _wp("Papua_New_Guinean_kina", "19 April 1975, equal in value to the Australian dollar"),
+    "wp-sbd": _wp("Solomon_Islands_dollar", "1977, replacing the Australian dollar at par"),
+    "wp-wst": _wp("Western_Samoan_pound", "1967: 1 pound = 2 tala"),
+    "wp-top": _wp("Tongan_pound", "1967: £1 = T$2"),
+    "wp-vuv": _wp("Vanuatu_vatu", "1981, replacing the New Hebrides franc at par"),
+    "wp-ttpi": _wp("Trust_Territory_of_the_Pacific_Islands", "the US dollar served as the currency"),
+    "wp-lyp": _wp("Libyan_pound", "1951–52: £L1 = 480 lire = 980 francs; dinar at par in 1971"),
+})
+
+_YU = [(1966, "1944 dinara", "Yugoslav 1966 dinar", 100, "wiki", None),
+       (1990, "1966 dinara", "Yugoslav 1990 dinar", 10_000, "wiki", None)]
+_YU94 = _YU + [(1992, "1990 dinara", "Yugoslav 1992 dinar", 10, "wiki", None),
+               (1993, "1992 dinara", "Yugoslav 1993 dinar", 1_000_000, "wiki", None),
+               (1994, "1993 dinara", "Yugoslav 1994 dinar", 1_000_000_000, "wiki", "January 1994."),
+               (1994, "1994 dinara", "Yugoslav novi dinar", 13_000_000, "wiki", None)]
+_FR = [(1960, "French Franc", "New French Franc", 100, "wiki", None),
+       (1999, "New French Franc", "Euro", 6.55957, "ec2866w", None)]
+_AUD = [(1966, "Australian pound", "Australian dollar", 0.5, "wp-aud", "Decimalisation: two dollars to the pound.")]
+
+WORLD += [
+    {"iso": "AL", "name": "Albania", "start": 1945, "unit": "lek", "steps": [
+        (1965, "Albanian lek", "Albanian lek (1965)", 10, "wp-all", "A confiscatory reform: ten old lek for one new.")]},
+    {"iso": "BA", "name": "Bosnia and Herzegovina (and Yugoslavia)", "start": 1945, "unit": "convertible mark", "steps": _YU + [
+        (1992, "Yugoslav 1990 dinar", "Bosnia and Herzegovina dinar", 10, "wp-bad", "July 1992."),
+        (1994, "Bosnia and Herzegovina dinar", "Bosnia and Herzegovina dinar (1994)", 10_000, "wp-bad", "August 1994."),
+        (1998, "Bosnia and Herzegovina dinar (1994)", "Bosnia and Herzegovina convertible mark", 100, None,
+         "The dinar was pegged at 100 to the Deutsche Mark, which the convertible mark equalled, but no source states the 1998 conversion rate.")],
+     "gap": "Follows the government-held areas; Serb-held areas used their own dinars. The 1998 rate to the convertible mark is implied by a peg, not stated."},
+    {"iso": "XK", "name": "Kosovo (and Yugoslavia)", "start": 1945, "unit": "euro", "steps": _YU94 + [
+        (1999, "Yugoslav novi dinar", "Deutsche Mark", None, "bqk-euro", "The Deutsche Mark was permitted from 1999 alongside the dinar, with no fixed conversion."),
+        (2002, "Deutsche Mark", "Euro", 1.95583, "ec2866w", "Accounts converted on 1 January 2002.")],
+     "gap": "The move from the dinar to the Deutsche Mark in 1999 had no fixed rate, so amounts from before 1999 do not convert."},
+    {"iso": "ME", "name": "Montenegro (and Yugoslavia)", "start": 1945, "unit": "euro", "steps": _YU94 + [
+        (1999, "Yugoslav novi dinar", "Deutsche Mark", None, "cbcg-euro", "From 2 November 1999 the Deutsche Mark floated alongside the dinar; it became the only legal tender in 2001."),
+        (2002, "Deutsche Mark", "Euro", 1.95583, "ec2866w", None)],
+     "gap": "The move from the dinar to the Deutsche Mark in 1999 had no fixed rate, so amounts from before 1999 do not convert."},
+    {"iso": "AD", "name": "Andorra", "start": 1945, "unit": "euro", "steps": [
+        (1960, "French Franc", "New French Franc", 100, "wiki", "Andorra had no currency of its own; follows the French franc. The Spanish peseta, also used, went to the euro at 166.386."),
+        _FR[1]]},
+    {"iso": "LI", "name": "Liechtenstein", "start": 1945, "unit": "Swiss franc", "currency": "Swiss franc", "steps": [], "basis": "wp-li"},
+    {"iso": "MC", "name": "Monaco", "start": 1945, "unit": "euro", "steps": [
+        (1960, "French Franc", "New French Franc", 100, "wiki", "The Monégasque franc circulated at par with the French franc and followed its revaluation."),
+        (1999, "New French Franc", "Euro", 6.55957, "ec2866w", "Monaco uses the euro at the French conversion rate under its monetary agreement.")]},
+    {"iso": "SM", "name": "San Marino", "start": 1945, "unit": "euro", "steps": [
+        (1999, "Italian lira", "Euro", 1936.27, "ec2866w", "The Sammarinese lira was pegged to the Italian lira; euro notes and coins from 1 January 2002.")]},
+    {"iso": "BN", "name": "Brunei", "start": 1945, "unit": "dollar", "steps": [
+        (1953, "Malayan dollar", "Malaya and British Borneo dollar", 1, "wp-mbbd",
+         "The Japanese occupation dollar was declared worthless in 1945 and the pre-war dollar restored."),
+        (1967, "Malaya and British Borneo dollar", "Brunei dollar", 1, "wp-bnd", None)]},
+    {"iso": "FJ", "name": "Fiji", "start": 1945, "unit": "dollar", "steps": [
+        (1969, "Fijian pound", "Fijian dollar", 0.5, "wp-fjd", "Decimalisation: two dollars to the pound.")]},
+    {"iso": "KI", "name": "Kiribati", "start": 1945, "unit": "Australian dollar", "steps": [
+        (1966, "Australian pound", "Australian dollar", 0.5, "wp-ki", "Kiribati has issued its own coins at par with the Australian dollar since 1979.")]},
+    {"iso": "TV", "name": "Tuvalu", "start": 1945, "unit": "Australian dollar", "steps": [
+        (1966, "Australian pound", "Australian dollar", 0.5, "wp-tv", "Tuvalu has issued its own coins alongside Australian ones since 1976.")]},
+    {"iso": "NR", "name": "Nauru", "start": 1946, "unit": "Australian dollar", "steps": _AUD,
+     "gap": "Starts after the war; Nauru was under Japanese occupation in 1945 and the swap of the occupation pound for the Australian pound has no stated rate."},
+    {"iso": "PG", "name": "Papua New Guinea", "start": 1945, "unit": "kina", "steps": _AUD + [
+        (1975, "Australian dollar", "Papua New Guinean kina", 1, "wp-pgk", "19 April 1975; the two circulated together until the end of 1975.")]},
+    {"iso": "SB", "name": "Solomon Islands", "start": 1945, "unit": "dollar", "steps": _AUD + [
+        (1977, "Australian dollar", "Solomon Islands dollar", 1, "wp-sbd", None)]},
+    {"iso": "WS", "name": "Samoa", "start": 1945, "unit": "tālā", "steps": [
+        (1967, "Western Samoan pound", "Samoan tālā", 0.5, "wp-wst", "Two tālā to the pound.")]},
+    {"iso": "TO", "name": "Tonga", "start": 1945, "unit": "paʻanga", "steps": [
+        (1967, "Tongan pound", "Tongan paʻanga", 0.5, "wp-top", "Two paʻanga to the pound.")]},
+    {"iso": "VU", "name": "Vanuatu", "start": 1946, "unit": "vatu", "currency": "CFP franc", "steps": [
+        (1969, "CFP franc", "New Hebrides franc", 1, None, "A separate New Hebrides franc from 1969; no source states the rate."),
+        (1981, "New Hebrides franc", "Vanuatu vatu", 1, "wp-vuv", None)],
+     "gap": "Follows the franc side of the condominium; British and Australian money also circulated until 1983."},
+    *[{"iso": iso, "name": name, "start": 1946, "unit": "US dollar", "currency": "United States dollar", "steps": [], "basis": "wp-ttpi"}
+      for iso, name in [("MH", "Marshall Islands"), ("FM", "Micronesia"), ("PW", "Palau")]],
+    {"iso": "LY", "name": "Libya", "start": 1945, "unit": "dinar", "steps": [
+        (1952, "Tripolitanian lira", "Libyan pound", 480, "wp-lyp",
+         "Follows Tripolitania. In the Fezzan the Algerian franc went at 980 per pound; in Cyrenaica the Egyptian pound was redeemed in sterling, at about 0.975, though no source states that rate."),
+        (1971, "Libyan pound", "Libyan dinar", 1, "wp-lyp", None)]},
+]
+WORLD_WORLD_BANK.update({"AL": "ALB", "BA": "BIH", "XK": "XKX", "ME": "MNE", "AD": "AND", "LI": "LIE", "MC": "MCO", "SM": "SMR",
+                         "BN": "BRN", "FJ": "FJI", "KI": "KIR", "TV": "TUV", "NR": "NRU", "PG": "PNG", "SB": "SLB", "WS": "WSM",
+                         "TO": "TON", "VU": "VUT", "MH": "MHL", "FM": "FSM", "PW": "PLW", "LY": "LBY"})
+WORLD_UNITS.update({"AL": "ALL", "BA": "BAM", "XK": "EUR", "ME": "EUR", "AD": "EUR", "LI": "CHF", "MC": "EUR", "SM": "EUR",
+                    "BN": "BND", "FJ": "FJD", "KI": "AUD", "TV": "AUD", "NR": "AUD", "PG": "PGK", "SB": "SBD", "WS": "WST",
+                    "TO": "TOP", "VU": "VUV", "MH": "USD", "FM": "USD", "PW": "USD", "LY": "LYD"})

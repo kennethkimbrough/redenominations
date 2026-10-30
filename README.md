@@ -37,9 +37,9 @@ every figure, and builds three things from it:
 | | Count |
 |---|---|
 | Reforms in the table since 1945 | 129 (153 including earlier ones) |
-| Countries with a fully cited chain from 1945 (or their first currency) to today | 110 |
-| Countries with a partial chain (a reform with several rates, a step with no fixed rate, or a start not yet traced) | 12 |
-| Countries not yet covered | about 75 |
+| Countries with a fully cited chain from 1945 (or their first currency) to today | 170 |
+| Countries with a partial chain (a reform with several rates, a step with no fixed rate, or a rate no source states) | 25 |
+| Not covered | overseas territories (Guam, Bermuda, Aruba and the like), Hong Kong and Macao |
 
 A country is **verified** only when every step of its chain has a checked
 source and the chain is unbroken, meaning each reform's new currency is the
@@ -105,16 +105,22 @@ when they change and redeploys; `pages.yml` runs the tests and publishes
   since 1945 (the United States, Switzerland, India, Japan and others) has no
   steps and cites one source for that continuity. Decimalisations that kept the
   main unit (the UK in 1971, India in 1957) are not steps.
-- Twelve chains stay partial on purpose. Germany (1948), Austria (1945 and
-  1947), Czechoslovakia (1953, so both the Czech Republic and Slovakia),
-  Romania (1952), Bulgaria (1952) and Afghanistan (2002) converted money at
-  more than one rate, so no single factor is exact; the converter uses the rate
-  for cash or small amounts and says so. Zimbabwe (2009), Cambodia (money
-  abolished in 1975) and Timor-Leste had changes with no fixed rate at all.
-  Iran approved a 10,000-to-1 redenomination in 2025 that is not confirmed to
-  be in effect, and Cameroon's start before the CFA franc is not yet traced.
-- Left out until their sources say more: Trinidad and Tobago, Libya and Cuba,
-  where a key rate or date is not stated anywhere readable.
+- 25 chains stay partial, each with the reason shown on the site. Some
+  reforms converted money at more than one rate (Germany 1948, Austria
+  1945–47, Czechoslovakia 1953, Romania and Bulgaria 1952, Afghanistan 2002);
+  the converter uses the rate for cash or small amounts and says so. Some
+  changes had no fixed rate at all (Zimbabwe 2009, Cambodia 1975–80,
+  Timor-Leste, Kosovo's and Montenegro's move to the Deutsche Mark, Qatar's
+  1966 switch). The rest have a step whose rate no source states, usually a
+  colonial currency giving way to a national one that was presumably at par
+  (Rwanda, Burundi, Grenada, Trinidad and Tobago), or sources that disagree
+  (Oman, 1970).
+- Where a country used two currencies at once, the chain follows the one that
+  leads to today's capital (Tripolitania for Libya, the north for Yemen, Abu
+  Dhabi for the UAE, the French side for Vanuatu) and the notes say what the
+  rest of the country used.
+- Syria struck two zeros on 1 January 2026. The World Bank series is still in
+  the old pound, which the site accounts for.
 
 Today's exchange rates come from the
 [currency-api dataset](https://github.com/fawazahmed0/exchange-api) published
