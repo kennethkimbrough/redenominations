@@ -346,6 +346,10 @@ WORLD_BANK = {
     "RO": "ROU", "BY": "BLR", "CD": "COD", "GH": "GHA", "HR": "HRV", "BG": "BGR", "ZW": "ZWE",
 }
 WORLD_BANK_UNIT_YEAR = {"VE": 2008, "SY": 2025}
+# Where the daily rate source still quotes a currency in its pre-reform unit: divide the
+# published rate by `divisor`, but only while it is above `above` (so the fix switches itself
+# off once the source moves to the new unit). Syria: ~13,000 old pounds per dollar in Oct 2026.
+RATE_OLD_UNIT = {"SY": {"divisor": 100, "above": 2000}}
 WORLD_BANK_UNSUPPORTED = {"ZW": "The World Bank series mixes several Zimbabwean currencies without a consistent restatement."}
 
 
@@ -413,6 +417,7 @@ def build() -> dict:
             "wb": WORLD_BANK.get(c["iso"]),
             "wb_unit_year": WORLD_BANK_UNIT_YEAR.get(c["iso"]),
             "wb_unsupported": WORLD_BANK_UNSUPPORTED.get(c["iso"]),
+            "rate_old_unit": RATE_OLD_UNIT.get(c["iso"]),
         })
     out.sort(key=lambda c: (c["status"] != "verified", -c["total_factor"]))
     return {"sources": SOURCES, "countries": out,

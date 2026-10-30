@@ -130,3 +130,13 @@ test("a country with no currency change converts to itself and still gets dollar
   assert.equal(d.usd, 25);
   assert.equal(unitFor(c, 1980).name, "Test dollar");
 });
+
+test("a rate still quoted in the old unit is corrected, and the fix switches off by itself", () => {
+  const sy = chain("SY");
+  const r = chainConvert(sy, 0, 1_000_000);
+  assert.equal(r.value, 10_000);
+  const old = dollarsToday(sy, r, { units: { SY: "SYP" }, rates: { SYP: 13_000 }, date: "d", source: { url: "x" } });
+  assert.equal(old.perUsd, 130);
+  const now = dollarsToday(sy, r, { units: { SY: "SYP" }, rates: { SYP: 130 }, date: "d", source: { url: "x" } });
+  assert.equal(now.perUsd, 130);
+});

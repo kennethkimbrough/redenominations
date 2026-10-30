@@ -69,8 +69,11 @@ export function chainConvert(chain, idx, amount) {
 /** Today's dollar figure for a chain conversion, or null when there is no usable rate. */
 export function dollarsToday(chain, result, rates) {
   const code = rates?.units?.[chain.iso];
-  const perUsd = code && rates.rates?.[code];
+  let perUsd = code && rates.rates?.[code];
   if (result.broken || !perUsd) return null;
+  // The source may still quote the pre-reform unit (Syria after 2026); see RATE_OLD_UNIT.
+  const fix = chain.rate_old_unit;
+  if (fix && perUsd > fix.above) perUsd /= fix.divisor;
   return { code, perUsd, usd: result.value / perUsd, oneDollarBuys: perUsd * result.totalRate, date: rates.date, source: rates.source };
 }
 

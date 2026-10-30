@@ -739,7 +739,8 @@
    "total_factor": 4e+29,
    "wb": "HUN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "RS",
@@ -828,7 +829,8 @@
    "total_factor": 1.3e+29,
    "wb": "SRB",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BR",
@@ -917,7 +919,8 @@
    "total_factor": 2750000000000000.0,
    "wb": "BRA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CD",
@@ -982,7 +985,8 @@
    "total_factor": 300000000000000.0,
    "wb": "COD",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "VE",
@@ -1035,7 +1039,8 @@
    "total_factor": 100000000000000.0,
    "wb": "VEN",
    "wb_unit_year": 2008,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "AR",
@@ -1100,7 +1105,8 @@
    "total_factor": 10000000000000.0,
    "wb": "ARG",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BY",
@@ -1189,7 +1195,8 @@
    "total_factor": 10000000000.0,
    "wb": "BLR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "HR",
@@ -1266,7 +1273,8 @@
    "total_factor": 7534500000.0,
    "wb": "HRV",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "NI",
@@ -1307,7 +1315,8 @@
    "total_factor": 5000000000.0,
    "wb": "NIC",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "PE",
@@ -1348,7 +1357,8 @@
    "total_factor": 1000000000.0,
    "wb": "PER",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BO",
@@ -1389,7 +1399,8 @@
    "total_factor": 1000000000.0,
    "wb": "BOL",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "AO",
@@ -1454,7 +1465,8 @@
    "total_factor": 1000000000.0,
    "wb": "AGO",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TM",
@@ -1531,7 +1543,8 @@
    "total_factor": 250000000.0,
    "wb": "TKM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SI",
@@ -1596,7 +1609,8 @@
    "total_factor": 239640000.0,
    "wb": "SVN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "GE",
@@ -1673,7 +1687,8 @@
    "total_factor": 100000000.0,
    "wb": "GEO",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MK",
@@ -1738,7 +1753,8 @@
    "total_factor": 100000000.0,
    "wb": "MKD",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "UA",
@@ -1815,7 +1831,8 @@
    "total_factor": 10000000.0,
    "wb": "UKR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TJ",
@@ -1904,7 +1921,8 @@
    "total_factor": 10000000.0,
    "wb": "TJK",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "AZ",
@@ -1981,7 +1999,8 @@
    "total_factor": 5000000.0,
    "wb": "AZE",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TR",
@@ -2010,7 +2029,8 @@
    "total_factor": 1000000.0,
    "wb": "TUR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "PL",
@@ -2051,7 +2071,8 @@
    "total_factor": 1000000.0,
    "wb": "POL",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CL",
@@ -2092,7 +2113,8 @@
    "total_factor": 1000000.0,
    "wb": "CHL",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "UY",
@@ -2133,7 +2155,8 @@
    "total_factor": 1000000.0,
    "wb": "URY",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "LT",
@@ -2222,7 +2245,8 @@
    "total_factor": 345280.0,
    "wb": "LTU",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "GR",
@@ -2263,7 +2287,8 @@
    "total_factor": 340750.0,
    "wb": "GRC",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "RU",
@@ -2340,7 +2365,8 @@
    "total_factor": 100000.0,
    "wb": "RUS",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "UZ",
@@ -2417,7 +2443,8 @@
    "total_factor": 100000.0,
    "wb": "UZB",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MD",
@@ -2494,7 +2521,8 @@
    "total_factor": 100000.0,
    "wb": "MDA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "KZ",
@@ -2559,7 +2587,8 @@
    "total_factor": 50000.0,
    "wb": "KAZ",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TW",
@@ -2588,7 +2617,8 @@
    "total_factor": 40000.0,
    "wb": null,
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "EC",
@@ -2617,7 +2647,8 @@
    "total_factor": 25000.0,
    "wb": "ECU",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "KG",
@@ -2682,7 +2713,8 @@
    "total_factor": 20000.0,
    "wb": "KGZ",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "AM",
@@ -2747,7 +2779,8 @@
    "total_factor": 20000.0,
    "wb": "ARM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "EE",
@@ -2824,7 +2857,8 @@
    "total_factor": 15646.599999999999,
    "wb": "EST",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "LV",
@@ -2913,7 +2947,8 @@
    "total_factor": 14056.08,
    "wb": "LVA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CN",
@@ -2942,7 +2977,8 @@
    "total_factor": 10000.0,
    "wb": "CHN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "KP",
@@ -2995,7 +3031,8 @@
    "total_factor": 10000.0,
    "wb": null,
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "IL",
@@ -3048,7 +3085,8 @@
    "total_factor": 10000.0,
    "wb": "ISR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "GH",
@@ -3113,7 +3151,8 @@
    "total_factor": 5000.0,
    "wb": "GHA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "VN",
@@ -3166,7 +3205,8 @@
    "total_factor": 4000.0,
    "wb": "VNM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "LA",
@@ -3219,7 +3259,8 @@
    "total_factor": 2000.0,
    "wb": "LAO",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "IT",
@@ -3248,7 +3289,8 @@
    "total_factor": 1936.27,
    "wb": "ITA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SM",
@@ -3277,7 +3319,8 @@
    "total_factor": 1936.27,
    "wb": "SMR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MX",
@@ -3306,7 +3349,8 @@
    "total_factor": 1000.0,
    "wb": "MEX",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "ID",
@@ -3335,7 +3379,8 @@
    "total_factor": 1000.0,
    "wb": "IDN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "KR",
@@ -3376,7 +3421,8 @@
    "total_factor": 1000.0,
    "wb": "KOR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MZ",
@@ -3417,7 +3463,8 @@
    "total_factor": 1000.0,
    "wb": "MOZ",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SD",
@@ -3470,7 +3517,8 @@
    "total_factor": 1000.0,
    "wb": "SDN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SR",
@@ -3499,7 +3547,8 @@
    "total_factor": 1000.0,
    "wb": "SUR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "ST",
@@ -3540,7 +3589,8 @@
    "total_factor": 1000.0,
    "wb": "STP",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TN",
@@ -3569,7 +3619,8 @@
    "total_factor": 1000.0,
    "wb": "TUN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SS",
@@ -3634,7 +3685,8 @@
    "total_factor": 1000.0,
    "wb": "SSD",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "FR",
@@ -3675,7 +3727,8 @@
    "total_factor": 655.957,
    "wb": "FRA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "AD",
@@ -3716,7 +3769,8 @@
    "total_factor": 655.957,
    "wb": "AND",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MC",
@@ -3757,7 +3811,8 @@
    "total_factor": 655.957,
    "wb": "MCO",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "FI",
@@ -3798,7 +3853,8 @@
    "total_factor": 594.573,
    "wb": "FIN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "ZM",
@@ -3863,7 +3919,8 @@
    "total_factor": 500.0,
    "wb": "ZMB",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SL",
@@ -3904,7 +3961,8 @@
    "total_factor": 500.0,
    "wb": "SLE",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "LY",
@@ -3945,7 +4003,8 @@
    "total_factor": 480.0,
    "wb": "LBY",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "PT",
@@ -3974,7 +4033,8 @@
    "total_factor": 200.482,
    "wb": "PRT",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "ES",
@@ -4003,7 +4063,8 @@
    "total_factor": 166.386,
    "wb": "ESP",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "IS",
@@ -4032,7 +4093,8 @@
    "total_factor": 100.0,
    "wb": "ISL",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "UG",
@@ -4073,7 +4135,8 @@
    "total_factor": 100.0,
    "wb": "UGA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MA",
@@ -4102,7 +4165,8 @@
    "total_factor": 100.0,
    "wb": "MAR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "DZ",
@@ -4143,7 +4207,8 @@
    "total_factor": 100.0,
    "wb": "DZA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SY",
@@ -4172,7 +4237,11 @@
    "total_factor": 100.0,
    "wb": "SYR",
    "wb_unit_year": 2025,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": {
+    "divisor": 100,
+    "above": 2000
+   }
   },
   {
    "iso": "GW",
@@ -4213,7 +4282,8 @@
    "total_factor": 65.0,
    "wb": "GNB",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MR",
@@ -4254,7 +4324,8 @@
    "total_factor": 50.0,
    "wb": "MRT",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BE",
@@ -4283,7 +4354,8 @@
    "total_factor": 40.3399,
    "wb": "BEL",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "LU",
@@ -4312,7 +4384,8 @@
    "total_factor": 40.3399,
    "wb": "LUX",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "KW",
@@ -4353,7 +4426,8 @@
    "total_factor": 13.333333333333334,
    "wb": "KWT",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "GN",
@@ -4406,7 +4480,8 @@
    "total_factor": 10.0,
    "wb": "GIN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BH",
@@ -4447,7 +4522,8 @@
    "total_factor": 10.0,
    "wb": "BHR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "AL",
@@ -4476,7 +4552,8 @@
    "total_factor": 10.0,
    "wb": "ALB",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SV",
@@ -4505,7 +4582,8 @@
    "total_factor": 8.75,
    "wb": "SLV",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MG",
@@ -4534,7 +4612,8 @@
    "total_factor": 5.0,
    "wb": "MDG",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "GQ",
@@ -4587,7 +4666,8 @@
    "total_factor": 4.0,
    "wb": "GNQ",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "NL",
@@ -4616,7 +4696,8 @@
    "total_factor": 2.20371,
    "wb": "NLD",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "ML",
@@ -4657,7 +4738,8 @@
    "total_factor": 2.0,
    "wb": "MLI",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "ET",
@@ -4686,7 +4768,8 @@
    "total_factor": 2.0,
    "wb": "ETH",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "GB",
@@ -4706,7 +4789,8 @@
    "total_factor": 1.0,
    "wb": "GBR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "KE",
@@ -4735,7 +4819,8 @@
    "total_factor": 1.0,
    "wb": "KEN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TZ",
@@ -4764,7 +4849,8 @@
    "total_factor": 1.0,
    "wb": "TZA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "US",
@@ -4784,7 +4870,8 @@
    "total_factor": 1.0,
    "wb": "USA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CA",
@@ -4804,7 +4891,8 @@
    "total_factor": 1.0,
    "wb": "CAN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CO",
@@ -4824,7 +4912,8 @@
    "total_factor": 1.0,
    "wb": "COL",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "PY",
@@ -4844,7 +4933,8 @@
    "total_factor": 1.0,
    "wb": "PRY",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "GT",
@@ -4864,7 +4954,8 @@
    "total_factor": 1.0,
    "wb": "GTM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CR",
@@ -4884,7 +4975,8 @@
    "total_factor": 1.0,
    "wb": "CRI",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CH",
@@ -4904,7 +4996,8 @@
    "total_factor": 1.0,
    "wb": "CHE",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SE",
@@ -4924,7 +5017,8 @@
    "total_factor": 1.0,
    "wb": "SWE",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "NO",
@@ -4944,7 +5038,8 @@
    "total_factor": 1.0,
    "wb": "NOR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "DK",
@@ -4964,7 +5059,8 @@
    "total_factor": 1.0,
    "wb": "DNK",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "DO",
@@ -4993,7 +5089,8 @@
    "total_factor": 1.0,
    "wb": "DOM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "IN",
@@ -5013,7 +5110,8 @@
    "total_factor": 1.0,
    "wb": "IND",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "JP",
@@ -5033,7 +5131,8 @@
    "total_factor": 1.0,
    "wb": "JPN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "PH",
@@ -5053,7 +5152,8 @@
    "total_factor": 1.0,
    "wb": "PHL",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TH",
@@ -5073,7 +5173,8 @@
    "total_factor": 1.0,
    "wb": "THA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "LK",
@@ -5093,7 +5194,8 @@
    "total_factor": 1.0,
    "wb": "LKA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "IQ",
@@ -5113,7 +5215,8 @@
    "total_factor": 1.0,
    "wb": "IRQ",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SA",
@@ -5133,7 +5236,8 @@
    "total_factor": 1.0,
    "wb": "SAU",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "EG",
@@ -5153,7 +5257,8 @@
    "total_factor": 1.0,
    "wb": "EGY",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "NP",
@@ -5173,7 +5278,8 @@
    "total_factor": 1.0,
    "wb": "NPL",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MN",
@@ -5193,7 +5299,8 @@
    "total_factor": 1.0,
    "wb": "MNG",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "PK",
@@ -5222,7 +5329,8 @@
    "total_factor": 1.0,
    "wb": "PAK",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BD",
@@ -5263,7 +5371,8 @@
    "total_factor": 1.0,
    "wb": "BGD",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MY",
@@ -5304,7 +5413,8 @@
    "total_factor": 1.0,
    "wb": "MYS",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SG",
@@ -5345,7 +5455,8 @@
    "total_factor": 1.0,
    "wb": "SGP",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MM",
@@ -5374,7 +5485,8 @@
    "total_factor": 1.0,
    "wb": "MMR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CM",
@@ -5394,7 +5506,8 @@
    "total_factor": 1.0,
    "wb": "CMR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BZ",
@@ -5414,7 +5527,8 @@
    "total_factor": 1.0,
    "wb": "BLZ",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "GY",
@@ -5467,7 +5581,8 @@
    "total_factor": 1.0,
    "wb": "GUY",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "HT",
@@ -5487,7 +5602,8 @@
    "total_factor": 1.0,
    "wb": "HTI",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "HN",
@@ -5507,7 +5623,8 @@
    "total_factor": 1.0,
    "wb": "HND",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "PA",
@@ -5527,7 +5644,8 @@
    "total_factor": 1.0,
    "wb": "PAN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CU",
@@ -5547,7 +5665,8 @@
    "total_factor": 1.0,
    "wb": "CUB",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BJ",
@@ -5567,7 +5686,8 @@
    "total_factor": 1.0,
    "wb": "BEN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BF",
@@ -5587,7 +5707,8 @@
    "total_factor": 1.0,
    "wb": "BFA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CI",
@@ -5607,7 +5728,8 @@
    "total_factor": 1.0,
    "wb": "CIV",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "NE",
@@ -5627,7 +5749,8 @@
    "total_factor": 1.0,
    "wb": "NER",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SN",
@@ -5647,7 +5770,8 @@
    "total_factor": 1.0,
    "wb": "SEN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TG",
@@ -5667,7 +5791,8 @@
    "total_factor": 1.0,
    "wb": "TGO",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CF",
@@ -5687,7 +5812,8 @@
    "total_factor": 1.0,
    "wb": "CAF",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TD",
@@ -5707,7 +5833,8 @@
    "total_factor": 1.0,
    "wb": "TCD",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CG",
@@ -5727,7 +5854,8 @@
    "total_factor": 1.0,
    "wb": "COG",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "GA",
@@ -5747,7 +5875,8 @@
    "total_factor": 1.0,
    "wb": "GAB",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "DJ",
@@ -5767,7 +5896,8 @@
    "total_factor": 1.0,
    "wb": "DJI",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CV",
@@ -5787,7 +5917,8 @@
    "total_factor": 1.0,
    "wb": "CPV",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "LR",
@@ -5807,7 +5938,8 @@
    "total_factor": 1.0,
    "wb": "LBR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SO",
@@ -5848,7 +5980,8 @@
    "total_factor": 1.0,
    "wb": "SOM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "NA",
@@ -5877,7 +6010,8 @@
    "total_factor": 1.0,
    "wb": "NAM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MU",
@@ -5897,7 +6031,8 @@
    "total_factor": 1.0,
    "wb": "MUS",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SC",
@@ -5917,7 +6052,8 @@
    "total_factor": 1.0,
    "wb": "SYC",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MV",
@@ -5946,7 +6082,8 @@
    "total_factor": 1.0,
    "wb": "MDV",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "AE",
@@ -5999,7 +6136,8 @@
    "total_factor": 1.0,
    "wb": "ARE",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "YE",
@@ -6028,7 +6166,8 @@
    "total_factor": 1.0,
    "wb": "YEM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "JO",
@@ -6057,7 +6196,8 @@
    "total_factor": 1.0,
    "wb": "JOR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "LB",
@@ -6077,7 +6217,8 @@
    "total_factor": 1.0,
    "wb": "LBN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BT",
@@ -6106,7 +6247,8 @@
    "total_factor": 1.0,
    "wb": "BTN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "LI",
@@ -6126,7 +6268,8 @@
    "total_factor": 1.0,
    "wb": "LIE",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BN",
@@ -6167,7 +6310,8 @@
    "total_factor": 1.0,
    "wb": "BRN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MH",
@@ -6187,7 +6331,8 @@
    "total_factor": 1.0,
    "wb": "MHL",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "FM",
@@ -6207,7 +6352,8 @@
    "total_factor": 1.0,
    "wb": "FSM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "PW",
@@ -6227,7 +6373,8 @@
    "total_factor": 1.0,
    "wb": "PLW",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "IE",
@@ -6256,7 +6403,8 @@
    "total_factor": 0.787564,
    "wb": "IRL",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CY",
@@ -6285,7 +6433,8 @@
    "total_factor": 0.585274,
    "wb": "CYP",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "AU",
@@ -6314,7 +6463,8 @@
    "total_factor": 0.5,
    "wb": "AUS",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "NZ",
@@ -6343,7 +6493,8 @@
    "total_factor": 0.5,
    "wb": "NZL",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "ZA",
@@ -6372,7 +6523,8 @@
    "total_factor": 0.5,
    "wb": "ZAF",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "NG",
@@ -6413,7 +6565,8 @@
    "total_factor": 0.5,
    "wb": "NGA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "JM",
@@ -6442,7 +6595,8 @@
    "total_factor": 0.5,
    "wb": "JAM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MW",
@@ -6495,7 +6649,8 @@
    "total_factor": 0.5,
    "wb": "MWI",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BW",
@@ -6536,7 +6691,8 @@
    "total_factor": 0.5,
    "wb": "BWA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SZ",
@@ -6577,7 +6733,8 @@
    "total_factor": 0.5,
    "wb": "SWZ",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "LS",
@@ -6618,7 +6775,8 @@
    "total_factor": 0.5,
    "wb": "LSO",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "FJ",
@@ -6647,7 +6805,8 @@
    "total_factor": 0.5,
    "wb": "FJI",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "KI",
@@ -6676,7 +6835,8 @@
    "total_factor": 0.5,
    "wb": "KIR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TV",
@@ -6705,7 +6865,8 @@
    "total_factor": 0.5,
    "wb": "TUV",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "PG",
@@ -6746,7 +6907,8 @@
    "total_factor": 0.5,
    "wb": "PNG",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SB",
@@ -6787,7 +6949,8 @@
    "total_factor": 0.5,
    "wb": "SLB",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "WS",
@@ -6816,7 +6979,8 @@
    "total_factor": 0.5,
    "wb": "WSM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TO",
@@ -6845,7 +7009,8 @@
    "total_factor": 0.5,
    "wb": "TON",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "MT",
@@ -6886,7 +7051,8 @@
    "total_factor": 0.4293,
    "wb": "MLT",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BS",
@@ -6915,7 +7081,8 @@
    "total_factor": 0.35,
    "wb": "BHS",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "AG",
@@ -6956,7 +7123,8 @@
    "total_factor": 0.20833333333333334,
    "wb": "ATG",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "DM",
@@ -6997,7 +7165,8 @@
    "total_factor": 0.20833333333333334,
    "wb": "DMA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "KN",
@@ -7038,7 +7207,8 @@
    "total_factor": 0.20833333333333334,
    "wb": "KNA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "LC",
@@ -7079,7 +7249,8 @@
    "total_factor": 0.20833333333333334,
    "wb": "LCA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "VC",
@@ -7120,7 +7291,8 @@
    "total_factor": 0.20833333333333334,
    "wb": "VCT",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "GM",
@@ -7161,7 +7333,8 @@
    "total_factor": 0.2,
    "wb": "GMB",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "XK",
@@ -7274,7 +7447,8 @@
    "total_factor": 2.542579e+29,
    "wb": "XKX",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "ME",
@@ -7387,7 +7561,8 @@
    "total_factor": 2.542579e+29,
    "wb": "MNE",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "ZW",
@@ -7448,7 +7623,8 @@
    "total_factor": 1e+25,
    "wb": "ZWE",
    "wb_unit_year": null,
-   "wb_unsupported": "The World Bank series mixes several Zimbabwean currencies without a consistent restatement."
+   "wb_unsupported": "The World Bank series mixes several Zimbabwean currencies without a consistent restatement.",
+   "rate_old_unit": null
   },
   {
    "iso": "BA",
@@ -7521,7 +7697,8 @@
    "total_factor": 10000000000000.0,
    "wb": "BIH",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "RO",
@@ -7574,7 +7751,8 @@
    "total_factor": 4000000000.0,
    "wb": "ROU",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BG",
@@ -7639,7 +7817,8 @@
    "total_factor": 1955830.0,
    "wb": "BGR",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TL",
@@ -7668,7 +7847,8 @@
    "total_factor": 6900.0,
    "wb": "TLS",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "AF",
@@ -7697,7 +7877,8 @@
    "total_factor": 1000.0,
    "wb": "AFG",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "SK",
@@ -7750,7 +7931,8 @@
    "total_factor": 150.63,
    "wb": "SVK",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "OM",
@@ -7803,7 +7985,8 @@
    "total_factor": 21.0,
    "wb": "OMN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "DE",
@@ -7844,7 +8027,8 @@
    "total_factor": 19.5583,
    "wb": "DEU",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "AT",
@@ -7885,7 +8069,8 @@
    "total_factor": 13.7603,
    "wb": "AUT",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "CZ",
@@ -7938,7 +8123,8 @@
    "total_factor": 5.0,
    "wb": "CZE",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "ER",
@@ -7975,7 +8161,8 @@
    "total_factor": 2.0,
    "wb": "ERI",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "QA",
@@ -8040,7 +8227,8 @@
    "total_factor": 1.065,
    "wb": "QAT",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "IR",
@@ -8060,7 +8248,8 @@
    "total_factor": 1.0,
    "wb": "IRN",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "KH",
@@ -8113,7 +8302,8 @@
    "total_factor": 1.0,
    "wb": "KHM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BB",
@@ -8154,7 +8344,8 @@
    "total_factor": 1.0,
    "wb": "BRB",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "TT",
@@ -8191,7 +8382,8 @@
    "total_factor": 1.0,
    "wb": "TTO",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "KM",
@@ -8211,7 +8403,8 @@
    "total_factor": 1.0,
    "wb": "COM",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "BI",
@@ -8248,7 +8441,8 @@
    "total_factor": 1.0,
    "wb": "BDI",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "RW",
@@ -8285,7 +8479,8 @@
    "total_factor": 1.0,
    "wb": "RWA",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "VU",
@@ -8322,7 +8517,8 @@
    "total_factor": 1.0,
    "wb": "VUT",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "NR",
@@ -8351,7 +8547,8 @@
    "total_factor": 0.5,
    "wb": "NRU",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   },
   {
    "iso": "GD",
@@ -8396,7 +8593,8 @@
    "total_factor": 0.20833333333333334,
    "wb": "GRD",
    "wb_unit_year": null,
-   "wb_unsupported": null
+   "wb_unsupported": null,
+   "rate_old_unit": null
   }
  ],
  "verified": 170,
