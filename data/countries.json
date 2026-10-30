@@ -199,6 +199,101 @@
    "title": "Lao kip — Wikipedia (1953 at par with the piastre; 1976 at 20:1; 1979 at 100:1)",
    "url": "https://en.wikipedia.org/wiki/Lao_kip",
    "accessed": "2026-10-30"
+  },
+  "wp-usd": {
+   "title": "United States dollar — Wikipedia (the dollar has been the base unit since the Coinage Act of 1792)",
+   "url": "https://en.wikipedia.org/wiki/United_States_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-cad": {
+   "title": "Canadian dollar — Wikipedia (the Uniform Currency Act of 1871)",
+   "url": "https://en.wikipedia.org/wiki/Canadian_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-cop": {
+   "title": "Colombian peso — Wikipedia (the current peso since 1837; a 2018 plan to drop three zeros was not adopted)",
+   "url": "https://en.wikipedia.org/wiki/Colombian_peso",
+   "accessed": "2026-10-30"
+  },
+  "wp-pyg": {
+   "title": "Paraguayan guaran%C3%AD — Wikipedia (created 1943, first issued 1944; a 2011 plan for a new guaraní is suspended)",
+   "url": "https://en.wikipedia.org/wiki/Paraguayan_guaran%C3%AD",
+   "accessed": "2026-10-30"
+  },
+  "wp-dop": {
+   "title": "Dominican peso — Wikipedia (peso oro at par with the US dollar from 1937; the dollar used alongside it until 1947)",
+   "url": "https://en.wikipedia.org/wiki/Dominican_peso",
+   "accessed": "2026-10-30"
+  },
+  "wp-gtq": {
+   "title": "Guatemalan quetzal — Wikipedia (introduced in 1925)",
+   "url": "https://en.wikipedia.org/wiki/Guatemalan_quetzal",
+   "accessed": "2026-10-30"
+  },
+  "wp-crc": {
+   "title": "Costa Rican col%C3%B3n — Wikipedia (introduced in 1896)",
+   "url": "https://en.wikipedia.org/wiki/Costa_Rican_col%C3%B3n",
+   "accessed": "2026-10-30"
+  },
+  "wp-chf": {
+   "title": "Swiss franc — Wikipedia (the franc as the monetary unit since 1850)",
+   "url": "https://en.wikipedia.org/wiki/Swiss_franc",
+   "accessed": "2026-10-30"
+  },
+  "wp-sek": {
+   "title": "Swedish krona — Wikipedia (introduced 1873 with the Scandinavian Monetary Union)",
+   "url": "https://en.wikipedia.org/wiki/Swedish_krona",
+   "accessed": "2026-10-30"
+  },
+  "wp-nok": {
+   "title": "Norwegian krone — Wikipedia (introduced in 1875)",
+   "url": "https://en.wikipedia.org/wiki/Norwegian_krone",
+   "accessed": "2026-10-30"
+  },
+  "wp-dkk": {
+   "title": "Danish krone — Wikipedia (introduced as the currency of Denmark in January 1875)",
+   "url": "https://en.wikipedia.org/wiki/Danish_krone",
+   "accessed": "2026-10-30"
+  },
+  "wp-bmk": {
+   "title": "Bohemian and Moravian koruna — Wikipedia (replaced by the reconstituted Czechoslovak koruna at par)",
+   "url": "https://en.wikipedia.org/wiki/Bohemian_and_Moravian_koruna",
+   "accessed": "2026-10-30"
+  },
+  "wp-csk2": {
+   "title": "Czechoslovak koruna — Wikipedia (1953: 5:1 up to 1,500 korunas, 50:1 beyond; 1993 split at par)",
+   "url": "https://en.wikipedia.org/wiki/Czechoslovak_koruna",
+   "accessed": "2026-10-30"
+  },
+  "wp-mad": {
+   "title": "Moroccan dirham — Wikipedia (1960: 1 dirham = 100 francs)",
+   "url": "https://en.wikipedia.org/wiki/Moroccan_dirham",
+   "accessed": "2026-10-30"
+  },
+  "wp-tnd": {
+   "title": "Tunisian dinar — Wikipedia (unit of account 1958, issued 1960, at 1,000 francs)",
+   "url": "https://en.wikipedia.org/wiki/Tunisian_dinar",
+   "accessed": "2026-10-30"
+  },
+  "wp-dzf": {
+   "title": "Algerian franc — Wikipedia (1960: 100 old francs = 1 new franc)",
+   "url": "https://en.wikipedia.org/wiki/Algerian_franc",
+   "accessed": "2026-10-30"
+  },
+  "wp-dzd": {
+   "title": "Algerian dinar — Wikipedia (1 April 1964, replacing the new franc at par)",
+   "url": "https://en.wikipedia.org/wiki/Algerian_dinar",
+   "accessed": "2026-10-30"
+  },
+  "wp-etb": {
+   "title": "Ethiopian birr — Wikipedia (reintroduced 23 July 1945 at 1 birr per 2 East African shillings)",
+   "url": "https://en.wikipedia.org/wiki/Ethiopian_birr",
+   "accessed": "2026-10-30"
+  },
+  "wp-xaf": {
+   "title": "CFA franc — Wikipedia (created 26 December 1945)",
+   "url": "https://en.wikipedia.org/wiki/CFA_franc",
+   "accessed": "2026-10-30"
   }
  },
  "countries": [
@@ -2951,6 +3046,35 @@
    "wb_unsupported": null
   },
   {
+   "iso": "TN",
+   "name": "Tunisia",
+   "start": 1945,
+   "unit": "dinar",
+   "currency": "Tunisian franc",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1958,
+     "old": "Tunisian franc",
+     "new": "Tunisian dinar",
+     "rate": 1000,
+     "source": {
+      "title": "Tunisian dinar — Wikipedia (unit of account 1958, issued 1960, at 1,000 francs)",
+      "url": "https://en.wikipedia.org/wiki/Tunisian_dinar",
+      "accessed": "2026-10-30"
+     },
+     "note": "A unit of account from 1958; notes and coins from 1960."
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "TUN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "FR",
    "name": "France",
    "start": 1945,
@@ -3263,6 +3387,76 @@
    ],
    "total_factor": 100.0,
    "wb": "UGA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "MA",
+   "name": "Morocco",
+   "start": 1945,
+   "unit": "dirham",
+   "currency": "Moroccan franc",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1960,
+     "old": "Moroccan franc",
+     "new": "Moroccan dirham",
+     "rate": 100,
+     "source": {
+      "title": "Moroccan dirham — Wikipedia (1960: 1 dirham = 100 francs)",
+      "url": "https://en.wikipedia.org/wiki/Moroccan_dirham",
+      "accessed": "2026-10-30"
+     },
+     "note": "Follows the former French zone. The former Spanish zone had switched from the peseta to the franc at 10 francs per peseta after reunification."
+    }
+   ],
+   "total_factor": 100.0,
+   "wb": "MAR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "DZ",
+   "name": "Algeria",
+   "start": 1945,
+   "unit": "dinar",
+   "currency": "Algerian franc",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1960,
+     "old": "Algerian franc",
+     "new": "Algerian new franc",
+     "rate": 100,
+     "source": {
+      "title": "Algerian franc — Wikipedia (1960: 100 old francs = 1 new franc)",
+      "url": "https://en.wikipedia.org/wiki/Algerian_franc",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1964,
+     "old": "Algerian new franc",
+     "new": "Algerian dinar",
+     "rate": 1,
+     "source": {
+      "title": "Algerian dinar — Wikipedia (1 April 1964, replacing the new franc at par)",
+      "url": "https://en.wikipedia.org/wiki/Algerian_dinar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 100.0,
+   "wb": "DZA",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -3641,6 +3835,35 @@
    "wb_unsupported": null
   },
   {
+   "iso": "ET",
+   "name": "Ethiopia",
+   "start": 1945,
+   "unit": "birr",
+   "currency": "East African shilling",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1945,
+     "old": "East African shilling",
+     "new": "Ethiopian birr",
+     "rate": 2,
+     "source": {
+      "title": "Ethiopian birr — Wikipedia (reintroduced 23 July 1945 at 1 birr per 2 East African shillings)",
+      "url": "https://en.wikipedia.org/wiki/Ethiopian_birr",
+      "accessed": "2026-10-30"
+     },
+     "note": "23 July 1945. Called the Ethiopian dollar in English until 1976, when birr became the name in every language."
+    }
+   ],
+   "total_factor": 2.0,
+   "wb": "ETH",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "GB",
    "name": "United Kingdom",
    "start": 1945,
@@ -3715,6 +3938,235 @@
    ],
    "total_factor": 1.0,
    "wb": "TZA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "US",
+   "name": "United States",
+   "start": 1945,
+   "unit": "dollar",
+   "currency": "United States dollar",
+   "basis": {
+    "title": "United States dollar — Wikipedia (the dollar has been the base unit since the Coinage Act of 1792)",
+    "url": "https://en.wikipedia.org/wiki/United_States_dollar",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "USA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "CA",
+   "name": "Canada",
+   "start": 1945,
+   "unit": "dollar",
+   "currency": "Canadian dollar",
+   "basis": {
+    "title": "Canadian dollar — Wikipedia (the Uniform Currency Act of 1871)",
+    "url": "https://en.wikipedia.org/wiki/Canadian_dollar",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "CAN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "CO",
+   "name": "Colombia",
+   "start": 1945,
+   "unit": "peso",
+   "currency": "Colombian peso",
+   "basis": {
+    "title": "Colombian peso — Wikipedia (the current peso since 1837; a 2018 plan to drop three zeros was not adopted)",
+    "url": "https://en.wikipedia.org/wiki/Colombian_peso",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "COL",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "PY",
+   "name": "Paraguay",
+   "start": 1945,
+   "unit": "guaraní",
+   "currency": "Paraguayan guaraní",
+   "basis": {
+    "title": "Paraguayan guaran%C3%AD — Wikipedia (created 1943, first issued 1944; a 2011 plan for a new guaraní is suspended)",
+    "url": "https://en.wikipedia.org/wiki/Paraguayan_guaran%C3%AD",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "PRY",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "GT",
+   "name": "Guatemala",
+   "start": 1945,
+   "unit": "quetzal",
+   "currency": "Guatemalan quetzal",
+   "basis": {
+    "title": "Guatemalan quetzal — Wikipedia (introduced in 1925)",
+    "url": "https://en.wikipedia.org/wiki/Guatemalan_quetzal",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "GTM",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "CR",
+   "name": "Costa Rica",
+   "start": 1945,
+   "unit": "colón",
+   "currency": "Costa Rican colón",
+   "basis": {
+    "title": "Costa Rican col%C3%B3n — Wikipedia (introduced in 1896)",
+    "url": "https://en.wikipedia.org/wiki/Costa_Rican_col%C3%B3n",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "CRI",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "CH",
+   "name": "Switzerland",
+   "start": 1945,
+   "unit": "franc",
+   "currency": "Swiss franc",
+   "basis": {
+    "title": "Swiss franc — Wikipedia (the franc as the monetary unit since 1850)",
+    "url": "https://en.wikipedia.org/wiki/Swiss_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "CHE",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SE",
+   "name": "Sweden",
+   "start": 1945,
+   "unit": "krona",
+   "currency": "Swedish krona",
+   "basis": {
+    "title": "Swedish krona — Wikipedia (introduced 1873 with the Scandinavian Monetary Union)",
+    "url": "https://en.wikipedia.org/wiki/Swedish_krona",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "SWE",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "NO",
+   "name": "Norway",
+   "start": 1945,
+   "unit": "krone",
+   "currency": "Norwegian krone",
+   "basis": {
+    "title": "Norwegian krone — Wikipedia (introduced in 1875)",
+    "url": "https://en.wikipedia.org/wiki/Norwegian_krone",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "NOR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "DK",
+   "name": "Denmark",
+   "start": 1945,
+   "unit": "krone",
+   "currency": "Danish krone",
+   "basis": {
+    "title": "Danish krone — Wikipedia (introduced as the currency of Denmark in January 1875)",
+    "url": "https://en.wikipedia.org/wiki/Danish_krone",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "DNK",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "DO",
+   "name": "Dominican Republic",
+   "start": 1945,
+   "unit": "peso",
+   "currency": "United States dollar",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "United States dollar",
+     "new": "Dominican peso",
+     "rate": 1,
+     "source": {
+      "title": "Dominican peso — Wikipedia (peso oro at par with the US dollar from 1937; the dollar used alongside it until 1947)",
+      "url": "https://en.wikipedia.org/wiki/Dominican_peso",
+      "accessed": "2026-10-30"
+     },
+     "note": "The peso oro, at par with the dollar, had circulated since 1937; the dollar stopped being used alongside it in 1947."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "DOM",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -4441,6 +4893,59 @@
    "wb_unsupported": null
   },
   {
+   "iso": "CZ",
+   "name": "Czech Republic (and Czechoslovakia)",
+   "start": 1945,
+   "unit": "koruna",
+   "currency": "Bohemian and Moravian koruna",
+   "basis": null,
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Every step is cited, but the 1953 reform used two rates (5:1 up to a limit, 50:1 beyond), so the factor holds only for small amounts.",
+   "steps": [
+    {
+     "year": 1945,
+     "old": "Bohemian and Moravian koruna",
+     "new": "Czechoslovak koruna",
+     "rate": 1,
+     "source": {
+      "title": "Bohemian and Moravian koruna — Wikipedia (replaced by the reconstituted Czechoslovak koruna at par)",
+      "url": "https://en.wikipedia.org/wiki/Bohemian_and_Moravian_koruna",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1953,
+     "old": "Czechoslovak koruna",
+     "new": "Czechoslovak koruna (1953)",
+     "rate": 5,
+     "source": {
+      "title": "Czechoslovak koruna — Wikipedia (1953: 5:1 up to 1,500 korunas, 50:1 beyond; 1993 split at par)",
+      "url": "https://en.wikipedia.org/wiki/Czechoslovak_koruna",
+      "accessed": "2026-10-30"
+     },
+     "note": "5 old for 1 new on the first 1,500 korunas per person, 50 for 1 on the rest. The 5:1 rate is used here."
+    },
+    {
+     "year": 1993,
+     "old": "Czechoslovak koruna (1953)",
+     "new": "Czech koruna",
+     "rate": 1,
+     "source": {
+      "title": "Czechoslovak koruna — Wikipedia (1953: 5:1 up to 1,500 korunas, 50:1 beyond; 1993 split at par)",
+      "url": "https://en.wikipedia.org/wiki/Czechoslovak_koruna",
+      "accessed": "2026-10-30"
+     },
+     "note": "The split of 8 February 1993, at par."
+    }
+   ],
+   "total_factor": 5.0,
+   "wb": "CZE",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "IR",
    "name": "Iran",
    "start": 1945,
@@ -4512,8 +5017,28 @@
    "wb": "KHM",
    "wb_unit_year": null,
    "wb_unsupported": null
+  },
+  {
+   "iso": "CM",
+   "name": "Cameroon",
+   "start": 1946,
+   "unit": "CFA franc",
+   "currency": "Central African CFA franc",
+   "basis": {
+    "title": "CFA franc — Wikipedia (created 26 December 1945)",
+    "url": "https://en.wikipedia.org/wiki/CFA_franc",
+    "accessed": "2026-10-30"
+   },
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Starts at the CFA franc's creation in December 1945. The rate at which French Cameroun's own franc was swapped, the move to the BEAC issue in the 1970s, and the former British Southern Cameroons are not yet cited.",
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "CMR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
   }
  ],
- "verified": 79,
- "partial": 10
+ "verified": 94,
+ "partial": 12
 }
