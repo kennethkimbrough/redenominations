@@ -55,18 +55,22 @@ function convert() {
   stepsEl.innerHTML = r.trail.map(({ step: s, applied }) => applied
     ? `<li>${s.year}: ${esc(s.old)} → ${esc(s.new)} <span class="rate">÷ ${fmtRate(s.rate)}</span>${s.source ? "" : ' <span class="uncited">(not yet cited)</span>'}</li>`
     : `<li class="uncited">${s.year}: ${esc(s.old)} → ${esc(s.new)} — no fixed conversion; the chain stops here.</li>`).join("");
-  if (r.noop) { out.innerHTML = `${fmtAmount(amount)} ${esc(r.from)} is already the current unit.`; writeState(); return; }
+  if (r.noop) { out.innerHTML = `${fmtAmount(amount)} ${esc(r.from)} is already the current unit.` + usdHtml(c, r); writeState(); return; }
   out.innerHTML = `${fmtAmount(amount)} ${esc(r.from)} ${r.broken ? "was last convertible as" : "="}<span class="big">${fmtAmount(r.value)} ${esc(r.unit)}</span>` +
     `<span class="zeros">${r.zeros ? `${Number.isInteger(r.zeros) ? r.zeros : r.zeros.toFixed(2)} zeros removed over ${r.applied} reform${r.applied === 1 ? "" : "s"}` : "no zeros removed"}` +
     `${r.uncited ? " · includes a step that is not yet cited" : ""}${r.broken ? " · the chain has no fixed rate past this point" : ""}</span>`;
+  out.innerHTML += usdHtml(c, r);
+  writeState();
+}
+function usdHtml(c, r) {
   const d = dollarsToday(c, r, rates);
   if (d) {
-    out.innerHTML += `<div class="usd">≈ <b>${fmtUsd(d.usd)}</b> at the rate of ${esc(d.date)} (${d.perUsd.toLocaleString("en-US", { maximumFractionDigits: 4 })} ${d.code} per US dollar). ` +
+    return `<div class="usd">≈ <b>${fmtUsd(d.usd)}</b> at the rate of ${esc(d.date)} (${d.perUsd.toLocaleString("en-US", { maximumFractionDigits: 4 })} ${d.code} per US dollar). ` +
       `One dollar today buys ${fmtAmount(d.oneDollarBuys)} ${esc(r.from)}.` +
       `${["VES", "ARS", "BOB"].includes(d.code) ? " This is the published rate; a parallel street rate may differ." : ""}` +
       ` <a href="${esc(d.source.url)}">Rate source</a>.</div>`;
   }
-  writeState();
+  return "";
 }
 cCountry.addEventListener("change", () => fillCurrencies());
 cFrom.addEventListener("change", convert);
@@ -162,32 +166,46 @@ function renderChains() {
   $("#chains").innerHTML = list.map((c) => `
   <details class="chain" id="chain-${c.iso}">
     <summary><h3>${esc(c.name)}</h3><span class="badge ${c.status}">${c.status}</span>
-      <span class="factor">${c.steps.length} step${c.steps.length === 1 ? "" : "s"}${c.total_factor > 1 ? ` · ${Math.round(log10(c.total_factor))} zeros` : ""}</span></summary>
+      <span class="factor">${c.steps.length ? `${c.steps.length} step${c.steps.length === 1 ? "" : "s"}` : "no change"}${c.total_factor > 1 ? ` · ${Math.round(log10(c.total_factor))} zeros` : ""}</span></summary>
     <ol>${c.steps.map((s) => `<li>${s.year}: ${esc(s.old)} → ${esc(s.new)}, ${s.rate ? (s.rate === 1 ? "at par" : `${fmtRate(s.rate)} old per new`) : "no fixed rate"}` +
       `${s.note ? `<div class="note">${esc(s.note)}</div>` : ""}` +
       `<div>${s.source ? `<cite>Source: <a href="${esc(s.source.url)}">${esc(s.source.title)}</a></cite>` : `<cite class="uncited" style="color:var(--red)">Not yet cited</cite>`}</div></li>`).join("")}</ol>
+    ${c.steps.length ? "" : `<p>The ${esc(c.currency)} has been the currency since ${c.start}, with no change of unit.${c.basis ? ` <cite>Source: <a href="${esc(c.basis.url)}">${esc(c.basis.title)}</a></cite>` : ""}</p>`}
     ${c.gap ? `<p class="gap">${esc(c.gap)}</p>` : ""}
     <p class="chain-links"><a href="#c=${c.iso}.0.1000000">Convert from this country</a></p>
   </details>`).join("");
 }
 $("#chain-filter").addEventListener("input", renderChains);
 renderChains();
+// Apply a "#c=…" or "#t=…" state (from an example link, a pasted link or the back button).
+function applyState(part, scroll) {
+  const amount = (a) => (+a).toLocaleString("en-US", { maximumFractionDigits: 6 });
+  if (part.startsWith("c=")) {
+    const [iso, idx, amt] = part.slice(2).split(".");
+    if (!chainOf(iso)) return;
+    cCountry.value = iso;
+    if (amt && Number.isFinite(+amt)) cAmount.value = amount(amt);
+    fillCurrencies(Number(idx) || 0);
+    if (scroll) $("#converter").scrollIntoView({ behavior: "smooth", block: "start" });
+  } else if (part.startsWith("t=") && history) {
+    const [iso, year, amt] = part.slice(2).split(".");
+    if (!history.countries[iso]) return;
+    $("#t-country").value = iso;
+    if (year && Number.isFinite(+year)) $("#t-year").value = year;
+    if (amt && Number.isFinite(+amt)) $("#t-amount").value = amount(amt);
+    $("#t-country").dispatchEvent(new Event("change"));
+    if (scroll) $("#then").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
 document.addEventListener("click", (e) => {
   const a = e.target.closest("a[href^='#c='], a[href^='#t=']"); if (!a) return;
   e.preventDefault();
-  const href = a.getAttribute("href");
-  if (href.startsWith("#c=")) {
-    const [iso, idx, amt] = href.slice(3).split(".");
-    if (!chainOf(iso)) return;
-    cCountry.value = iso; cAmount.value = (+amt).toLocaleString("en-US"); fillCurrencies(Number(idx) || 0);
-    $("#converter").scrollIntoView({ behavior: "smooth", block: "start" });
-  } else if (history) {
-    const [iso, year, amt] = href.slice(3).split(".");
-    if (!history.countries[iso]) return;
-    $("#t-country").value = iso; $("#t-year").value = year; $("#t-amount").value = (+amt).toLocaleString("en-US");
-    $("#t-country").dispatchEvent(new Event("change"));
-    $("#then").scrollIntoView({ behavior: "smooth", block: "start" });
-  }
+  applyState(a.getAttribute("href").slice(1), true);
+});
+// replaceState (used by writeState) does not fire hashchange, so this only runs on real navigation.
+window.addEventListener("hashchange", () => {
+  const parts = location.hash.replace(/^#/, "").split("&").filter(Boolean);
+  parts.forEach((p, i) => applyState(p, i === parts.length - 1 && parts.length === 1));
 });
 
 // ---------- at the time ----------
