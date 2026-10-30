@@ -14,6 +14,10 @@ every figure, and builds three things from it:
 - **A converter.** Pick a country, a year's currency and an amount, and it
   multiplies through every reform since: 1,000,000 Brazilian cruzeiros of 1945
   come out as 3.6 × 10⁻¹⁰ reais, 15.4 zeros later.
+- **Dollars today.** The same result at today's exchange rate, and the reverse:
+  how much of the old currency one dollar buys now (1.3 × 10³² pengő). A
+  scheduled job fetches the rates daily from a keyless source and records the
+  date; the site shows it with every result.
 - **A chart** of cumulative zeros removed per country since 1945, on a log
   scale, drawn as plain SVG.
 - **The full table**, filterable, with the rate and the number of zeros for each
@@ -53,6 +57,13 @@ the "verified" count truthful.
   and Bulgaria's euro adoptions, and the end of the Zimbabwean dollar) are
   marked "not yet cited" in the data and on the site.
 
+Today's exchange rates come from the
+[currency-api dataset](https://github.com/fawazahmed0/exchange-api) published
+daily to jsDelivr, with open.er-api.com as a fallback. These are published
+market or official rates. In countries with a parallel street rate (Venezuela
+and Argentina for long stretches, Bolivia recently) the dollar figure can be
+well off what a money changer would give, and the site says so.
+
 "Old per new" is the number of old units that bought one new unit. A rate below
 one (Iran's 1932 toman to rial) means the new unit was the smaller one.
 
@@ -69,6 +80,7 @@ tests/test_data.py              chain continuity, citations, rates matching the 
 site/                           index.html, styles.css, app.js (no build step, no dependencies)
 .github/workflows/ci.yml        rebuilds the JSON, fails if it differs from what is committed, runs the tests
 .github/workflows/pages.yml     runs the tests, publishes site/ to GitHub Pages, checks the live URL
+.github/workflows/rates.yml     daily: fetches USD rates into data/rates.json and redeploys
 ```
 
 ## Run it
