@@ -60,10 +60,13 @@ test("Zimbabwe: the chain stops where there is no fixed rate", () => {
   assert.equal(dollarsToday(chain("ZW"), r, { units: { ZW: "ZWG" }, rates: { ZWG: 26.8 } }), null);
 });
 
-test("Belarus: an uncited step is flagged but still applied", () => {
-  const r = chainConvert(chain("BY"), 0, 1);
+test("an uncited step is flagged but still applied", () => {
+  const by = chain("BY");
+  assert.equal(chainConvert(by, 0, 1).uncited, false);
+  const steps = by.steps.map((s, i) => (i === by.steps.length - 2 ? { ...s, source: null } : s));
+  const r = chainConvert({ ...by, steps }, 0, 1);
   assert.equal(r.uncited, true);
-  assert.equal(r.applied, chain("BY").steps.length);
+  assert.equal(r.applied, by.steps.length);
 });
 
 test("dollars today", () => {

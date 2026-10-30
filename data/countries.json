@@ -24,6 +24,91 @@
    "title": "ECB press release, 8 July 2025: Bulgaria to join euro area on 1 January 2026 (lev fixed at 1.95583 = EUR 1)",
    "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr250708~b9676a9fa8.en.html",
    "accessed": "2026-10-30"
+  },
+  "bog-gh": {
+   "title": "Bank of Ghana, \"Evolution of currency in Ghana\" (cedi of 19 July 1965 equal to 8s 4d; new cedi of 1967 at ¢1.20 = N¢1.00)",
+   "url": "https://www.bog.gov.gh/bank-notes-coins/evolution-of-currency-in-ghana/",
+   "accessed": "2026-10-30"
+  },
+  "wp-ghpound": {
+   "title": "Ghanaian pound — Wikipedia (replaced the British West African pound at par in 1958)",
+   "url": "https://en.wikipedia.org/wiki/Ghanaian_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-leone": {
+   "title": "Sierra Leonean leone — Wikipedia (introduced 4 August 1964 at 2 leones to the West African pound)",
+   "url": "https://en.wikipedia.org/wiki/Sierra_Leonean_leone",
+   "accessed": "2026-10-30"
+  },
+  "wp-rnpound": {
+   "title": "Rhodesia and Nyasaland pound — Wikipedia (replaced the Southern Rhodesian pound at par; Zambia's pound at par with it)",
+   "url": "https://en.wikipedia.org/wiki/Rhodesia_and_Nyasaland_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-zmpound": {
+   "title": "Zambian pound — Wikipedia (replaced the Rhodesia and Nyasaland pound at par in 1964; kwacha at £1 = K2 in 1968)",
+   "url": "https://en.wikipedia.org/wiki/Zambian_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-sdpound": {
+   "title": "Sudanese pound — Wikipedia (replaced the Egyptian pound at par after independence)",
+   "url": "https://en.wikipedia.org/wiki/Sudanese_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-mzescudo": {
+   "title": "Mozambican escudo — Wikipedia (currency of Mozambique 1914–1980, replaced by the metical at par)",
+   "url": "https://en.wikipedia.org/wiki/Mozambican_escudo",
+   "accessed": "2026-10-30"
+  },
+  "wp-stescudo": {
+   "title": "São Tomé and Príncipe escudo — Wikipedia (currency 1914–1977, replaced at par by the dobra)",
+   "url": "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe_escudo",
+   "accessed": "2026-10-30"
+  },
+  "wp-cdfranc": {
+   "title": "Congolese franc — Wikipedia (the Belgian Congo franc remained the currency after independence in 1960)",
+   "url": "https://en.wikipedia.org/wiki/Congolese_franc",
+   "accessed": "2026-10-30"
+  },
+  "wp-vnd": {
+   "title": "Vietnamese đồng — Wikipedia (14 September 1985: one new đồng worth 10 old)",
+   "url": "https://en.wikipedia.org/wiki/Vietnamese_%C4%91%E1%BB%93ng",
+   "accessed": "2026-10-30"
+  },
+  "wp-ilpound": {
+   "title": "Israeli pound — Wikipedia (replaced the Palestine pound in June 1952, keeping its par peg to sterling)",
+   "url": "https://en.wikipedia.org/wiki/Israeli_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-mtlira": {
+   "title": "Maltese lira — Wikipedia (at exact 1:1 with sterling until 1971; decimalised in May 1972)",
+   "url": "https://en.wikipedia.org/wiki/Maltese_lira",
+   "accessed": "2026-10-30"
+  },
+  "wp-csk": {
+   "title": "Czechoslovak koruna — Wikipedia (1953: 5:1 up to 1,500 korunas, 50:1 beyond; 1993 split at par)",
+   "url": "https://en.wikipedia.org/wiki/Czechoslovak_koruna",
+   "accessed": "2026-10-30"
+  },
+  "wp-roleu": {
+   "title": "Romanian leu — Wikipedia (15 August 1947 at 20,000:1; 1952 at rates from 20 to 400 old lei per new)",
+   "url": "https://en.wikipedia.org/wiki/Romanian_leu",
+   "accessed": "2026-10-30"
+  },
+  "wp-bglev": {
+   "title": "Bulgarian lev — Wikipedia (1952 at 100:1 with other rates for bank accounts and prices; 1962 at 10:1)",
+   "url": "https://en.wikipedia.org/wiki/Bulgarian_lev",
+   "accessed": "2026-10-30"
+  },
+  "wp-atschilling": {
+   "title": "Austrian schilling — Wikipedia (1945 at 1:1 to the Reichsmark up to 150 per person; 1947 at par for the first 150, 3:1 beyond)",
+   "url": "https://en.wikipedia.org/wiki/Austrian_schilling",
+   "accessed": "2026-10-30"
+  },
+  "wp-byr": {
+   "title": "Belarusian ruble — Wikipedia (2000: 1 new ruble = 1,000 old)",
+   "url": "https://en.wikipedia.org/wiki/Belarusian_ruble",
+   "accessed": "2026-10-30"
   }
  },
  "countries": [
@@ -229,6 +314,69 @@
    "wb_unsupported": null
   },
   {
+   "iso": "CD",
+   "name": "DR Congo",
+   "start": 1945,
+   "unit": "franc",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1960,
+     "old": "Belgian Congo franc",
+     "new": "First congolese franc",
+     "rate": 1,
+     "source": {
+      "title": "Congolese franc — Wikipedia (the Belgian Congo franc remained the currency after independence in 1960)",
+      "url": "https://en.wikipedia.org/wiki/Congolese_franc",
+      "accessed": "2026-10-30"
+     },
+     "note": "Independence: the same franc carried on as the Congolese franc."
+    },
+    {
+     "year": 1967,
+     "old": "First congolese franc",
+     "new": "First zaïre",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1993,
+     "old": "First Zaïre",
+     "new": "Nouveau zaïre",
+     "rate": 3000000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1998,
+     "old": "Nouveau zaïre",
+     "new": "Second Congolese franc",
+     "rate": 100000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 300000000000000.0,
+   "wb": "COD",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "VE",
    "name": "Venezuela",
    "start": 1945,
@@ -339,6 +487,93 @@
    ],
    "total_factor": 10000000000000.0,
    "wb": "ARG",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "BY",
+   "name": "Belarus (and the Soviet Union)",
+   "start": 1945,
+   "unit": "ruble",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "4th Soviet ruble",
+     "new": "5th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "5th Soviet ruble",
+     "new": "6th Soviet ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1991,
+     "old": "6th Soviet ruble",
+     "new": "7th Soviet ruble",
+     "rate": 1,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1994,
+     "old": "7th Soviet ruble",
+     "new": "First Belarusian ruble",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2000,
+     "old": "First Belarusian ruble",
+     "new": "Second Belarusian ruble",
+     "rate": 1000,
+     "source": {
+      "title": "Belarusian ruble — Wikipedia (2000: 1 new ruble = 1,000 old)",
+      "url": "https://en.wikipedia.org/wiki/Belarusian_ruble",
+      "accessed": "2026-10-30"
+     },
+     "note": "Missing from the redenomination table, so cited from the article on the ruble itself."
+    },
+    {
+     "year": 2016,
+     "old": "Second Belarusian ruble",
+     "new": "Third Belarusian ruble",
+     "rate": 10000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 10000000000.0,
+   "wb": "BLR",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -2038,6 +2273,171 @@
    "wb_unsupported": null
   },
   {
+   "iso": "IL",
+   "name": "Israel",
+   "start": 1948,
+   "unit": "new shekel",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1952,
+     "old": "Palestine pound",
+     "new": "Israeli pound",
+     "rate": 1,
+     "source": {
+      "title": "Israeli pound — Wikipedia (replaced the Palestine pound in June 1952, keeping its par peg to sterling)",
+      "url": "https://en.wikipedia.org/wiki/Israeli_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": "The Palestine pound stayed in use after independence. The Israeli pound replaced it on 9 June 1952 and kept its peg at par to sterling, so the change was one for one."
+    },
+    {
+     "year": 1980,
+     "old": "Israeli pound",
+     "new": "Israeli shekel (1st)",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1986,
+     "old": "Shekel",
+     "new": "New Shekel",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": "The Bank of Israel dates the new shekel to 4 September 1985; the source table lists 1986."
+    }
+   ],
+   "total_factor": 10000.0,
+   "wb": "ISR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "GH",
+   "name": "Ghana",
+   "start": 1945,
+   "unit": "cedi",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1958,
+     "old": "British West African pound",
+     "new": "Ghanaian pound",
+     "rate": 1,
+     "source": {
+      "title": "Ghanaian pound — Wikipedia (replaced the British West African pound at par in 1958)",
+      "url": "https://en.wikipedia.org/wiki/Ghanaian_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1965,
+     "old": "Ghanaian pound",
+     "new": "Old cedi",
+     "rate": 0.4166666666666667,
+     "source": {
+      "title": "Bank of Ghana, \"Evolution of currency in Ghana\" (cedi of 19 July 1965 equal to 8s 4d; new cedi of 1967 at ¢1.20 = N¢1.00)",
+      "url": "https://www.bog.gov.gh/bank-notes-coins/evolution-of-currency-in-ghana/",
+      "accessed": "2026-10-30"
+     },
+     "note": "One cedi was worth eight shillings and four pence, so a pound bought 2.4 cedis; the new unit was the smaller one."
+    },
+    {
+     "year": 1967,
+     "old": "Old cedi",
+     "new": "Ghanaian cedi",
+     "rate": 1.2,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2007,
+     "old": "Cedi",
+     "new": "New Ghanaian cedi",
+     "rate": 10000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 5000.0,
+   "wb": "GHA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "VN",
+   "name": "Vietnam (from South Vietnam)",
+   "start": 1955,
+   "unit": "đồng",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1975,
+     "old": "Đồng",
+     "new": "Liberation đồng",
+     "rate": 500,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": "The South Vietnamese đồng after the fall of Saigon."
+    },
+    {
+     "year": 1978,
+     "old": "Liberation đồng",
+     "new": "Đồng (unified)",
+     "rate": 0.8,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": "Unification of the two Vietnamese currencies; the new unit was the larger one. A northern đồng converted one for one."
+    },
+    {
+     "year": 1985,
+     "old": "Đồng (unified)",
+     "new": "Đồng (1985)",
+     "rate": 10,
+     "source": {
+      "title": "Vietnamese đồng — Wikipedia (14 September 1985: one new đồng worth 10 old)",
+      "url": "https://en.wikipedia.org/wiki/Vietnamese_%C4%91%E1%BB%93ng",
+      "accessed": "2026-10-30"
+     },
+     "note": "14 September 1985: one new đồng for ten old. Missing from the redenomination table, so cited from the article on the đồng."
+    }
+   ],
+   "total_factor": 4000.0,
+   "wb": "VNM",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "IT",
    "name": "Italy",
    "start": 1945,
@@ -2158,6 +2558,96 @@
    "wb_unsupported": null
   },
   {
+   "iso": "MZ",
+   "name": "Mozambique",
+   "start": 1945,
+   "unit": "metical",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1980,
+     "old": "Mozambican escudo",
+     "new": "(old) meticais",
+     "rate": 1,
+     "source": {
+      "title": "Mozambican escudo — Wikipedia (currency of Mozambique 1914–1980, replaced by the metical at par)",
+      "url": "https://en.wikipedia.org/wiki/Mozambican_escudo",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2006,
+     "old": "(old) meticais",
+     "new": "New Mozambican metical",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "MOZ",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SD",
+   "name": "Sudan",
+   "start": 1945,
+   "unit": "pound",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1957,
+     "old": "Egyptian pound",
+     "new": "First Sudanese pounds",
+     "rate": 1,
+     "source": {
+      "title": "Sudanese pound — Wikipedia (replaced the Egyptian pound at par after independence)",
+      "url": "https://en.wikipedia.org/wiki/Sudanese_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1992,
+     "old": "First Sudanese pounds",
+     "new": "Sudanese dinar",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2007,
+     "old": "Sudanese dinars",
+     "new": "Second Sudanese pound",
+     "rate": 100,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "SDN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "SR",
    "name": "Suriname",
    "start": 1945,
@@ -2181,6 +2671,45 @@
    ],
    "total_factor": 1000.0,
    "wb": "SUR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "ST",
+   "name": "São Tomé and Príncipe",
+   "start": 1945,
+   "unit": "dobra",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1977,
+     "old": "São Tomé and Príncipe escudo",
+     "new": "São Tomé and Príncipe dobra (1st)",
+     "rate": 1,
+     "source": {
+      "title": "São Tomé and Príncipe escudo — Wikipedia (currency 1914–1977, replaced at par by the dobra)",
+      "url": "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe_escudo",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2018,
+     "old": "São Tomé and Príncipe dobra (1st)",
+     "new": "São Tomé and Príncipe dobra (2nd)",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "STP",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -2259,6 +2788,108 @@
    ],
    "total_factor": 594.573,
    "wb": "FIN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "ZM",
+   "name": "Zambia",
+   "start": 1945,
+   "unit": "kwacha",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1955,
+     "old": "Southern Rhodesian pound",
+     "new": "Rhodesia and Nyasaland pound",
+     "rate": 1,
+     "source": {
+      "title": "Rhodesia and Nyasaland pound — Wikipedia (replaced the Southern Rhodesian pound at par; Zambia's pound at par with it)",
+      "url": "https://en.wikipedia.org/wiki/Rhodesia_and_Nyasaland_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": "Northern Rhodesia used the Southern Rhodesian pound until the federation's own pound replaced it."
+    },
+    {
+     "year": 1964,
+     "old": "Rhodesia and Nyasaland pound",
+     "new": "Zambian pound",
+     "rate": 1,
+     "source": {
+      "title": "Zambian pound — Wikipedia (replaced the Rhodesia and Nyasaland pound at par in 1964; kwacha at £1 = K2 in 1968)",
+      "url": "https://en.wikipedia.org/wiki/Zambian_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1968,
+     "old": "Zambian pound",
+     "new": "(old) Kwacha",
+     "rate": 0.5,
+     "source": {
+      "title": "Zambian pound — Wikipedia (replaced the Rhodesia and Nyasaland pound at par in 1964; kwacha at £1 = K2 in 1968)",
+      "url": "https://en.wikipedia.org/wiki/Zambian_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": "Decimalisation: two kwacha to the pound."
+    },
+    {
+     "year": 2013,
+     "old": "(old) Kwacha",
+     "new": "Zambian kwacha",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 500.0,
+   "wb": "ZMB",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SL",
+   "name": "Sierra Leone",
+   "start": 1945,
+   "unit": "leone",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1964,
+     "old": "British West African pound",
+     "new": "(old) Sierra Leonean leone",
+     "rate": 0.5,
+     "source": {
+      "title": "Sierra Leonean leone — Wikipedia (introduced 4 August 1964 at 2 leones to the West African pound)",
+      "url": "https://en.wikipedia.org/wiki/Sierra_Leonean_leone",
+      "accessed": "2026-10-30"
+     },
+     "note": "Two leones to the pound; the new unit was the smaller one."
+    },
+    {
+     "year": 2021,
+     "old": "(old) Sierra Leonean leone",
+     "new": "Sierra Leonean leone",
+     "rate": 1000,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 500.0,
+   "wb": "SLE",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -2791,6 +3422,45 @@
    "wb_unsupported": null
   },
   {
+   "iso": "MT",
+   "name": "Malta",
+   "start": 1945,
+   "unit": "euro",
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1972,
+     "old": "Maltese pound",
+     "new": "Maltese lira",
+     "rate": 1,
+     "source": {
+      "title": "Maltese lira — Wikipedia (at exact 1:1 with sterling until 1971; decimalised in May 1972)",
+      "url": "https://en.wikipedia.org/wiki/Maltese_lira",
+      "accessed": "2026-10-30"
+     },
+     "note": "Not a redenomination: the pound, kept at exactly one pound sterling until 1971, was decimalised in May 1972 and later called the lira."
+    },
+    {
+     "year": 2008,
+     "old": "Maltese lira",
+     "new": "Euro",
+     "rate": 0.4293,
+     "source": {
+      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
+      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 0.4293,
+   "wb": "MLT",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "ZW",
    "name": "Zimbabwe",
    "start": 1980,
@@ -2850,163 +3520,37 @@
    "wb_unsupported": "The World Bank series mixes several Zimbabwean currencies without a consistent restatement."
   },
   {
-   "iso": "CD",
-   "name": "DR Congo",
-   "start": 1960,
-   "unit": "franc",
-   "status": "partial",
-   "unsourced_steps": 0,
-   "gap": "Starts at independence in 1960; the Belgian Congo franc before it is not yet cited.",
-   "steps": [
-    {
-     "year": 1967,
-     "old": "First congolese franc",
-     "new": "First zaïre",
-     "rate": 1000,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 1993,
-     "old": "First Zaïre",
-     "new": "Nouveau zaïre",
-     "rate": 3000000,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 1998,
-     "old": "Nouveau zaïre",
-     "new": "Second Congolese franc",
-     "rate": 100000,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    }
-   ],
-   "total_factor": 300000000000000.0,
-   "wb": "COD",
-   "wb_unit_year": null,
-   "wb_unsupported": null
-  },
-  {
-   "iso": "BY",
-   "name": "Belarus (and the Soviet Union)",
-   "start": 1945,
-   "unit": "ruble",
-   "status": "partial",
-   "unsourced_steps": 1,
-   "gap": null,
-   "steps": [
-    {
-     "year": 1947,
-     "old": "4th Soviet ruble",
-     "new": "5th Soviet ruble",
-     "rate": 10,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 1961,
-     "old": "5th Soviet ruble",
-     "new": "6th Soviet ruble",
-     "rate": 10,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 1991,
-     "old": "6th Soviet ruble",
-     "new": "7th Soviet ruble",
-     "rate": 1,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 1994,
-     "old": "7th Soviet ruble",
-     "new": "First Belarusian ruble",
-     "rate": 10,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 2000,
-     "old": "First Belarusian ruble",
-     "new": "Second Belarusian ruble",
-     "rate": 1000,
-     "source": null,
-     "note": "Missing from the source table. The National Bank of Belarus publishes the history of its denominations, but its site refuses automated reading, so this step must be checked by hand."
-    },
-    {
-     "year": 2016,
-     "old": "Second Belarusian ruble",
-     "new": "Third Belarusian ruble",
-     "rate": 10000,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    }
-   ],
-   "total_factor": 10000000000.0,
-   "wb": "BLR",
-   "wb_unit_year": null,
-   "wb_unsupported": null
-  },
-  {
    "iso": "RO",
    "name": "Romania",
    "start": 1945,
    "unit": "leu",
    "status": "partial",
-   "unsourced_steps": 2,
-   "gap": null,
+   "unsourced_steps": 0,
+   "gap": "Every step is cited, but the 1952 reform had no single rate (20 to 400 old lei per new), so no one factor is exact.",
    "steps": [
     {
      "year": 1947,
      "old": "Romanian leu (1st)",
      "new": "Romanian leu (2nd)",
      "rate": 20000,
-     "source": null,
-     "note": "Not yet cited."
+     "source": {
+      "title": "Romanian leu — Wikipedia (15 August 1947 at 20,000:1; 1952 at rates from 20 to 400 old lei per new)",
+      "url": "https://en.wikipedia.org/wiki/Romanian_leu",
+      "accessed": "2026-10-30"
+     },
+     "note": "The \"great stabilisation\" of 15 August 1947, with caps on how much each person could convert."
     },
     {
      "year": 1952,
      "old": "Romanian leu (2nd)",
      "new": "Romanian leu (3rd)",
      "rate": 20,
-     "source": null,
-     "note": "The 1952 reform used several rates; 20:1 was the main cash rate. Not yet cited."
+     "source": {
+      "title": "Romanian leu — Wikipedia (15 August 1947 at 20,000:1; 1952 at rates from 20 to 400 old lei per new)",
+      "url": "https://en.wikipedia.org/wiki/Romanian_leu",
+      "accessed": "2026-10-30"
+     },
+     "note": "Rates ranged from 20 to 400 old lei per new leu depending on the kind and size of holding; the most favourable, 20:1, is used here."
     },
     {
      "year": 2005,
@@ -3032,24 +3576,32 @@
    "start": 1945,
    "unit": "euro",
    "status": "partial",
-   "unsourced_steps": 2,
-   "gap": null,
+   "unsourced_steps": 0,
+   "gap": "Every step is cited, but the 1952 reform converted cash, bank accounts and prices at different rates, so no one factor is exact.",
    "steps": [
     {
      "year": 1952,
      "old": "Bulgarian lev (2nd)",
      "new": "Bulgarian lev (3rd)",
      "rate": 100,
-     "source": null,
-     "note": "Not yet cited."
+     "source": {
+      "title": "Bulgarian lev — Wikipedia (1952 at 100:1 with other rates for bank accounts and prices; 1962 at 10:1)",
+      "url": "https://en.wikipedia.org/wiki/Bulgarian_lev",
+      "accessed": "2026-10-30"
+     },
+     "note": "100:1 for cash; bank accounts converted at rates from 100:3 to 200:1, and prices at 25:1."
     },
     {
      "year": 1962,
      "old": "Bulgarian lev (3rd)",
      "new": "Bulgarian lev (4th)",
      "rate": 10,
-     "source": null,
-     "note": "Not yet cited."
+     "source": {
+      "title": "Bulgarian lev — Wikipedia (1952 at 100:1 with other rates for bank accounts and prices; 1962 at 10:1)",
+      "url": "https://en.wikipedia.org/wiki/Bulgarian_lev",
+      "accessed": "2026-10-30"
+     },
+     "note": null
     },
     {
      "year": 1999,
@@ -3082,84 +3634,6 @@
    "wb_unsupported": null
   },
   {
-   "iso": "GH",
-   "name": "Ghana",
-   "start": 1965,
-   "unit": "cedi",
-   "status": "partial",
-   "unsourced_steps": 0,
-   "gap": "Starts at the 1965 cedi; the Ghanaian pound and the West African pound before it are not yet cited.",
-   "steps": [
-    {
-     "year": 1967,
-     "old": "Old cedi",
-     "new": "Ghanaian cedi",
-     "rate": 1.2,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 2007,
-     "old": "Cedi",
-     "new": "New Ghanaian cedi",
-     "rate": 10000,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    }
-   ],
-   "total_factor": 12000.0,
-   "wb": "GHA",
-   "wb_unit_year": null,
-   "wb_unsupported": null
-  },
-  {
-   "iso": "IL",
-   "name": "Israel",
-   "start": 1948,
-   "unit": "new shekel",
-   "status": "partial",
-   "unsourced_steps": 0,
-   "gap": "Starts at the Israeli pound of 1948; the Palestine pound it replaced at par is not yet cited.",
-   "steps": [
-    {
-     "year": 1980,
-     "old": "Israeli pound",
-     "new": "Israeli shekel (1st)",
-     "rate": 10,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 1986,
-     "old": "Shekel",
-     "new": "New Shekel",
-     "rate": 1000,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    }
-   ],
-   "total_factor": 10000.0,
-   "wb": "ISR",
-   "wb_unit_year": null,
-   "wb_unsupported": null
-  },
-  {
    "iso": "TL",
    "name": "Timor-Leste",
    "start": 1976,
@@ -3187,208 +3661,38 @@
    "wb_unsupported": null
   },
   {
-   "iso": "VN",
-   "name": "Vietnam (from South Vietnam)",
-   "start": 1955,
-   "unit": "đồng",
-   "status": "partial",
-   "unsourced_steps": 1,
-   "gap": "Follows the southern currency; the North Vietnamese đồng and the 1985 reform are not yet cited.",
-   "steps": [
-    {
-     "year": 1975,
-     "old": "Đồng",
-     "new": "Liberation đồng",
-     "rate": 500,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": "The South Vietnamese đồng after the fall of Saigon."
-    },
-    {
-     "year": 1978,
-     "old": "Liberation đồng",
-     "new": "Đồng (unified)",
-     "rate": 0.8,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": "Unification of the two Vietnamese currencies; the new unit was the larger one."
-    },
-    {
-     "year": 1985,
-     "old": "Đồng (unified)",
-     "new": "Đồng (1985)",
-     "rate": 10,
-     "source": null,
-     "note": "The 1985 price-wage-money reform exchanged 10 old đồng for 1 new. Missing from the source table; not yet cited."
-    }
-   ],
-   "total_factor": 4000.0,
-   "wb": "VNM",
-   "wb_unit_year": null,
-   "wb_unsupported": null
-  },
-  {
-   "iso": "MZ",
-   "name": "Mozambique",
-   "start": 1980,
-   "unit": "metical",
-   "status": "partial",
-   "unsourced_steps": 0,
-   "gap": "Starts at the 1980 metical; the Mozambican escudo before it is not yet cited.",
-   "steps": [
-    {
-     "year": 2006,
-     "old": "(old) meticais",
-     "new": "New Mozambican metical",
-     "rate": 1000,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    }
-   ],
-   "total_factor": 1000.0,
-   "wb": "MOZ",
-   "wb_unit_year": null,
-   "wb_unsupported": null
-  },
-  {
-   "iso": "ZM",
-   "name": "Zambia",
-   "start": 1968,
-   "unit": "kwacha",
-   "status": "partial",
-   "unsourced_steps": 0,
-   "gap": "Starts at the 1968 kwacha; the Zambian pound before it is not yet cited.",
-   "steps": [
-    {
-     "year": 2013,
-     "old": "(old) Kwacha",
-     "new": "Zambian kwacha",
-     "rate": 1000,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    }
-   ],
-   "total_factor": 1000.0,
-   "wb": "ZMB",
-   "wb_unit_year": null,
-   "wb_unsupported": null
-  },
-  {
-   "iso": "SD",
-   "name": "Sudan",
-   "start": 1957,
-   "unit": "pound",
-   "status": "partial",
-   "unsourced_steps": 0,
-   "gap": "Starts at the 1957 pound; the Egyptian pound used before it is not yet cited.",
-   "steps": [
-    {
-     "year": 1992,
-     "old": "First Sudanese pounds",
-     "new": "Sudanese dinar",
-     "rate": 10,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    },
-    {
-     "year": 2007,
-     "old": "Sudanese dinars",
-     "new": "Second Sudanese pound",
-     "rate": 100,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    }
-   ],
-   "total_factor": 1000.0,
-   "wb": "SDN",
-   "wb_unit_year": null,
-   "wb_unsupported": null
-  },
-  {
-   "iso": "SL",
-   "name": "Sierra Leone",
-   "start": 1964,
-   "unit": "leone",
-   "status": "partial",
-   "unsourced_steps": 0,
-   "gap": "Starts at the 1964 leone; the West African pound before it is not yet cited.",
-   "steps": [
-    {
-     "year": 2021,
-     "old": "(old) Sierra Leonean leone",
-     "new": "Sierra Leonean leone",
-     "rate": 1000,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    }
-   ],
-   "total_factor": 1000.0,
-   "wb": "SLE",
-   "wb_unit_year": null,
-   "wb_unsupported": null
-  },
-  {
-   "iso": "ST",
-   "name": "São Tomé and Príncipe",
-   "start": 1977,
-   "unit": "dobra",
-   "status": "partial",
-   "unsourced_steps": 0,
-   "gap": "Starts at the 1977 dobra; the escudo before it is not yet cited.",
-   "steps": [
-    {
-     "year": 2018,
-     "old": "São Tomé and Príncipe dobra (1st)",
-     "new": "São Tomé and Príncipe dobra (2nd)",
-     "rate": 1000,
-     "source": {
-      "title": "Redenomination — Wikipedia (table of currency redenominations)",
-      "url": "https://en.wikipedia.org/wiki/Redenomination",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    }
-   ],
-   "total_factor": 1000.0,
-   "wb": "STP",
-   "wb_unit_year": null,
-   "wb_unsupported": null
-  },
-  {
    "iso": "SK",
-   "name": "Slovakia",
-   "start": 1993,
+   "name": "Slovakia (and Czechoslovakia)",
+   "start": 1945,
    "unit": "euro",
    "status": "partial",
    "unsourced_steps": 0,
-   "gap": "Starts at the 1993 koruna; its split from the Czechoslovak koruna at par is not yet cited.",
+   "gap": "Every step is cited, but the 1953 reform used two rates (5:1 up to a limit, 50:1 beyond), so the factor holds only for small amounts.",
    "steps": [
+    {
+     "year": 1953,
+     "old": "Czechoslovak koruna",
+     "new": "Czechoslovak koruna (1953)",
+     "rate": 5,
+     "source": {
+      "title": "Czechoslovak koruna — Wikipedia (1953: 5:1 up to 1,500 korunas, 50:1 beyond; 1993 split at par)",
+      "url": "https://en.wikipedia.org/wiki/Czechoslovak_koruna",
+      "accessed": "2026-10-30"
+     },
+     "note": "5 old for 1 new on the first 1,500 korunas per person, 50 for 1 on the rest. The 5:1 rate is used here."
+    },
+    {
+     "year": 1993,
+     "old": "Czechoslovak koruna (1953)",
+     "new": "Slovak koruna",
+     "rate": 1,
+     "source": {
+      "title": "Czechoslovak koruna — Wikipedia (1953: 5:1 up to 1,500 korunas, 50:1 beyond; 1993 split at par)",
+      "url": "https://en.wikipedia.org/wiki/Czechoslovak_koruna",
+      "accessed": "2026-10-30"
+     },
+     "note": "The split of 8 February 1993, at par."
+    },
     {
      "year": 2009,
      "old": "Slovak koruna",
@@ -3402,7 +3706,7 @@
      "note": null
     }
    ],
-   "total_factor": 30.126,
+   "total_factor": 150.63,
    "wb": "SVK",
    "wb_unit_year": null,
    "wb_unsupported": null
@@ -3453,8 +3757,20 @@
    "unit": "euro",
    "status": "partial",
    "unsourced_steps": 0,
-   "gap": "Starts at the schilling as reintroduced in December 1945; its conversion from the Reichsmark is not yet cited.",
+   "gap": "Every step is cited, but the 1945 and 1947 exchanges were capped per person with worse rates above the cap, so the factor holds only for small amounts.",
    "steps": [
+    {
+     "year": 1945,
+     "old": "Reichsmark",
+     "new": "Austrian schilling",
+     "rate": 1,
+     "source": {
+      "title": "Austrian schilling — Wikipedia (1945 at 1:1 to the Reichsmark up to 150 per person; 1947 at par for the first 150, 3:1 beyond)",
+      "url": "https://en.wikipedia.org/wiki/Austrian_schilling",
+      "accessed": "2026-10-30"
+     },
+     "note": "1:1, but only up to 150 per person. In 1947 old schilling notes were exchanged at par for the first 150 and at 3:1 beyond."
+    },
     {
      "year": 1999,
      "old": "Austrian schilling",
@@ -3472,35 +3788,8 @@
    "wb": "AUT",
    "wb_unit_year": null,
    "wb_unsupported": null
-  },
-  {
-   "iso": "MT",
-   "name": "Malta",
-   "start": 1972,
-   "unit": "euro",
-   "status": "partial",
-   "unsourced_steps": 0,
-   "gap": "Starts at the 1972 lira; the Maltese pound before it, renamed at par, is not yet cited.",
-   "steps": [
-    {
-     "year": 2008,
-     "old": "Maltese lira",
-     "new": "Euro",
-     "rate": 0.4293,
-     "source": {
-      "title": "Council Regulation (EC) No 2866/98 on the conversion rates between the euro and the currencies of the Member States adopting the euro, Article 1 (as amended)",
-      "url": "https://www.legislation.gov.uk/eur/1998/2866/data.html",
-      "accessed": "2026-10-30"
-     },
-     "note": null
-    }
-   ],
-   "total_factor": 0.4293,
-   "wb": "MLT",
-   "wb_unit_year": null,
-   "wb_unsupported": null
   }
  ],
- "verified": 57,
- "partial": 18
+ "verified": 68,
+ "partial": 7
 }

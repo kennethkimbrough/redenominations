@@ -1,6 +1,6 @@
 """Additional country chains, built only from sources already checked:
 the Wikipedia redenomination table ("wiki"), Council Regulation 2866/98
-("ec2866"), and ECB press releases for Croatia and Bulgaria.
+("ec2866"), and the per-currency sources listed in SOURCES in build_countries.py.
 
 Imported by build_countries.py. Same step format:
 (year, old currency, new currency, old units per new unit, source key, note).
@@ -76,13 +76,22 @@ MORE = [
     euro("BE", "Belgium", 1945, "Belgian franc", 40.3399, 1999),
     euro("LU", "Luxembourg", 1945, "Luxembourg franc", 40.3399, 1999),
     euro("IE", "Ireland", 1945, "Irish pound", 0.787564, 1999),
-    euro("AT", "Austria", 1945, "Austrian schilling", 13.7603, 1999,
-         gap="Starts at the schilling as reintroduced in December 1945; its conversion from the Reichsmark is not yet cited."),
+    {"iso": "AT", "name": "Austria", "start": 1945, "unit": "euro", "steps": [
+        (1945, "Reichsmark", "Austrian schilling", 1, "wp-atschilling",
+         "1:1, but only up to 150 per person. In 1947 old schilling notes were exchanged at par for the first 150 and at 3:1 beyond."),
+        (1999, "Austrian schilling", "Euro", 13.7603, "ec2866", None)],
+     "gap": "Every step is cited, but the 1945 and 1947 exchanges were capped per person with worse rates above the cap, so the factor holds only for small amounts."},
     euro("CY", "Cyprus", 1960, "Cyprus pound", 0.585274, 2008),
-    euro("MT", "Malta", 1972, "Maltese lira", 0.4293, 2008,
-         gap="Starts at the 1972 lira; the Maltese pound before it, renamed at par, is not yet cited."),
-    euro("SK", "Slovakia", 1993, "Slovak koruna", 30.126, 2009,
-         gap="Starts at the 1993 koruna; its split from the Czechoslovak koruna at par is not yet cited."),
+    {"iso": "MT", "name": "Malta", "start": 1945, "unit": "euro", "steps": [
+        (1972, "Maltese pound", "Maltese lira", 1, "wp-mtlira",
+         "Not a redenomination: the pound, kept at exactly one pound sterling until 1971, was decimalised in May 1972 and later called the lira."),
+        (2008, "Maltese lira", "Euro", 0.4293, "ec2866", None)]},
+    {"iso": "SK", "name": "Slovakia (and Czechoslovakia)", "start": 1945, "unit": "euro", "steps": [
+        (1953, "Czechoslovak koruna", "Czechoslovak koruna (1953)", 5, "wp-csk",
+         "5 old for 1 new on the first 1,500 korunas per person, 50 for 1 on the rest. The 5:1 rate is used here."),
+        (1993, "Czechoslovak koruna (1953)", "Slovak koruna", 1, "wp-csk", "The split of 8 February 1993, at par."),
+        (2009, "Slovak koruna", "Euro", 30.126, "ec2866", None)],
+     "gap": "Every step is cited, but the 1953 reform used two rates (5:1 up to a limit, 50:1 beyond), so the factor holds only for small amounts."},
     {"iso": "ID", "name": "Indonesia", "start": 1949, "unit": "rupiah", "steps": [
         (1965, "First rupiah", "Rupiah (new)", 1_000, "wiki", None)]},
     {"iso": "KR", "name": "South Korea", "start": 1945, "unit": "won", "steps": [
@@ -94,27 +103,31 @@ MORE = [
         (1955, "First Renminbi yuan", "Second Renminbi yuan", 10_000, "wiki", None)]},
     {"iso": "IS", "name": "Iceland", "start": 1945, "unit": "króna", "steps": [
         (1981, "Icelandic króna", "Icelandic króna", 100, "wiki", None)]},
-    {"iso": "MZ", "name": "Mozambique", "start": 1980, "unit": "metical", "steps": [
-        (2006, "(old) meticais", "New Mozambican metical", 1_000, "wiki", None)],
-     "gap": "Starts at the 1980 metical; the Mozambican escudo before it is not yet cited."},
-    {"iso": "ZM", "name": "Zambia", "start": 1968, "unit": "kwacha", "steps": [
-        (2013, "(old) Kwacha", "Zambian kwacha", 1_000, "wiki", None)],
-     "gap": "Starts at the 1968 kwacha; the Zambian pound before it is not yet cited."},
-    {"iso": "SD", "name": "Sudan", "start": 1957, "unit": "pound", "steps": [
+    {"iso": "MZ", "name": "Mozambique", "start": 1945, "unit": "metical", "steps": [
+        (1980, "Mozambican escudo", "(old) meticais", 1, "wp-mzescudo", None),
+        (2006, "(old) meticais", "New Mozambican metical", 1_000, "wiki", None)]},
+    {"iso": "ZM", "name": "Zambia", "start": 1945, "unit": "kwacha", "steps": [
+        (1955, "Southern Rhodesian pound", "Rhodesia and Nyasaland pound", 1, "wp-rnpound",
+         "Northern Rhodesia used the Southern Rhodesian pound until the federation's own pound replaced it."),
+        (1964, "Rhodesia and Nyasaland pound", "Zambian pound", 1, "wp-zmpound", None),
+        (1968, "Zambian pound", "(old) Kwacha", 0.5, "wp-zmpound", "Decimalisation: two kwacha to the pound."),
+        (2013, "(old) Kwacha", "Zambian kwacha", 1_000, "wiki", None)]},
+    {"iso": "SD", "name": "Sudan", "start": 1945, "unit": "pound", "steps": [
+        (1957, "Egyptian pound", "First Sudanese pounds", 1, "wp-sdpound", None),
         (1992, "First Sudanese pounds", "Sudanese dinar", 10, "wiki", None),
-        (2007, "Sudanese dinars", "Second Sudanese pound", 100, "wiki", None)],
-     "gap": "Starts at the 1957 pound; the Egyptian pound used before it is not yet cited."},
+        (2007, "Sudanese dinars", "Second Sudanese pound", 100, "wiki", None)]},
     {"iso": "UG", "name": "Uganda", "start": 1945, "unit": "shilling", "steps": [
         (1966, "East African shilling", "First Ugandan shilling", 1, "wiki", None),
         (1987, "First Ugandan shilling", "Second Ugandan shilling", 100, "wiki", None)]},
     {"iso": "SR", "name": "Suriname", "start": 1945, "unit": "dollar", "steps": [
         (2004, "Surinamese guilder", "Surinamese dollar", 1_000, "wiki", None)]},
-    {"iso": "SL", "name": "Sierra Leone", "start": 1964, "unit": "leone", "steps": [
-        (2021, "(old) Sierra Leonean leone", "Sierra Leonean leone", 1_000, "wiki", None)],
-     "gap": "Starts at the 1964 leone; the West African pound before it is not yet cited."},
-    {"iso": "ST", "name": "São Tomé and Príncipe", "start": 1977, "unit": "dobra", "steps": [
-        (2018, "São Tomé and Príncipe dobra (1st)", "São Tomé and Príncipe dobra (2nd)", 1_000, "wiki", None)],
-     "gap": "Starts at the 1977 dobra; the escudo before it is not yet cited."},
+    {"iso": "SL", "name": "Sierra Leone", "start": 1945, "unit": "leone", "steps": [
+        (1964, "British West African pound", "(old) Sierra Leonean leone", 0.5, "wp-leone",
+         "Two leones to the pound; the new unit was the smaller one."),
+        (2021, "(old) Sierra Leonean leone", "Sierra Leonean leone", 1_000, "wiki", None)]},
+    {"iso": "ST", "name": "São Tomé and Príncipe", "start": 1945, "unit": "dobra", "steps": [
+        (1977, "São Tomé and Príncipe escudo", "São Tomé and Príncipe dobra (1st)", 1, "wp-stescudo", None),
+        (2018, "São Tomé and Príncipe dobra (1st)", "São Tomé and Príncipe dobra (2nd)", 1_000, "wiki", None)]},
     {"iso": "MR", "name": "Mauritania", "start": 1960, "unit": "ouguiya", "steps": [
         (1973, "CFA franc", "Ouguiya", 5, "wiki", None),
         (2018, "First Mauritanian ouguiya", "Second Mauritanian ouguiya", 10, "wiki", None)]},
@@ -143,9 +156,8 @@ MORE = [
 MORE += [
     {"iso": "VN", "name": "Vietnam (from South Vietnam)", "start": 1955, "unit": "đồng", "steps": [
         (1975, "Đồng", "Liberation đồng", 500, "wiki", "The South Vietnamese đồng after the fall of Saigon."),
-        (1978, "Liberation đồng", "Đồng (unified)", 0.8, "wiki", "Unification of the two Vietnamese currencies; the new unit was the larger one."),
-        (1985, "Đồng (unified)", "Đồng (1985)", 10, None, "The 1985 price-wage-money reform exchanged 10 old đồng for 1 new. Missing from the source table; not yet cited.")],
-     "gap": "Follows the southern currency; the North Vietnamese đồng and the 1985 reform are not yet cited."},
+        (1978, "Liberation đồng", "Đồng (unified)", 0.8, "wiki", "Unification of the two Vietnamese currencies; the new unit was the larger one. A northern đồng converted one for one."),
+        (1985, "Đồng (unified)", "Đồng (1985)", 10, "wp-vnd", "14 September 1985: one new đồng for ten old. Missing from the redenomination table, so cited from the article on the đồng.")]},
     {"iso": "TL", "name": "Timor-Leste", "start": 1976, "unit": "US dollar", "steps": [
         (1999, "Indonesian rupiah", "United States dollar", 6900, "wiki", "An approximate market rate at the time, as the source gives it; the dollar was adopted by the UN administration in 2000 and there was no fixed conversion.")],
      "gap": "The rupiah-to-dollar figure is approximate, not a fixed legal rate; the Portuguese Timor escudo before 1976 is not covered."},

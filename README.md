@@ -37,8 +37,8 @@ every figure, and builds three things from it:
 | | Count |
 |---|---|
 | Reforms in the table since 1945 | 129 (153 including earlier ones) |
-| Countries with a fully cited chain from their first post-war currency to today | 57 |
-| Countries with a partial chain (a step or the starting point still needs a citation) | 18 |
+| Countries with a fully cited chain from their first post-war currency to today | 68 |
+| Countries with a partial chain (a reform with several rates, or a step with no fixed rate) | 7 |
 | Countries not yet covered | about 120 |
 
 A country is **verified** only when every step of its chain has a checked
@@ -57,7 +57,7 @@ the "verified" count truthful.
 ```mermaid
 flowchart LR
   wiki[Wikipedia redenomination table] -->|transcribed by hand| build1[build_redenominations.py]
-  reg[Council Regulation 2866/98<br/>ECB press releases<br/>Bundesbank] -->|cited per step| build2[build_countries.py]
+  reg[Council Regulation 2866/98<br/>ECB, Bundesbank, Bank of Ghana<br/>currency articles] -->|cited per step| build2[build_countries.py]
   build1 --> red[(redenominations.json)]
   build2 --> cty[(countries.json)]
   wb[World Bank API<br/>PA.NUS.FCRF, FP.CPI.TOTL] -->|daily job| hist[(history.json)]
@@ -89,13 +89,21 @@ when they change and redeploys; `pages.yml` runs the tests and publishes
   Germany stays partial: wages and rents converted 1:1, balances at less than
   1:10, and each person swapped 60 Reichsmark for 40 Deutsche Mark, so no
   single factor is exact.
-- Steps that are included for continuity but not yet checked against a source
-  (Belarus in 2000, Romania in 1947 and 1952, Vietnam in 1985, the end of the
-  Zimbabwean dollar) are marked "not yet cited" in the data and on the site,
-  as are chains whose starting currency is not yet traced back to 1945
-  (Austria, Malta, Slovakia, Sudan and several African countries). The
-  National Bank of Belarus publishes its denomination history, but its site
-  refuses automated reading, so that one needs a human.
+- Steps the redenomination table leaves out, and the currency changes before a
+  country's first redenomination (the West African pound to the cedi and the
+  leone, the Egyptian pound to the Sudanese pound, the Portuguese escudos to
+  the metical and the dobra, the Palestine pound to the Israeli pound, the
+  Rhodesia and Nyasaland pound to the kwacha, Belarus in 2000, Vietnam in
+  1985), cite the Wikipedia article on the currency in question, or the Bank
+  of Ghana's own history for the cedi. Each source is listed with the sentence
+  it supports in `data/countries.json`.
+- Seven chains stay partial on purpose. Germany (1948), Austria (1945 and
+  1947), Czechoslovakia (1953), Romania (1952) and Bulgaria (1952) converted
+  money at more than one rate depending on the amount or the kind of holding,
+  so no single factor is exact; the converter uses the rate for cash or small
+  amounts and says so. The last Zimbabwean dollar was abandoned in 2009 with no
+  fixed rate, and Timor-Leste's switch from the rupiah to the US dollar had no
+  legal conversion rate either.
 
 Today's exchange rates come from the
 [currency-api dataset](https://github.com/fawazahmed0/exchange-api) published

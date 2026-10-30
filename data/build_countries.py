@@ -44,7 +44,37 @@ SOURCES = {
         "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr250708~b9676a9fa8.en.html",
         "accessed": "2026-10-30",
     },
+    "bog-gh": {
+        "title": "Bank of Ghana, \"Evolution of currency in Ghana\" (cedi of 19 July 1965 equal to 8s 4d; new cedi of 1967 at ¢1.20 = N¢1.00)",
+        "url": "https://www.bog.gov.gh/bank-notes-coins/evolution-of-currency-in-ghana/",
+        "accessed": "2026-10-30",
+    },
 }
+
+
+def _wp(title: str, page: str, says: str) -> dict:
+    return {"title": f"{title} — Wikipedia ({says})",
+            "url": f"https://en.wikipedia.org/wiki/{page}", "accessed": "2026-10-30"}
+
+
+SOURCES.update({
+    "wp-ghpound": _wp("Ghanaian pound", "Ghanaian_pound", "replaced the British West African pound at par in 1958"),
+    "wp-leone": _wp("Sierra Leonean leone", "Sierra_Leonean_leone", "introduced 4 August 1964 at 2 leones to the West African pound"),
+    "wp-rnpound": _wp("Rhodesia and Nyasaland pound", "Rhodesia_and_Nyasaland_pound", "replaced the Southern Rhodesian pound at par; Zambia's pound at par with it"),
+    "wp-zmpound": _wp("Zambian pound", "Zambian_pound", "replaced the Rhodesia and Nyasaland pound at par in 1964; kwacha at £1 = K2 in 1968"),
+    "wp-sdpound": _wp("Sudanese pound", "Sudanese_pound", "replaced the Egyptian pound at par after independence"),
+    "wp-mzescudo": _wp("Mozambican escudo", "Mozambican_escudo", "currency of Mozambique 1914–1980, replaced by the metical at par"),
+    "wp-stescudo": _wp("São Tomé and Príncipe escudo", "S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe_escudo", "currency 1914–1977, replaced at par by the dobra"),
+    "wp-cdfranc": _wp("Congolese franc", "Congolese_franc", "the Belgian Congo franc remained the currency after independence in 1960"),
+    "wp-vnd": _wp("Vietnamese đồng", "Vietnamese_%C4%91%E1%BB%93ng", "14 September 1985: one new đồng worth 10 old"),
+    "wp-ilpound": _wp("Israeli pound", "Israeli_pound", "replaced the Palestine pound in June 1952, keeping its par peg to sterling"),
+    "wp-mtlira": _wp("Maltese lira", "Maltese_lira", "at exact 1:1 with sterling until 1971; decimalised in May 1972"),
+    "wp-csk": _wp("Czechoslovak koruna", "Czechoslovak_koruna", "1953: 5:1 up to 1,500 korunas, 50:1 beyond; 1993 split at par"),
+    "wp-roleu": _wp("Romanian leu", "Romanian_leu", "15 August 1947 at 20,000:1; 1952 at rates from 20 to 400 old lei per new"),
+    "wp-bglev": _wp("Bulgarian lev", "Bulgarian_lev", "1952 at 100:1 with other rates for bank accounts and prices; 1962 at 10:1"),
+    "wp-atschilling": _wp("Austrian schilling", "Austrian_schilling", "1945 at 1:1 to the Reichsmark up to 150 per person; 1947 at par for the first 150, 3:1 beyond"),
+    "wp-byr": _wp("Belarusian ruble", "Belarusian_ruble", "2000: 1 new ruble = 1,000 old"),
+})
 
 # Each country: iso, name, the currency in use at the start year, then steps.
 # Step: (year, old currency, new currency, old units per new unit, source key, note)
@@ -231,19 +261,23 @@ COUNTRIES = [
     {
         "iso": "IL", "name": "Israel", "start": 1948, "unit": "new shekel",
         "steps": [
+            (1952, "Palestine pound", "Israeli pound", 1, "wp-ilpound",
+             "The Palestine pound stayed in use after independence. The Israeli pound replaced it on 9 June 1952 and kept its peg at par to sterling, so the change was one for one."),
             (1980, "Israeli pound", "Israeli shekel (1st)", 10, "wiki", None),
-            (1986, "Shekel", "New Shekel", 1_000, "wiki", None),
+            (1986, "Shekel", "New Shekel", 1_000, "wiki",
+             "The Bank of Israel dates the new shekel to 4 September 1985; the source table lists 1986."),
         ],
-        "gap": "Starts at the Israeli pound of 1948; the Palestine pound it replaced at par is not yet cited.",
     },
     {
         "iso": "RO", "name": "Romania", "start": 1945, "unit": "leu",
         "steps": [
-            (1947, "Romanian leu (1st)", "Romanian leu (2nd)", 20_000, None, "Not yet cited."),
-            (1952, "Romanian leu (2nd)", "Romanian leu (3rd)", 20, None,
-             "The 1952 reform used several rates; 20:1 was the main cash rate. Not yet cited."),
+            (1947, "Romanian leu (1st)", "Romanian leu (2nd)", 20_000, "wp-roleu",
+             "The \"great stabilisation\" of 15 August 1947, with caps on how much each person could convert."),
+            (1952, "Romanian leu (2nd)", "Romanian leu (3rd)", 20, "wp-roleu",
+             "Rates ranged from 20 to 400 old lei per new leu depending on the kind and size of holding; the most favourable, 20:1, is used here."),
             (2005, "Romanian leu (3rd)", "Romanian leu (4th)", 10_000, "wiki", None),
         ],
+        "gap": "Every step is cited, but the 1952 reform had no single rate (20 to 400 old lei per new), so no one factor is exact.",
     },
     {
         "iso": "BY", "name": "Belarus (and the Soviet Union)", "start": 1945, "unit": "ruble",
@@ -252,27 +286,30 @@ COUNTRIES = [
             (1961, "5th Soviet ruble", "6th Soviet ruble", 10, "wiki", None),
             (1991, "6th Soviet ruble", "7th Soviet ruble", 1, "wiki", None),
             (1994, "7th Soviet ruble", "First Belarusian ruble", 10, "wiki", None),
-            (2000, "First Belarusian ruble", "Second Belarusian ruble", 1_000, None,
-             "Missing from the source table. The National Bank of Belarus publishes the history of its denominations, but its site refuses automated reading, so this step must be checked by hand."),
+            (2000, "First Belarusian ruble", "Second Belarusian ruble", 1_000, "wp-byr",
+             "Missing from the redenomination table, so cited from the article on the ruble itself."),
             (2016, "Second Belarusian ruble", "Third Belarusian ruble", 10_000, "wiki", None),
         ],
     },
     {
-        "iso": "CD", "name": "DR Congo", "start": 1960, "unit": "franc",
+        "iso": "CD", "name": "DR Congo", "start": 1945, "unit": "franc",
         "steps": [
+            (1960, "Belgian Congo franc", "First congolese franc", 1, "wp-cdfranc",
+             "Independence: the same franc carried on as the Congolese franc."),
             (1967, "First congolese franc", "First zaïre", 1_000, "wiki", None),
             (1993, "First Zaïre", "Nouveau zaïre", 3_000_000, "wiki", None),
             (1998, "Nouveau zaïre", "Second Congolese franc", 100_000, "wiki", None),
         ],
-        "gap": "Starts at independence in 1960; the Belgian Congo franc before it is not yet cited.",
     },
     {
-        "iso": "GH", "name": "Ghana", "start": 1965, "unit": "cedi",
+        "iso": "GH", "name": "Ghana", "start": 1945, "unit": "cedi",
         "steps": [
+            (1958, "British West African pound", "Ghanaian pound", 1, "wp-ghpound", None),
+            (1965, "Ghanaian pound", "Old cedi", 1 / 2.4, "bog-gh",
+             "One cedi was worth eight shillings and four pence, so a pound bought 2.4 cedis; the new unit was the smaller one."),
             (1967, "Old cedi", "Ghanaian cedi", 1.2, "wiki", None),
             (2007, "Cedi", "New Ghanaian cedi", 10_000, "wiki", None),
         ],
-        "gap": "Starts at the 1965 cedi; the Ghanaian pound and the West African pound before it are not yet cited.",
     },
     {
         "iso": "HR", "name": "Croatia (and Yugoslavia)", "start": 1945, "unit": "euro",
@@ -287,11 +324,13 @@ COUNTRIES = [
     {
         "iso": "BG", "name": "Bulgaria", "start": 1945, "unit": "euro",
         "steps": [
-            (1952, "Bulgarian lev (2nd)", "Bulgarian lev (3rd)", 100, None, "Not yet cited."),
-            (1962, "Bulgarian lev (3rd)", "Bulgarian lev (4th)", 10, None, "Not yet cited."),
+            (1952, "Bulgarian lev (2nd)", "Bulgarian lev (3rd)", 100, "wp-bglev",
+             "100:1 for cash; bank accounts converted at rates from 100:3 to 200:1, and prices at 25:1."),
+            (1962, "Bulgarian lev (3rd)", "Bulgarian lev (4th)", 10, "wp-bglev", None),
             (1999, "Bulgarian lev", "Bulgarian new lev", 1_000, "wiki", None),
             (2026, "Bulgarian new lev", "Euro", 1.95583, "ecb-bg", "The lev had been pegged at this rate to the mark, then the euro, since 1997."),
         ],
+        "gap": "Every step is cited, but the 1952 reform converted cash, bank accounts and prices at different rates, so no one factor is exact.",
     },
 ]
 
