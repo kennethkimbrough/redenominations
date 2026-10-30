@@ -26,6 +26,7 @@
     <p class="coverage" id="coverage"></p>
   </header>
 
+  <noscript><p class="panel">This page needs JavaScript to run the converters. The data behind it is plain JSON in <a href="https://github.com/kennethkimbrough/redenominations/tree/main/data">the repository</a>.</p></noscript>
   <main>
     <section class="panel" id="converter">
       <h2>Convert an old banknote</h2>
@@ -40,6 +41,7 @@
           <select id="c-from"></select>
         </label>
       </form>
+      <p class="examples">Try: <a href="#c=HU.0.1000000">a million 1945 pengő</a> · <a href="#c=RS.0.1000">1,000 Yugoslav dinars of 1945</a> · <a href="#c=FR.0.100">100 old French francs</a> · <a href="#c=VE.0.1000000">a million bolívares of 2007</a></p>
       <div class="result" id="c-result" aria-live="polite"></div>
       <ol class="steps" id="c-steps"></ol>
     </section>
@@ -59,6 +61,7 @@
           <span class="unit" id="t-unit"></span>
         </label>
       </form>
+      <p class="examples">Try: <a href="#t=IND.1980.1000">1,000 rupees in 1980</a> · <a href="#t=JPN.1965.100000">100,000 yen in 1965</a> · <a href="#t=BRA.1980.1000000">a million cruzeiros in 1980</a> · <a href="#t=VNM.1995.1000000">a million đồng in 1995</a> · <a href="#t=DEU.1970.1000">1,000 Deutsche Mark in 1970</a></p>
       <div class="result" id="t-result" aria-live="polite"></div>
     </section>
 

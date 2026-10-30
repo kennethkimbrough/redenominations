@@ -99,8 +99,8 @@ function chart() {
     for (const sg of r.segs) {
       const decade = Math.floor(sg.step.year / 10) * 10;
       const tip = `${r.c.name} — ${sg.step.year}: ${sg.step.old} → ${sg.step.new}, ÷ ${sg.step.rate.toLocaleString("en-US")} (${sg.z % 1 ? sg.z.toFixed(2) : sg.z} zeros)${sg.uncited ? " · not yet cited" : ""}`;
-      if (sg.z === 0) { segs += `<i class="tick" data-tip="${esc(tip)} — at par"></i>`; continue; }
-      segs += `<i class="seg${sg.uncited ? " uncited" : ""}" style="width:${(sg.z / maxZ) * 100}%;background:${DECADE_COLOURS[decade] ?? "#888"}" data-tip="${esc(tip)}"></i>`;
+      if (sg.z === 0) { segs += `<i class="tick" data-tip="${esc(tip)} — at par" title="${esc(tip)} — at par"></i>`; continue; }
+      segs += `<i class="seg${sg.uncited ? " uncited" : ""}" style="width:${(sg.z / maxZ) * 100}%;background:${DECADE_COLOURS[decade] ?? "#888"}" data-tip="${esc(tip)}" title="${esc(tip)}"></i>`;
     }
     html += `<div class="bar-row"><span class="bar-name" title="${esc(r.c.name)}">${esc(label)}</span><span class="bar-track" style="background-size:${100 / (maxZ / 5)}% 100%">${segs}</span>` +
       `<span class="bar-total">${r.total % 1 ? r.total.toFixed(1) : r.total}${r.c.status === "partial" ? " ·" : ""}</span></div>`;
@@ -172,12 +172,22 @@ function renderChains() {
 }
 $("#chain-filter").addEventListener("input", renderChains);
 renderChains();
-$("#chains").addEventListener("click", (e) => {
-  const a = e.target.closest("a[href^='#c=']"); if (!a) return;
+document.addEventListener("click", (e) => {
+  const a = e.target.closest("a[href^='#c='], a[href^='#t=']"); if (!a) return;
   e.preventDefault();
-  const [iso, idx, amt] = a.getAttribute("href").slice(3).split(".");
-  cCountry.value = iso; cAmount.value = (+amt).toLocaleString("en-US"); fillCurrencies(Number(idx) || 0);
-  $("#converter").scrollIntoView({ behavior: "smooth", block: "start" });
+  const href = a.getAttribute("href");
+  if (href.startsWith("#c=")) {
+    const [iso, idx, amt] = href.slice(3).split(".");
+    if (!chainOf(iso)) return;
+    cCountry.value = iso; cAmount.value = (+amt).toLocaleString("en-US"); fillCurrencies(Number(idx) || 0);
+    $("#converter").scrollIntoView({ behavior: "smooth", block: "start" });
+  } else if (history) {
+    const [iso, year, amt] = href.slice(3).split(".");
+    if (!history.countries[iso]) return;
+    $("#t-country").value = iso; $("#t-year").value = year; $("#t-amount").value = (+amt).toLocaleString("en-US");
+    $("#t-country").dispatchEvent(new Event("change"));
+    $("#then").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 });
 
 // ---------- at the time ----------

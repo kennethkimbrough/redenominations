@@ -59,6 +59,7 @@ select, input[type=text], input[type=search], input[type=number] {
   padding: .55rem .7rem; min-height: 48px; width: 100%;
 }
 input:focus-visible, select:focus-visible { outline: 3px solid var(--gold); outline-offset: 1px; }
+.examples { font-size: .9rem; color: var(--ink-2); margin: -.2rem 0 .8rem; }
 .result { font-size: 1.35rem; padding: 1rem 1.1rem; border: 1px solid var(--line); background: var(--paper-2); border-left: 6px solid var(--gold); }
 .result .big { font-size: clamp(1.6rem, 5vw, 2.4rem); font-variant-numeric: tabular-nums; display: block; margin: .15rem 0; }
 .result .zeros { color: var(--ink-2); font-size: 1rem; }
