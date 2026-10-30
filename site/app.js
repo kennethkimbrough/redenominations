@@ -88,37 +88,27 @@ function chart() {
   if (chartSort === "recent") rows = [...rows].sort((a, b) => b.segs[b.segs.length - 1].step.year - a.segs[a.segs.length - 1].step.year);
   if (chartSort === "name") rows = [...rows].sort((a, b) => a.c.name.localeCompare(b.c.name));
   const shown = chartShowAll ? rows : rows.slice(0, 20);
-  const W = 860, L = 200, R = 70, T = 28, rowH = 24, B = 8;
-  const H = T + shown.length * rowH + B;
   const maxZ = Math.ceil(Math.max(...rows.map((r) => r.total)) / 5) * 5;
-  const X = (z) => L + (z / maxZ) * (W - L - R);
-  let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Zeros removed per country since 1945, one segment per reform">`;
-  for (let z = 0; z <= maxZ; z += 5) {
-    svg += `<line class="grid" x1="${X(z)}" x2="${X(z)}" y1="${T - 6}" y2="${H - B}"/><text class="axis" x="${X(z)}" y="${T - 10}" text-anchor="middle">${z}</text>`;
-  }
-  svg += `<text class="axis" x="${W - R + 14}" y="${T - 10}">zeros</text>`;
-  shown.forEach((r, i) => {
-    const y = T + i * rowH;
+  const ticks = [];
+  for (let z = 0; z <= maxZ; z += 5) ticks.push(`<span style="left:${(z / maxZ) * 100}%">${z}</span>`);
+  let html = `<div class="bars" role="img" aria-label="Zeros removed per country since 1945, one segment per reform">` +
+    `<div class="bar-row axis-row"><span class="bar-name"></span><span class="bar-track axis">${ticks.join("")}</span><span class="bar-total">zeros</span></div>`;
+  for (const r of shown) {
     const label = r.c.name.replace(/ \(.*\)/, "");
-    svg += `<text class="name" x="${L - 10}" y="${y + 16}" text-anchor="end">${esc(label.length > 24 ? label.slice(0, 23) + "…" : label)}</text>`;
-    let x = L;
+    let segs = "";
     for (const sg of r.segs) {
       const decade = Math.floor(sg.step.year / 10) * 10;
-      const tip = `${esc(r.c.name)} — ${sg.step.year}: ${esc(sg.step.old)} → ${esc(sg.step.new)}, ÷ ${sg.step.rate.toLocaleString("en-US")} (${sg.z % 1 ? sg.z.toFixed(2) : sg.z} zeros)${sg.uncited ? " · not yet cited" : ""}`;
-      if (sg.z === 0) {
-        svg += `<line class="tick" x1="${x}" x2="${x}" y1="${y + 5}" y2="${y + 19}" data-tip="${tip} — at par"/>`;
-        continue;
-      }
-      const w = Math.max(X(sg.z) - L, 2);
-      svg += `<rect class="seg${sg.uncited ? " uncited" : ""}" x="${x}" y="${y + 4}" width="${w}" height="16" fill="${DECADE_COLOURS[decade] ?? "#888"}" data-tip="${tip}"/>`;
-      x += w;
+      const tip = `${r.c.name} — ${sg.step.year}: ${sg.step.old} → ${sg.step.new}, ÷ ${sg.step.rate.toLocaleString("en-US")} (${sg.z % 1 ? sg.z.toFixed(2) : sg.z} zeros)${sg.uncited ? " · not yet cited" : ""}`;
+      if (sg.z === 0) { segs += `<i class="tick" data-tip="${esc(tip)} — at par"></i>`; continue; }
+      segs += `<i class="seg${sg.uncited ? " uncited" : ""}" style="width:${(sg.z / maxZ) * 100}%;background:${DECADE_COLOURS[decade] ?? "#888"}" data-tip="${esc(tip)}"></i>`;
     }
-    svg += `<text class="total" x="${x + 6}" y="${y + 16}">${r.total % 1 ? r.total.toFixed(1) : r.total}${r.c.status === "partial" ? " ·" : ""}</text>`;
-  });
-  svg += "</svg>";
-  svg += `<div class="legend">${DECADES.filter((d) => shown.some((r) => r.segs.some((sg) => Math.floor(sg.step.year / 10) * 10 === d)))
+    html += `<div class="bar-row"><span class="bar-name" title="${esc(r.c.name)}">${esc(label)}</span><span class="bar-track" style="background-size:${100 / (maxZ / 5)}% 100%">${segs}</span>` +
+      `<span class="bar-total">${r.total % 1 ? r.total.toFixed(1) : r.total}${r.c.status === "partial" ? " ·" : ""}</span></div>`;
+  }
+  html += "</div>";
+  html += `<div class="legend">${DECADES.filter((d) => shown.some((r) => r.segs.some((sg) => Math.floor(sg.step.year / 10) * 10 === d)))
     .map((d) => `<span><i style="background:${DECADE_COLOURS[d]}"></i>${d}s</span>`).join("")}<span><i style="border:1px dashed var(--red)"></i>not yet cited</span><span>· partial chain</span></div>`;
-  $("#chart").innerHTML = svg;
+  $("#chart").innerHTML = html;
   $("#chart-more").textContent = chartShowAll ? "Show the top 20" : `Show all ${rows.length} countries`;
 }
 chart();

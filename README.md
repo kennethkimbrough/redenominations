@@ -52,6 +52,28 @@ The plan is to grow this country by country: add the next 10–20 chains, cite
 each step against a central-bank or statutory source, and let the tests keep
 the "verified" count truthful.
 
+## How the data moves
+
+```mermaid
+flowchart LR
+  wiki[Wikipedia redenomination table] -->|transcribed by hand| build1[build_redenominations.py]
+  reg[Council Regulation 2866/98<br/>ECB press releases<br/>Bundesbank] -->|cited per step| build2[build_countries.py]
+  build1 --> red[(redenominations.json)]
+  build2 --> cty[(countries.json)]
+  wb[World Bank API<br/>PA.NUS.FCRF, FP.CPI.TOTL] -->|daily job| hist[(history.json)]
+  names[mledoze/countries] -->|daily job| hist
+  fx[currency-api via jsDelivr] -->|daily job| rates[(rates.json)]
+  red & cty --> tests[tests: chains unbroken,<br/>every verified step cited,<br/>rates match the table]
+  red & cty & hist & rates --> engine[site/engine.js<br/>tested with node:test]
+  engine --> page[the page, GitHub Pages]
+```
+
+Three GitHub Actions workflows: `ci.yml` rebuilds the JSON from the Python
+sources and fails if it differs from what is committed, then runs both test
+suites; `rates.yml` runs daily, refreshes the exchange-rate files, commits them
+when they change and redeploys; `pages.yml` runs the tests and publishes
+`site/`, then checks that the live URL answers.
+
 ## Where the numbers come from
 
 - The table of reforms is transcribed from the
