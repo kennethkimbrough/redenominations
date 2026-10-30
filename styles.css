@@ -79,15 +79,21 @@ input:focus-visible, select:focus-visible { outline: 3px solid var(--gold); outl
 .hero-number span::before { content: " "; }
 .hero-figure figcaption { font-size: .95rem; color: var(--ink-2); margin-top: .3rem; }
 
-/* Chart */
-#chart svg { width: 100%; height: auto; display: block; font-family: var(--serif); }
-#chart .grid { stroke: var(--line); }
-#chart .axis { fill: var(--ink-3); font-size: 12px; }
-#chart .name { font-size: 13px; fill: var(--ink); }
-#chart .total { font-size: 12px; fill: var(--ink-2); font-variant-numeric: tabular-nums; }
-#chart .seg { cursor: pointer; stroke: var(--paper); stroke-width: 1; }
-#chart .seg.uncited { fill: none !important; stroke: var(--red); stroke-dasharray: 3 2; }
-#chart .tick { stroke: var(--ink-3); stroke-width: 2; }
+/* Chart: HTML bars so they scale to any width */
+.bars { display: flex; flex-direction: column; gap: 4px; }
+.bar-row { display: grid; grid-template-columns: minmax(84px, 150px) 1fr 44px; align-items: center; gap: .5rem; min-height: 22px; }
+.bar-name { font-size: .9rem; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar-track { position: relative; display: flex; height: 16px; background-image: repeating-linear-gradient(90deg, var(--line) 0 1px, transparent 1px 100%); background-size: 16.6667% 100%; /* overridden inline from the axis */ }
+.bar-track .seg { display: block; height: 100%; min-width: 2px; cursor: pointer; box-shadow: inset -1px 0 0 var(--paper); }
+.bar-track .seg.uncited { background: transparent !important; border: 1px dashed var(--red); box-sizing: border-box; }
+.bar-track .tick { display: block; width: 2px; height: 100%; background: var(--ink-3); cursor: pointer; }
+.bar-total { font-size: .8rem; color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.axis-row { min-height: 18px; margin-bottom: 2px; }
+.bar-track.axis { height: 14px; background: none; }
+.bar-track.axis span { position: absolute; top: 0; transform: translateX(-50%); font-size: .75rem; color: var(--ink-3); }
+.bar-track.axis span:first-child { transform: none; }
+.bar-track.axis span:last-child { transform: translateX(-100%); }
+@media (max-width: 480px) { .bar-row { grid-template-columns: 84px 1fr 36px; } .bar-name { font-size: .8rem; } }
 .legend { display: flex; flex-wrap: wrap; gap: .3rem .9rem; font-size: .85rem; margin-top: .6rem; }
 .legend i { display: inline-block; width: 14px; height: 10px; vertical-align: middle; margin-right: .3rem; border-radius: 2px; }
 .btn { font: inherit; font-size: .95rem; min-height: 44px; padding: .4rem 1rem; border: 1px solid var(--ink-3); border-radius: 4px;
