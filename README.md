@@ -1,1 +1,97 @@
-# redenominations
+# Zeros Removed
+
+**Every currency redenomination since 1945, chained together so you can ask
+what an old banknote is worth in the unit a country uses today.**
+
+Live: https://kennethkimbrough.github.io/redenominations/
+
+When inflation runs far enough, the numbers stop fitting on the notes and a
+country issues a new currency at a fixed rate to the old one: 1,000 old for 1
+new, or in Hungary in 1946, 400,000,000,000,000,000,000,000,000,000 pengő for
+one forint. This project collects those reforms as data, with a citation on
+every figure, and builds three things from it:
+
+- **A converter.** Pick a country, a year's currency and an amount, and it
+  multiplies through every reform since: 1,000,000 Brazilian cruzeiros of 1945
+  come out as 3.6 × 10⁻¹⁰ reais, 15.4 zeros later.
+- **A chart** of cumulative zeros removed per country since 1945, on a log
+  scale, drawn as plain SVG.
+- **The full table**, filterable, with the rate and the number of zeros for each
+  reform.
+
+## Coverage, honestly
+
+| | Count |
+|---|---|
+| Reforms in the table since 1945 | 129 (153 including earlier ones) |
+| Countries with a fully cited chain from 1945 to today | 19 |
+| Countries with a partial chain (a step still needs a citation) | 9 |
+| Countries not yet covered | about 165 |
+
+A country is **verified** only when every step of its chain has a checked
+source and the chain is unbroken, meaning each reform's new currency is the
+next reform's old currency. The tests refuse anything else, so a country cannot
+be marked verified by accident. Partial chains are shown on the site with the
+missing step named, and the converter says when a result passes through an
+uncited step.
+
+The plan is to grow this country by country: add the next 10–20 chains, cite
+each step against a central-bank or statutory source, and let the tests keep
+the "verified" count truthful.
+
+## Where the numbers come from
+
+- The table of reforms is transcribed from the
+  [Wikipedia article on redenomination](https://en.wikipedia.org/wiki/Redenomination)
+  (read 30 October 2026). It lives in `data/build_redenominations.py` as plain
+  rows, so each one can be checked and corrected individually.
+- Euro conversion rates come from
+  [Council Regulation (EC) No 2866/98](https://www.legislation.gov.uk/eur/1998/2866/data.html),
+  Article 1.
+- Steps that are included for continuity but not yet checked against a source
+  (Germany's 1948 reform, Belarus in 2000, Romania in 1947 and 1952, Croatia's
+  and Bulgaria's euro adoptions, and the end of the Zimbabwean dollar) are
+  marked "not yet cited" in the data and on the site.
+
+"Old per new" is the number of old units that bought one new unit. A rate below
+one (Iran's 1932 toman to rial) means the new unit was the smaller one.
+
+The converter says nothing about purchasing power. It only follows the legal
+conversion rates, which is the point: it shows how much of a currency's
+numbering was struck off, not what the money bought.
+
+## Layout
+
+```
+data/build_redenominations.py   the source table as rows → data/redenominations.json
+data/build_countries.py         one chain per country with a source per step → data/countries.json
+tests/test_data.py              chain continuity, citations, rates matching the table
+site/                           index.html, styles.css, app.js (no build step, no dependencies)
+.github/workflows/ci.yml        rebuilds the JSON, fails if it differs from what is committed, runs the tests
+.github/workflows/pages.yml     runs the tests, publishes site/ to GitHub Pages, checks the live URL
+```
+
+## Run it
+
+```sh
+python3 data/build_redenominations.py
+python3 data/build_countries.py
+python3 -m unittest discover -s tests -v
+mkdir -p site/data && cp data/*.json site/data/ && (cd site && python3 -m http.server 8000)
+```
+
+## Adding a country
+
+1. Add an entry to `COUNTRIES` in `data/build_countries.py`: the currency in
+   use at the start year, then one tuple per reform with the year, old and new
+   currency names, old units per new unit, a source key and an optional note.
+2. If the source is new, add it to `SOURCES` with a title, URL and the date you
+   read it.
+3. Run the build and the tests. A step that cites the Wikipedia table must
+   appear there with the same rate; a chain with a gap fails; a verified
+   country with an uncited step fails.
+
+## License
+
+MIT for the code. The data is compiled from the sources above under their own
+terms; Wikipedia text is CC BY-SA 4.0.
