@@ -53,8 +53,9 @@ def fetch_all(indicator: str) -> list[dict]:
 
 
 CURRENCIES_SOURCE = {
-    "title": "REST Countries (restcountries.com), currencies field",
-    "url": "https://restcountries.com/v3.1/all?fields=cca3,currencies",
+    "title": "mledoze/countries dataset (countries.json), currencies field",
+    "url": "https://raw.githubusercontent.com/mledoze/countries/master/countries.json",
+    "page": "https://github.com/mledoze/countries",
 }
 
 
