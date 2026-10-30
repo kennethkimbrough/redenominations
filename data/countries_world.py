@@ -34,6 +34,25 @@ WORLD_SOURCES = {
     "wp-afn": _wp("Afghan_afghani", "2002: 1,000 old afghanis per new, 2,000 for Dostum issues"),
     "wp-khr": _wp("Cambodian_riel", "1953 at par with the piastre; abolished 1975; re-established 20 March 1980"),
     "wp-lak": _wp("Lao_kip", "1953 at par with the piastre; 1976 at 20:1; 1979 at 100:1"),
+    "wp-usd": _wp("United_States_dollar", "the dollar has been the base unit since the Coinage Act of 1792"),
+    "wp-cad": _wp("Canadian_dollar", "the Uniform Currency Act of 1871"),
+    "wp-cop": _wp("Colombian_peso", "the current peso since 1837; a 2018 plan to drop three zeros was not adopted"),
+    "wp-pyg": _wp("Paraguayan_guaran%C3%AD", "created 1943, first issued 1944; a 2011 plan for a new guaraní is suspended"),
+    "wp-dop": _wp("Dominican_peso", "peso oro at par with the US dollar from 1937; the dollar used alongside it until 1947"),
+    "wp-gtq": _wp("Guatemalan_quetzal", "introduced in 1925"),
+    "wp-crc": _wp("Costa_Rican_col%C3%B3n", "introduced in 1896"),
+    "wp-chf": _wp("Swiss_franc", "the franc as the monetary unit since 1850"),
+    "wp-sek": _wp("Swedish_krona", "introduced 1873 with the Scandinavian Monetary Union"),
+    "wp-nok": _wp("Norwegian_krone", "introduced in 1875"),
+    "wp-dkk": _wp("Danish_krone", "introduced as the currency of Denmark in January 1875"),
+    "wp-bmk": _wp("Bohemian_and_Moravian_koruna", "replaced by the reconstituted Czechoslovak koruna at par"),
+    "wp-csk2": _wp("Czechoslovak_koruna", "1953: 5:1 up to 1,500 korunas, 50:1 beyond; 1993 split at par"),
+    "wp-mad": _wp("Moroccan_dirham", "1960: 1 dirham = 100 francs"),
+    "wp-tnd": _wp("Tunisian_dinar", "unit of account 1958, issued 1960, at 1,000 francs"),
+    "wp-dzf": _wp("Algerian_franc", "1960: 100 old francs = 1 new franc"),
+    "wp-dzd": _wp("Algerian_dinar", "1 April 1964, replacing the new franc at par"),
+    "wp-etb": _wp("Ethiopian_birr", "reintroduced 23 July 1945 at 1 birr per 2 East African shillings"),
+    "wp-xaf": _wp("CFA_franc", "created 26 December 1945"),
 }
 
 WORLD = [
@@ -80,6 +99,38 @@ WORLD = [
         (1976, "Royal kip", "Liberation kip", 20, "wp-lak",
          "People could exchange up to 100,000 royal kip and businesses up to a million; the rest had to be deposited in state banks."),
         (1979, "Liberation kip", "Lao kip", 100, "wp-lak", "16 December 1979.")]},
+    {"iso": "US", "name": "United States", "start": 1945, "unit": "dollar", "currency": "United States dollar", "steps": [], "basis": "wp-usd"},
+    {"iso": "CA", "name": "Canada", "start": 1945, "unit": "dollar", "currency": "Canadian dollar", "steps": [], "basis": "wp-cad"},
+    {"iso": "CO", "name": "Colombia", "start": 1945, "unit": "peso", "currency": "Colombian peso", "steps": [], "basis": "wp-cop"},
+    {"iso": "PY", "name": "Paraguay", "start": 1945, "unit": "guaraní", "currency": "Paraguayan guaraní", "steps": [], "basis": "wp-pyg"},
+    {"iso": "GT", "name": "Guatemala", "start": 1945, "unit": "quetzal", "currency": "Guatemalan quetzal", "steps": [], "basis": "wp-gtq"},
+    {"iso": "CR", "name": "Costa Rica", "start": 1945, "unit": "colón", "currency": "Costa Rican colón", "steps": [], "basis": "wp-crc"},
+    {"iso": "CH", "name": "Switzerland", "start": 1945, "unit": "franc", "currency": "Swiss franc", "steps": [], "basis": "wp-chf"},
+    {"iso": "SE", "name": "Sweden", "start": 1945, "unit": "krona", "currency": "Swedish krona", "steps": [], "basis": "wp-sek"},
+    {"iso": "NO", "name": "Norway", "start": 1945, "unit": "krone", "currency": "Norwegian krone", "steps": [], "basis": "wp-nok"},
+    {"iso": "DK", "name": "Denmark", "start": 1945, "unit": "krone", "currency": "Danish krone", "steps": [], "basis": "wp-dkk"},
+    {"iso": "DO", "name": "Dominican Republic", "start": 1945, "unit": "peso", "steps": [
+        (1947, "United States dollar", "Dominican peso", 1, "wp-dop",
+         "The peso oro, at par with the dollar, had circulated since 1937; the dollar stopped being used alongside it in 1947.")]},
+    {"iso": "CZ", "name": "Czech Republic (and Czechoslovakia)", "start": 1945, "unit": "koruna", "steps": [
+        (1945, "Bohemian and Moravian koruna", "Czechoslovak koruna", 1, "wp-bmk", None),
+        (1953, "Czechoslovak koruna", "Czechoslovak koruna (1953)", 5, "wp-csk2",
+         "5 old for 1 new on the first 1,500 korunas per person, 50 for 1 on the rest. The 5:1 rate is used here."),
+        (1993, "Czechoslovak koruna (1953)", "Czech koruna", 1, "wp-csk2", "The split of 8 February 1993, at par.")],
+     "gap": "Every step is cited, but the 1953 reform used two rates (5:1 up to a limit, 50:1 beyond), so the factor holds only for small amounts."},
+    {"iso": "MA", "name": "Morocco", "start": 1945, "unit": "dirham", "steps": [
+        (1960, "Moroccan franc", "Moroccan dirham", 100, "wp-mad",
+         "Follows the former French zone. The former Spanish zone had switched from the peseta to the franc at 10 francs per peseta after reunification.")]},
+    {"iso": "TN", "name": "Tunisia", "start": 1945, "unit": "dinar", "steps": [
+        (1958, "Tunisian franc", "Tunisian dinar", 1_000, "wp-tnd", "A unit of account from 1958; notes and coins from 1960.")]},
+    {"iso": "DZ", "name": "Algeria", "start": 1945, "unit": "dinar", "steps": [
+        (1960, "Algerian franc", "Algerian new franc", 100, "wp-dzf", None),
+        (1964, "Algerian new franc", "Algerian dinar", 1, "wp-dzd", None)]},
+    {"iso": "ET", "name": "Ethiopia", "start": 1945, "unit": "birr", "steps": [
+        (1945, "East African shilling", "Ethiopian birr", 2, "wp-etb",
+         "23 July 1945. Called the Ethiopian dollar in English until 1976, when birr became the name in every language.")]},
+    {"iso": "CM", "name": "Cameroon", "start": 1946, "unit": "CFA franc", "currency": "Central African CFA franc", "steps": [], "basis": "wp-xaf",
+     "gap": "Starts at the CFA franc's creation in December 1945. The rate at which French Cameroun's own franc was swapped, the move to the BEAC issue in the 1970s, and the former British Southern Cameroons are not yet cited."},
 ]
 
 WORLD_ALIASES = {}
@@ -87,9 +138,15 @@ WORLD_ALIASES = {}
 WORLD_WORLD_BANK = {
     "GB": "GBR", "AU": "AUS", "NZ": "NZL", "ZA": "ZAF", "NG": "NGA", "KE": "KEN", "TZ": "TZA",
     "JM": "JAM", "MW": "MWI", "GM": "GMB", "IR": "IRN", "AF": "AFG", "KH": "KHM", "LA": "LAO",
+    "US": "USA", "CA": "CAN", "CO": "COL", "PY": "PRY", "GT": "GTM", "CR": "CRI", "CH": "CHE",
+    "SE": "SWE", "NO": "NOR", "DK": "DNK", "DO": "DOM", "CZ": "CZE", "MA": "MAR", "TN": "TUN",
+    "DZ": "DZA", "ET": "ETH", "CM": "CMR",
 }
 
 WORLD_UNITS = {
     "GB": "GBP", "AU": "AUD", "NZ": "NZD", "ZA": "ZAR", "NG": "NGN", "KE": "KES", "TZ": "TZS",
     "JM": "JMD", "MW": "MWK", "GM": "GMD", "IR": "IRR", "AF": "AFN", "KH": "KHR", "LA": "LAK",
+    "US": "USD", "CA": "CAD", "CO": "COP", "PY": "PYG", "GT": "GTQ", "CR": "CRC", "CH": "CHF",
+    "SE": "SEK", "NO": "NOK", "DK": "DKK", "DO": "DOP", "CZ": "CZK", "MA": "MAD", "TN": "TND",
+    "DZ": "DZD", "ET": "ETB", "CM": "XAF",
 }
