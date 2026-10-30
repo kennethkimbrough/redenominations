@@ -294,6 +294,86 @@
    "title": "CFA franc — Wikipedia (created 26 December 1945)",
    "url": "https://en.wikipedia.org/wiki/CFA_franc",
    "accessed": "2026-10-30"
+  },
+  "wp-inr": {
+   "title": "History of the rupee — Wikipedia (1957 decimalisation: the rupee kept its value, divided into 100 paisa)",
+   "url": "https://en.wikipedia.org/wiki/History_of_the_rupee",
+   "accessed": "2026-10-30"
+  },
+  "wp-pkr": {
+   "title": "Pakistani rupee — Wikipedia (Indian and Pakistani rupees at parity; Indian notes supplied until 30 June 1948)",
+   "url": "https://en.wikipedia.org/wiki/Pakistani_rupee",
+   "accessed": "2026-10-30"
+  },
+  "wp-bdt": {
+   "title": "Bangladeshi taka — Wikipedia (4 March 1972: the taka replaced the Pakistani rupee at par)",
+   "url": "https://en.wikipedia.org/wiki/Bangladeshi_taka",
+   "accessed": "2026-10-30"
+  },
+  "boj-newyen": {
+   "title": "Bank of Japan, \"Why do we use the yen?\" (the 1946 conversion to the \"new yen\", a forced exchange of notes in the same unit)",
+   "url": "https://www.boj.or.jp/en/announcements/education/oshiete/money/c07.htm",
+   "accessed": "2026-10-30"
+  },
+  "ph-eo25": {
+   "title": "Executive Order No. 25, 18 November 1944 (Japanese-issued money not legal tender; pre-war Philippine Treasury certificates and coins continue as legal tender)",
+   "url": "https://batasnatin.com/laws/eo-25-6",
+   "accessed": "2026-10-30"
+  },
+  "wp-thb": {
+   "title": "Thai baht — Wikipedia (the baht since before 1945, with no change of unit)",
+   "url": "https://en.wikipedia.org/wiki/Thai_baht",
+   "accessed": "2026-10-30"
+  },
+  "wp-mbbd": {
+   "title": "Malaya and British Borneo dollar — Wikipedia (1953: replaced the Malayan dollar at par; 1967: replaced at par by the ringgit and the Singapore dollar)",
+   "url": "https://en.wikipedia.org/wiki/Malaya_and_British_Borneo_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-lkr": {
+   "title": "Sri Lankan rupee — Wikipedia (known until 1972 as the Ceylon rupee)",
+   "url": "https://en.wikipedia.org/wiki/Sri_Lankan_rupee",
+   "accessed": "2026-10-30"
+  },
+  "wp-mmk": {
+   "title": "Myanmar kyat — Wikipedia (introduced 1 July 1952, replacing the rupee at par)",
+   "url": "https://en.wikipedia.org/wiki/Myanmar_kyat",
+   "accessed": "2026-10-30"
+  },
+  "wp-iqd": {
+   "title": "Iraqi dinar — Wikipedia (the dinar since 1932; 2003 notes exchanged at par)",
+   "url": "https://en.wikipedia.org/wiki/Iraqi_dinar",
+   "accessed": "2026-10-30"
+  },
+  "wp-sar": {
+   "title": "Saudi riyal — Wikipedia (the riyal since before 1945; only its subdivisions changed)",
+   "url": "https://en.wikipedia.org/wiki/Saudi_riyal",
+   "accessed": "2026-10-30"
+  },
+  "wp-egp": {
+   "title": "Egyptian pound — Wikipedia (the pound since before 1945)",
+   "url": "https://en.wikipedia.org/wiki/Egyptian_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-npr": {
+   "title": "Nepalese rupee — Wikipedia (the rupee since 1932; the Indian rupee ceased to be legal tender in Nepal in 1966)",
+   "url": "https://en.wikipedia.org/wiki/Nepalese_rupee",
+   "accessed": "2026-10-30"
+  },
+  "wp-mnt": {
+   "title": "Mongolian t%C3%B6gr%C3%B6g — Wikipedia (introduced 9 December 1925)",
+   "url": "https://en.wikipedia.org/wiki/Mongolian_t%C3%B6gr%C3%B6g",
+   "accessed": "2026-10-30"
+  },
+  "wp-krwyen": {
+   "title": "Korean yen — Wikipedia (replaced at par by the North Korean won)",
+   "url": "https://en.wikipedia.org/wiki/Korean_yen",
+   "accessed": "2026-10-30"
+  },
+  "wp-kpw": {
+   "title": "North Korean won — Wikipedia (1959: new won equal to 100 old; 2009: 100 to 1, with exchange limits)",
+   "url": "https://en.wikipedia.org/wiki/North_Korean_won",
+   "accessed": "2026-10-30"
   }
  },
  "countries": [
@@ -2530,6 +2610,59 @@
    "wb_unsupported": null
   },
   {
+   "iso": "KP",
+   "name": "North Korea",
+   "start": 1945,
+   "unit": "won",
+   "currency": "Korean yen",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "Korean yen",
+     "new": "North Korean won (1947)",
+     "rate": 1,
+     "source": {
+      "title": "Korean yen — Wikipedia (replaced at par by the North Korean won)",
+      "url": "https://en.wikipedia.org/wiki/Korean_yen",
+      "accessed": "2026-10-30"
+     },
+     "note": "6 December 1947."
+    },
+    {
+     "year": 1959,
+     "old": "North Korean won (1947)",
+     "new": "North Korean won (1959)",
+     "rate": 100,
+     "source": {
+      "title": "North Korean won — Wikipedia (1959: new won equal to 100 old; 2009: 100 to 1, with exchange limits)",
+      "url": "https://en.wikipedia.org/wiki/North_Korean_won",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2009,
+     "old": "North Korean won (1959)",
+     "new": "North Korean won",
+     "rate": 100,
+     "source": {
+      "title": "North Korean won — Wikipedia (1959: new won equal to 100 old; 2009: 100 to 1, with exchange limits)",
+      "url": "https://en.wikipedia.org/wiki/North_Korean_won",
+      "accessed": "2026-10-30"
+     },
+     "note": "Each person could exchange only a limited amount (first 100,000, later up to 500,000 old won); the rest could not be converted."
+    }
+   ],
+   "total_factor": 10000.0,
+   "wb": null,
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "IL",
    "name": "Israel",
    "start": 1948,
@@ -4171,6 +4304,387 @@
    "wb_unsupported": null
   },
   {
+   "iso": "IN",
+   "name": "India",
+   "start": 1945,
+   "unit": "rupee",
+   "currency": "Indian rupee",
+   "basis": {
+    "title": "History of the rupee — Wikipedia (1957 decimalisation: the rupee kept its value, divided into 100 paisa)",
+    "url": "https://en.wikipedia.org/wiki/History_of_the_rupee",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "IND",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "JP",
+   "name": "Japan",
+   "start": 1945,
+   "unit": "yen",
+   "currency": "Japanese yen",
+   "basis": {
+    "title": "Bank of Japan, \"Why do we use the yen?\" (the 1946 conversion to the \"new yen\", a forced exchange of notes in the same unit)",
+    "url": "https://www.boj.or.jp/en/announcements/education/oshiete/money/c07.htm",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "JPN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "PH",
+   "name": "Philippines",
+   "start": 1945,
+   "unit": "peso",
+   "currency": "Philippine peso",
+   "basis": {
+    "title": "Executive Order No. 25, 18 November 1944 (Japanese-issued money not legal tender; pre-war Philippine Treasury certificates and coins continue as legal tender)",
+    "url": "https://batasnatin.com/laws/eo-25-6",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "PHL",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "TH",
+   "name": "Thailand",
+   "start": 1945,
+   "unit": "baht",
+   "currency": "Thai baht",
+   "basis": {
+    "title": "Thai baht — Wikipedia (the baht since before 1945, with no change of unit)",
+    "url": "https://en.wikipedia.org/wiki/Thai_baht",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "THA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "LK",
+   "name": "Sri Lanka",
+   "start": 1945,
+   "unit": "rupee",
+   "currency": "Sri Lankan rupee",
+   "basis": {
+    "title": "Sri Lankan rupee — Wikipedia (known until 1972 as the Ceylon rupee)",
+    "url": "https://en.wikipedia.org/wiki/Sri_Lankan_rupee",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "LKA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "IQ",
+   "name": "Iraq",
+   "start": 1945,
+   "unit": "dinar",
+   "currency": "Iraqi dinar",
+   "basis": {
+    "title": "Iraqi dinar — Wikipedia (the dinar since 1932; 2003 notes exchanged at par)",
+    "url": "https://en.wikipedia.org/wiki/Iraqi_dinar",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "IRQ",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SA",
+   "name": "Saudi Arabia",
+   "start": 1945,
+   "unit": "riyal",
+   "currency": "Saudi riyal",
+   "basis": {
+    "title": "Saudi riyal — Wikipedia (the riyal since before 1945; only its subdivisions changed)",
+    "url": "https://en.wikipedia.org/wiki/Saudi_riyal",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "SAU",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "EG",
+   "name": "Egypt",
+   "start": 1945,
+   "unit": "pound",
+   "currency": "Egyptian pound",
+   "basis": {
+    "title": "Egyptian pound — Wikipedia (the pound since before 1945)",
+    "url": "https://en.wikipedia.org/wiki/Egyptian_pound",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "EGY",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "NP",
+   "name": "Nepal",
+   "start": 1945,
+   "unit": "rupee",
+   "currency": "Nepalese rupee",
+   "basis": {
+    "title": "Nepalese rupee — Wikipedia (the rupee since 1932; the Indian rupee ceased to be legal tender in Nepal in 1966)",
+    "url": "https://en.wikipedia.org/wiki/Nepalese_rupee",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "NPL",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "MN",
+   "name": "Mongolia",
+   "start": 1945,
+   "unit": "tögrög",
+   "currency": "Mongolian tögrög",
+   "basis": {
+    "title": "Mongolian t%C3%B6gr%C3%B6g — Wikipedia (introduced 9 December 1925)",
+    "url": "https://en.wikipedia.org/wiki/Mongolian_t%C3%B6gr%C3%B6g",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "MNG",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "PK",
+   "name": "Pakistan",
+   "start": 1945,
+   "unit": "rupee",
+   "currency": "Indian rupee",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1948,
+     "old": "Indian rupee",
+     "new": "Pakistani rupee",
+     "rate": 1,
+     "source": {
+      "title": "Pakistani rupee — Wikipedia (Indian and Pakistani rupees at parity; Indian notes supplied until 30 June 1948)",
+      "url": "https://en.wikipedia.org/wiki/Pakistani_rupee",
+      "accessed": "2026-10-30"
+     },
+     "note": "Pakistan's own notes replaced Indian ones after independence, at parity."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "PAK",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "BD",
+   "name": "Bangladesh",
+   "start": 1945,
+   "unit": "taka",
+   "currency": "Indian rupee",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1948,
+     "old": "Indian rupee",
+     "new": "Pakistani rupee",
+     "rate": 1,
+     "source": {
+      "title": "Pakistani rupee — Wikipedia (Indian and Pakistani rupees at parity; Indian notes supplied until 30 June 1948)",
+      "url": "https://en.wikipedia.org/wiki/Pakistani_rupee",
+      "accessed": "2026-10-30"
+     },
+     "note": "As East Pakistan."
+    },
+    {
+     "year": 1972,
+     "old": "Pakistani rupee",
+     "new": "Bangladeshi taka",
+     "rate": 1,
+     "source": {
+      "title": "Bangladeshi taka — Wikipedia (4 March 1972: the taka replaced the Pakistani rupee at par)",
+      "url": "https://en.wikipedia.org/wiki/Bangladeshi_taka",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "BGD",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "MY",
+   "name": "Malaysia",
+   "start": 1945,
+   "unit": "ringgit",
+   "currency": "Malayan dollar",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1953,
+     "old": "Malayan dollar",
+     "new": "Malaya and British Borneo dollar",
+     "rate": 1,
+     "source": {
+      "title": "Malaya and British Borneo dollar — Wikipedia (1953: replaced the Malayan dollar at par; 1967: replaced at par by the ringgit and the Singapore dollar)",
+      "url": "https://en.wikipedia.org/wiki/Malaya_and_British_Borneo_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "The Japanese occupation dollar was declared worthless in 1945 and the pre-war dollar restored."
+    },
+    {
+     "year": 1967,
+     "old": "Malaya and British Borneo dollar",
+     "new": "Malaysian ringgit",
+     "rate": 1,
+     "source": {
+      "title": "Malaya and British Borneo dollar — Wikipedia (1953: replaced the Malayan dollar at par; 1967: replaced at par by the ringgit and the Singapore dollar)",
+      "url": "https://en.wikipedia.org/wiki/Malaya_and_British_Borneo_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "MYS",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SG",
+   "name": "Singapore",
+   "start": 1945,
+   "unit": "dollar",
+   "currency": "Malayan dollar",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1953,
+     "old": "Malayan dollar",
+     "new": "Malaya and British Borneo dollar",
+     "rate": 1,
+     "source": {
+      "title": "Malaya and British Borneo dollar — Wikipedia (1953: replaced the Malayan dollar at par; 1967: replaced at par by the ringgit and the Singapore dollar)",
+      "url": "https://en.wikipedia.org/wiki/Malaya_and_British_Borneo_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "The Japanese occupation dollar was declared worthless in 1945 and the pre-war dollar restored."
+    },
+    {
+     "year": 1967,
+     "old": "Malaya and British Borneo dollar",
+     "new": "Singapore dollar",
+     "rate": 1,
+     "source": {
+      "title": "Malaya and British Borneo dollar — Wikipedia (1953: replaced the Malayan dollar at par; 1967: replaced at par by the ringgit and the Singapore dollar)",
+      "url": "https://en.wikipedia.org/wiki/Malaya_and_British_Borneo_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "SGP",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "MM",
+   "name": "Myanmar",
+   "start": 1945,
+   "unit": "kyat",
+   "currency": "Burmese rupee",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1952,
+     "old": "Burmese rupee",
+     "new": "Myanmar kyat",
+     "rate": 1,
+     "source": {
+      "title": "Myanmar kyat — Wikipedia (introduced 1 July 1952, replacing the rupee at par)",
+      "url": "https://en.wikipedia.org/wiki/Myanmar_kyat",
+      "accessed": "2026-10-30"
+     },
+     "note": "The Japanese occupation kyat became worthless in 1945. Later note withdrawals (1964, 1985, 1987) cancelled notes without changing the unit."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "MMR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "IE",
    "name": "Ireland",
    "start": 1945,
@@ -5039,6 +5553,6 @@
    "wb_unsupported": null
   }
  ],
- "verified": 94,
+ "verified": 110,
  "partial": 12
 }

@@ -53,6 +53,24 @@ WORLD_SOURCES = {
     "wp-dzd": _wp("Algerian_dinar", "1 April 1964, replacing the new franc at par"),
     "wp-etb": _wp("Ethiopian_birr", "reintroduced 23 July 1945 at 1 birr per 2 East African shillings"),
     "wp-xaf": _wp("CFA_franc", "created 26 December 1945"),
+    "wp-inr": _wp("History_of_the_rupee", "1957 decimalisation: the rupee kept its value, divided into 100 paisa"),
+    "wp-pkr": _wp("Pakistani_rupee", "Indian and Pakistani rupees at parity; Indian notes supplied until 30 June 1948"),
+    "wp-bdt": _wp("Bangladeshi_taka", "4 March 1972: the taka replaced the Pakistani rupee at par"),
+    "boj-newyen": {"title": "Bank of Japan, \"Why do we use the yen?\" (the 1946 conversion to the \"new yen\", a forced exchange of notes in the same unit)",
+                   "url": "https://www.boj.or.jp/en/announcements/education/oshiete/money/c07.htm", "accessed": "2026-10-30"},
+    "ph-eo25": {"title": "Executive Order No. 25, 18 November 1944 (Japanese-issued money not legal tender; pre-war Philippine Treasury certificates and coins continue as legal tender)",
+                "url": "https://batasnatin.com/laws/eo-25-6", "accessed": "2026-10-30"},
+    "wp-thb": _wp("Thai_baht", "the baht since before 1945, with no change of unit"),
+    "wp-mbbd": _wp("Malaya_and_British_Borneo_dollar", "1953: replaced the Malayan dollar at par; 1967: replaced at par by the ringgit and the Singapore dollar"),
+    "wp-lkr": _wp("Sri_Lankan_rupee", "known until 1972 as the Ceylon rupee"),
+    "wp-mmk": _wp("Myanmar_kyat", "introduced 1 July 1952, replacing the rupee at par"),
+    "wp-iqd": _wp("Iraqi_dinar", "the dinar since 1932; 2003 notes exchanged at par"),
+    "wp-sar": _wp("Saudi_riyal", "the riyal since before 1945; only its subdivisions changed"),
+    "wp-egp": _wp("Egyptian_pound", "the pound since before 1945"),
+    "wp-npr": _wp("Nepalese_rupee", "the rupee since 1932; the Indian rupee ceased to be legal tender in Nepal in 1966"),
+    "wp-mnt": _wp("Mongolian_t%C3%B6gr%C3%B6g", "introduced 9 December 1925"),
+    "wp-krwyen": _wp("Korean_yen", "replaced at par by the North Korean won"),
+    "wp-kpw": _wp("North_Korean_won", "1959: new won equal to 100 old; 2009: 100 to 1, with exchange limits"),
 }
 
 WORLD = [
@@ -129,6 +147,37 @@ WORLD = [
     {"iso": "ET", "name": "Ethiopia", "start": 1945, "unit": "birr", "steps": [
         (1945, "East African shilling", "Ethiopian birr", 2, "wp-etb",
          "23 July 1945. Called the Ethiopian dollar in English until 1976, when birr became the name in every language.")]},
+    {"iso": "IN", "name": "India", "start": 1945, "unit": "rupee", "currency": "Indian rupee", "steps": [], "basis": "wp-inr"},
+    {"iso": "JP", "name": "Japan", "start": 1945, "unit": "yen", "currency": "Japanese yen", "steps": [], "basis": "boj-newyen"},
+    {"iso": "PH", "name": "Philippines", "start": 1945, "unit": "peso", "currency": "Philippine peso", "steps": [], "basis": "ph-eo25"},
+    {"iso": "TH", "name": "Thailand", "start": 1945, "unit": "baht", "currency": "Thai baht", "steps": [], "basis": "wp-thb"},
+    {"iso": "LK", "name": "Sri Lanka", "start": 1945, "unit": "rupee", "currency": "Sri Lankan rupee", "steps": [], "basis": "wp-lkr"},
+    {"iso": "IQ", "name": "Iraq", "start": 1945, "unit": "dinar", "currency": "Iraqi dinar", "steps": [], "basis": "wp-iqd"},
+    {"iso": "SA", "name": "Saudi Arabia", "start": 1945, "unit": "riyal", "currency": "Saudi riyal", "steps": [], "basis": "wp-sar"},
+    {"iso": "EG", "name": "Egypt", "start": 1945, "unit": "pound", "currency": "Egyptian pound", "steps": [], "basis": "wp-egp"},
+    {"iso": "NP", "name": "Nepal", "start": 1945, "unit": "rupee", "currency": "Nepalese rupee", "steps": [], "basis": "wp-npr"},
+    {"iso": "MN", "name": "Mongolia", "start": 1945, "unit": "tögrög", "currency": "Mongolian tögrög", "steps": [], "basis": "wp-mnt"},
+    {"iso": "PK", "name": "Pakistan", "start": 1945, "unit": "rupee", "steps": [
+        (1948, "Indian rupee", "Pakistani rupee", 1, "wp-pkr", "Pakistan's own notes replaced Indian ones after independence, at parity.")]},
+    {"iso": "BD", "name": "Bangladesh", "start": 1945, "unit": "taka", "steps": [
+        (1948, "Indian rupee", "Pakistani rupee", 1, "wp-pkr", "As East Pakistan."),
+        (1972, "Pakistani rupee", "Bangladeshi taka", 1, "wp-bdt", None)]},
+    {"iso": "MY", "name": "Malaysia", "start": 1945, "unit": "ringgit", "steps": [
+        (1953, "Malayan dollar", "Malaya and British Borneo dollar", 1, "wp-mbbd",
+         "The Japanese occupation dollar was declared worthless in 1945 and the pre-war dollar restored."),
+        (1967, "Malaya and British Borneo dollar", "Malaysian ringgit", 1, "wp-mbbd", None)]},
+    {"iso": "SG", "name": "Singapore", "start": 1945, "unit": "dollar", "steps": [
+        (1953, "Malayan dollar", "Malaya and British Borneo dollar", 1, "wp-mbbd",
+         "The Japanese occupation dollar was declared worthless in 1945 and the pre-war dollar restored."),
+        (1967, "Malaya and British Borneo dollar", "Singapore dollar", 1, "wp-mbbd", None)]},
+    {"iso": "MM", "name": "Myanmar", "start": 1945, "unit": "kyat", "steps": [
+        (1952, "Burmese rupee", "Myanmar kyat", 1, "wp-mmk",
+         "The Japanese occupation kyat became worthless in 1945. Later note withdrawals (1964, 1985, 1987) cancelled notes without changing the unit.")]},
+    {"iso": "KP", "name": "North Korea", "start": 1945, "unit": "won", "steps": [
+        (1947, "Korean yen", "North Korean won (1947)", 1, "wp-krwyen", "6 December 1947."),
+        (1959, "North Korean won (1947)", "North Korean won (1959)", 100, "wp-kpw", None),
+        (2009, "North Korean won (1959)", "North Korean won", 100, "wp-kpw",
+         "Each person could exchange only a limited amount (first 100,000, later up to 500,000 old won); the rest could not be converted.")]},
     {"iso": "CM", "name": "Cameroon", "start": 1946, "unit": "CFA franc", "currency": "Central African CFA franc", "steps": [], "basis": "wp-xaf",
      "gap": "Starts at the CFA franc's creation in December 1945. The rate at which French Cameroun's own franc was swapped, the move to the BEAC issue in the 1970s, and the former British Southern Cameroons are not yet cited."},
 ]
@@ -141,6 +190,9 @@ WORLD_WORLD_BANK = {
     "US": "USA", "CA": "CAN", "CO": "COL", "PY": "PRY", "GT": "GTM", "CR": "CRI", "CH": "CHE",
     "SE": "SWE", "NO": "NOR", "DK": "DNK", "DO": "DOM", "CZ": "CZE", "MA": "MAR", "TN": "TUN",
     "DZ": "DZA", "ET": "ETH", "CM": "CMR",
+    "IN": "IND", "PK": "PAK", "BD": "BGD", "JP": "JPN", "PH": "PHL", "TH": "THA", "MY": "MYS",
+    "SG": "SGP", "LK": "LKA", "MM": "MMR", "IQ": "IRQ", "SA": "SAU", "EG": "EGY", "NP": "NPL",
+    "KP": None, "MN": "MNG",
 }
 
 WORLD_UNITS = {
@@ -149,4 +201,7 @@ WORLD_UNITS = {
     "US": "USD", "CA": "CAD", "CO": "COP", "PY": "PYG", "GT": "GTQ", "CR": "CRC", "CH": "CHF",
     "SE": "SEK", "NO": "NOK", "DK": "DKK", "DO": "DOP", "CZ": "CZK", "MA": "MAD", "TN": "TND",
     "DZ": "DZD", "ET": "ETB", "CM": "XAF",
+    "IN": "INR", "PK": "PKR", "BD": "BDT", "JP": "JPY", "PH": "PHP", "TH": "THB", "MY": "MYR",
+    "SG": "SGD", "LK": "LKR", "MM": "MMK", "IQ": "IQD", "SA": "SAR", "EG": "EGP", "NP": "NPR",
+    "KP": "KPW", "MN": "MNT",
 }

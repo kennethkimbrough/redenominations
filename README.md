@@ -37,9 +37,9 @@ every figure, and builds three things from it:
 | | Count |
 |---|---|
 | Reforms in the table since 1945 | 129 (153 including earlier ones) |
-| Countries with a fully cited chain from their first post-war currency to today | 68 |
-| Countries with a partial chain (a reform with several rates, or a step with no fixed rate) | 7 |
-| Countries not yet covered | about 120 |
+| Countries with a fully cited chain from 1945 (or their first currency) to today | 110 |
+| Countries with a partial chain (a reform with several rates, a step with no fixed rate, or a start not yet traced) | 12 |
+| Countries not yet covered | about 75 |
 
 A country is **verified** only when every step of its chain has a checked
 source and the chain is unbroken, meaning each reform's new currency is the
@@ -97,13 +97,24 @@ when they change and redeploys; `pages.yml` runs the tests and publishes
   1985), cite the Wikipedia article on the currency in question, or the Bank
   of Ghana's own history for the cedi. Each source is listed with the sentence
   it supports in `data/countries.json`.
-- Seven chains stay partial on purpose. Germany (1948), Austria (1945 and
-  1947), Czechoslovakia (1953), Romania (1952) and Bulgaria (1952) converted
-  money at more than one rate depending on the amount or the kind of holding,
-  so no single factor is exact; the converter uses the rate for cash or small
-  amounts and says so. The last Zimbabwean dollar was abandoned in 2009 with no
-  fixed rate, and Timor-Leste's switch from the rupiah to the US dollar had no
-  legal conversion rate either.
+- Countries that never redenominated are covered too, because many still
+  changed currency: Australia, New Zealand, South Africa, Nigeria, Jamaica and
+  Malawi moved from a pound to a decimal unit worth half of it, and colonial
+  currencies gave way to national ones, usually at par. These chains live in
+  `data/countries_world.py`. A country whose currency has not changed at all
+  since 1945 (the United States, Switzerland, India, Japan and others) has no
+  steps and cites one source for that continuity. Decimalisations that kept the
+  main unit (the UK in 1971, India in 1957) are not steps.
+- Twelve chains stay partial on purpose. Germany (1948), Austria (1945 and
+  1947), Czechoslovakia (1953, so both the Czech Republic and Slovakia),
+  Romania (1952), Bulgaria (1952) and Afghanistan (2002) converted money at
+  more than one rate, so no single factor is exact; the converter uses the rate
+  for cash or small amounts and says so. Zimbabwe (2009), Cambodia (money
+  abolished in 1975) and Timor-Leste had changes with no fixed rate at all.
+  Iran approved a 10,000-to-1 redenomination in 2025 that is not confirmed to
+  be in effect, and Cameroon's start before the CFA franc is not yet traced.
+- Left out until their sources say more: Trinidad and Tobago, Libya and Cuba,
+  where a key rate or date is not stated anywhere readable.
 
 Today's exchange rates come from the
 [currency-api dataset](https://github.com/fawazahmed0/exchange-api) published
@@ -141,6 +152,7 @@ link: `#c=HU.0.1000000` is a million 1945 pengő in the chain converter, and
 data/build_redenominations.py   the source table as rows → data/redenominations.json
 data/build_countries.py         one chain per country with a source per step → data/countries.json
 data/countries_more.py          further chains built from the same sources (Soviet and Yugoslav successors, euro members, others)
+data/countries_world.py         countries outside the redenomination table, including those whose currency never changed
 tests/test_data.py              chain continuity, citations, rates matching the table
 site/engine.js                  the arithmetic, with no DOM: chain conversion, at-the-time conversion, formatting
 site/app.js, index.html, css    the page (no build step, no dependencies)
