@@ -113,7 +113,7 @@ MORE = [
         (1968, "Zambian pound", "(old) Kwacha", 0.5, "wp-zmpound", "Decimalisation: two kwacha to the pound."),
         (2013, "(old) Kwacha", "Zambian kwacha", 1_000, "wiki", None)]},
     {"iso": "SD", "name": "Sudan", "start": 1945, "unit": "pound", "steps": [
-        (1957, "Egyptian pound", "First Sudanese pounds", 1, "wp-sdpound", None),
+        (1956, "Egyptian pound", "First Sudanese pounds", 1, "wp-sdpound", "Created when Anglo-Egyptian rule ended on 1 January 1956; the first notes followed in April 1957."),
         (1992, "First Sudanese pounds", "Sudanese dinar", 10, "wiki", None),
         (2007, "Sudanese dinars", "Second Sudanese pound", 100, "wiki", None)]},
     {"iso": "UG", "name": "Uganda", "start": 1945, "unit": "shilling", "steps": [
