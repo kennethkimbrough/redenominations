@@ -494,6 +494,111 @@
    "title": "East African shilling — Wikipedia (Eritrea adopted the Ethiopian dollar on federation in 1952)",
    "url": "https://en.wikipedia.org/wiki/East_African_shilling",
    "accessed": "2026-10-30"
+  },
+  "wp-bwp": {
+   "title": "Botswana pula — Wikipedia (introduced 23 August 1976, replacing the rand at par)",
+   "url": "https://en.wikipedia.org/wiki/Botswana_pula",
+   "accessed": "2026-10-30"
+  },
+  "wp-szl": {
+   "title": "Swazi lilangeni — Wikipedia (introduced in 1974 at par with the rand)",
+   "url": "https://en.wikipedia.org/wiki/Swazi_lilangeni",
+   "accessed": "2026-10-30"
+  },
+  "wp-lsl": {
+   "title": "Lesotho loti — Wikipedia (pegged 1:1 to the rand; circulating coins from 1979–80 to replace the rand)",
+   "url": "https://en.wikipedia.org/wiki/Lesotho_loti",
+   "accessed": "2026-10-30"
+  },
+  "wp-nad": {
+   "title": "Namibian dollar — Wikipedia (first notes 15 September 1993, at par with the rand)",
+   "url": "https://en.wikipedia.org/wiki/Namibian_dollar",
+   "accessed": "2026-10-30"
+  },
+  "wp-zar-users": {
+   "title": "South African rand — Wikipedia (South West Africa used the rand from 1961)",
+   "url": "https://en.wikipedia.org/wiki/South_African_rand",
+   "accessed": "2026-10-30"
+  },
+  "wp-mur": {
+   "title": "Mauritian rupee — Wikipedia (the rupee throughout, with only new coin and note issues since 1945)",
+   "url": "https://en.wikipedia.org/wiki/Mauritian_rupee",
+   "accessed": "2026-10-30"
+  },
+  "wp-scr": {
+   "title": "Seychellois rupee — Wikipedia (currency of Seychelles since 1914)",
+   "url": "https://en.wikipedia.org/wiki/Seychellois_rupee",
+   "accessed": "2026-10-30"
+  },
+  "wp-sdd": {
+   "title": "Sudanese dinar — Wikipedia (1992 at 10 pounds per dinar; 2007 second pound at 100 dinars)",
+   "url": "https://en.wikipedia.org/wiki/Sudanese_dinar",
+   "accessed": "2026-10-30"
+  },
+  "wp-ssp": {
+   "title": "South Sudanese pound — Wikipedia (introduced 18 July 2011, replacing the Sudanese pound at par)",
+   "url": "https://en.wikipedia.org/wiki/South_Sudanese_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-mvr": {
+   "title": "Maldivian rufiyaa — Wikipedia (rufiyaa notes from 1947, equal in value to the Ceylonese rupee)",
+   "url": "https://en.wikipedia.org/wiki/Maldivian_rufiyaa",
+   "accessed": "2026-10-30"
+  },
+  "wp-gulfrupee": {
+   "title": "Gulf rupee — Wikipedia (issued 1959, equivalent to the Indian rupee)",
+   "url": "https://en.wikipedia.org/wiki/Gulf_rupee",
+   "accessed": "2026-10-30"
+  },
+  "wp-bhd": {
+   "title": "Bahraini dinar — Wikipedia (1965, at 10 Gulf rupees to the dinar)",
+   "url": "https://en.wikipedia.org/wiki/Bahraini_dinar",
+   "accessed": "2026-10-30"
+  },
+  "wp-kwd": {
+   "title": "Kuwaiti dinar — Wikipedia (1961, at 13⅓ rupees to the dinar)",
+   "url": "https://en.wikipedia.org/wiki/Kuwaiti_dinar",
+   "accessed": "2026-10-30"
+  },
+  "wp-omr": {
+   "title": "Omani rial — Wikipedia (Saidi rial of 1970 at 21 Gulf rupees; renamed Omani rial at par in 1972)",
+   "url": "https://en.wikipedia.org/wiki/Omani_rial",
+   "accessed": "2026-10-30"
+  },
+  "wp-qar": {
+   "title": "Qatari riyal — Wikipedia (1966: Saudi riyal at 1.065 Gulf rupees, then the Qatar and Dubai riyal; Qatari riyal at par in 1973)",
+   "url": "https://en.wikipedia.org/wiki/Qatari_riyal",
+   "accessed": "2026-10-30"
+  },
+  "wp-aed": {
+   "title": "United Arab Emirates dirham — Wikipedia (Abu Dhabi: Bahraini dinar at 10 Gulf rupees in 1966; dirham at 10 to the dinar in 1973)",
+   "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates_dirham",
+   "accessed": "2026-10-30"
+  },
+  "wp-yer-n": {
+   "title": "North Yemeni rial — Wikipedia (replaced at par by the Yemeni rial after unification)",
+   "url": "https://en.wikipedia.org/wiki/North_Yemeni_rial",
+   "accessed": "2026-10-30"
+  },
+  "wp-jod": {
+   "title": "Jordanian dinar — Wikipedia (issued from 1949, exchangeable for Palestine pounds at parity)",
+   "url": "https://en.wikipedia.org/wiki/Jordanian_dinar",
+   "accessed": "2026-10-30"
+  },
+  "wp-lbp": {
+   "title": "Lebanese pound — Wikipedia (the Lebanese pound since its 1939 separation from Syria's)",
+   "url": "https://en.wikipedia.org/wiki/Lebanese_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-syp": {
+   "title": "Syrian pound — Wikipedia (1 January 2026: 100 old pounds for one new pound)",
+   "url": "https://en.wikipedia.org/wiki/Syrian_pound",
+   "accessed": "2026-10-30"
+  },
+  "wp-btn": {
+   "title": "Bhutanese ngultrum — Wikipedia (1974, at par with the Indian rupee)",
+   "url": "https://en.wikipedia.org/wiki/Bhutanese_ngultrum",
+   "accessed": "2026-10-30"
   }
  },
  "countries": [
@@ -3328,6 +3433,71 @@
    "wb_unsupported": null
   },
   {
+   "iso": "SS",
+   "name": "South Sudan",
+   "start": 1945,
+   "unit": "pound",
+   "currency": "Egyptian pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1957,
+     "old": "Egyptian pound",
+     "new": "First Sudanese pounds",
+     "rate": 1,
+     "source": {
+      "title": "Sudanese pound — Wikipedia (replaced the Egyptian pound at par after independence)",
+      "url": "https://en.wikipedia.org/wiki/Sudanese_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1992,
+     "old": "First Sudanese pounds",
+     "new": "Sudanese dinar",
+     "rate": 10,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": "In the south, prices were often still set in pounds, and Kenyan shillings were widely used."
+    },
+    {
+     "year": 2007,
+     "old": "Sudanese dinars",
+     "new": "Second Sudanese pound",
+     "rate": 100,
+     "source": {
+      "title": "Redenomination — Wikipedia (table of currency redenominations)",
+      "url": "https://en.wikipedia.org/wiki/Redenomination",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 2011,
+     "old": "Second Sudanese pound",
+     "new": "South Sudanese pound",
+     "rate": 1,
+     "source": {
+      "title": "South Sudanese pound — Wikipedia (introduced 18 July 2011, replacing the Sudanese pound at par)",
+      "url": "https://en.wikipedia.org/wiki/South_Sudanese_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": "Independence."
+    }
+   ],
+   "total_factor": 1000.0,
+   "wb": "SSD",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "FR",
    "name": "France",
    "start": 1945,
@@ -3714,6 +3884,35 @@
    "wb_unsupported": null
   },
   {
+   "iso": "SY",
+   "name": "Syria",
+   "start": 1945,
+   "unit": "pound",
+   "currency": "Syrian pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 2026,
+     "old": "Syrian pound",
+     "new": "New Syrian pound",
+     "rate": 100,
+     "source": {
+      "title": "Syrian pound — Wikipedia (1 January 2026: 100 old pounds for one new pound)",
+      "url": "https://en.wikipedia.org/wiki/Syrian_pound",
+      "accessed": "2026-10-30"
+     },
+     "note": "1 January 2026. Old notes could be exchanged until 30 July 2026."
+    }
+   ],
+   "total_factor": 100.0,
+   "wb": "SYR",
+   "wb_unit_year": 2025,
+   "wb_unsupported": null
+  },
+  {
    "iso": "GW",
    "name": "Guinea-Bissau",
    "start": 1945,
@@ -3854,6 +4053,47 @@
    "wb_unsupported": null
   },
   {
+   "iso": "KW",
+   "name": "Kuwait",
+   "start": 1945,
+   "unit": "dinar",
+   "currency": "Indian rupee",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1959,
+     "old": "Indian rupee",
+     "new": "Gulf rupee",
+     "rate": 1,
+     "source": {
+      "title": "Gulf rupee — Wikipedia (issued 1959, equivalent to the Indian rupee)",
+      "url": "https://en.wikipedia.org/wiki/Gulf_rupee",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1961,
+     "old": "Gulf rupee",
+     "new": "Kuwaiti dinar",
+     "rate": 13.333333333333334,
+     "source": {
+      "title": "Kuwaiti dinar — Wikipedia (1961, at 13⅓ rupees to the dinar)",
+      "url": "https://en.wikipedia.org/wiki/Kuwaiti_dinar",
+      "accessed": "2026-10-30"
+     },
+     "note": "During the Iraqi occupation of 1990–91 the Iraqi dinar was imposed; the Kuwaiti dinar was then restored at its pre-war value."
+    }
+   ],
+   "total_factor": 13.333333333333334,
+   "wb": "KWT",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "GN",
    "name": "Guinea",
    "start": 1945,
@@ -3903,6 +4143,47 @@
    ],
    "total_factor": 10.0,
    "wb": "GIN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "BH",
+   "name": "Bahrain",
+   "start": 1945,
+   "unit": "dinar",
+   "currency": "Indian rupee",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1959,
+     "old": "Indian rupee",
+     "new": "Gulf rupee",
+     "rate": 1,
+     "source": {
+      "title": "Gulf rupee — Wikipedia (issued 1959, equivalent to the Indian rupee)",
+      "url": "https://en.wikipedia.org/wiki/Gulf_rupee",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1965,
+     "old": "Gulf rupee",
+     "new": "Bahraini dinar",
+     "rate": 10,
+     "source": {
+      "title": "Bahraini dinar — Wikipedia (1965, at 10 Gulf rupees to the dinar)",
+      "url": "https://en.wikipedia.org/wiki/Bahraini_dinar",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 10.0,
+   "wb": "BHR",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -5279,6 +5560,264 @@
    "wb_unsupported": null
   },
   {
+   "iso": "NA",
+   "name": "Namibia",
+   "start": 1961,
+   "unit": "dollar",
+   "currency": "South African rand",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1993,
+     "old": "South African rand",
+     "new": "Namibian dollar",
+     "rate": 1,
+     "source": {
+      "title": "Namibian dollar — Wikipedia (first notes 15 September 1993, at par with the rand)",
+      "url": "https://en.wikipedia.org/wiki/Namibian_dollar",
+      "accessed": "2026-10-30"
+     },
+     "note": "The rand is still legal tender."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "NAM",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "MU",
+   "name": "Mauritius",
+   "start": 1945,
+   "unit": "rupee",
+   "currency": "Mauritian rupee",
+   "basis": {
+    "title": "Mauritian rupee — Wikipedia (the rupee throughout, with only new coin and note issues since 1945)",
+    "url": "https://en.wikipedia.org/wiki/Mauritian_rupee",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "MUS",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SC",
+   "name": "Seychelles",
+   "start": 1945,
+   "unit": "rupee",
+   "currency": "Seychellois rupee",
+   "basis": {
+    "title": "Seychellois rupee — Wikipedia (currency of Seychelles since 1914)",
+    "url": "https://en.wikipedia.org/wiki/Seychellois_rupee",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "SYC",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "MV",
+   "name": "Maldives",
+   "start": 1945,
+   "unit": "rufiyaa",
+   "currency": "Ceylon rupee",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1947,
+     "old": "Ceylon rupee",
+     "new": "Maldivian rufiyaa",
+     "rate": 1,
+     "source": {
+      "title": "Maldivian rufiyaa — Wikipedia (rufiyaa notes from 1947, equal in value to the Ceylonese rupee)",
+      "url": "https://en.wikipedia.org/wiki/Maldivian_rufiyaa",
+      "accessed": "2026-10-30"
+     },
+     "note": "Rufiyaa notes, equal in value to the rupee, circulated alongside it at first."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "MDV",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "AE",
+   "name": "United Arab Emirates",
+   "start": 1945,
+   "unit": "dirham",
+   "currency": "Indian rupee",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1959,
+     "old": "Indian rupee",
+     "new": "Gulf rupee",
+     "rate": 1,
+     "source": {
+      "title": "Gulf rupee — Wikipedia (issued 1959, equivalent to the Indian rupee)",
+      "url": "https://en.wikipedia.org/wiki/Gulf_rupee",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1966,
+     "old": "Gulf rupee",
+     "new": "Bahraini dinar",
+     "rate": 10,
+     "source": {
+      "title": "United Arab Emirates dirham — Wikipedia (Abu Dhabi: Bahraini dinar at 10 Gulf rupees in 1966; dirham at 10 to the dinar in 1973)",
+      "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates_dirham",
+      "accessed": "2026-10-30"
+     },
+     "note": "Follows Abu Dhabi. Dubai and the northern emirates used the Saudi riyal and then the Qatar and Dubai riyal, exchanged for the dirham at par."
+    },
+    {
+     "year": 1973,
+     "old": "Bahraini dinar",
+     "new": "United Arab Emirates dirham",
+     "rate": 0.1,
+     "source": {
+      "title": "United Arab Emirates dirham — Wikipedia (Abu Dhabi: Bahraini dinar at 10 Gulf rupees in 1966; dirham at 10 to the dinar in 1973)",
+      "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates_dirham",
+      "accessed": "2026-10-30"
+     },
+     "note": "Ten dirhams to the dinar."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "ARE",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "YE",
+   "name": "Yemen",
+   "start": 1945,
+   "unit": "rial",
+   "currency": "North Yemeni rial",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1990,
+     "old": "North Yemeni rial",
+     "new": "Yemeni rial",
+     "rate": 1,
+     "source": {
+      "title": "North Yemeni rial — Wikipedia (replaced at par by the Yemeni rial after unification)",
+      "url": "https://en.wikipedia.org/wiki/North_Yemeni_rial",
+      "accessed": "2026-10-30"
+     },
+     "note": "Follows the north. In the south, the South Yemeni dinar was exchanged at 26 rials until 1996."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "YEM",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "JO",
+   "name": "Jordan",
+   "start": 1945,
+   "unit": "dinar",
+   "currency": "Palestine pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1950,
+     "old": "Palestine pound",
+     "new": "Jordanian dinar",
+     "rate": 1,
+     "source": {
+      "title": "Jordanian dinar — Wikipedia (issued from 1949, exchangeable for Palestine pounds at parity)",
+      "url": "https://en.wikipedia.org/wiki/Jordanian_dinar",
+      "accessed": "2026-10-30"
+     },
+     "note": "Legal tender from 1 July 1950."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "JOR",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "LB",
+   "name": "Lebanon",
+   "start": 1945,
+   "unit": "pound",
+   "currency": "Lebanese pound",
+   "basis": {
+    "title": "Lebanese pound — Wikipedia (the Lebanese pound since its 1939 separation from Syria's)",
+    "url": "https://en.wikipedia.org/wiki/Lebanese_pound",
+    "accessed": "2026-10-30"
+   },
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [],
+   "total_factor": 1.0,
+   "wb": "LBN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "BT",
+   "name": "Bhutan",
+   "start": 1945,
+   "unit": "ngultrum",
+   "currency": "Indian rupee",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1974,
+     "old": "Indian rupee",
+     "new": "Bhutanese ngultrum",
+     "rate": 1,
+     "source": {
+      "title": "Bhutanese ngultrum — Wikipedia (1974, at par with the Indian rupee)",
+      "url": "https://en.wikipedia.org/wiki/Bhutanese_ngultrum",
+      "accessed": "2026-10-30"
+     },
+     "note": "The Indian rupee still circulates at par."
+    }
+   ],
+   "total_factor": 1.0,
+   "wb": "BTN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "IE",
    "name": "Ireland",
    "start": 1945,
@@ -5543,6 +6082,129 @@
    ],
    "total_factor": 0.5,
    "wb": "MWI",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "BW",
+   "name": "Botswana",
+   "start": 1945,
+   "unit": "pula",
+   "currency": "South African pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1961,
+     "old": "South African pound",
+     "new": "South African rand",
+     "rate": 0.5,
+     "source": {
+      "title": "South African rand — Wikipedia (1961: 2 rand to 1 pound)",
+      "url": "https://en.wikipedia.org/wiki/South_African_rand",
+      "accessed": "2026-10-30"
+     },
+     "note": "Decimalisation: two rand to the pound."
+    },
+    {
+     "year": 1976,
+     "old": "South African rand",
+     "new": "Botswana pula",
+     "rate": 1,
+     "source": {
+      "title": "Botswana pula — Wikipedia (introduced 23 August 1976, replacing the rand at par)",
+      "url": "https://en.wikipedia.org/wiki/Botswana_pula",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 0.5,
+   "wb": "BWA",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "SZ",
+   "name": "Eswatini",
+   "start": 1945,
+   "unit": "lilangeni",
+   "currency": "South African pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1961,
+     "old": "South African pound",
+     "new": "South African rand",
+     "rate": 0.5,
+     "source": {
+      "title": "South African rand — Wikipedia (1961: 2 rand to 1 pound)",
+      "url": "https://en.wikipedia.org/wiki/South_African_rand",
+      "accessed": "2026-10-30"
+     },
+     "note": "Decimalisation: two rand to the pound."
+    },
+    {
+     "year": 1974,
+     "old": "South African rand",
+     "new": "Swazi lilangeni",
+     "rate": 1,
+     "source": {
+      "title": "Swazi lilangeni — Wikipedia (introduced in 1974 at par with the rand)",
+      "url": "https://en.wikipedia.org/wiki/Swazi_lilangeni",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 0.5,
+   "wb": "SWZ",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "LS",
+   "name": "Lesotho",
+   "start": 1945,
+   "unit": "loti",
+   "currency": "South African pound",
+   "basis": null,
+   "status": "verified",
+   "unsourced_steps": 0,
+   "gap": null,
+   "steps": [
+    {
+     "year": 1961,
+     "old": "South African pound",
+     "new": "South African rand",
+     "rate": 0.5,
+     "source": {
+      "title": "South African rand — Wikipedia (1961: 2 rand to 1 pound)",
+      "url": "https://en.wikipedia.org/wiki/South_African_rand",
+      "accessed": "2026-10-30"
+     },
+     "note": "Decimalisation: two rand to the pound."
+    },
+    {
+     "year": 1980,
+     "old": "South African rand",
+     "new": "Lesotho loti",
+     "rate": 1,
+     "source": {
+      "title": "Lesotho loti — Wikipedia (pegged 1:1 to the rand; circulating coins from 1979–80 to replace the rand)",
+      "url": "https://en.wikipedia.org/wiki/Lesotho_loti",
+      "accessed": "2026-10-30"
+     },
+     "note": "Issued from 1966 as an accounting unit, in circulation from 1980; the rand is still legal tender."
+    }
+   ],
+   "total_factor": 0.5,
+   "wb": "LSO",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -6153,6 +6815,59 @@
    "wb_unsupported": null
   },
   {
+   "iso": "OM",
+   "name": "Oman",
+   "start": 1945,
+   "unit": "rial",
+   "currency": "Indian rupee",
+   "basis": null,
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "Every step is cited, but sources disagree on the 1970 rate (21 or 13⅓ Gulf rupees per rial).",
+   "steps": [
+    {
+     "year": 1959,
+     "old": "Indian rupee",
+     "new": "Gulf rupee",
+     "rate": 1,
+     "source": {
+      "title": "Gulf rupee — Wikipedia (issued 1959, equivalent to the Indian rupee)",
+      "url": "https://en.wikipedia.org/wiki/Gulf_rupee",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1970,
+     "old": "Gulf rupee",
+     "new": "Saidi rial",
+     "rate": 21,
+     "source": {
+      "title": "Omani rial — Wikipedia (Saidi rial of 1970 at 21 Gulf rupees; renamed Omani rial at par in 1972)",
+      "url": "https://en.wikipedia.org/wiki/Omani_rial",
+      "accessed": "2026-10-30"
+     },
+     "note": "7 May 1970. The Gulf rupee article gives 13⅓ rupees to the rial instead."
+    },
+    {
+     "year": 1972,
+     "old": "Saidi rial",
+     "new": "Omani rial",
+     "rate": 1,
+     "source": {
+      "title": "Omani rial — Wikipedia (Saidi rial of 1970 at 21 Gulf rupees; renamed Omani rial at par in 1972)",
+      "url": "https://en.wikipedia.org/wiki/Omani_rial",
+      "accessed": "2026-10-30"
+     },
+     "note": "A renaming, at par."
+    }
+   ],
+   "total_factor": 21.0,
+   "wb": "OMN",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
    "iso": "DE",
    "name": "Germany",
    "start": 1945,
@@ -6321,6 +7036,71 @@
    ],
    "total_factor": 2.0,
    "wb": "ERI",
+   "wb_unit_year": null,
+   "wb_unsupported": null
+  },
+  {
+   "iso": "QA",
+   "name": "Qatar",
+   "start": 1945,
+   "unit": "riyal",
+   "currency": "Indian rupee",
+   "basis": null,
+   "status": "partial",
+   "unsourced_steps": 0,
+   "gap": "The 1966 switch from the Saudi riyal to the Qatar and Dubai riyal has no stated rate, so amounts from before September 1966 do not convert.",
+   "steps": [
+    {
+     "year": 1959,
+     "old": "Indian rupee",
+     "new": "Gulf rupee",
+     "rate": 1,
+     "source": {
+      "title": "Gulf rupee — Wikipedia (issued 1959, equivalent to the Indian rupee)",
+      "url": "https://en.wikipedia.org/wiki/Gulf_rupee",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    },
+    {
+     "year": 1966,
+     "old": "Gulf rupee",
+     "new": "Saudi riyal",
+     "rate": 1.065,
+     "source": {
+      "title": "Qatari riyal — Wikipedia (1966: Saudi riyal at 1.065 Gulf rupees, then the Qatar and Dubai riyal; Qatari riyal at par in 1973)",
+      "url": "https://en.wikipedia.org/wiki/Qatari_riyal",
+      "accessed": "2026-10-30"
+     },
+     "note": "Adopted briefly after India devalued the Gulf rupee."
+    },
+    {
+     "year": 1966,
+     "old": "Saudi riyal",
+     "new": "Qatar and Dubai riyal",
+     "rate": null,
+     "source": {
+      "title": "Qatari riyal — Wikipedia (1966: Saudi riyal at 1.065 Gulf rupees, then the Qatar and Dubai riyal; Qatari riyal at par in 1973)",
+      "url": "https://en.wikipedia.org/wiki/Qatari_riyal",
+      "accessed": "2026-10-30"
+     },
+     "note": "Introduced in September 1966; no rate against the Saudi riyal is stated."
+    },
+    {
+     "year": 1973,
+     "old": "Qatar and Dubai riyal",
+     "new": "Qatari riyal",
+     "rate": 1,
+     "source": {
+      "title": "Qatari riyal — Wikipedia (1966: Saudi riyal at 1.065 Gulf rupees, then the Qatar and Dubai riyal; Qatari riyal at par in 1973)",
+      "url": "https://en.wikipedia.org/wiki/Qatari_riyal",
+      "accessed": "2026-10-30"
+     },
+     "note": null
+    }
+   ],
+   "total_factor": 1.065,
+   "wb": "QAT",
    "wb_unit_year": null,
    "wb_unsupported": null
   },
@@ -6615,6 +7395,6 @@
    "wb_unsupported": null
   }
  ],
- "verified": 137,
- "partial": 18
+ "verified": 153,
+ "partial": 20
 }
