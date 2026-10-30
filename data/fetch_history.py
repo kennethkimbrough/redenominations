@@ -72,12 +72,21 @@ def fetch_currency_names() -> dict[str, dict]:
             cur = r.get("currencies")
             if not isinstance(cur, dict) or not cur:
                 continue
-            code = sorted(cur)[0] if len(cur) > 1 else next(iter(cur))
+            # Several currencies listed: prefer the one whose code starts with the country's
+            # own ISO2 code (ZWE -> ZWG rather than BWP), else the first alphabetically.
+            cca2 = str(r.get("cca2", "")).upper()
+            own = [c for c in sorted(cur) if cca2 and c.startswith(cca2)]
+            code = own[0] if own else (sorted(cur)[0] if len(cur) > 1 else next(iter(cur)))
             info = cur[code] if isinstance(cur[code], dict) else {}
             out[r["cca3"]] = {"code": code, "name": info.get("name") or code}
     except Exception as exc:  # noqa: BLE001 - names are optional
         print(f"::warning::currency names unavailable: {exc!r}")
         return {}
+    # World Bank entries the dataset does not carry.
+    out.setdefault("XKX", {"code": "EUR", "name": "Euro"})
+    out.setdefault("EMU", {"code": "EUR", "name": "Euro"})
+    out.setdefault("FSM", {"code": "USD", "name": "United States dollar"})
+    out.setdefault("CHI", {"code": "GBP", "name": "British pound"})
     return out
 
 
