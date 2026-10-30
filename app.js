@@ -1,7 +1,8 @@
-const [table, countries, rates] = await Promise.all([
+const [table, countries, rates, history] = await Promise.all([
   fetch("data/redenominations.json").then((r) => r.json()),
   fetch("data/countries.json").then((r) => r.json()),
   fetch("data/rates.json").then((r) => (r.ok ? r.json() : null)).catch(() => null),
+  fetch("data/history.json").then((r) => (r.ok ? r.json() : null)).catch(() => null),
 ]);
 
 const $ = (s) => document.querySelector(s);
@@ -181,3 +182,66 @@ $("#chains").innerHTML = countries.countries.map((c) => `
       `<div>${s.source ? `<cite>Source: <a href="${esc(s.source.url)}">${esc(s.source.title)}</a></cite>` : `<cite class="uncited" style="color:var(--red)">Not yet cited</cite>`}</div></li>`).join("")}</ol>
     ${c.gap ? `<p class="gap">${esc(c.gap)}</p>` : ""}
   </details>`).join("");
+
+
+// ---------- at the time ----------
+if (history) {
+  const tCountry = $("#t-country"), tYear = $("#t-year"), tAmount = $("#t-amount");
+  const chainByWb = Object.fromEntries(countries.countries.filter((c) => c.wb).map((c) => [c.wb, c]));
+  const list = Object.entries(history.countries).map(([iso, c]) => ({ iso, name: c.name })).sort((a, b) => a.name.localeCompare(b.name));
+  for (const c of list) { const o = document.createElement("option"); o.value = c.iso; o.textContent = c.name; tCountry.append(o); }
+  const cpiYears = Object.keys(history.us_cpi).map(Number);
+  const cpiLatest = Math.max(...cpiYears);
+  tYear.max = String(cpiLatest + 2);
+
+  /** Name of the currency a chain country used in `year`, and the factor from that unit to the World Bank's unit. */
+  function unitFor(chain, year) {
+    const cutoff = chain.wb_unit_year ?? Infinity;
+    let name = chain.steps[0].old, factor = 1;
+    for (const s of chain.steps) {
+      if (s.year <= year) name = s.new;
+      else if (s.year <= cutoff && s.new !== "Euro" && s.rate) factor *= s.rate;
+      else if (s.year <= cutoff && s.new !== "Euro" && !s.rate) return { name, factor: null };
+    }
+    return { name, factor };
+  }
+
+  function thenConvert() {
+    const iso = tCountry.value, year = Math.round(Number(tYear.value));
+    const amount = parseFloat(tAmount.value.replace(/[,\s_]/g, ""));
+    const c = history.countries[iso];
+    const chain = chainByWb[iso];
+    const out = $("#t-result"), note = $("#t-note");
+    const unit = chain ? unitFor(chain, year) : { name: "local currency", factor: 1 };
+    $("#t-unit").textContent = chain ? `in ${unit.name}` : "";
+    if (!Number.isFinite(amount) || !Number.isFinite(year)) { out.textContent = "Enter a year and an amount."; note.textContent = ""; return; }
+    const rate = c.rates[year];
+    if (chain?.wb_unsupported) { out.textContent = `No reliable series for ${c.name}.`; note.textContent = chain.wb_unsupported; return; }
+    if (!rate) {
+      const have = Object.keys(c.rates).map(Number);
+      out.textContent = `No exchange rate for ${c.name} in ${year}.`;
+      note.textContent = have.length ? `The World Bank series for ${c.name} covers ${Math.min(...have)}–${Math.max(...have)}, with gaps.` : "";
+      return;
+    }
+    if (unit.factor === null) { out.textContent = `${c.name}'s chain has no fixed rate between ${year} and the World Bank's unit.`; note.textContent = ""; return; }
+    const usdThen = amount / unit.factor / rate;
+    const cpiYear = history.us_cpi[Math.min(Math.max(year, Math.min(...cpiYears)), cpiLatest)];
+    const usdNow = usdThen * history.us_cpi[cpiLatest] / cpiYear;
+    out.innerHTML = `${fmtAmount(amount)} ${esc(unit.name === "local currency" ? c.name + " " + unit.name : unit.name)} in ${year} =` +
+      `<span class="big">${fmtUsd(usdThen)} in ${year} dollars</span>` +
+      `<span class="zeros">about <b>${fmtUsd(usdNow)}</b> in ${cpiLatest} dollars (US consumer prices rose ${(history.us_cpi[cpiLatest] / cpiYear).toFixed(1)}× since ${year})` +
+      ` · average official rate in ${year}: ${rate >= 0.01 ? rate.toLocaleString("en-US", { maximumFractionDigits: 4 }) : rate.toExponential(3)} ${chain ? "current units" : "local units"} per dollar</span>`;
+    const later = table.rows.filter((r) => r.country === c.name && r.year > year);
+    const warn = [];
+    if (!chain && later.length) warn.push(`${c.name} redenominated in ${later.map((r) => r.year).join(", ")} and the World Bank restates earlier years in the later unit, so enter the amount in today's unit, or expect the figure to be off by a factor of ${later.map((r) => fmtRate(r.rate).replace(/<[^>]+>/g, "^")).join(" × ")}.`);
+    if (chain && chain.status === "partial") warn.push(`${chain.name}'s chain has an uncited step; the conversion to the current unit may be off.`);
+    if (["VEN", "ARG", "BOL", "ZWE"].includes(iso)) warn.push("Official rate; a parallel street rate existed for much of this period.");
+    note.innerHTML = warn.map(esc).join(" ") + ` <a href="${esc(history.source.url)}">Source</a>, fetched ${esc(history.fetched)}.`;
+  }
+  tCountry.addEventListener("change", thenConvert);
+  tYear.addEventListener("input", thenConvert);
+  tAmount.addEventListener("input", thenConvert);
+  $("#then-form").addEventListener("submit", (e) => e.preventDefault());
+  tCountry.value = "IND";
+  thenConvert();
+}
