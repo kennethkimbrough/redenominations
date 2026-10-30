@@ -102,6 +102,12 @@ input:focus-visible, select:focus-visible { outline: 3px solid var(--gold); outl
 .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 table { border-collapse: collapse; width: 100%; font-size: .95rem; }
 th, td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th button { all: unset; cursor: pointer; font: inherit; color: inherit; }
+th[aria-sort=ascending] button::after { content: " ▲"; font-size: .7em; }
+th[aria-sort=descending] button::after { content: " ▼"; font-size: .7em; }
+th:hover { color: var(--ink); }
+.check select { width: auto; min-height: 40px; padding: .3rem .6rem; }
+.chain-links { margin: .6rem 0 0; font-size: .9rem; }
 th { color: var(--ink-3); font-weight: 500; font-variant: small-caps; letter-spacing: .05em; position: sticky; top: 0; background: var(--paper); white-space: nowrap; }
 tbody tr:nth-child(even) { background: color-mix(in srgb, var(--paper-2) 55%, transparent); }
 td.num { font-family: var(--mono); font-size: .85rem; white-space: nowrap; }

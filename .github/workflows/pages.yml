@@ -25,6 +25,7 @@ jobs:
         run: |
           mkdir -p site/data
           cp data/redenominations.json data/countries.json data/rates.json data/history.json site/data/
+          cp docs/chart.png site/chart.png
           touch site/.nojekyll
       - uses: peaceiris/actions-gh-pages@v4
         with:

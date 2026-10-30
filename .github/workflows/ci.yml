@@ -18,5 +18,10 @@ jobs:
           python3 data/build_redenominations.py
           python3 data/build_countries.py
           git diff --exit-code -- data/*.json
-      - name: Tests
+      - name: Data tests
         run: python3 -m unittest discover -s tests -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Engine tests
+        run: node --test tests/*.test.mjs

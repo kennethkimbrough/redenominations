@@ -1,5 +1,7 @@
 # Zeros Removed
 
+[![CI](https://github.com/kennethkimbrough/redenominations/actions/workflows/ci.yml/badge.svg)](https://github.com/kennethkimbrough/redenominations/actions/workflows/ci.yml)
+
 **Every currency redenomination since 1945, chained together so you can ask
 what an old banknote is worth in the unit a country uses today.**
 
@@ -91,6 +93,12 @@ The converter says nothing about purchasing power. It only follows the legal
 conversion rates, which is the point: it shows how much of a currency's
 numbering was struck off, not what the money bought.
 
+## Shareable links
+
+Both converters write their state to the URL, so a result can be sent as a
+link: `#c=HU.0.1000000` is a million 1945 pengő in the chain converter, and
+`#t=IND.1980.1000` is a thousand 1980 rupees in the at-the-time converter.
+
 ## Layout
 
 ```
@@ -98,8 +106,10 @@ data/build_redenominations.py   the source table as rows → data/redenomination
 data/build_countries.py         one chain per country with a source per step → data/countries.json
 data/countries_more.py          further chains built from the same sources (Soviet and Yugoslav successors, euro members, others)
 tests/test_data.py              chain continuity, citations, rates matching the table
-site/                           index.html, styles.css, app.js (no build step, no dependencies)
-.github/workflows/ci.yml        rebuilds the JSON, fails if it differs from what is committed, runs the tests
+site/engine.js                  the arithmetic, with no DOM: chain conversion, at-the-time conversion, formatting
+site/app.js, index.html, css    the page (no build step, no dependencies)
+tests/engine.test.mjs           node:test suite for engine.js against the real data files
+.github/workflows/ci.yml        rebuilds the JSON, fails if it differs from what is committed, runs both test suites
 .github/workflows/pages.yml     runs the tests, publishes site/ to GitHub Pages, checks the live URL
 .github/workflows/rates.yml     daily: fetches USD rates into data/rates.json and redeploys
 ```
@@ -109,7 +119,8 @@ site/                           index.html, styles.css, app.js (no build step, n
 ```sh
 python3 data/build_redenominations.py
 python3 data/build_countries.py
-python3 -m unittest discover -s tests -v
+python3 -m unittest discover -s tests -v      # data integrity
+node --test tests/*.test.mjs                  # conversion arithmetic
 mkdir -p site/data && cp data/*.json site/data/ && (cd site && python3 -m http.server 8000)
 ```
 
