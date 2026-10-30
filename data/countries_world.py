@@ -308,3 +308,84 @@ WORLD_WORLD_BANK.update({"BJ": "BEN", "BF": "BFA", "CI": "CIV", "NE": "NER", "SN
 WORLD_UNITS.update({"BJ": "XOF", "BF": "XOF", "CI": "XOF", "NE": "XOF", "SN": "XOF", "TG": "XOF", "CF": "XAF", "TD": "XAF",
                     "CG": "XAF", "GA": "XAF", "KM": "KMF", "DJ": "DJF", "CV": "CVE", "LR": "LRD", "BI": "BIF", "RW": "RWF",
                     "SO": "SOS", "ER": "ERN"})
+
+
+# ---------- Southern Africa, Indian Ocean, Gulf, Levant ----------
+WORLD_SOURCES.update({
+    "wp-bwp": _wp("Botswana_pula", "introduced 23 August 1976, replacing the rand at par"),
+    "wp-szl": _wp("Swazi_lilangeni", "introduced in 1974 at par with the rand"),
+    "wp-lsl": _wp("Lesotho_loti", "pegged 1:1 to the rand; circulating coins from 1979–80 to replace the rand"),
+    "wp-nad": _wp("Namibian_dollar", "first notes 15 September 1993, at par with the rand"),
+    "wp-zar-users": _wp("South_African_rand", "South West Africa used the rand from 1961"),
+    "wp-mur": _wp("Mauritian_rupee", "the rupee throughout, with only new coin and note issues since 1945"),
+    "wp-scr": _wp("Seychellois_rupee", "currency of Seychelles since 1914"),
+    "wp-sdd": _wp("Sudanese_dinar", "1992 at 10 pounds per dinar; 2007 second pound at 100 dinars"),
+    "wp-ssp": _wp("South_Sudanese_pound", "introduced 18 July 2011, replacing the Sudanese pound at par"),
+    "wp-mvr": _wp("Maldivian_rufiyaa", "rufiyaa notes from 1947, equal in value to the Ceylonese rupee"),
+    "wp-gulfrupee": _wp("Gulf_rupee", "issued 1959, equivalent to the Indian rupee"),
+    "wp-bhd": _wp("Bahraini_dinar", "1965, at 10 Gulf rupees to the dinar"),
+    "wp-kwd": _wp("Kuwaiti_dinar", "1961, at 13⅓ rupees to the dinar"),
+    "wp-omr": _wp("Omani_rial", "Saidi rial of 1970 at 21 Gulf rupees; renamed Omani rial at par in 1972"),
+    "wp-qar": _wp("Qatari_riyal", "1966: Saudi riyal at 1.065 Gulf rupees, then the Qatar and Dubai riyal; Qatari riyal at par in 1973"),
+    "wp-aed": _wp("United_Arab_Emirates_dirham", "Abu Dhabi: Bahraini dinar at 10 Gulf rupees in 1966; dirham at 10 to the dinar in 1973"),
+    "wp-yer-n": _wp("North_Yemeni_rial", "replaced at par by the Yemeni rial after unification"),
+    "wp-jod": _wp("Jordanian_dinar", "issued from 1949, exchangeable for Palestine pounds at parity"),
+    "wp-lbp": _wp("Lebanese_pound", "the Lebanese pound since its 1939 separation from Syria's"),
+    "wp-syp": _wp("Syrian_pound", "1 January 2026: 100 old pounds for one new pound"),
+    "wp-btn": _wp("Bhutanese_ngultrum", "1974, at par with the Indian rupee"),
+})
+
+_RAND = [(1961, "South African pound", "South African rand", 0.5, "wp-zar", "Decimalisation: two rand to the pound.")]
+_GULF = [(1959, "Indian rupee", "Gulf rupee", 1, "wp-gulfrupee", None)]
+
+WORLD += [
+    {"iso": "BW", "name": "Botswana", "start": 1945, "unit": "pula", "steps": _RAND + [
+        (1976, "South African rand", "Botswana pula", 1, "wp-bwp", None)]},
+    {"iso": "SZ", "name": "Eswatini", "start": 1945, "unit": "lilangeni", "steps": _RAND + [
+        (1974, "South African rand", "Swazi lilangeni", 1, "wp-szl", None)]},
+    {"iso": "LS", "name": "Lesotho", "start": 1945, "unit": "loti", "steps": _RAND + [
+        (1980, "South African rand", "Lesotho loti", 1, "wp-lsl", "Issued from 1966 as an accounting unit, in circulation from 1980; the rand is still legal tender.")]},
+    {"iso": "NA", "name": "Namibia", "start": 1961, "unit": "dollar", "currency": "South African rand", "steps": [
+        (1993, "South African rand", "Namibian dollar", 1, "wp-nad", "The rand is still legal tender.")]},
+    {"iso": "MU", "name": "Mauritius", "start": 1945, "unit": "rupee", "currency": "Mauritian rupee", "steps": [], "basis": "wp-mur"},
+    {"iso": "SC", "name": "Seychelles", "start": 1945, "unit": "rupee", "currency": "Seychellois rupee", "steps": [], "basis": "wp-scr"},
+    {"iso": "SS", "name": "South Sudan", "start": 1945, "unit": "pound", "steps": [
+        (1957, "Egyptian pound", "First Sudanese pounds", 1, "wp-sdpound", None),
+        (1992, "First Sudanese pounds", "Sudanese dinar", 10, "wiki", "In the south, prices were often still set in pounds, and Kenyan shillings were widely used."),
+        (2007, "Sudanese dinars", "Second Sudanese pound", 100, "wiki", None),
+        (2011, "Second Sudanese pound", "South Sudanese pound", 1, "wp-ssp", "Independence.")]},
+    {"iso": "MV", "name": "Maldives", "start": 1945, "unit": "rufiyaa", "steps": [
+        (1947, "Ceylon rupee", "Maldivian rufiyaa", 1, "wp-mvr", "Rufiyaa notes, equal in value to the rupee, circulated alongside it at first.")]},
+    {"iso": "BH", "name": "Bahrain", "start": 1945, "unit": "dinar", "steps": _GULF + [
+        (1965, "Gulf rupee", "Bahraini dinar", 10, "wp-bhd", None)]},
+    {"iso": "KW", "name": "Kuwait", "start": 1945, "unit": "dinar", "steps": _GULF + [
+        (1961, "Gulf rupee", "Kuwaiti dinar", 40 / 3, "wp-kwd", "During the Iraqi occupation of 1990–91 the Iraqi dinar was imposed; the Kuwaiti dinar was then restored at its pre-war value.")]},
+    {"iso": "OM", "name": "Oman", "start": 1945, "unit": "rial", "steps": _GULF + [
+        (1970, "Gulf rupee", "Saidi rial", 21, "wp-omr", "7 May 1970. The Gulf rupee article gives 13⅓ rupees to the rial instead."),
+        (1972, "Saidi rial", "Omani rial", 1, "wp-omr", "A renaming, at par.")],
+     "gap": "Every step is cited, but sources disagree on the 1970 rate (21 or 13⅓ Gulf rupees per rial)."},
+    {"iso": "QA", "name": "Qatar", "start": 1945, "unit": "riyal", "steps": _GULF + [
+        (1966, "Gulf rupee", "Saudi riyal", 1.065, "wp-qar", "Adopted briefly after India devalued the Gulf rupee."),
+        (1966, "Saudi riyal", "Qatar and Dubai riyal", None, "wp-qar", "Introduced in September 1966; no rate against the Saudi riyal is stated."),
+        (1973, "Qatar and Dubai riyal", "Qatari riyal", 1, "wp-qar", None)],
+     "gap": "The 1966 switch from the Saudi riyal to the Qatar and Dubai riyal has no stated rate, so amounts from before September 1966 do not convert."},
+    {"iso": "AE", "name": "United Arab Emirates", "start": 1945, "unit": "dirham", "steps": _GULF + [
+        (1966, "Gulf rupee", "Bahraini dinar", 10, "wp-aed", "Follows Abu Dhabi. Dubai and the northern emirates used the Saudi riyal and then the Qatar and Dubai riyal, exchanged for the dirham at par."),
+        (1973, "Bahraini dinar", "United Arab Emirates dirham", 0.1, "wp-aed", "Ten dirhams to the dinar.")]},
+    {"iso": "YE", "name": "Yemen", "start": 1945, "unit": "rial", "steps": [
+        (1990, "North Yemeni rial", "Yemeni rial", 1, "wp-yer-n",
+         "Follows the north. In the south, the South Yemeni dinar was exchanged at 26 rials until 1996.")]},
+    {"iso": "JO", "name": "Jordan", "start": 1945, "unit": "dinar", "steps": [
+        (1950, "Palestine pound", "Jordanian dinar", 1, "wp-jod", "Legal tender from 1 July 1950.")]},
+    {"iso": "LB", "name": "Lebanon", "start": 1945, "unit": "pound", "currency": "Lebanese pound", "steps": [], "basis": "wp-lbp"},
+    {"iso": "SY", "name": "Syria", "start": 1945, "unit": "pound", "steps": [
+        (2026, "Syrian pound", "New Syrian pound", 100, "wp-syp", "1 January 2026. Old notes could be exchanged until 30 July 2026.")]},
+    {"iso": "BT", "name": "Bhutan", "start": 1945, "unit": "ngultrum", "steps": [
+        (1974, "Indian rupee", "Bhutanese ngultrum", 1, "wp-btn", "The Indian rupee still circulates at par.")]},
+]
+WORLD_WORLD_BANK.update({"BW": "BWA", "SZ": "SWZ", "LS": "LSO", "NA": "NAM", "MU": "MUS", "SC": "SYC", "SS": "SSD", "MV": "MDV",
+                         "BH": "BHR", "KW": "KWT", "OM": "OMN", "QA": "QAT", "AE": "ARE", "YE": "YEM", "JO": "JOR", "LB": "LBN",
+                         "SY": "SYR", "BT": "BTN"})
+WORLD_UNITS.update({"BW": "BWP", "SZ": "SZL", "LS": "LSL", "NA": "NAD", "MU": "MUR", "SC": "SCR", "SS": "SSP", "MV": "MVR",
+                    "BH": "BHD", "KW": "KWD", "OM": "OMR", "QA": "QAR", "AE": "AED", "YE": "YER", "JO": "JOD", "LB": "LBP",
+                    "SY": "SYP", "BT": "BTN"})

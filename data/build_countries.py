@@ -345,7 +345,7 @@ WORLD_BANK = {
     "RS": "SRB", "MX": "MEX", "AO": "AGO", "CL": "CHL", "UY": "URY", "DE": "DEU", "IL": "ISR",
     "RO": "ROU", "BY": "BLR", "CD": "COD", "GH": "GHA", "HR": "HRV", "BG": "BGR", "ZW": "ZWE",
 }
-WORLD_BANK_UNIT_YEAR = {"VE": 2008}
+WORLD_BANK_UNIT_YEAR = {"VE": 2008, "SY": 2025}
 WORLD_BANK_UNSUPPORTED = {"ZW": "The World Bank series mixes several Zimbabwean currencies without a consistent restatement."}
 
 
