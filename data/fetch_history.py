@@ -24,14 +24,28 @@ SOURCE = {
 }
 
 
+def get_json(url: str, attempts: int = 3):
+    last: Exception | None = None
+    for i in range(attempts):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "redenominations-history/1.0"})
+            with urllib.request.urlopen(req, timeout=90) as resp:  # noqa: S310 - fixed https hosts
+                return json.load(resp)
+        except Exception as exc:  # noqa: BLE001 - retried
+            last = exc
+            print(f"::warning::{url}: attempt {i + 1} failed: {exc!r}")
+    raise RuntimeError(f"{url}: {last!r}")
+
+
 def fetch_all(indicator: str) -> list[dict]:
     rows: list[dict] = []
     page = 1
     while True:
         url = f"{API}/country/all/indicator/{indicator}?format=json&per_page=20000&date=1960:{date.today().year}&page={page}"
-        req = urllib.request.Request(url, headers={"User-Agent": "redenominations-history/1.0"})
-        with urllib.request.urlopen(req, timeout=60) as resp:  # noqa: S310 - fixed https host
-            meta, data = json.load(resp)
+        body = get_json(url)
+        if not isinstance(body, list) or len(body) != 2:
+            raise RuntimeError(f"unexpected World Bank response for {indicator}: {str(body)[:200]}")
+        meta, data = body
         rows.extend(data or [])
         if page >= int(meta.get("pages", 1)):
             return rows
@@ -47,11 +61,9 @@ CURRENCIES_SOURCE = {
 def fetch_currency_names() -> dict[str, dict]:
     """ISO3 -> {"code", "name"} for each country's current currency. Empty on failure."""
     try:
-        req = urllib.request.Request(CURRENCIES_SOURCE["url"], headers={"User-Agent": "redenominations-history/1.0"})
-        with urllib.request.urlopen(req, timeout=60) as resp:  # noqa: S310 - fixed https host
-            rows = json.load(resp)
+        rows = get_json(CURRENCIES_SOURCE["url"])
     except Exception as exc:  # noqa: BLE001 - names are optional
-        print(f"currency names unavailable: {exc!r}", file=sys.stderr)
+        print(f"::warning::currency names unavailable: {exc!r}")
         return {}
     out = {}
     for r in rows:
@@ -80,7 +92,7 @@ def main() -> int:
     us_cpi = {int(r["date"]): float(r["value"]) for r in cpi
               if r["countryiso3code"] == "USA" and r["value"] is not None}
     if not us_cpi or "IND" not in countries or "BRA" not in countries:
-        print("unexpected response shape", file=sys.stderr)
+        print(f"::error::unexpected response shape: {len(fx)} fx rows, {len(cpi)} cpi rows, {len(countries)} countries")
         return 1
 
     out = {
@@ -107,4 +119,8 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except Exception as exc:  # noqa: BLE001 - surface the cause as a workflow annotation
+        print(f"::error::fetch_history failed: {exc!r}")
+        sys.exit(1)
