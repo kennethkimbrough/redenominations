@@ -57,14 +57,14 @@ function convert() {
     : `<li class="uncited">${s.year}: ${esc(s.old)} → ${esc(s.new)} — no fixed conversion; the chain stops here.</li>`).join("");
   if (r.noop) { out.innerHTML = `${fmtAmount(amount)} ${esc(r.from)} is already the current unit.` + usdHtml(c, r); writeState(); return; }
   out.innerHTML = `${fmtAmount(amount)} ${esc(r.from)} ${r.broken ? "was last convertible as" : "="}<span class="big">${fmtAmount(r.value)} ${esc(r.unit)}</span>` +
-    `<span class="zeros">${r.zeros ? `${Number.isInteger(r.zeros) ? r.zeros : r.zeros.toFixed(2)} zeros removed over ${r.applied} reform${r.applied === 1 ? "" : "s"}` : "no zeros removed"}` +
+    `<span class="zeros">${r.zeros ? `${Number.isInteger(r.zeros) ? r.zeros : r.zeros.toFixed(2)} zeros removed over ${r.applied} reform${r.applied === 1 ? "" : "s"}` : (r.totalRate < 1 ? `no zeros removed: the new unit is the smaller one, ${fmtAmount(1 / r.totalRate)} to each old one` : "no zeros removed")}` +
     `${r.uncited ? " · includes a step that is not yet cited" : ""}${r.broken ? " · the chain has no fixed rate past this point" : ""}</span>`;
   out.innerHTML += usdHtml(c, r);
   writeState();
 }
 function usdHtml(c, r) {
   const d = dollarsToday(c, r, rates);
-  if (d) {
+  if (d && d.code !== "USD") {
     return `<div class="usd">≈ <b>${fmtUsd(d.usd)}</b> at the rate of ${esc(d.date)} (${d.perUsd.toLocaleString("en-US", { maximumFractionDigits: 4 })} ${d.code} per US dollar). ` +
       `One dollar today buys ${fmtAmount(d.oneDollarBuys)} ${esc(r.from)}.` +
       `${["VES", "ARS", "BOB"].includes(d.code) ? " This is the published rate; a parallel street rate may differ." : ""}` +
