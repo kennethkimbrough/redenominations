@@ -1,7 +1,7 @@
 {
  "base": "USD",
  "date": "2026-11-02",
- "fetched": "2026-11-02",
+ "fetched": "2026-11-03",
  "missing": [],
  "note": "Units of local currency per 1 US dollar. Published market/official rates; where a parallel (street) rate exists, this is not it.",
  "rates": {
